@@ -1,0 +1,8 @@
+[
+  {"energy":"se11","roles":["sr04","sr01","sr15"],"lines":["sl03","sl04"],"adj":"chill"},
+  {"energy":"se09","roles":["sr10","sr09","sr14"],"lines":["sl07","sl10"],"adj":"witty"},
+  {"energy":"se02","roles":["sr08","sr06","sr19"],"lines":["sl17","sl20"],"adj":"bright"},
+  {"energy":"se07","roles":["sr01","sr15","sr20"],"lines":["sl20","sl02"],"adj":"witty"},
+  {"energy":"se11","roles":["sr09","sr14","sr12"],"lines":["sl15","sl02"],"adj":"focused"},
+  {"energy":"se11","roles":["sr06","sr19","sr13"],"lines":["sl13","sl06"],"adj":"creative"}
+]

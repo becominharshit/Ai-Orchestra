@@ -1,0 +1,4 @@
+[
+  { "plan": "pl1", "research": ["re5", "re6", "re4"], "drafts": ["dr1", "dr2", "dr3"], "analysis": "an1", "review": "rv1", "call_options": ["co1", "co2", "co3"] },
+  { "plan": "pl2", "research": ["re1", "re2", "re3"], "drafts": ["dr4", "dr5", "dr6"], "analysis": "an2", "review": "rv2", "call_options": ["co1", "co4", "co5"] }
+]

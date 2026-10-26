@@ -1,0 +1,435 @@
+{
+ "template": "trailer",
+ "reviewed": "Avi / BRAIN line-bank review, 24 Oct 2026 (TODO(student): add lines, keep ids stable)",
+ "slots": {
+  "n": "squad size 2-5, as a digit"
+ },
+ "captions": {
+  "1": [
+   {
+    "id": "tr-c1-01",
+    "text": "Ek squad. Ek mission."
+   },
+   {
+    "id": "tr-c1-02",
+    "text": "Unhone socha normal din hai"
+   },
+   {
+    "id": "tr-c1-03",
+    "text": "Is fest season mein"
+   },
+   {
+    "id": "tr-c1-04",
+    "text": "Ek legendary kahani shuru"
+   },
+   {
+    "id": "tr-c1-05",
+    "text": "Har hero ki ek squad hoti hai"
+   },
+   {
+    "id": "tr-c1-06",
+    "text": "Entry aisi, sab ruk gaye"
+   },
+   {
+    "id": "tr-c1-07",
+    "text": "Slow motion, full attitude"
+   },
+   {
+    "id": "tr-c1-08",
+    "text": "{n} heroes, ek kahani"
+   },
+   {
+    "id": "tr-c1-09",
+    "text": "Campus ki sabse badi entry"
+   },
+   {
+    "id": "tr-c1-10",
+    "text": "Ek din, ek squad, ek plan"
+   },
+   {
+    "id": "tr-c1-11",
+    "text": "Kahani yahin se shuru hui"
+   },
+   {
+    "id": "tr-c1-12",
+    "text": "Kadam kadam pe swag"
+   },
+   {
+    "id": "tr-c1-13",
+    "text": "Hero entry, take one"
+   },
+   {
+    "id": "tr-c1-14",
+    "text": "Sab dekh rahe the"
+   }
+  ],
+  "2": [
+   {
+    "id": "tr-c2-01",
+    "text": "Phir squad ne entry li"
+   },
+   {
+    "id": "tr-c2-02",
+    "text": "Sab ki nazar ek taraf"
+   },
+   {
+    "id": "tr-c2-03",
+    "text": "Ek look, poora scene"
+   },
+   {
+    "id": "tr-c2-04",
+    "text": "Drama level: blockbuster"
+   },
+   {
+    "id": "tr-c2-05",
+    "text": "Yeh look history banega"
+   },
+   {
+    "id": "tr-c2-06",
+    "text": "Aankhon mein full confidence"
+   },
+   {
+    "id": "tr-c2-07",
+    "text": "Ek pal, poori picture"
+   },
+   {
+    "id": "tr-c2-08",
+    "text": "Twist abhi baaki hai"
+   },
+   {
+    "id": "tr-c2-09",
+    "text": "Ab kuch bada hone wala hai"
+   },
+   {
+    "id": "tr-c2-10",
+    "text": "Silence. Phir dhamaka."
+   },
+   {
+    "id": "tr-c2-11",
+    "text": "Scene mein jaan aa gayi"
+   },
+   {
+    "id": "tr-c2-12",
+    "text": "Is look pe tali banti hai"
+   },
+   {
+    "id": "tr-c2-13",
+    "text": "Background music: dosti"
+   },
+   {
+    "id": "tr-c2-14",
+    "text": "Climax ki taiyaari"
+   }
+  ],
+  "3": [
+   {
+    "id": "tr-c3-01",
+    "text": "Picture abhi baaki hai"
+   },
+   {
+    "id": "tr-c3-02",
+    "text": "Coming soon, campus ke paas"
+   },
+   {
+    "id": "tr-c3-03",
+    "text": "Blockbuster loading"
+   },
+   {
+    "id": "tr-c3-04",
+    "text": "Release date: aaj"
+   },
+   {
+    "id": "tr-c3-05",
+    "text": "Ab history banegi"
+   },
+   {
+    "id": "tr-c3-06",
+    "text": "Full HD dosti"
+   },
+   {
+    "id": "tr-c3-07",
+    "text": "Hit, superhit, squad hit"
+   },
+   {
+    "id": "tr-c3-08",
+    "text": "The end? Nahi, shuruaat"
+   },
+   {
+    "id": "tr-c3-09",
+    "text": "Sequel jaldi aa raha hai"
+   },
+   {
+    "id": "tr-c3-10",
+    "text": "Box office: dosti ka record"
+   },
+   {
+    "id": "tr-c3-11",
+    "text": "Climax: legendary"
+   },
+   {
+    "id": "tr-c3-12",
+    "text": "Ek jump, sau memories"
+   },
+   {
+    "id": "tr-c3-13",
+    "text": "Freeze. Yeh pal yaad rahega."
+   },
+   {
+    "id": "tr-c3-14",
+    "text": "Paisa vasool squad"
+   }
+  ]
+ },
+ "hooks": [
+  {
+   "id": "tr-h-01",
+   "text": "Is fest season...",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-02",
+   "text": "Ek squad. Ek mission.",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-03",
+   "text": "Coming soon",
+   "style": "alert"
+  },
+  {
+   "id": "tr-h-04",
+   "text": "Picture abhi baaki hai",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-05",
+   "text": "Blockbuster alert",
+   "style": "alert"
+  },
+  {
+   "id": "tr-h-06",
+   "text": "In a world of exams...",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-07",
+   "text": "Trailer out now",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-08",
+   "text": "Ek kahani dosti ki",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-09",
+   "text": "Kya yeh squad jeetegi?",
+   "style": "question"
+  },
+  {
+   "id": "tr-h-10",
+   "text": "Saal ki sabse badi film",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-11",
+   "text": "POV: tum hero ho",
+   "style": "pov"
+  },
+  {
+   "id": "tr-h-12",
+   "text": "Lights. Camera. Squad.",
+   "style": "countdown"
+  },
+  {
+   "id": "tr-h-13",
+   "text": "Har hero ki ek squad",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-14",
+   "text": "Starring: hum",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-15",
+   "text": "Ab hoga asli drama",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-16",
+   "text": "Slow motion shuru",
+   "style": "countdown"
+  },
+  {
+   "id": "tr-h-17",
+   "text": "Kahani mein twist hai",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-18",
+   "text": "Ready for the climax?",
+   "style": "countdown"
+  },
+  {
+   "id": "tr-h-19",
+   "text": "3, 2, 1, action!",
+   "style": "countdown"
+  },
+  {
+   "id": "tr-h-20",
+   "text": "Squad: The Movie",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-21",
+   "text": "Campus ka blockbuster",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-22",
+   "text": "Yeh film zaroor dekhna",
+   "style": "callout"
+  },
+  {
+   "id": "tr-h-23",
+   "text": "Hero entry incoming",
+   "style": "alert"
+  },
+  {
+   "id": "tr-h-24",
+   "text": "Dosti ki picture",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-25",
+   "text": "Ek epic trailer",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-26",
+   "text": "Popcorn ready rakho",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-27",
+   "text": "Full filmy mood",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-28",
+   "text": "Kaun banega hero?",
+   "style": "question"
+  },
+  {
+   "id": "tr-h-29",
+   "text": "POV: trailer tumhara",
+   "style": "pov"
+  },
+  {
+   "id": "tr-h-30",
+   "text": "Cinema mein pehli baar",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-31",
+   "text": "Lights on, squad on",
+   "style": "countdown"
+  },
+  {
+   "id": "tr-h-32",
+   "text": "Yeh scene iconic hai",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-33",
+   "text": "Directed by dosti",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-34",
+   "text": "Season finale vibes",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-35",
+   "text": "Kya hoga aage?",
+   "style": "question"
+  },
+  {
+   "id": "tr-h-36",
+   "text": "Thriller nahi, dosti",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-37",
+   "text": "Superhit squad",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-38",
+   "text": "Ek legendary entry",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-39",
+   "text": "Abhi toh trailer hai",
+   "style": "title"
+  },
+  {
+   "id": "tr-h-40",
+   "text": "Filmy squad, real dosti",
+   "style": "title"
+  }
+ ],
+ "posts": [
+  {
+   "id": "tr-p-01",
+   "text": "Trailer out, movie kab aayegi?"
+  },
+  {
+   "id": "tr-p-02",
+   "text": "Picture abhi baaki hai, dost"
+  },
+  {
+   "id": "tr-p-03",
+   "text": "Blockbuster squad, now showing"
+  },
+  {
+   "id": "tr-p-04",
+   "text": "Blockbuster loading, popcorn ready rakho"
+  },
+  {
+   "id": "tr-p-05",
+   "text": "Har hero ki ek squad hoti hai"
+  },
+  {
+   "id": "tr-p-06",
+   "text": "Fest season ka sabse bada release"
+  },
+  {
+   "id": "tr-p-07",
+   "text": "Starring: meri squad"
+  },
+  {
+   "id": "tr-p-08",
+   "text": "Directed by dosti, edited by AI agents"
+  },
+  {
+   "id": "tr-p-09",
+   "text": "Sequel jaldi aa raha hai"
+  },
+  {
+   "id": "tr-p-10",
+   "text": "{n} heroes, ek blockbuster"
+  },
+  {
+   "id": "tr-p-11",
+   "text": "Box office pe dosti ka record"
+  },
+  {
+   "id": "tr-p-12",
+   "text": "Lights, camera, squad"
+  }
+ ]
+}

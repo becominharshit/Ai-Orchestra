@@ -1,0 +1,435 @@
+{
+ "template": "roast",
+ "reviewed": "Avi / BRAIN line-bank review, 24 Oct 2026 (TODO(student): add lines, keep ids stable)",
+ "slots": {
+  "n": "squad size 2-5, as a digit"
+ },
+ "captions": {
+  "1": [
+   {
+    "id": "ro-c1-01",
+    "text": "2am: Maggi hi asli dost hai"
+   },
+   {
+    "id": "ro-c1-02",
+    "text": "Hostel ka 5 star chef: Maggi"
+   },
+   {
+    "id": "ro-c1-03",
+    "text": "Raat 2 baje ka gourmet dinner"
+   },
+   {
+    "id": "ro-c1-04",
+    "text": "Maggi 2 minute, hum 20 minute"
+   },
+   {
+    "id": "ro-c1-05",
+    "text": "Midnight snack committee meeting"
+   },
+   {
+    "id": "ro-c1-06",
+    "text": "Hostel life: unlimited Maggi"
+   },
+   {
+    "id": "ro-c1-07",
+    "text": "Neend baad mein, Maggi pehle"
+   },
+   {
+    "id": "ro-c1-08",
+    "text": "Kitchen band, jugaad chalu"
+   },
+   {
+    "id": "ro-c1-09",
+    "text": "2am wali bhookh, full drama"
+   },
+   {
+    "id": "ro-c1-10",
+    "text": "Ek packet, {n} dost"
+   },
+   {
+    "id": "ro-c1-11",
+    "text": "Raat ka menu: sirf Maggi"
+   },
+   {
+    "id": "ro-c1-12",
+    "text": "Hostel ka MasterChef moment"
+   },
+   {
+    "id": "ro-c1-13",
+    "text": "Bhookh lagi? Kettle on"
+   },
+   {
+    "id": "ro-c1-14",
+    "text": "Late night, great bite"
+   }
+  ],
+  "2": [
+   {
+    "id": "ro-c2-01",
+    "text": "Deadline kal, shuru aaj raat"
+   },
+   {
+    "id": "ro-c2-02",
+    "text": "Assignment ne bola, main hoon na"
+   },
+   {
+    "id": "ro-c2-03",
+    "text": "PDF kahan hai bhai?"
+   },
+   {
+    "id": "ro-c2-04",
+    "text": "Deadline ko dekh ke dance"
+   },
+   {
+    "id": "ro-c2-05",
+    "text": "Group project, group panic"
+   },
+   {
+    "id": "ro-c2-06",
+    "text": "Submit karna bhi ek art hai"
+   },
+   {
+    "id": "ro-c2-07",
+    "text": "Wifi slow, dil fast"
+   },
+   {
+    "id": "ro-c2-08",
+    "text": "11:59 pm wali energy"
+   },
+   {
+    "id": "ro-c2-09",
+    "text": "Panic mode: activated"
+   },
+   {
+    "id": "ro-c2-10",
+    "text": "Teamwork, last minute edition"
+   },
+   {
+    "id": "ro-c2-11",
+    "text": "Ek assignment, {n} dimaag"
+   },
+   {
+    "id": "ro-c2-12",
+    "text": "Coffee pe coffee"
+   },
+   {
+    "id": "ro-c2-13",
+    "text": "Ek aur coffee, please"
+   },
+   {
+    "id": "ro-c2-14",
+    "text": "Ctrl S, Ctrl S, Ctrl S"
+   }
+  ],
+  "3": [
+   {
+    "id": "ro-c3-01",
+    "text": "Phir bhi vibe 100 percent"
+   },
+   {
+    "id": "ro-c3-02",
+    "text": "Sab set hai, trust the process"
+   },
+   {
+    "id": "ro-c3-03",
+    "text": "Last minute, best minute"
+   },
+   {
+    "id": "ro-c3-04",
+    "text": "Panic? Kaun sa panic?"
+   },
+   {
+    "id": "ro-c3-05",
+    "text": "End mein sab chill"
+   },
+   {
+    "id": "ro-c3-06",
+    "text": "Thumbs up, sab sorted"
+   },
+   {
+    "id": "ro-c3-07",
+    "text": "Hostel life, best life"
+   },
+   {
+    "id": "ro-c3-08",
+    "text": "Stress gaya, smile aaya"
+   },
+   {
+    "id": "ro-c3-09",
+    "text": "Submitted! Ab party"
+   },
+   {
+    "id": "ro-c3-10",
+    "text": "Sab sambhal liya, squad style"
+   },
+   {
+    "id": "ro-c3-11",
+    "text": "Chill pill: le li"
+   },
+   {
+    "id": "ro-c3-12",
+    "text": "Kal ki tension kal"
+   },
+   {
+    "id": "ro-c3-13",
+    "text": "Dosti hai toh sab easy"
+   },
+   {
+    "id": "ro-c3-14",
+    "text": "Mission hostel: complete"
+   }
+  ]
+ },
+ "hooks": [
+  {
+   "id": "ro-h-01",
+   "text": "POV: 2am hostel life",
+   "style": "pov"
+  },
+  {
+   "id": "ro-h-02",
+   "text": "Hostel life be like",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-03",
+   "text": "Deadline kal hai, toh?",
+   "style": "question"
+  },
+  {
+   "id": "ro-h-04",
+   "text": "Relatable? Tag karo",
+   "style": "callout"
+  },
+  {
+   "id": "ro-h-05",
+   "text": "Hostel ka daily scene",
+   "style": "callout"
+  },
+  {
+   "id": "ro-h-06",
+   "text": "Sirf hamare saath?",
+   "style": "question"
+  },
+  {
+   "id": "ro-h-07",
+   "text": "Hostel diaries, ep 1",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-08",
+   "text": "2am ka asli sach",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-09",
+   "text": "Maggi lovers, aao",
+   "style": "callout"
+  },
+  {
+   "id": "ro-h-10",
+   "text": "Deadline wali raat",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-11",
+   "text": "Sabke saath hota hai",
+   "style": "callout"
+  },
+  {
+   "id": "ro-h-12",
+   "text": "POV: kal submission hai",
+   "style": "pov"
+  },
+  {
+   "id": "ro-h-13",
+   "text": "Hostel mein ek raat",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-14",
+   "text": "Isko kehte hain jugaad",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-15",
+   "text": "Bhookh vs neend",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-16",
+   "text": "Assignment panic: live",
+   "style": "alert"
+  },
+  {
+   "id": "ro-h-17",
+   "text": "Kaun kaun relate kare?",
+   "style": "question"
+  },
+  {
+   "id": "ro-h-18",
+   "text": "Hostel life unlocked",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-19",
+   "text": "Raat ke 2 baj gaye",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-20",
+   "text": "Last minute squad",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-21",
+   "text": "Yeh toh daily hai",
+   "style": "callout"
+  },
+  {
+   "id": "ro-h-22",
+   "text": "POV: wifi slow hai",
+   "style": "pov"
+  },
+  {
+   "id": "ro-h-23",
+   "text": "Ek hostel, sau kahaniyan",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-24",
+   "text": "Maggi time!",
+   "style": "alert"
+  },
+  {
+   "id": "ro-h-25",
+   "text": "Deadline aa gayi!",
+   "style": "alert"
+  },
+  {
+   "id": "ro-h-26",
+   "text": "Kya tum bhi aise ho?",
+   "style": "question"
+  },
+  {
+   "id": "ro-h-27",
+   "text": "Hostel ka scene dekho",
+   "style": "callout"
+  },
+  {
+   "id": "ro-h-28",
+   "text": "Sach batao, relate?",
+   "style": "question"
+  },
+  {
+   "id": "ro-h-29",
+   "text": "Hostel life ka trailer",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-30",
+   "text": "Bas 5 minute aur",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-31",
+   "text": "Panic? Thoda sa",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-32",
+   "text": "Group project be like",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-33",
+   "text": "POV: PDF nahi mil raha",
+   "style": "pov"
+  },
+  {
+   "id": "ro-h-34",
+   "text": "Raat lambi, Maggi chhoti",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-35",
+   "text": "Chill hai, sab chill",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-36",
+   "text": "Hostel wale samjhenge",
+   "style": "callout"
+  },
+  {
+   "id": "ro-h-37",
+   "text": "Roast: hostel edition",
+   "style": "alert"
+  },
+  {
+   "id": "ro-h-38",
+   "text": "Yeh raat yaad rahegi",
+   "style": "callout"
+  },
+  {
+   "id": "ro-h-39",
+   "text": "Exam se pehle wali raat",
+   "style": "title"
+  },
+  {
+   "id": "ro-h-40",
+   "text": "Squad ka 2am plan",
+   "style": "title"
+  }
+ ],
+ "posts": [
+  {
+   "id": "ro-p-01",
+   "text": "Hostel life, unlimited Maggi edition"
+  },
+  {
+   "id": "ro-p-02",
+   "text": "Trust the process, aur Maggi ko bhi"
+  },
+  {
+   "id": "ro-p-03",
+   "text": "Last minute, best minute"
+  },
+  {
+   "id": "ro-p-04",
+   "text": "Panic? Kaun sa panic?"
+  },
+  {
+   "id": "ro-p-05",
+   "text": "Group project, group panic, group chill"
+  },
+  {
+   "id": "ro-p-06",
+   "text": "Sab sorted, hostel style"
+  },
+  {
+   "id": "ro-p-07",
+   "text": "2am wali dosti sabse pakki"
+  },
+  {
+   "id": "ro-p-08",
+   "text": "Deadline aayi, squad ne sambhal liya"
+  },
+  {
+   "id": "ro-p-09",
+   "text": "Hostel diaries, episode 1"
+  },
+  {
+   "id": "ro-p-10",
+   "text": "Maggi, deadline aur dosti"
+  },
+  {
+   "id": "ro-p-11",
+   "text": "{n} dost, ek packet Maggi"
+  },
+  {
+   "id": "ro-p-12",
+   "text": "Relatable? Apni squad ko tag karo"
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+data/leads/
+data/pdfs/
+data/whatsapp/
+!data/
+node_modules/

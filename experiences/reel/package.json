@@ -1,0 +1,12 @@
+{
+  "name": "play-reel-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Squad Reel Studio, play-web side (loaded by core/server). No dependencies of its own: it runs inside the play-web image.",
+  "scripts": {
+    "test": "node --test --test-concurrency=1 ../../test/reel/*.test.js",
+    "shots": "node ../../test/reel/shots.mjs",
+    "load": "node ../../test/reel/load.mjs"
+  }
+}

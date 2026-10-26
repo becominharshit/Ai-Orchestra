@@ -1,0 +1,19 @@
+{
+  "name": "play-zenith-ops",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deploy, key and load-test scripts for play-zenith. No dependencies: Node 22 built-ins, the aws CLI, docker and Chrome.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "plan": "node aws/lightsail.mjs plan",
+    "status": "node aws/lightsail.mjs status",
+    "dns-sample": "node aws/make-dns-pdf.mjs --sample",
+    "loadtest": "node loadtest/run.mjs",
+    "key": "node set-claude-key.mjs",
+    "secret": "node set-secret.mjs",
+    "monitor": "node monitor.mjs",
+    "uptime": "node monitor.mjs summary"
+  }
+}

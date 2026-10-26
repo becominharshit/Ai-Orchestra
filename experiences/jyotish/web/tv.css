@@ -1,0 +1,168 @@
+/* AI Jyotish TV styles (loaded only on /tv/jyotish by web/tv.js). Sizes are em of the TV stage
+   (16 px at 1920x1080 landscape and at 1080x1920 portrait). Text is kept >= 22 px at 1080p for camera. */
+
+/* ---------- legibility on camera: bigger agent names, chips and log than the core default ---------- */
+.jt :is(.orx--landscape, .orx--portrait) .orx-name,
+.jt :is(.orx--landscape, .orx--portrait).orx--many .orx-name { font-size: 2.35em; }
+.jt :is(.orx--landscape, .orx--portrait) .orx-node--lead .orx-name { font-size: 2.5em; }
+.jt :is(.orx--landscape, .orx--portrait) .orx-role { font-size: 1.4em; }
+.jt :is(.orx--landscape, .orx--portrait) .orx-chip { font-size: 1.4em; }
+.jt :is(.orx--landscape, .orx--portrait) .orx-lines { font-size: 1.45em; }
+.jt :is(.orx--landscape, .orx--portrait) .orx-roster-row b { font-size: 1.4em; }
+.jt :is(.orx--landscape, .orx--portrait) .orx-now-v { font-size: 1.6em; }
+.jt :is(.orx--landscape, .orx--portrait) .orx-label { width: 19em; }
+
+/* ---------- always-on label ---------- */
+.jt .tv-top-mid { visibility: hidden; }
+.jt-badge { position: absolute; z-index: 6; left: 50%; top: 2.05em; translate: -50% 0; white-space: nowrap; pointer-events: none;
+  font-family: var(--font-mono); font-weight: 800; font-size: 1.4em; letter-spacing: 0.18em; color: #FFE08A;
+  padding: 0.45em 1.2em; border-radius: 99px; background: rgba(10, 8, 34, 0.82); border: 1px solid rgba(255, 193, 94, 0.55); box-shadow: 0 0 1.6em rgba(255, 193, 94, 0.25); }
+.jt.is-capture .jt-badge { top: 0.9em; }
+.jt[data-layout='portrait'] .jt-badge { top: 2.6em; font-size: 1.5em; }
+.jt[data-layout='portrait'].is-capture .jt-badge { top: 0.9em; }
+.jt.has-spot .jt-badge { opacity: 0; } /* the spotlight carries its own label */
+.jt.is-capture .tv-spot { padding-bottom: 3.6em; }
+.jt[data-layout='portrait'] :is(.orx--landscape, .orx--portrait) .orx-name, .jt[data-layout='portrait'] .orx--portrait.orx--many .orx-name { font-size: 2.1em; }
+
+/* TV minimums (CHECK-02 F3): palm chips >= 22 px, status labels 24 px. Overrides palm.css for the TV only. */
+.jt .jp-tv .jp-chip { font-size: 1.4em; padding: 0.3em 0.75em 0.3em 0.55em; }
+.jt .jp-tv .jp-status { font-size: 1.5em; letter-spacing: 0.08em; bottom: 0.9em; }
+.jt .jp-tv .jp-chip::before { width: 0.6em; height: 0.6em; }
+/* the orchestra behind the spotlight fades out, so no stray label edges peek past the card */
+.jt .tv-live { transition: opacity 0.6s var(--ease); }
+.jt.has-spot .tv-live { opacity: 0; }
+/* portrait: keep the spotlight footer clear of the core @handle line */
+.jt[data-layout='portrait'] .jt-spot { padding-bottom: 2.6em; }
+.jt[data-layout='portrait'].is-capture .tv-spot { padding-bottom: 5.2em; }
+
+/* ---------- palm dock (live run) ---------- */
+.jt-dock { position: absolute; z-index: 3; left: 2em; top: 8.2em; bottom: 6.6em; width: 25.4em; display: flex; flex-direction: column; gap: 1em;
+  padding: 1.3em 1.3em 1.4em; border-radius: 1.6em; opacity: 0; transform: translateX(-2em); transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+  background: linear-gradient(180deg, rgba(22, 17, 66, 0.98), rgba(9, 8, 30, 0.98)) padding-box, linear-gradient(160deg, #62BBF3, #8F6BFF 60%, #FF8FC0) border-box;
+  border: 0.14em solid transparent; box-shadow: 0 0 4em rgba(98, 187, 243, 0.28), 0 2em 4em rgba(0, 0, 0, 0.5); }
+.jt-dock.on { opacity: 1; transform: none; }
+.jt.has-spot .jt-dock, .jt[data-mode='idle'] .jt-dock { opacity: 0; }
+.jt.has-spot .jt-dock.hold { opacity: 1; z-index: 5; }
+.jt[data-layout='portrait'].is-capture .tv-chips { top: auto; bottom: 3.6em; } /* keep REPLAY / PINNED off the palm dock */
+.jt-dock-h { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4em 0.6em; }
+.jt-dot { width: 0.8em; height: 0.8em; border-radius: 50%; background: #62BBF3; box-shadow: 0 0 1em #62BBF3; animation: orx-blink 1s infinite; flex: none; }
+.jt-dock.done .jt-dot { background: #3EE6A8; box-shadow: 0 0 1em #3EE6A8; animation: none; }
+.jt-dock-n { font-weight: 800; font-size: 1.5em; white-space: nowrap; }
+.jt-dock-s { margin-left: auto; font-family: var(--font-mono); font-size: 1.5em; letter-spacing: 0.06em; color: #9fd8ff; padding: 0.3em 0.7em; border-radius: 99px; background: rgba(98, 187, 243, 0.14); border: 1px solid rgba(124, 203, 255, 0.4); white-space: nowrap; }
+.jt-dock.done .jt-dock-s { color: #3EE6A8; background: rgba(62, 230, 168, 0.12); border-color: rgba(62, 230, 168, 0.45); }
+.jt-dock-palm { flex: 1; min-height: 0; position: relative; }
+.jt-dock .jp-labels { display: none; } /* the rows below the photo are the legend here */
+.jt-dock-palm .jp-palm, .jt-spot-palm .jp-palm { position: absolute; inset: 0; }
+.jt-dock-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45em; }
+.jt-row { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.7em; padding: 0.45em 0.8em; border-radius: 0.8em; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(186, 196, 255, 0.1); transition: background 0.4s, border-color 0.4s; }
+.jt-row i { width: 0.35em; height: 1.4em; border-radius: 0.3em; background: var(--c); opacity: 0.35; }
+.jt-row b { font-size: 1.4em; }
+.jt-row-v { font-family: var(--font-mono); font-weight: 700; font-size: 1.4em; color: var(--stage-dim); }
+.jt-row.on { background: color-mix(in srgb, var(--c) 14%, transparent); border-color: color-mix(in srgb, var(--c) 55%, transparent); }
+.jt-row.on i { opacity: 1; box-shadow: 0 0 0.8em var(--c); }
+.jt-row.on .jt-row-v { color: #fff; }
+
+.jt.is-capture .jt-dock { left: 1.4em; top: 2.9em; bottom: 3.4em; width: 23.2em; }
+/* the dock takes the mission panel's place while the palm is up (it would peek out around the dock) */
+.jt.jt-palm-on .orx-mission { visibility: hidden; }
+.jt.is-capture:not([data-layout='portrait']) .jt-dock-n { font-size: 1.32em; }
+.jt[data-layout='portrait'] .jt-dock { left: 3.4em; right: 3.4em; width: auto; top: 11.6em; bottom: auto; height: 27em; display: grid;
+  grid-template-columns: 19em 1fr; grid-template-rows: auto 1fr; grid-template-areas: 'palm head' 'palm rows'; gap: 1em 1.6em; transform: translateY(-1.5em); }
+.jt[data-layout='portrait'] .jt-dock.on { transform: none; }
+.jt[data-layout='portrait'] .jt-dock-h { grid-area: head; }
+.jt[data-layout='portrait'] .jt-dock-palm { grid-area: palm; }
+.jt[data-layout='portrait'] .jt-dock-rows { grid-area: rows; grid-auto-rows: 1fr; gap: 0.8em; }
+.jt[data-layout='portrait'] .jt-row { padding: 0.75em 1em; }
+.jt[data-layout='portrait'].is-capture .jt-dock { top: 5em; height: 29em; }
+/* portrait: the agents sit high in the graph, so while the palm is up the live orchestra moves below the dock
+   (it re-lays itself out on resize) */
+.jt[data-layout='portrait'] .tv-live { transition: top 0.6s var(--ease), opacity 0.6s var(--ease); }
+.jt[data-layout='portrait'].jt-palm-on .tv-live { top: 39.6em; }
+.jt[data-layout='portrait'].is-capture.jt-palm-on .tv-live { top: 34.8em; }
+
+/* ---------- spotlight: palm + the reading typing out ---------- */
+.jt .tv-spot { padding: 1.6em 2.4em; }
+.jt-spot { position: relative; width: 100%; height: 100%; max-width: 112em; display: grid; grid-template-columns: 38em minmax(0, 1fr); gap: 2.2em; padding: 2.4em 3em 2.2em;
+  border-radius: 2.4em; text-align: left;
+  background: linear-gradient(160deg, rgba(30, 24, 90, 0.97), rgba(12, 10, 40, 0.97)) padding-box, linear-gradient(135deg, #62BBF3, #8F6BFF 55%, #FF8FC0) border-box;
+  border: 0.2em solid transparent; box-shadow: 0 0 6em rgba(98, 187, 243, 0.3), 0 3em 6em rgba(0, 0, 0, 0.6); }
+.tv-spot.show .jt-spot { animation: tv-pop 0.7s var(--ease); }
+.jt-spot-l { display: flex; flex-direction: column; gap: 1.4em; min-height: 0; }
+.jt-spot-palm { flex: 1; min-height: 0; position: relative; margin-right: 8.5em; } /* room for the line chips, inside the column */
+.jt-sign { display: grid; grid-template-columns: 6.4em 1fr auto; gap: 1.1em; align-items: center; }
+.jt-sign-c { width: 6.4em; height: 6.4em; border-radius: 50%; padding: 1em; background: radial-gradient(circle at 40% 35%, #2a2170, #0c0a2a 70%); box-shadow: 0 0 0 1px rgba(159, 216, 255, 0.25), 0 0 2.6em rgba(143, 107, 255, 0.55); }
+.jt-sign-c svg { width: 100%; height: 100%; }
+.jt-sign-t b { display: block; font-size: 1.9em; font-weight: 800; white-space: nowrap; }
+.jt-sign-t span { font-size: 1.4em; color: var(--stage-dim); }
+.jt-num { display: grid; place-items: center; width: 10.5em; height: 10.5em; border-radius: 50%; background: var(--grad); box-shadow: 0 0 2.4em rgba(143, 107, 255, 0.6); text-align: center; }
+.jt-num small { font-family: var(--font-mono); font-weight: 800; font-size: 1.5em; letter-spacing: 0; margin-top: 0.9em; white-space: nowrap; }
+.jt-num b { font-family: var(--font-display); font-size: 4em; line-height: 0.9; margin-top: -0.55em; }
+
+.jt-spot-r { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.jt-kicker { font-family: var(--font-mono); font-weight: 800; font-size: 1.4em; letter-spacing: 0.22em; text-transform: uppercase; color: #9fd8ff; }
+.jt-title { font-size: 4.4em; margin: 0.12em 0 0.3em; background: linear-gradient(120deg, #fff, #cfe9ff 45%, #d6c8ff); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: 0.06em; }
+.jt-sec, .jt-col-k { font-family: var(--font-mono); font-weight: 800; font-size: 1.4em; letter-spacing: 0.18em; text-transform: uppercase; color: var(--stage-dim); margin-bottom: 0.5em; }
+.jt-who { list-style: none; margin: 0 0 1.1em; padding: 0; display: grid; gap: 0.35em; }
+.jt-who li { font-family: var(--font-display); font-weight: 500; font-size: 2.15em; line-height: 1.25; min-height: 1.25em; opacity: 0; }
+.jt-who li.on, .jt-plist li.on { opacity: 1; }
+.jt-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2em; min-height: 0; }
+.jt-col.past .jt-col-k { color: #9fd8ff; }
+.jt-col.future .jt-col-k { color: #ffb3d2; }
+.jt-plist { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55em; counter-reset: p; }
+.jt-plist li { counter-increment: p; position: relative; padding: 0.55em 0.8em 0.55em 2.7em; min-height: 3.1em; border-radius: 0.9em; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(186, 196, 255, 0.1);
+  font-size: 1.45em; line-height: 1.35; font-weight: 600; opacity: 0.25; }
+.jt-plist li::before { content: counter(p); position: absolute; left: 0.7em; top: 0.6em; width: 1.4em; height: 1.4em; border-radius: 50%; display: grid; place-items: center; font-size: 0.8em; font-weight: 800; color: #0b0a24; background: var(--grad-glow); }
+.jt-col.future .jt-plist li::before { background: linear-gradient(135deg, #FF8FC0, #A88BFF); }
+.jt-plist li.locked { opacity: 1; display: grid; gap: 0.5em; align-content: center; }
+.jt-plist li.locked span { display: block; height: 0.55em; border-radius: 0.3em; background: linear-gradient(90deg, rgba(255, 255, 255, 0.08), rgba(255, 179, 210, 0.35), rgba(255, 255, 255, 0.08)); background-size: 200% 100%; animation: jt-shimmer 1.6s linear infinite; }
+.jt-plist li.locked span + span { width: 60%; }
+.jt-plist li.jt-hint { counter-increment: none; opacity: 1; padding-left: 0.8em; min-height: 0; font-size: 1.4em; color: #ffb3d2; background: none; border: 1px dashed rgba(255, 143, 192, 0.45); }
+.jt-plist li.jt-hint::before { display: none; }
+@keyframes jt-shimmer { to { background-position: -200% 0; } }
+.jt-col.unlocked .jt-plist li { border-color: rgba(255, 143, 192, 0.35); }
+.jt-caret { display: inline-block; width: 0.08em; height: 1em; margin-left: 0.06em; vertical-align: -0.12em; background: #9fd8ff; box-shadow: 0 0 0.6em #9fd8ff; animation: orx-blink 0.8s infinite; }
+.jt-foot { margin-top: auto; padding-top: 1.1em; display: flex; gap: 1em; align-items: center; }
+.jt-foot .pz-forfun { font-size: 1.4em; padding: 0.3em 0.9em; }
+.jt-demo { font-family: var(--font-mono); font-weight: 800; font-size: 1.4em; letter-spacing: 0.16em; color: #FFE08A; }
+
+/* portrait spotlight: palm + sign on top, the reading below */
+.jt[data-layout='portrait'] .tv-spot { padding: 1.4em 2em; }
+.jt[data-layout='portrait'] .jt-spot { grid-template-columns: 1fr; grid-template-rows: 33em minmax(0, 1fr); gap: 2em; padding: 2.2em 2.4em 2em; }
+.jt[data-layout='portrait'] .jt-spot-l { flex-direction: row; gap: 2em; }
+.jt[data-layout='portrait'] .jt-spot-palm { flex: 1.25; }
+.jt[data-layout='portrait'] .jt-sign { flex: 1; grid-template-columns: 1fr; justify-items: start; align-content: center; gap: 1.2em; }
+.jt[data-layout='portrait'] .jt-sign-c { width: 10em; height: 10em; }
+.jt[data-layout='portrait'] .jt-sign-t b { font-size: 2.4em; white-space: normal; }
+.jt[data-layout='portrait'] .jt-num { width: 10.5em; height: 10.5em; }
+.jt[data-layout='portrait'] .jt-cols { grid-template-columns: 1fr; gap: 1.2em; }
+.jt[data-layout='portrait'] .jt-title { font-size: 4.6em; }
+.jt[data-layout='portrait'] .jt-who li { font-size: 2em; }
+.jt[data-layout='portrait'] .jt-plist li { font-size: 1.55em; min-height: 0; }
+.jt[data-layout='portrait'] .jt-foot { justify-content: space-between; }
+
+/* ---------- Dost compatibility spotlight ---------- */
+.jt-dost { grid-template-columns: 40em minmax(0, 1fr); }
+.jt-dost-h { display: flex; flex-direction: column; justify-content: center; gap: 0.6em; }
+.jt-dost .jt-title { font-size: 5em; }
+.jt-dost-line { font-family: var(--font-display); font-size: 2.3em; line-height: 1.25; margin: 0; min-height: 2.5em; opacity: 0; }
+.jt-dost-line.on { opacity: 1; }
+.jt-dost-score { align-self: flex-start; font-family: var(--font-mono); font-weight: 800; font-size: 1.6em; padding: 0.4em 1em; border-radius: 99px; color: #052116; background: #3EE6A8; box-shadow: 0 0 2em rgba(62, 230, 168, 0.5); }
+.jt-dost-roles { list-style: none; margin: 0 0 1.4em; padding: 0; display: grid; gap: 0.8em; }
+.jt-dost-role { display: grid; gap: 0.25em; padding: 0.9em 1.2em; border-radius: 1em; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(186, 196, 255, 0.14); }
+.jt-dost-role b { font-size: 2em; font-weight: 800; background: var(--grad-glow); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.jt-dost-role span { font-size: 1.5em; min-height: 1.3em; opacity: 0; }
+.jt-dost-role span.on { opacity: 1; }
+.jt[data-layout='portrait'] .jt-dost { grid-template-columns: 1fr; grid-template-rows: auto minmax(0, 1fr); }
+.jt[data-layout='portrait'] .jt-dost .jt-title { font-size: 4.8em; }
+
+/* portrait (CHECK-02c): keep the orchestra clear of the Mission Log. Shorter log, no role line under the names,
+   and while the palm dock is up the (hidden) mission panel gives its space to the graph. */
+.jt[data-layout='portrait'] .orx--portrait { grid-template-rows: auto minmax(0, 1fr) 16em; }
+.jt[data-layout='portrait'] .orx--portrait .orx-role { display: none; }
+.jt[data-layout='portrait'].jt-palm-on .orx--portrait .orx-mission { display: none; }
+.jt[data-layout='portrait'].jt-palm-on .orx--portrait { grid-template-rows: minmax(0, 1fr) 16em; }
+/* portrait capture: start the orchestra below the "SIRF MAZE KE LIYE" badge */
+.jt[data-layout='portrait'].is-capture .orx--portrait { padding-top: 5.4em; }
+/* during the 1.5 s dock hold the spotlight's palm chips wait (they would peek out under the dock border) */
+.jt .jt-spot .jp-labels { transition: opacity 0.5s var(--ease); }
+.jt:has(.jt-dock.hold) .jt-spot .jp-labels { opacity: 0; }

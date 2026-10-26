@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070618">
+  <title>AI ya Asli? · Zenith</title>
+  <link rel="stylesheet" href="/core/tokens.css">
+  <link rel="stylesheet" href="/core/orchestra.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="stage">
+  <main class="pz-wrap ax">
+    <header class="ax-head">
+      <a class="pz-brand" href="/"><i></i>Zenith</a>
+      <span class="ax-chip" id="head-chip">60 sec game</span>
+    </header>
+
+    <!-- 1. intro: pick a generated nickname (no typing), then solo or duel -->
+    <section id="s-intro" class="ax-screen">
+      <p class="ax-banner" id="room-banner" hidden></p>
+      <div class="pz-kicker">Counter <span data-pz-counter-of="asli">7</span> · 10 rounds</div>
+      <h1 class="pz-display ax-title">AI ya <span class="pz-grad-text">Asli?</span></h1>
+      <p class="pz-dim ax-lede">Har round mein ek line, code ya awaaz. Tap karo: AI ne banaya, ya asli hai?</p>
+      <div class="ax-nickpick">
+        <div class="ax-nickpick-head"><small>Apna game naam chuno</small><button class="ax-reroll" id="reroll" type="button">Naye naam</button></div>
+        <div class="ax-nickopts" id="nick-opts" role="radiogroup" aria-label="Game naam"></div>
+        <p class="ax-nickhint">Big screen pe sirf yeh naam dikhega.</p>
+      </div>
+      <ul class="ax-rules">
+        <li><b>10</b> rounds</li>
+        <li><b>6s</b> har round</li>
+        <li><b>+50</b> speed bonus</li>
+      </ul>
+      <p class="ax-sound">Awaaz on rakho: voice rounds bhi aa sakte hain.</p>
+      <div id="tv-toggle"></div>
+      <button class="pz-btn block ax-go ax-bigscreen" id="bigscreen" type="button" disabled hidden>Big screen pe khelo</button>
+      <button class="pz-btn block ax-go" id="start" type="button" disabled>Akele khelo</button>
+      <div class="ax-duelbtns">
+        <button class="pz-btn ghost block" id="duel-new" type="button" disabled>Dost ke saath duel</button>
+        <button class="pz-btn ghost block" id="duel-join" type="button" disabled>Duel code hai? Join karo</button>
+      </div>
+      <p class="ax-hero-note" id="hero-note" hidden></p>
+    </section>
+
+    <!-- 1b. duel room: share the code (creator) or type the friend's code (joiner) -->
+    <section id="s-room" class="ax-screen" hidden>
+      <div class="pz-kicker">1v1 duel</div>
+      <div id="room-host" hidden>
+        <h2 class="pz-display ax-res-title">Dost ko yeh code do</h2>
+        <div class="ax-roomcode" id="room-code" aria-live="polite"></div>
+        <div class="ax-roomqr" id="room-qr"></div>
+        <p class="pz-dim">Dost apne phone se QR scan kare, ya "Duel code hai?" pe yeh 4 letters daale. Same 10 rounds, dono ke liye.</p>
+        <button class="pz-btn block ax-bigscreen" id="room-tv" type="button" hidden>Duel big screen pe dikhao</button>
+        <p class="ax-wait" id="room-tv-note" hidden></p>
+      </div>
+      <form id="room-join" class="pz-stack" autocomplete="off" hidden>
+        <h2 class="pz-display ax-res-title">Dost ka duel code</h2>
+        <input class="pz-input ax-codein" id="code-in" name="code" maxlength="4" inputmode="text" autocapitalize="characters" spellcheck="false" placeholder="ABCD" aria-label="4 letter duel code">
+        <p class="ax-err" id="join-err" hidden></p>
+        <button class="pz-btn block" type="submit">Join karo</button>
+      </form>
+      <div class="ax-vs" id="room-vs"></div>
+      <p class="ax-wait" id="room-wait">Dost ka intezaar...</p>
+      <button class="pz-btn ghost block" id="room-cancel" type="button">Wapas</button>
+    </section>
+
+    <!-- 2. orchestra: Curator picks, Detector warms up, Scorekeeper ready (and again at the end) -->
+    <section id="s-brief" class="ax-screen" hidden>
+      <div id="orx"></div>
+      <div class="ax-count" id="count" hidden></div>
+    </section>
+
+    <!-- 3. a round -->
+    <section id="s-round" class="ax-screen" hidden>
+      <div class="ax-duelbar" id="duelbar" hidden></div>
+      <div class="ax-bar">
+        <span class="ax-rn" id="rn">1/10</span>
+        <ol class="ax-dots" id="dots"></ol>
+        <span class="ax-pts" id="pts">0</span>
+      </div>
+      <div class="ax-timer"><i id="timer"></i></div>
+      <article class="ax-card" id="card">
+        <div class="ax-type" id="r-type">TEXT</div>
+        <div class="ax-body" id="r-body"></div>
+        <div class="ax-reveal" id="reveal" hidden>
+          <div class="ax-stamp" id="rv-stamp"></div>
+          <p class="ax-verdict" id="rv-verdict"></p>
+          <p class="ax-tip" id="rv-tip"></p>
+          <p class="ax-credit" id="rv-credit"></p>
+          <p class="ax-det" id="rv-det"></p>
+          <button class="ax-next" id="next" type="button">Agla round</button>
+        </div>
+      </article>
+      <div class="ax-picks" id="picks">
+        <button class="ax-pick ai" data-pick="ai" type="button"><b>AI</b><small>machine ne banaya</small></button>
+        <button class="ax-pick real" data-pick="real" type="button"><b>ASLI</b><small>insaan ka kaam</small></button>
+      </div>
+      <p class="ax-ticker pz-mono" id="ticker"></p>
+    </section>
+
+    <!-- 3b. duel: waiting for the friend's last rounds -->
+    <section id="s-wait" class="ax-screen" hidden>
+      <div class="pz-kicker">Duel</div>
+      <h2 class="pz-display ax-res-title">Tumhare 10 rounds ho gaye!</h2>
+      <div class="ax-vs" id="wait-vs"></div>
+      <p class="ax-wait">Dost ke rounds chal rahe hain...</p>
+    </section>
+
+    <!-- 4. result: score + rank only after the follow gate -->
+    <section id="s-result" class="ax-screen" hidden>
+      <div class="pz-kicker" id="res-kicker">Game khatam</div>
+      <h2 class="pz-display ax-res-title">Shabaash, <span id="res-nick"></span>!</h2>
+      <div class="ax-locked" id="locked">
+        <div class="ax-lockbox" aria-hidden="true"><span>?/10</span></div>
+        <p id="locked-line">Tumhara score, aaj ka rank aur Detector Agent se muqabla ready hai.</p>
+        <button class="pz-btn block" id="unlock" type="button">Score + rank unlock karo</button>
+      </div>
+      <div class="ax-unlocked" id="unlocked" hidden>
+        <div class="ax-outcome" id="res-outcome" hidden></div>
+        <div class="ax-score"><b id="res-score"></b><span>/10</span></div>
+        <div class="ax-badge" id="res-badge"></div>
+        <ul class="ax-stats">
+          <li><small id="res-s1k">Points</small><b id="res-points"></b></li>
+          <li><small>Aaj ka rank</small><b id="res-rank"></b></li>
+          <li><small id="res-s3k">Detector Agent</small><b id="res-det"></b></li>
+        </ul>
+        <ol class="ax-rounds" id="res-rounds"></ol>
+        <p class="ax-res-line" id="res-line"></p>
+        <img id="card-img" class="ax-cardimg" alt="Share card preview" width="1080" height="1920">
+        <button class="pz-btn block" id="friends" type="button">Doston ko bhejo</button>
+        <button class="pz-btn ghost block" id="story" type="button">Story pe share karo</button>
+      </div>
+      <button class="pz-btn ghost block" id="rematch" type="button" hidden>Rematch duel</button>
+      <button class="pz-btn ghost block" id="again" type="button">Phir se khelo</button>
+      <p class="ax-src pz-mono" id="res-src"></p>
+    </section>
+  </main>
+  <audio id="clip" preload="auto" playsinline></audio>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Stall Runbook: Zenith at KRMU Ideas 4.0</title><link rel="stylesheet" href="operator.css">
+<style>
+  .map td, .map th { font-size: 8.5pt; padding: 3px 5px; }
+  .map code { font-size: 7.6pt; }
+  .tight li { margin-bottom: 1.5px; }
+  .who td { height: 17px; padding: 2px 5px; font-size: 8.3pt; }
+  .who td:nth-child(2), .who td:nth-child(3) { border-bottom: 1px solid #9a97b5; }
+  .who td:first-child, .who th:first-child { width: 48%; }
+  .who td:nth-child(2), .who th:nth-child(2) { width: 30%; }
+  .nw code { white-space: nowrap; }
+</style></head>
+<body>
+
+<!-- PAGE 1 -->
+<section class="page">
+  <div class="top"><img src="../../print/assets/logo/zenith_logo_ink.png" alt="Zenith School of AI"><div class="tag">Stall runbook · KRMU Ideas 4.0<br>27 to 28 Oct 2026 · all counters</div></div>
+  <div class="kicker">For the stall lead and student staff</div>
+  <h1>Stall Runbook</h1>
+  <p class="lede">TV setup, pairing staff devices, the alerts and operator views, safety, offline mode, what to do when something breaks, and who to call. Each counter also has its own 2-page operator card.</p>
+
+  <div class="grid2">
+    <div class="purpose" style="margin:0"><p><b>Purpose:</b> one place to run the Zenith stall for two days: which address each TV opens, the morning routine, big-screen turns and rewards, the safety rules, and the fallback when the internet fails.</p>
+      <p><b>Needed from Avi:</b> the 7 inputs on the right, by the rehearsal on 26 Oct 18:00.</p></div>
+    <div class="box" style="margin:0"><h3>Decisions and inputs for Avi</h3>
+      <ul class="check small tight">
+        <li>Fill "Who to call" (page 6): names and numbers.</li>
+        <li>Go/no-go 26 Oct 12:00 for counters 2 (AI Startup Studio) and 4 (Build Your Own AI Agent); on a no-go use the A4 fallback tents (PRINT_SPEC page 2).</li>
+        <li>The reward item for big-screen players. Until then no item name on any screen or in what staff say.</li>
+        <li>Go-ahead for WhatsApp live sends at Career Studio (switch stays OFF until then).</li>
+        <li>Hand the admin key to the stall lead in person. Never in a group chat, never on paper.</li>
+        <li>Confirm the spend cap: 350 USD on the live site (<code>ops/aws/environments.json</code>); the key's workspace limit is 400 USD (STATUS.md).</li>
+        <li>One safety lead per shift, both days (names on page 6).</li>
+      </ul></div>
+  </div>
+
+  <h2 style="margin-top:9px">Counter map and TV addresses</h2>
+  <p class="small">Every address starts with <code>https://play.zenithschool.ai</code>. If the domain is not live yet, the lead gives the temporary address; the paths stay the same. In offline mode replace the start with <code>http://&lt;laptop address&gt;:8790</code> (page 5).</p>
+  <table class="map">
+    <tr><th>Counter</th><th>Experience</th><th>Visitor link (standee QR)</th><th>TV address</th><th>Card</th></tr>
+    <tr><td><b>1</b></td><td>AI Jyotish <span class="fun">For fun only</span></td><td><code>/jyotish?c=1</code></td><td><code>/tv/jyotish?c=1</code></td><td>01</td></tr>
+    <tr><td><b>2</b></td><td>AI Startup Studio <b>(new, go/no-go)</b></td><td><code>/startup?c=2</code></td><td><code>/tv/startup?c=2</code></td><td>06</td></tr>
+    <tr><td><b>3</b></td><td>AI Sharks <span class="fun">For fun only</span></td><td><code>/shark?c=3</code></td><td><code>/tv/shark?c=3</code></td><td>04</td></tr>
+    <tr><td><b>4</b></td><td>Build Your Own AI Agent <b>(new, go/no-go)</b></td><td><code>/agent?c=4</code></td><td><code>/tv/agent?c=4</code></td><td>07</td></tr>
+    <tr><td><b>5</b></td><td>Career Studio (+ counter laptop with the full Career Forecast)</td><td><code>/career?c=5</code></td><td><code>/tv/career?c=5</code></td><td>02</td></tr>
+    <tr><td><b>6</b></td><td>Squad Reel Studio</td><td><code>/reel?c=6</code></td><td><code>/tv/reel?c=6</code></td><td>03</td></tr>
+    <tr><td><b>7</b></td><td>AI ya Asli? (+ duel)</td><td><code>/asli?c=7</code></td><td><code>/tv/asli?c=7</code></td><td>05</td></tr>
+    <tr><td><b>8</b></td><td>AI Jyotish + Dost Compatibility <span class="fun">For fun only</span></td><td><code>/jyotish?c=8</code></td><td><code>/tv/jyotish?c=8</code></td><td>01</td></tr>
+    <tr><td><i>wall</i></td><td>Live Projects side wall (posters, not a counter)</td><td>Follow QR</td><td><i>spare screen (optional):</i> loop slide PNG</td><td>none</td></tr>
+  </table>
+  <p class="small"><b>Go/no-go 26 Oct 12:00</b> for 2 and 4; on a no-go use the fallback tent (2: AI Jyotish <code>/jyotish?c=2</code>; 4: Career Studio <code>/career?c=4</code>; either: the hub <code>/</code>). Every standee and tent has a small <b>follow QR</b> and the photo-frame cue; no photo desk, no printouts.</p>
+  <p class="small">Filming views: add <code>&amp;capture=1</code> and <code>&amp;layout=portrait</code> (9:16) to a TV address. Follow is honour-based (<code>instagram.com/zenith_school_of_ai</code>), we never check it.</p>
+
+  <div class="say" style="margin-top:6px"><h3>What staff say about Zenith (the only wording)</h3>
+    <ul class="small tight">
+      <li>Who built it: <b>"Zenith first-years ne AI agents ke saath banaye"</b> (short: "Zenith first-years x AI agents"). Nothing else about who built or coded what, and no number of days.</li>
+      <li>Programme: <b>"B.Tech in AI + mini-MBA. Ek degree, KRMU ki."</b> For more: zenithschool.ai or the follow QR on every standee.</li>
+      <li>Never: job, placement, salary, medical or exam guarantees; other colleges' or companies' names; anything negative about a visitor. Jyotish, AI Sharks and anything predictive: "Sirf maze ke liye".</li>
+    </ul></div>
+  <div class="src">Source: build notes, 24 Oct. Screenshots: local test server with fictional demo profiles, 24 Oct.</div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  <div class="top"><img src="../../print/assets/logo/zenith_logo_ink.png" alt="Zenith School of AI"><div class="tag">Stall runbook · page 2 · opening routine</div></div>
+  <div class="box small" style="margin-bottom:5px"><h3>Kit list (counter map v4)</h3>
+    <b>8 TVs + 8 laptops</b> (one pair per counter 1 to 8, each laptop drives its counter TV), plus an <b>optional spare screen</b> for the Live Projects loop slide on the side wall (<code>print/out/pdf/slide_WALL-live-projects_16x9_1920x1080.png</code>, full screen). Career Studio keeps its extra counter laptop for the full Career Forecast. Two 4G hotspots, chargers and extension boards, staff phones. Print: 8 standees, 16 counter tents, 8 A3 posters, 6 fallback tents (counters 2 and 4), Live Projects wall posters (PRINT_SPEC.pdf). <span class="inf">(Laptop-per-TV split is the lead's v5 brief.)</span></div>
+  <h2>Opening routine (every morning, before visitors)</h2>
+  <div class="cols-6-4">
+    <div>
+      <ol class="small">
+        <li><b>Power and network.</b> TVs, the 8 counter laptops and phones on charge. Venue Wi-Fi or the stall hotspots on (page 5).</li>
+        <li><b>Lead makes pairing codes.</b> On the lead's own device, open <code>/admin</code> and tap <b>"Pair a staff device"</b>: it shows a 6-digit code, valid 10 minutes, for one device only. Make one code per device.</li>
+        <li><b>Pair each TV browser first, in normal Chrome</b> (kiosk mode has no address bar). Open <code>/staff</code> and type the code. The page says "Staff device ready". That browser is now a staff browser for 4 days; <code>/staff/off</code> ends it. Pair again after clearing cookies, in another browser, and on the offline laptop address (pairing is per address).</li>
+        <li><b>Then open the TV address full screen.</b> On a Mac TV machine: <code>open -na "Google Chrome" --args --kiosk "&lt;TV address&gt;"</code> (Cmd+Q leaves kiosk). Press <span class="key">H</span>. If the top says "Staff TV nahi", leave kiosk with Cmd+Q and pair again (step 3).</li>
+        <li><b>Staff, filming and safety-lead phones:</b> pair each one the same way (<code>/staff</code>, its own code). Then demos, hero runs and staff controls are not rate-limited. Never pair a visitor's phone.</li>
+        <li><b>Check <code>/status.json</code></b> on a staff phone (table on page 4): <code>"ok":true</code>, <code>reelWorker</code> ok, and note <code>safetyMode</code>.</li>
+        <li><b>One test per counter</b> (the counter cards say how). A <code>?demo=hero</code> run uses a fictional profile and is not counted.</li>
+        <li><b>The safety lead opens <code>/admin/alerts</code></b> on their paired phone and turns "Sound + vibration" on (page 3).</li>
+      </ol>
+      <p class="small">Only the lead opens <code>/admin</code>, to make codes. <b>Never write down or show the admin key</b>: not on a TV, in a photo, in a chat or on paper. Never post codes in a group chat. If the key leaks, tell the lead at once (Avi changes it).</p>
+    </div>
+    <div>
+      <div class="shots"><figure><img src="../shots/TASK-09/stall-phone-pair.png" alt="" style="max-height:58mm;object-fit:cover;object-position:center"><figcaption>Pairing page <code>/staff</code>: type the 6-digit code from the lead</figcaption></figure></div>
+      <div class="shots tv"><figure><img src="../shots/TASK-09/stall-tv-no-staff.png" alt=""><figcaption>Not a staff TV yet: the top line says "Staff TV nahi"</figcaption></figure></div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div>
+      <h3>TV staff keys (staff TV only)</h3>
+      <table>
+        <tr><th>Key</th><th>What it does</th></tr>
+        <tr><td><span class="key">P</span></td><td>Pin: holds this visitor on the TV (others wait, up to 15 min). Press again to unpin.</td></tr>
+        <tr><td><span class="key">B</span></td><td>Blank this TV now and clear the session. Use it at once if anything wrong is on screen.</td></tr>
+        <tr><td><span class="key">A</span></td><td>Hide or show the anchor / record card.</td></tr>
+        <tr><td><span class="key">R</span></td><td>Replay the last session (filming). <span class="key">1</span> <span class="key">2</span> <span class="key">5</span> = speed 1x, 1/2x, 1/5x; <span class="key">Esc</span> stops.</td></tr>
+        <tr><td><span class="key">C</span> <span class="key">H</span></td><td>C: capture mode on or off. H: shows this key list.</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>What an idle TV shows</h3>
+      <p class="small">Every 9 s it rotates: the big QR, today's counts ("Aaj X logon ne khela", "follow karke result dekha", shares, from our own counters, never Instagram), the leaderboard, the anchor or record card (only if one was played) and "About this stall" with the public line. After a visitor ends, the TV goes back to idle in 22 s.</p>
+      <div class="shots tv"><figure><img src="../shots/TASK-09/stall-tv-idle-counters.png" alt=""><figcaption>Idle: today's counts</figcaption></figure><figure><img src="../shots/TASK-09/stall-tv-idle-about.png" alt=""><figcaption>Idle: About this stall</figcaption></figure></div>
+    </div>
+  </div>
+  <div class="src">Source: build notes, 24 Oct. Screenshots: local test server with fictional demo profiles, 24 Oct.</div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+  <div class="top"><img src="../../print/assets/logo/zenith_logo_ink.png" alt="Zenith School of AI"><div class="tag">Stall runbook · page 3 · alerts view, operator view, big screen</div></div>
+  <h2>The safety lead and the alerts view</h2>
+  <div class="cols-6-4">
+    <div class="small">
+      <p><b>Each shift names one safety lead.</b> They keep <b>the alerts view</b>, <code>/admin/alerts</code>, open all shift on their paired phone, with <b>"Sound + vibration" on</b>, and go to the counter when an alert comes in (page 4). Counter staff can always tell the safety lead directly too.</p>
+      <p>The alerts view lists every counter's alerts. Each one shows only the <b>time, counter, experience and kind</b> ("Support card dikha" or "Filter ne ek gaali roki"), never anything about the visitor. <b>"Theek hai"</b> dismisses an alert once it is handled.</p>
+      <h3 style="margin-top:6px">Operator view: <code>/tv/&lt;exp&gt;?c=&lt;n&gt;&amp;op=1</code></h3>
+      <p>One counter, e.g. <code>/tv/shark?c=3&amp;op=1</code>, on a paired phone (it shows only the panel) or a laptop. It shows that counter's alerts too. <b>Never open the operator view or the alerts view on the public TV.</b></p>
+      <p><b>The operator view has</b> the <b>big screen queue</b> (nicknames only) with <b>Next</b> (end the running turn, start the next), <b>Skip</b> (drop the first person waiting, e.g. they left), <b>Clear</b> (empty the queue, end the turn, drop a pending guest star) and <b>Pin</b>; <b>Guest star turn</b> (name list + "consent confirmed by staff" tick), <b>Mark next turn as record</b>, <b>Hide anchor card</b> once a card exists; and the <b>reward token</b> field with <b>Reward given</b>.</p>
+    </div>
+    <div class="shots"><figure><img src="../shots/TASK-09/stall-alerts-safety-lead.png" alt="" style="width:100%;height:auto"><figcaption>Alerts view <code>/admin/alerts</code> (test data)</figcaption></figure><figure><img src="../shots/TASK-12/op-phone-375x812.png" alt="" style="height:66mm;object-fit:cover;object-position:top"><figcaption>Operator view on a phone: alert, queue, token</figcaption></figure></div>
+  </div>
+
+  <div class="grid3">
+    <div class="box"><h3>Big-screen turns</h3>
+      <ol class="small tight">
+        <li>Visitor taps "Big screen pe khelo" and picks 1 of 3 generated nicknames (no typing).</li>
+        <li>Phone shows "Line mein ho: N aage". When the TV is free the turn starts by itself and the TV shows "BIG SCREEN: &lt;nickname&gt;".</li>
+        <li>Up to 10 wait per counter. A waiting phone that goes away drops out after 3 min; a turn ends after 4 min at most.</li>
+        <li>Other visitors still play on their phones; their TV mirror waits.</li>
+      </ol></div>
+    <div class="box"><h3>Guest star (anchor) turns</h3>
+      <ol class="small tight">
+        <li>Only if the anchor really plays and agrees, and the filming crew has the organisers' and anchor's OK.</li>
+        <li>Anchor joins the queue with "Big screen pe khelo" (own phone or a staff phone).</li>
+        <li>Pick the name (Ayushman Pandita, Gaurav Taneja, Manika Vishwakarma), tick consent, tap <b>Guest star turn</b>, then <b>Next</b>.</li>
+        <li>Their result is pinned as "Beat [name] ka score". Hide: "Hide anchor card" or <span class="key">A</span>.</li>
+      </ol>
+      <p class="small">A pending guest star waits for Next (5 min, then it expires; Clear drops it). No anchor: <b>Mark next turn as record</b>, then Next: "Zenith ka record". Never make up a reading or score for a real person.</p></div>
+    <div class="box"><h3>Reward token</h3>
+      <ol class="small tight">
+        <li>After a big-screen turn of 20 s or more, the phone shows a 4-character code and QR: "Counter pe dikhao".</li>
+        <li>Type the 4 characters in the token field, tap <b>Reward given</b>. It is counted (count only), and the code cannot be used again.</li>
+        <li>A code works once, on its own counter, for 30 min.</li>
+      </ol>
+      <p class="small">Reward item: <span class="blank"></span> <i>(Avi to confirm; until then do not name an item)</i></p></div>
+  </div>
+  <p class="small"><b>Student feedback:</b> if a student team asks for a change, tell the lead; requests are logged in OneDrive <code>03 Student Builds/Build_Review_Log.xlsx</code>.</p>
+  <div class="src">Source: build notes, 24 Oct. Screenshots: local test server with fictional demo profiles, 24 Oct.</div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page">
+  <div class="top"><img src="../../print/assets/logo/zenith_logo_ink.png" alt="Zenith School of AI"><div class="tag">Stall runbook · page 4 · safety</div></div>
+  <h2>Safety (read this before your first shift)</h2>
+  <div class="cols-6-4">
+    <div>
+      <div class="care"><h3>Care alert: a visitor saw the support card</h3>
+        <ul class="small tight">
+          <li>If a visitor types something that sounds like self-harm or crisis, their phone shows a calm card: "Tum akele nahi ho. Kisi bade se ya kisi apne se baat karo. Tele-MANAS (free, 24x7): 14416", with a call button. There is no game or score, and nothing goes to the TV.</li>
+          <li>The alerts view (<code>/admin/alerts</code>) shows "Support card dikha" with the time, counter and experience only; the operator view shows an <b>amber dot</b>. The safety lead goes; counter staff can go first.</li>
+          <li><b>Go over kindly, without fuss.</b> "Sab theek hai? Baat karni ho toh hum yahin hain." Offer water and a quiet spot. Listen; do not lecture.</li>
+          <li><b>Tele-MANAS is 14416</b> (free, 24x7). If someone is in immediate danger: venue security / first aid (page 6) and <b>112</b>.</li>
+          <li><b>Never take a photo, a name or a number. Never discuss it in front of others or on camera.</b> Tap "Theek hai" on the alert, then tell the safety lead (time only).</li>
+        </ul></div>
+      <div class="box"><h3>Something wrong on a TV</h3>
+        <p class="small">Press <span class="key">B</span> at once (staff TV), then tell the lead. The lead can also use "Clear counter N" on <code>/admin</code>. Every TV text comes from reviewed lines, and visitor typing never reaches a TV, so this should be rare. Log it (page 6).</p></div>
+    </div>
+    <div>
+      <div class="shots"><figure><img src="../shots/TASK-09/stall-phone-care-card.png" alt="" style="max-height:92mm;object-fit:cover;object-position:center"><figcaption>The support card on the visitor's phone</figcaption></figure></div>
+      <div class="say"><h3>Privacy lines for every counter</h3>
+        <ul class="small tight">
+          <li>Palm photos are not stored or logged.</li>
+          <li>Reels are deleted after 48 hours.</li>
+          <li>Names, birth dates, numbers and typed words never go on a TV.</li>
+          <li>Minors on our camera: hands and screens only, never faces.</li>
+        </ul></div>
+    </div>
+  </div>
+
+  <div class="box" style="border-color:#f0d58c;background:#fffaf0"><h3>Degraded mode: the live AI check is off</h3>
+    <div class="grid2 small">
+      <div><p><b>When:</b> no AI key yet, the AI is down, the spend cap is reached, or the stall runs offline.</p>
+        <p><b>How to spot it:</b> open <code>/status.json</code>:</p>
+        <table>
+          <tr class="nw"><th>Field</th><th>Normal</th><th>Degraded</th></tr>
+          <tr class="nw"><td><code>safetyMode</code></td><td><code>"live"</code></td><td><code>"degraded"</code></td></tr>
+          <tr class="nw"><td><code>claude</code></td><td><code>"live"</code></td><td><code>"no_key"</code>, <code>"spend_cap"</code>, <code>"demo"</code>, <code>"mock"</code></td></tr>
+          <tr><td><code>demo</code> / <code>offline</code></td><td><code>false</code></td><td><code>true</code></td></tr>
+        </table>
+        <p>On phones: results say "Offline mode: ready-made ...", and the Tele-MANAS line under text boxes is bigger, in a soft card.</p></div>
+      <div><p><b>What changes:</b> the apps keep working on reviewed lines. The care line shows more prominently. Every rule hit (care or bad language) raises the operator alert.</p>
+        <p><b>What staff do:</b></p>
+        <ul class="tight">
+          <li><b>AI Sharks: chips only.</b> Typing and voice are refused in degraded mode; guide visitors to "Type karna nahi? Idea type chuno".</li>
+          <li>The safety lead keeps the alerts view open.</li>
+          <li>Tell the lead. Log it as degraded, not down.</li>
+        </ul></div>
+    </div></div>
+  <div class="src">Source: build notes, 24 Oct. Screenshots: local test server with fictional demo profiles, 24 Oct.</div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page">
+  <div class="top"><img src="../../print/assets/logo/zenith_logo_ink.png" alt="Zenith School of AI"><div class="tag">Stall runbook · page 5 · offline, spend cap, consent switches</div></div>
+  <h2>Offline mode on the counter laptop</h2>
+  <p class="small">Use it when play.zenithschool.ai is slow or down, or the venue network fails. One laptop runs everything; TVs and staff phones join the stall hotspot. The app blocks every outbound request and uses reviewed ready-made answers. <b>Lead or tech on-call starts it.</b></p>
+  <div class="grid2">
+    <div class="box"><h3>Start (about 5 minutes)</h3>
+      <ol class="small tight">
+        <li>Laptop on power, joined to the stall hotspot.</li>
+        <li>Find its address: <code>ipconfig getifaddr en0</code> (looks like <code>172.20.10.2</code>). Write it on the counter cards.</li>
+        <li>Keep it awake: <code>caffeinate -dis &amp;</code> (lid open, on power).</li>
+        <li><code>cd ~/"Documents/Zenith School of AI/Ideas 4.0 builds/play-zenith"</code>, then <code>PUBLIC_URL=http://&lt;address&gt;:8790 npm run offline</code>. The first line says <code>mode: OFFLINE</code>. If macOS asks to allow incoming connections for node: <b>Allow</b>.</li>
+        <li>From a phone on the hotspot: <code>http://&lt;address&gt;:8790/healthz</code> shows <code>{"ok":true}</code>.</li>
+        <li>TVs: <code>http://&lt;address&gt;:8790/tv/&lt;exp&gt;?c=&lt;n&gt;</code>. <b>Pair each TV and staff phone again at this address</b> (<code>/staff</code>, in normal Chrome before kiosk), with codes the lead makes on the laptop's <code>/admin</code> ("Pair a staff device").</li>
+      </ol></div>
+    <div class="box"><h3>While offline, and going back</h3>
+      <ul class="small tight">
+        <li>Visitors can play only if they join the hotspot; otherwise use the staff phones at each counter. The TV QR points to the laptop.</li>
+        <li>Squad Reel: the reel studio starts inside the app on the laptop with the first reel, so the first one may be slower.</li>
+        <li>Back online: Ctrl+C in the app's Terminal tab (counts are saved), switch TVs back to the play.zenithschool.ai addresses, pair again there if the TV says "Staff TV nahi".</li>
+        <li>Offline counts stay on the laptop: <code>npm run stats</code>, add them to the day by hand.</li>
+      </ul>
+      <h3>Hotspots</h3>
+      <p class="small">A phone hotspot takes about 10 devices. With 8 TVs plus staff phones, use a second hotspot for the phones, or a small travel router. <span class="inf">(Inference, not measured at the venue.)</span></p></div>
+  </div>
+
+  <div class="grid2">
+    <div class="box"><h3>Spend cap</h3>
+      <p class="small">The AI spend has a cap: <b>350 USD</b> on the live site (<code>SPEND_CAP_USD</code>, <code>ops/aws/environments.json</code>). When it is reached, <code>/status.json</code> shows <code>"claude":"spend_cap"</code> and the lead's <code>/admin</code> page shows "mode spend_cap" with a full spend bar. Phones keep working with ready-made answers ("Offline mode: ready-made ..."), and safety turns degraded (page 4).</p>
+      <p class="small"><b>If a visitor asks:</b> "Abhi AI ke ready answers chal rahe hain, game bilkul same hai." <b>Then</b> tell the lead; only Avi raises the cap.</p></div>
+    <div class="box"><h3>Consent switches</h3>
+      <ul class="small tight">
+        <li><b>Reel on the TV:</b> plays only if the squad ticks "Big screen pe reel chalao" (default off). Never tick it for them.</li>
+        <li><b>Repost:</b> only reels with "Zenith ise repost kar sakta hai" ticked; an under-18 squad also needs a teacher's or parent's OK. The lead sees the consent list on a staff-only page.</li>
+        <li><b>WhatsApp (Career Studio):</b> the live-send switch on <code>/career/staff/</code> is staff-only and <b>stays OFF until the lead says</b>. With it off, forms are saved and PDFs go later; the phone says so.</li>
+      </ul></div>
+  </div>
+
+  <div class="box small"><h3>Filming phones (filming crew, hero capture 26 Oct 14:00 to 17:00)</h3>
+    Pair each filming phone once (code from the lead). Use the fictional demo runs: <code>/jyotish/?c=8&amp;demo=hero</code>, <code>/jyotish/dost.html?c=8&amp;demo=hero</code>, <code>/shark/v2/?c=3&amp;demo=hero</code>, <code>/career/?c=5&amp;demo=hero</code>, <code>/reel/?c=6&amp;demo=hero</code>, <code>/asli/?c=7&amp;demo=hero</code> (counters 2 and 4: only after a go); TV with <code>&amp;capture=1&amp;layout=portrait</code>, <span class="key">R</span> to replay. Hero runs share that counter's TV, so film when the counter is quiet. Minors: hands and screens only.</div>
+  <div class="src">Source: build notes, 24 Oct. Screenshots: local test server with fictional demo profiles, 24 Oct.</div>
+</section>
+
+<!-- PAGE 6 -->
+<section class="page">
+  <div class="top"><img src="../../print/assets/logo/zenith_logo_ink.png" alt="Zenith School of AI"><div class="tag">Stall runbook · page 6 · when something breaks, who to call</div></div>
+  <h2>When something breaks</h2>
+  <table>
+    <tr><th>What you see</th><th>First thing to do</th><th>Then</th></tr>
+    <tr><td>A TV is frozen or blank.</td><td>Reload the page (Cmd+R or F5). Check the TV's network.</td><td>Offline mode: is the laptop awake and the app running?</td></tr>
+    <tr><td>A TV still shows the last visitor.</td><td>Wait 22 s, or press <span class="key">B</span>.</td><td>Lead: "Clear counter N" on <code>/admin</code>.</td></tr>
+    <tr><td>"Staff TV nahi" on a TV, or P / B / A do nothing.</td><td>Pair that TV browser again, in normal Chrome (page 2).</td><td>Check the TV uses the same address (online vs laptop).</td></tr>
+    <tr><td>A TV shows a "wrong counter" staff warning.</td><td>Fix the <code>?c=</code> number to the counter on the standee.</td><td></td></tr>
+    <tr><td>Phones cannot open the site.</td><td>Open <code>/status.json</code> on a staff phone on mobile data.</td><td>Down for 2+ minutes: tell the lead; offline mode (page 5).</td></tr>
+    <tr><td>Many phones show "Line mein ho" or a countdown.</td><td>Busy: phones retry by themselves.</td><td>If it lasts, tell the lead (limits, or many phones on one Wi-Fi address).</td></tr>
+    <tr><td>Results say "Offline mode: ready-made ...".</td><td>Degraded mode (page 4). AI Sharks: chips only.</td><td>Tell the lead once.</td></tr>
+    <tr><td>Reel studio busy or down (<code>reelWorker</code> false).</td><td>Tell the lead.</td><td>Offline laptop runs its own reel studio.</td></tr>
+    <tr><td>Something wrong or rude on a TV.</td><td>Press <span class="key">B</span> at once.</td><td>Tell the lead, log it.</td></tr>
+    <tr><td>A visitor seems upset, or the amber care alert.</td><td>Care steps (page 4). Tele-MANAS 14416.</td><td>Immediate danger: security / first aid and 112.</td></tr>
+  </table>
+
+  <div class="grid2">
+    <div class="box"><h3>Log every incident</h3>
+      <p class="small">File: <code>Social media/10_workstreams/WS-A_stall_build/INCIDENT_LOG.md</code>. One row per incident: <b>#, Start, End, Experience / counter, What broke, Minutes down, Degraded mode used, Fix, Logged by</b>. Times in IST. "Minutes down" = minutes visitors could not finish on their phones; a counter in offline or degraded mode counts as degraded, not down.</p>
+      <p class="small"><b>Staff can simply tell the lead</b> (what, which counter, when); the lead writes the row. Never write visitor names, numbers or what someone typed. The lead can run the uptime monitor on the laptop: <code>node ops/monitor.mjs</code>, and <code>node ops/monitor.mjs summary</code> each evening for the daily table.</p></div>
+    <div class="box"><h3>Who to call <span class="small" style="font-weight:400">(Avi to fill)</span></h3>
+      <table class="who">
+        <tr><th>Role</th><th>Name</th><th>Phone</th></tr>
+        <tr><td>Stall lead, 27 Oct</td><td></td><td></td></tr>
+        <tr><td>Stall lead, 28 Oct</td><td></td><td></td></tr>
+        <tr><td>Safety leads, 27 Oct</td><td></td><td></td></tr>
+        <tr><td>Safety leads, 28 Oct</td><td></td><td></td></tr>
+        <tr><td>Tech on-call (app, TVs)</td><td></td><td></td></tr>
+        <tr><td>Avi (decisions)</td><td></td><td></td></tr>
+        <tr><td>Nalin (domain, WhatsApp)</td><td></td><td></td></tr>
+        <tr><td>Filming crew lead</td><td></td><td></td></tr>
+        <tr><td>KRMU organiser contact</td><td></td><td></td></tr>
+        <tr><td>Security / first aid</td><td></td><td></td></tr>
+        <tr><td>Power / electrician</td><td></td><td></td></tr>
+        <tr><td>Tele-MANAS (24x7)</td><td colspan="2"><b>14416</b></td></tr>
+        <tr><td>Emergency</td><td colspan="2"><b>112</b></td></tr>
+      </table></div>
+  </div>
+  <div class="src">Source: build notes, 24 Oct. Screenshots: local test server with fictional demo profiles, 24 Oct.</div>
+</section>
+</body></html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070618">
+  <title>AI Jyotish · Zenith</title>
+  <link rel="stylesheet" href="/core/tokens.css">
+  <link rel="stylesheet" href="/core/orchestra.css">
+  <link rel="stylesheet" href="./palm.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="stage">
+  <div class="jy-sky" aria-hidden="true"></div>
+  <main class="pz-wrap jy">
+    <header class="jy-head">
+      <a class="pz-brand" href="/"><i></i>Zenith</a>
+      <span class="pz-forfun">For fun only</span>
+    </header>
+
+    <!-- 1. form -->
+    <section id="s-form" class="jy-screen">
+      <div class="jy-hero">
+        <div class="jy-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="pz-kicker">6 AI agents · live</div>
+        <h1 class="pz-display jy-title">AI <span class="pz-grad-text">Jyotish</span></h1>
+        <p class="pz-dim jy-sub">Haath dikhao. Jyotish Guru aur uske agents batayenge tum kaun ho, past mein kya hua, aur aage kya aane wala hai.</p>
+      </div>
+      <form id="form" class="pz-stack" autocomplete="off" novalidate>
+        <label class="pz-field"><span>First name (sirf tumhare phone pe dikhega)</span>
+          <input class="pz-input" name="name" maxlength="20" placeholder="jaise: Riya" required autocapitalize="words"></label>
+        <label class="pz-field"><span>Date of birth</span>
+          <input class="pz-input" name="dob" type="date" required min="1930-01-01"></label>
+        <div class="jy-row2">
+          <label class="pz-field"><span>Birth place</span>
+            <input class="pz-input" name="place" maxlength="40" placeholder="jaise: Gurugram"></label>
+          <label class="pz-field"><span>Time (optional)</span>
+            <input class="pz-input" name="time" type="time"></label>
+        </div>
+        <p class="jy-err" id="form-err" role="alert" hidden></p>
+        <div id="tv-toggle"></div>
+        <p class="jy-tvnote" id="tv-note" hidden>On rakha toh tumhare palm ki photo aur reading counter ke TV pe dikhegi. Naam, DOB, jagah kabhi nahi. Photo kahin save nahi hoti.</p>
+        <button class="pz-btn block" type="submit">Aage: palm photo</button>
+      </form>
+      <p class="jy-hero-note" id="hero-note" hidden></p>
+      <a class="jy-link" href="./dost.html" id="dost-link">Squad ke saath aaye ho? Dost compatibility try karo</a>
+    </section>
+
+    <!-- 2. palm photo -->
+    <section id="s-palm" class="jy-screen" hidden>
+      <div class="pz-kicker">Step 2 of 2 · Hast Rekha</div>
+      <h2 class="pz-display jy-h2">Apna <span class="pz-grad-text">haath</span> dikhao</h2>
+      <p class="pz-dim">Ujaale mein, hatheli camera ki taraf, ungliyan upar. Ek hi haath, poora frame bhar do.</p>
+      <div id="palm-preview" class="jy-preview"></div>
+      <div class="pz-stack">
+        <label class="pz-btn block jy-file" id="pick-label">
+          <input id="palm-input" type="file" accept="image/*" capture="environment">
+          <span id="pick-text">Palm ki photo lo</span>
+        </label>
+        <button class="pz-btn block" id="go" type="button" hidden>Reading shuru karo</button>
+        <button class="jy-link" id="skip" type="button">Photo ke bina chalao (demo haath)</button>
+      </div>
+      <p class="jy-fine">Photo sirf is reading ke liye AI ko jaati hai. Na save hoti hai, na log mein likhi jaati hai.</p>
+    </section>
+
+    <!-- 3. agents at work -->
+    <section id="s-run" class="jy-screen" hidden>
+      <div id="run-palm" class="jy-runpalm"></div>
+      <div id="orx"></div>
+      <div class="jy-tabagents" id="tab-agents" hidden>
+        <div class="jy-tabagents-k">Sirf tumhare phone pe</div>
+        <div class="jy-tabagents-row">
+          <span class="jy-ta" data-id="dating"><i></i>Dating Agent<b>WORKING</b></span>
+          <span class="jy-ta" data-id="health"><i></i>Health Agent<b>WORKING</b></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. result -->
+    <section id="s-result" class="jy-screen" hidden>
+      <div class="jy-rhead">
+        <div class="jy-const" id="r-const"></div>
+        <div class="jy-rhead-t">
+          <div class="pz-kicker" id="r-kicker">Tumhara AI Bhavishya</div>
+          <h2 class="pz-display jy-rtitle" id="r-title"></h2>
+          <div class="jy-badges" id="r-badges"></div>
+        </div>
+      </div>
+      <div class="jy-forfun-row"><span class="pz-forfun">For fun only</span><span class="pz-dim">AI demo hai, sach ka daawa nahi.</span></div>
+
+      <div class="jy-card jy-who">
+        <div class="jy-card-k">Tum kaun ho</div>
+        <ol class="jy-wholines" id="r-who"></ol>
+      </div>
+
+      <div class="jy-card jy-palmcard">
+        <div class="jy-card-k">Tumhara haath, Hast Rekha Agent ki nazar se</div>
+        <div id="r-palm"></div>
+        <ul class="jy-legend" id="r-legend"></ul>
+      </div>
+
+      <div class="jy-card">
+        <div class="jy-card-k"><i class="jy-ico past"></i>Past: jo ho chuka</div>
+        <ol class="jy-plist" id="r-past"></ol>
+      </div>
+
+      <div class="jy-card jy-future" id="future-card">
+        <div class="jy-card-k"><i class="jy-ico future"></i>Future: jo aane wala hai</div>
+        <ol class="jy-plist" id="r-future"></ol>
+        <button class="pz-btn block" id="unlock" type="button">Future unlock karo</button>
+      </div>
+
+      <div class="jy-share" id="share-box" hidden>
+        <img id="card-img" alt="Mera AI Bhavishya share card" width="1080" height="1920">
+        <button class="pz-btn block" id="friends" type="button">Doston ko bhejo</button>
+        <button class="pz-btn ghost block" id="story" type="button">Story pe share karo</button>
+      </div>
+
+      <nav class="jy-tabs" id="tabs" role="tablist">
+        <button role="tab" data-tab="career" aria-selected="true">Career</button>
+        <button role="tab" data-tab="dating" aria-selected="false">Dating</button>
+        <button role="tab" data-tab="health" aria-selected="false">Health</button>
+      </nav>
+      <div class="jy-card jy-tab" id="tab-career" role="tabpanel"></div>
+      <div class="jy-card jy-tab" id="tab-dating" role="tabpanel" hidden></div>
+      <div class="jy-card jy-tab" id="tab-health" role="tabpanel" hidden></div>
+
+      <button class="pz-btn ghost block" id="again" type="button">Phir se khelo</button>
+      <p class="jy-src pz-mono" id="r-src"></p>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

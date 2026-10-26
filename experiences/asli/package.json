@@ -1,0 +1,15 @@
+{
+  "name": "play-zenith-asli",
+  "private": true,
+  "type": "module",
+  "description": "AI ya Asli? (counter 7): content tools and tests. The server part is loaded by core (server.js). No runtime dependencies.",
+  "scripts": {
+    "asli:check": "node scripts/check.mjs",
+    "asli:add": "node scripts/add.mjs",
+    "asli:approve": "node scripts/add.mjs --approve",
+    "asli:list": "node scripts/add.mjs --list",
+    "asli:voices": "node scripts/make-voices.mjs",
+    "test": "cd ../.. && node --test --test-concurrency=1 test/asli/*.test.js",
+    "e2e": "cd ../.. && node test/asli/e2e.mjs"
+  }
+}

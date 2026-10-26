@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" data-exp="career">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070618">
+  <title>Career Studio · Zenith</title>
+  <link rel="stylesheet" href="/core/tokens.css">
+  <link rel="stylesheet" href="/core/orchestra.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="stage">
+  <main class="pz-wrap cs">
+    <header class="cs-head">
+      <a class="pz-brand" href="/"><i></i>Zenith</a>
+      <span class="cs-head-name">Career Studio</span>
+    </header>
+
+    <!-- home -->
+    <section id="s-home" class="cs-screen">
+      <div class="pz-kicker">Career Studio</div>
+      <h1 class="pz-display cs-title">Tumhara career, <span class="pz-grad-text">2030 mein</span></h1>
+      <p class="pz-dim">Do cheezein try karo. Dono 2 minute se kam.</p>
+      <button class="cs-pick" id="go-jtm" type="button">
+        <span class="cs-pick-ico" data-icon="clock"></span>
+        <span><b>Job Time Machine</b><small>2026 vs 2030: ek hi din, do zamaane. AI agents ki team ke saath. 90 second.</small></span>
+      </button>
+      <button class="cs-pick" id="go-fc" type="button">
+        <span class="cs-pick-ico" data-icon="compass"></span>
+        <span><b>Career Forecast preview</b><small>Interest chuno, dekho kaunse careers grow aur change ho rahe hain. PDF WhatsApp pe.</small></span>
+      </button>
+      <div id="tv-toggle"></div>
+      <p class="cs-hero-note" id="hero-note" hidden></p>
+    </section>
+
+    <!-- B1. pick a job -->
+    <section id="s-jobs" class="cs-screen" hidden>
+      <div class="pz-kicker">Job Time Machine</div>
+      <h2 class="pz-display cs-h2">Kaunsa job <span class="pz-grad-text">khelna hai?</span></h2>
+      <p class="pz-dim">Round 1: aaj ka tareeka (2026). Round 2: wahi din, AI agents ke saath (2030).</p>
+      <div class="cs-jobs" id="jobs"></div>
+      <button class="pz-btn ghost block cs-back" data-go="s-home" type="button">Wapas</button>
+    </section>
+
+    <!-- B2. round 1, 2026 -->
+    <section id="s-r1" class="cs-screen" hidden>
+      <div class="cs-round"><span class="cs-year">2026</span><span id="r1-step">Kaam 1 of 3</span><span class="cs-clock pz-mono" id="r1-clock">0s</span></div>
+      <div class="cs-timebar"><i id="r1-bar"></i></div>
+      <p class="cs-r1-job pz-dim" id="r1-job"></p>
+      <div class="cs-task" id="r1-task"></div>
+    </section>
+
+    <!-- B3. between rounds -->
+    <section id="s-mid" class="cs-screen" hidden>
+      <div class="pz-kicker">Round 1 done</div>
+      <h2 class="pz-display cs-h2" id="mid-title"></h2>
+      <ol class="cs-taglist" id="mid-tags"></ol>
+      <p class="pz-dim" id="mid-line">Ab wahi din, 2030 mein. Tumhari AI agent team ready hai.</p>
+      <button class="pz-btn block" id="go-r2" type="button">2030 mein jao</button>
+    </section>
+
+    <!-- B4. round 2, 2030 -->
+    <section id="s-r2" class="cs-screen" hidden>
+      <div class="cs-round"><span class="cs-year y30">2030</span><span id="r2-step">AI agent team</span><span class="cs-clock pz-mono" id="r2-clock">0s</span></div>
+      <div id="orx"></div>
+      <div id="agent-out" class="cs-agent-out" hidden></div>
+      <div id="calls" class="cs-calls" hidden></div>
+    </section>
+
+    <!-- B5. result -->
+    <section id="s-result" class="cs-screen" hidden>
+      <div class="pz-kicker">Tumhara 2030 skill stack</div>
+      <h2 class="pz-display cs-h2" id="res-title"></h2>
+      <div class="cs-vs" id="res-vs"></div>
+      <div id="res-split"></div>
+      <ol class="cs-skills" id="res-skills"></ol>
+      <p class="cs-zline" id="res-zline"></p>
+      <p class="cs-note" id="res-note" hidden></p>
+      <div class="cs-share">
+        <img id="res-card" alt="Share card preview" width="1080" height="1920">
+        <button class="pz-btn block cs-friends" id="res-friends" type="button">Doston ko bhejo: dekhein unka 2030 career kya kehta hai</button>
+        <button class="pz-btn ghost block" id="res-story" type="button">Story pe share karo</button>
+      </div>
+      <button class="pz-btn ghost block" id="res-to-fc" type="button">Poora forecast + PDF bhi dekho</button>
+      <button class="pz-btn ghost block" id="res-again" type="button">Naya job khelo</button>
+      <p class="cs-src pz-mono" id="res-src"></p>
+    </section>
+
+    <!-- A1. interest areas -->
+    <section id="s-areas" class="cs-screen" hidden>
+      <div class="pz-kicker">Career Forecast preview</div>
+      <h2 class="pz-display cs-h2">Kya <span class="pz-grad-text">pasand hai?</span></h2>
+      <p class="pz-dim">Ek area chuno. Data: Zenith AI Role Atlas, 2026.</p>
+      <div class="cs-areas" id="areas"></div>
+      <button class="pz-btn ghost block cs-back" data-go="s-home" type="button">Wapas</button>
+    </section>
+
+    <!-- A2. forecast preview -->
+    <section id="s-fc" class="cs-screen" hidden>
+      <div class="pz-kicker" id="fc-kicker">Top careers</div>
+      <h2 class="pz-display cs-h2" id="fc-title"></h2>
+      <div class="cs-legend" id="fc-legend"></div>
+      <div id="fc-cards" class="cs-cards"></div>
+      <div class="cs-cta">
+        <b>Poora forecast + PDF chahiye? Counter pe WhatsApp karo</b>
+        <span class="pz-dim">Ya yahin form bhar do. Counter laptop pe poora Career Forecast bhi chal raha hai.</span>
+        <button class="pz-btn block" id="fc-wa" type="button">WhatsApp pe chahiye?</button>
+        <a class="pz-btn ghost block" id="fc-pdf" href="#" target="_blank" rel="noopener">PDF preview abhi dekho</a>
+      </div>
+      <button class="pz-btn block cs-friends" id="fc-friends" type="button">Doston ko bhejo: dekhein unka 2030 career kya kehta hai</button>
+      <button class="pz-btn ghost block" data-go="s-areas" type="button">Doosra area dekho</button>
+      <p class="cs-src pz-mono">A forecast, not a guarantee.</p>
+    </section>
+
+    <!-- A3. WhatsApp form -->
+    <section id="s-wa" class="cs-screen" hidden>
+      <div class="pz-kicker">WhatsApp pe chahiye?</div>
+      <h2 class="pz-display cs-h2">Forecast PDF <span class="pz-grad-text">WhatsApp pe</span></h2>
+      <p class="pz-dim" id="wa-intro"></p>
+      <form id="wa-form" class="pz-stack" autocomplete="off" novalidate>
+        <label class="pz-field"><span>First name</span>
+          <input class="pz-input" name="firstName" maxlength="40" autocomplete="given-name" required></label>
+        <label class="pz-field"><span>WhatsApp number</span>
+          <input class="pz-input" name="phone" inputmode="numeric" maxlength="15" placeholder="10 digit mobile number" autocomplete="tel-national" required></label>
+        <label class="pz-field"><span>Class / age</span>
+          <select class="pz-input" name="band" required id="wa-band"></select></label>
+        <div class="pz-field"><span>Interest area</span><div class="cs-chip-line" id="wa-area"></div></div>
+        <label class="cs-consent"><input type="checkbox" name="consent" id="wa-consent"><span id="wa-purpose"></span></label>
+        <p class="cs-optout" id="wa-optout"></p>
+        <p class="cs-err" id="wa-err" role="alert" hidden></p>
+        <button class="pz-btn block" type="submit" id="wa-submit" disabled>Aage badho</button>
+      </form>
+      <button class="pz-btn ghost block" data-go="s-fc" type="button">Wapas</button>
+    </section>
+
+    <!-- A4. confirm number -->
+    <section id="s-wa-confirm" class="cs-screen" hidden>
+      <div class="pz-kicker">Ek baar check karo</div>
+      <h2 class="pz-display cs-h2 cs-mask" id="wa-mask"></h2>
+      <p class="pz-dim">Sahi hai? Isi number pe PDF aayega.</p>
+      <button class="pz-btn block" id="wa-yes" type="button">Haan, sahi hai</button>
+      <button class="pz-btn ghost block" id="wa-edit" type="button">Number badlo</button>
+    </section>
+
+    <!-- A5. done -->
+    <section id="s-wa-done" class="cs-screen" hidden>
+      <div class="pz-kicker">Request mil gayi</div>
+      <h2 class="pz-display cs-h2" id="wa-copy"></h2>
+      <div class="cs-sendstate" id="wa-state" hidden><span class="pz-spinner"></span><b id="wa-state-text">Bhej rahe hain...</b></div>
+      <p class="cs-optout" id="wa-optout2"></p>
+      <a class="pz-btn ghost block" id="wa-pdf" href="#" target="_blank" rel="noopener">PDF abhi phone pe dekho</a>
+      <button class="pz-btn block cs-friends" id="wa-friends" type="button">Doston ko bhejo: dekhein unka 2030 career kya kehta hai</button>
+      <button class="pz-btn ghost block" data-go="s-home" type="button">Career Studio home</button>
+    </section>
+  </main>
+  <div class="cs-tip" id="tip" role="tooltip" hidden></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

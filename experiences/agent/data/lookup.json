@@ -1,0 +1,3022 @@
+{
+ "_about": "Curated data for the Lookup tool of Build Your Own AI Agent (14 templates, CHANGE-02a). The agent never searches the web and the model never writes this content: it only picks and orders. Every line is reviewed copy (Hinglish, positive, no promises of marks, ranks, admissions, jobs or money, no medical, diet or investment advice, no real colleges, companies or people). Career splits are copied from experiences/career/data/cf_data_v60 (Zenith School of AI research, 2026).",
+ "jee": {
+  "items": {
+   "physics": {
+    "facts": [
+     "Har chapter ke baad 5 numericals khud solve karo.",
+     "Formula sheet ek page pe rakho, roz 2 minute dekho."
+    ],
+    "topicsBy": {
+     "c11": [
+      "Units and Dimensions",
+      "Kinematics",
+      "Laws of Motion",
+      "Work, Energy, Power",
+      "Rotational Motion",
+      "Gravitation",
+      "Thermodynamics",
+      "Oscillations",
+      "Waves"
+     ],
+     "c12": [
+      "Electrostatics",
+      "Current Electricity",
+      "Magnetism",
+      "EM Induction",
+      "Ray Optics",
+      "Wave Optics",
+      "Modern Physics",
+      "Semiconductors"
+     ]
+    }
+   },
+   "chemistry": {
+    "facts": [
+     "Reactions ko flowchart bana ke yaad karo.",
+     "Physical chemistry ke numericals roz thode thode."
+    ],
+    "topicsBy": {
+     "c11": [
+      "Mole Concept",
+      "Atomic Structure",
+      "Chemical Bonding",
+      "Thermodynamics",
+      "Equilibrium",
+      "Redox",
+      "Organic Basics",
+      "Hydrocarbons"
+     ],
+     "c12": [
+      "Solutions",
+      "Electrochemistry",
+      "Chemical Kinetics",
+      "Coordination Compounds",
+      "Haloalkanes",
+      "Alcohols and Phenols",
+      "Biomolecules"
+     ]
+    }
+   },
+   "maths": {
+    "facts": [
+     "Har topic ke 10 sawaal, bina solution dekhe.",
+     "Galtiyon ki ek copy banao, revision mein kaam aayegi."
+    ],
+    "topicsBy": {
+     "c11": [
+      "Sets and Functions",
+      "Trigonometry",
+      "Complex Numbers",
+      "Sequences and Series",
+      "Straight Lines",
+      "Conic Sections",
+      "Permutations",
+      "Binomial Theorem"
+     ],
+     "c12": [
+      "Matrices",
+      "Determinants",
+      "Limits and Continuity",
+      "Derivatives",
+      "Integrals",
+      "Differential Equations",
+      "Vectors",
+      "Probability"
+     ]
+    }
+   }
+  },
+  "weak": {
+   "p_mech": {
+    "item": "physics",
+    "label": "Mechanics",
+    "topics": [
+     "Laws of Motion: free body diagrams",
+     "Work, Energy, Power: concept recap",
+     "Rotational Motion: torque basics"
+    ]
+   },
+   "p_elec": {
+    "item": "physics",
+    "label": "Electrostatics",
+    "topics": [
+     "Electrostatics: field lines",
+     "Electrostatics: Gauss law basics",
+     "Capacitors: series and parallel"
+    ]
+   },
+   "p_opt": {
+    "item": "physics",
+    "label": "Optics",
+    "topics": [
+     "Optics: mirror and lens formula",
+     "Optics: refraction basics",
+     "Optics: ray diagrams"
+    ]
+   },
+   "c_org": {
+    "item": "chemistry",
+    "label": "Organic basics",
+    "topics": [
+     "Organic: naming practice",
+     "Organic: reaction types",
+     "Organic: isomers"
+    ]
+   },
+   "c_bond": {
+    "item": "chemistry",
+    "label": "Chemical bonding",
+    "topics": [
+     "Bonding: VSEPR shapes",
+     "Bonding: hybridisation",
+     "Bonding: polarity"
+    ]
+   },
+   "c_eq": {
+    "item": "chemistry",
+    "label": "Equilibrium",
+    "topics": [
+     "Equilibrium: Le Chatelier",
+     "Equilibrium: Kc and Kp",
+     "Ionic equilibrium: pH basics"
+    ]
+   },
+   "m_calc": {
+    "item": "maths",
+    "label": "Calculus",
+    "topics": [
+     "Limits: standard forms",
+     "Derivatives: chain rule",
+     "Integrals: substitution"
+    ]
+   },
+   "m_coord": {
+    "item": "maths",
+    "label": "Coordinate geometry",
+    "topics": [
+     "Straight lines: slope forms",
+     "Circles: equation forms",
+     "Parabola: standard form"
+    ]
+   },
+   "m_prob": {
+    "item": "maths",
+    "label": "Probability",
+    "topics": [
+     "Probability: counting basics",
+     "Probability: conditional",
+     "Probability: practice set"
+    ]
+   }
+  },
+  "questionTypes": [
+   "Single correct MCQ",
+   "Numerical answer",
+   "Previous year question",
+   "Concept check in 1 line",
+   "Multi-concept question",
+   "Speed round: 5 easy sawaal"
+  ],
+  "general": [
+   "Active recall: book band karke yaad karo.",
+   "Har din ke end pe galtiyan ek line mein likho."
+  ]
+ },
+ "boards": {
+  "items": {
+   "physics": {
+    "facts": [
+     "Derivations ko steps mein likh ke practice karo.",
+     "Diagrams saaf aur label ke saath."
+    ],
+    "topics": [
+     "Electric Charges and Fields",
+     "Current Electricity",
+     "Magnetic Effects",
+     "EM Induction",
+     "Ray Optics",
+     "Wave Optics",
+     "Dual Nature",
+     "Semiconductors"
+    ]
+   },
+   "chemistry": {
+    "facts": [
+     "Named reactions ki ek list banao.",
+     "NCERT ke intext questions zaroor karo."
+    ],
+    "topics": [
+     "Solutions",
+     "Electrochemistry",
+     "Chemical Kinetics",
+     "d and f Block",
+     "Coordination Compounds",
+     "Haloalkanes",
+     "Alcohols and Phenols",
+     "Biomolecules"
+    ]
+   },
+   "maths": {
+    "facts": [
+     "Har chapter ke solved examples pehle.",
+     "Steps likhna marks wala habit hai."
+    ],
+    "topics": [
+     "Relations and Functions",
+     "Matrices",
+     "Determinants",
+     "Continuity",
+     "Derivatives",
+     "Integrals",
+     "Differential Equations",
+     "Probability"
+    ]
+   },
+   "biology": {
+    "facts": [
+     "Diagrams khud bana ke label karo.",
+     "NCERT ki lines dobara padho."
+    ],
+    "topics": [
+     "Reproduction",
+     "Genetics",
+     "Evolution",
+     "Biotechnology",
+     "Ecology",
+     "Ecosystem"
+    ]
+   },
+   "english": {
+    "facts": [
+     "Har writing format ka ek sample rakho.",
+     "Roz ek passage, 3 line summary."
+    ],
+    "topics": [
+     "Reading Practice",
+     "Notice and Letter",
+     "Article Writing",
+     "Prose Chapters",
+     "Poetry",
+     "Sample Paper"
+    ]
+   },
+   "cs": {
+    "facts": [
+     "Har concept ka chhota program khud likho.",
+     "Output pehle socho, phir run karo."
+    ],
+    "topics": [
+     "Python Revision",
+     "Functions",
+     "File Handling",
+     "Stacks",
+     "SQL Queries",
+     "Networking"
+    ]
+   },
+   "economics": {
+    "facts": [
+     "Har concept ke saath ek graph banao.",
+     "Definitions apne words mein likho."
+    ],
+    "topics": [
+     "National Income",
+     "Money and Banking",
+     "Government Budget",
+     "Balance of Payments",
+     "Indian Economy",
+     "Sample Paper"
+    ]
+   },
+   "accounts": {
+    "facts": [
+     "Har format ka ek solved example rakho.",
+     "Roz 2 entries bina dekhe."
+    ],
+    "topics": [
+     "Partnership Basics",
+     "Admission of Partner",
+     "Retirement",
+     "Shares",
+     "Financial Statements",
+     "Cash Flow"
+    ]
+   },
+   "business": {
+    "facts": [
+     "Case studies ke keywords underline karo.",
+     "Har chapter ka mind map banao."
+    ],
+    "topics": [
+     "Management",
+     "Planning",
+     "Organising",
+     "Staffing",
+     "Directing",
+     "Marketing"
+    ]
+   },
+   "hindi": {
+    "facts": [
+     "Har path ka saransh apne shabdon mein.",
+     "Lekhan ke formats ka ek page."
+    ],
+    "topics": [
+     "Gadya Path",
+     "Kavya Path",
+     "Lekhan",
+     "Vyakaran",
+     "Sample Paper"
+    ]
+   }
+  },
+  "params": {
+   "board": {
+    "cbse": [
+     "Sample papers ka pattern dekh ke practice karo.",
+     "NCERT pehle, phir baaki books."
+    ],
+    "isc": [
+     "Previous papers ke long answers ki practice.",
+     "Har subject ka syllabus checklist banao."
+    ],
+    "state": [
+     "Board ke previous papers sabse kaam ke hain.",
+     "Textbook ke exercises poore karo."
+    ]
+   }
+  },
+  "cycles": [
+   {
+    "name": "Pehla round: sab chapters",
+    "share": 60
+   },
+   {
+    "name": "Doosra round: weak topics",
+    "share": 27
+   },
+   {
+    "name": "Teesra round: sample papers aur recap",
+    "share": 13
+   }
+  ],
+  "general": [
+   "Har hafte ek din halka rakho.",
+   "Sample paper time laga ke karo."
+  ]
+ },
+ "concept": {
+  "items": {
+   "newton": {
+    "label": "Newton ke laws of motion",
+    "kid": "Gend ko dhakka do toh chalti hai, rok do toh rukti hai. Jitna zor, utni tez. Aur deewar ko dhakka do toh deewar bhi tumhe utna hi wapas dhakelti hai.",
+    "exam": [
+     "First law: koi cheez apni state (rest ya motion) tab tak nahi badalti jab tak net force na lage (inertia).",
+     "Second law: F = m x a. Force, mass aur acceleration ka product hai.",
+     "Third law: har action ka barabar aur opposite reaction hota hai."
+    ],
+    "real": "Bus achanak ruke toh hum aage jhukte hain (inertia). Rocket gas peeche phenkta hai, khud aage jaata hai (third law).",
+    "check": {
+     "q": "2 kg ki trolley ko 3 m/s2 acceleration dena hai. Kitna force?",
+     "a": "F = m x a = 2 x 3 = 6 N"
+    },
+    "calc": {
+     "kind": "mul",
+     "a": 2,
+     "b": 3,
+     "aName": "m (kg)",
+     "bName": "a (m/s2)",
+     "out": "F",
+     "unit": "N"
+    },
+    "topics": [
+     "First law: inertia",
+     "Second law: F = m x a",
+     "Third law: action reaction",
+     "Free body diagram practice"
+    ]
+   },
+   "current": {
+    "label": "Electric current",
+    "kid": "Wire mein chhote chhote charges line mein chalte hain, jaise pipe mein paani. Jitna zyada charge ek second mein nikle, utna zyada current.",
+    "exam": [
+     "Electric current = charge per unit time: I = Q / t.",
+     "SI unit ampere (A): 1 A = 1 coulomb per second.",
+     "Conventional current positive se negative terminal ki taraf maana jaata hai."
+    ],
+    "real": "Phone charger pe likha 2 A matlab har second 2 coulomb charge phone ki taraf jaata hai.",
+    "check": {
+     "q": "5 second mein 10 C charge guzra. Current kitna?",
+     "a": "I = Q / t = 10 / 5 = 2 A"
+    },
+    "calc": {
+     "kind": "div",
+     "a": 10,
+     "b": 5,
+     "aName": "Q (C)",
+     "bName": "t (s)",
+     "out": "I",
+     "unit": "A"
+    },
+    "topics": [
+     "Charge aur current",
+     "I = Q / t",
+     "Ohm ka law",
+     "Circuit diagram practice"
+    ]
+   },
+   "refraction": {
+    "label": "Refraction of light",
+    "kid": "Roshni ek cheez se doosri mein jaate hi apni speed badalti hai, isliye thoda mud jaati hai. Isi liye paani mein pencil tedhi dikhti hai.",
+    "exam": [
+     "Refraction: light ka ek medium se doosre medium mein jaate waqt mudna.",
+     "Refractive index n = c / v (vacuum mein speed / medium mein speed).",
+     "Snell ka law: n1 sin i = n2 sin r."
+    ],
+    "real": "Chashme aur camera lens refraction se image focus karte hain.",
+    "check": {
+     "q": "Glass mein light ki speed 2 x 10^8 m/s hai. Refractive index? (c = 3 x 10^8 m/s)",
+     "a": "n = c / v = 3 / 2 = 1.5"
+    },
+    "calc": {
+     "kind": "div",
+     "a": 3,
+     "b": 2,
+     "aName": "c (x 10^8 m/s)",
+     "bName": "v (x 10^8 m/s)",
+     "out": "n",
+     "unit": ""
+    },
+    "topics": [
+     "Refraction kya hai",
+     "n = c / v",
+     "Snell ka law",
+     "Lens practice"
+    ]
+   },
+   "bonding": {
+    "label": "Chemical bonding",
+    "kid": "Atoms akele adhoore lagte hain, isliye electrons share ya exchange karke dost ban jaate hain aur stable ho jaate hain.",
+    "exam": [
+     "Ionic bond: ek atom electron deta hai, doosra leta hai (jaise NaCl).",
+     "Covalent bond: atoms electrons share karte hain (jaise H2O).",
+     "Atoms octet (8 outer electrons) pura karke stable bante hain."
+    ],
+    "real": "Namak (NaCl) ionic hai, isliye paani mein ghul jaata hai. Paani ke molecule covalent bonds se bante hain.",
+    "check": {
+     "q": "Na ke paas 1 outer electron hai, Cl ke paas 7. Electron transfer ke baad Cl ke paas kitne?",
+     "a": "7 + 1 = 8, octet pura"
+    },
+    "calc": {
+     "kind": "add",
+     "a": 7,
+     "b": 1,
+     "aName": "Cl outer electrons",
+     "bName": "Na se mila",
+     "out": "Cl outer electrons ab",
+     "unit": ""
+    },
+    "topics": [
+     "Octet rule",
+     "Ionic bond",
+     "Covalent bond",
+     "Lewis structure practice"
+    ]
+   },
+   "mole": {
+    "label": "Mole concept",
+    "kid": "Darzan matlab 12, waise hi chemistry mein ek mole matlab bahut saare particles, ek fixed ginti. Isse atoms ginna aasaan hota hai.",
+    "exam": [
+     "1 mole = 6.022 x 10^23 particles (Avogadro number).",
+     "Moles = given mass / molar mass.",
+     "Molar mass grams per mole mein hota hai."
+    ],
+    "real": "Dawai banane wale aur cooking gas ke cylinder bharne wale bhi mass se moles ka hisaab lagate hain.",
+    "check": {
+     "q": "36 g paani mein kitne moles? (molar mass 18 g/mol)",
+     "a": "36 / 18 = 2 mol"
+    },
+    "calc": {
+     "kind": "div",
+     "a": 36,
+     "b": 18,
+     "aName": "mass (g)",
+     "bName": "molar mass (g/mol)",
+     "out": "moles",
+     "unit": "mol"
+    },
+    "topics": [
+     "Mole kya hai",
+     "Avogadro number",
+     "Mass se moles",
+     "Numericals practice"
+    ]
+   },
+   "integration": {
+    "label": "Integration (area under curve)",
+    "kid": "Ek tedhi line ke neeche ki jagah naapni ho toh usse bahut patli patli strips mein kaato aur sab jodo. Wahi integration hai.",
+    "exam": [
+     "Integration differentiation ka ulta hai (antiderivative).",
+     "Integral of x^n dx = x^(n+1) / (n+1) + C, jab n alag ho -1 se.",
+     "Definite integral a se b tak curve ke neeche ka area deta hai."
+    ],
+    "real": "Speed ka graph ho toh uske neeche ka area kitni doori tay hui, woh batata hai.",
+    "check": {
+     "q": "y = 2x ka area x = 0 se x = 3 tak?",
+     "a": "Integral of 2x = x^2, toh 3^2 minus 0 = 9 square units"
+    },
+    "calc": {
+     "kind": "square",
+     "a": 3,
+     "b": 0,
+     "aName": "upper limit",
+     "bName": "lower limit",
+     "out": "area",
+     "unit": "sq units"
+    },
+    "topics": [
+     "Antiderivative",
+     "Power rule",
+     "Definite integral",
+     "Area practice"
+    ]
+   },
+   "probability": {
+    "label": "Probability",
+    "kid": "Kisi cheez ke hone ka chance. Sikka uchhalo toh head aane ka chance aadha.",
+    "exam": [
+     "P(event) = favourable outcomes / total outcomes.",
+     "Probability hamesha 0 aur 1 ke beech hoti hai.",
+     "P(not A) = 1 minus P(A)."
+    ],
+    "real": "Weather app ka 70% baarish ka chance bhi probability hai.",
+    "check": {
+     "q": "Do dice phenko, sum 7 aane ka chance?",
+     "a": "Favourable 6, total 36, toh 6 / 36 = 1 / 6"
+    },
+    "calc": {
+     "kind": "frac",
+     "a": 6,
+     "b": 36,
+     "aName": "favourable",
+     "bName": "total",
+     "out": "P",
+     "unit": ""
+    },
+    "topics": [
+     "Outcomes ginna",
+     "Favourable by total",
+     "Complement rule",
+     "Dice aur cards practice"
+    ]
+   },
+   "photosynthesis": {
+    "label": "Photosynthesis",
+    "kid": "Paude dhoop, paani aur hawa ki carbon dioxide se apna khana banate hain, aur badle mein humein oxygen dete hain.",
+    "exam": [
+     "6CO2 + 6H2O + light energy se C6H12O6 + 6O2 banta hai.",
+     "Ye chloroplast mein hota hai, chlorophyll light absorb karta hai.",
+     "Light reactions aur dark reactions (Calvin cycle) do stages hain."
+    ],
+    "real": "Hum jo oxygen lete hain aur jo anaaj khaate hain, dono ki shuruaat photosynthesis se hoti hai.",
+    "check": {
+     "q": "Equation mein left side pe carbon atoms kitne? (6CO2)",
+     "a": "6 x 1 = 6, aur glucose C6H12O6 mein bhi 6"
+    },
+    "calc": {
+     "kind": "mul",
+     "a": 6,
+     "b": 1,
+     "aName": "CO2 molecules",
+     "bName": "C per CO2",
+     "out": "carbon atoms",
+     "unit": ""
+    },
+    "topics": [
+     "Equation yaad karo",
+     "Chloroplast aur chlorophyll",
+     "Light aur dark reactions",
+     "Diagram practice"
+    ]
+   },
+   "supply": {
+    "label": "Demand aur supply",
+    "kid": "Jab koi cheez sab ko chahiye aur kam ho, toh uska daam badhta hai. Jab bahut saari ho aur kam log chahein, toh daam girta hai.",
+    "exam": [
+     "Law of demand: price badhe toh demand ghatti hai (baaki sab same).",
+     "Law of supply: price badhe toh supply badhti hai.",
+     "Equilibrium: jahan demand = supply."
+    ],
+    "real": "Barish mein chhatri ka daam aur Diwali pe mithai ka daam demand aur supply se badalta hai.",
+    "check": {
+     "q": "Demand Qd = 100 minus 2P, supply Qs = 20 + 2P. Equilibrium price?",
+     "a": "100 minus 2P = 20 + 2P, toh 4P = 80, P = 20, Q = 60"
+    },
+    "calc": {
+     "kind": "equilibrium",
+     "a": 100,
+     "b": 20,
+     "aName": "demand intercept",
+     "bName": "supply intercept",
+     "out": "P",
+     "unit": ""
+    },
+    "topics": [
+     "Law of demand",
+     "Law of supply",
+     "Equilibrium",
+     "Graph practice"
+    ]
+   },
+   "recursion": {
+    "label": "Recursion (coding)",
+    "kid": "Russian dolls kholte jao, har doll ke andar chhoti doll. Sabse chhoti pe ruk jao. Function bhi khud ko chhote kaam ke saath bulata hai.",
+    "exam": [
+     "Recursive function khud ko call karta hai.",
+     "Base case pe recursion rukta hai, warna woh chalta hi rahega.",
+     "Example: factorial(n) = n x factorial(n minus 1), factorial(1) = 1."
+    ],
+    "real": "Folders ke andar folders ki saari files dhoondhna recursion se aasaan hota hai.",
+    "check": {
+     "q": "factorial(5) kitna?",
+     "a": "5 x 4 x 3 x 2 x 1 = 120"
+    },
+    "calc": {
+     "kind": "factorial",
+     "a": 5,
+     "b": 0,
+     "aName": "n",
+     "bName": "",
+     "out": "factorial",
+     "unit": ""
+    },
+    "topics": [
+     "Base case",
+     "Recursive call",
+     "Factorial code",
+     "Trace karke dekho"
+    ]
+   }
+  },
+  "general": [
+   "Kal is concept ko kisi dost ko 2 minute mein samjhao.",
+   "Ek chhoti formula card banao."
+  ]
+ },
+ "skill": {
+  "items": {
+   "learn": {
+    "facts": [
+     "Roz ek concept, chhota aur clear.",
+     "Notes apne words mein."
+    ],
+    "topicsBy": {
+     "python": [
+      "Variables aur types",
+      "If else",
+      "Loops",
+      "Functions",
+      "Lists aur dictionaries",
+      "Files",
+      "Modules",
+      "Errors handle karna"
+     ],
+     "ai": [
+      "AI kya hai",
+      "Data kya hota hai",
+      "Patterns aur training",
+      "Prompt likhna",
+      "AI ki limits",
+      "AI ka sahi use",
+      "Simple model ka idea",
+      "AI in daily apps"
+     ],
+     "web": [
+      "HTML structure",
+      "CSS basics",
+      "Layout",
+      "JavaScript basics",
+      "Buttons aur events",
+      "Forms",
+      "Responsive design",
+      "Page online karna"
+     ],
+     "data": [
+      "Data kya hai",
+      "Spreadsheet basics",
+      "Average aur median",
+      "Charts",
+      "CSV padhna",
+      "Cleaning data",
+      "Patterns dhoondhna",
+      "Data story"
+     ]
+    }
+   },
+   "practice": {
+    "facts": [
+     "Har din 3 chhote problems.",
+     "Galti ho toh error padho, woh hint hai."
+    ],
+    "topicsBy": {
+     "python": [
+      "10 print practice",
+      "Number games",
+      "String practice",
+      "List practice",
+      "Function practice",
+      "Mini quiz"
+     ],
+     "ai": [
+      "5 prompts likho",
+      "Output compare karo",
+      "Galat answer pakdo",
+      "Prompt sudharo",
+      "AI se summary",
+      "Mini quiz"
+     ],
+     "web": [
+      "Ek page banao",
+      "Style badlo",
+      "Button jodo",
+      "Form banao",
+      "Mobile view theek karo",
+      "Mini quiz"
+     ],
+     "data": [
+      "Class data table",
+      "Average nikalo",
+      "Bar chart",
+      "Line chart",
+      "Ek sawaal, ek chart",
+      "Mini quiz"
+     ]
+    }
+   },
+   "project": {
+    "facts": [
+     "Chhota project, pura karo.",
+     "Pehle sketch, phir code."
+    ],
+    "topicsBy": {
+     "python": [
+      "Project idea likho",
+      "Guess the number game",
+      "Score jodo",
+      "Dost ko khilao"
+     ],
+     "ai": [
+      "Project idea likho",
+      "Study helper prompts",
+      "Test karo",
+      "Dost ko dikhao"
+     ],
+     "web": [
+      "Project idea likho",
+      "Portfolio page",
+      "Projects section",
+      "Online daalo"
+     ],
+     "data": [
+      "Project idea likho",
+      "Apna data jodo, bina naam ke",
+      "3 charts",
+      "Data story share karo"
+     ]
+    }
+   },
+   "share": {
+    "facts": [
+     "Jo seekha woh 3 line mein share karo.",
+     "Feedback se hi growth aati hai."
+    ],
+    "topicsBy": {
+     "python": [
+      "Code dost ko dikhao",
+      "README likho",
+      "Ek post: kya seekha",
+      "Next goal likho"
+     ],
+     "ai": [
+      "Best prompt share karo",
+      "Kya galat hua, likho",
+      "Ek post: kya seekha",
+      "Next goal likho"
+     ],
+     "web": [
+      "Link dost ko bhejo",
+      "Feedback lo",
+      "Ek post: kya seekha",
+      "Next goal likho"
+     ],
+     "data": [
+      "Chart dost ko dikhao",
+      "Feedback lo",
+      "Ek post: kya seekha",
+      "Next goal likho"
+     ]
+    }
+   }
+  },
+  "params": {
+   "skill": {
+    "python": [
+     "Python ka syntax simple hai, shuruaat ke liye achha.",
+     "Online editor se bina install shuru karo."
+    ],
+    "ai": [
+     "AI ko clear instructions do, achha output milega.",
+     "AI ka answer hamesha khud check karo."
+    ],
+    "web": [
+     "Browser hi tumhara lab hai.",
+     "Har change ka result turant dikhta hai."
+    ],
+    "data": [
+     "Chhote data se shuru karo.",
+     "Ek sawaal poocho, data se jawab dhoondo."
+    ]
+   }
+  },
+  "projects": {
+   "python": "Mini project: number guessing game with score",
+   "ai": "Mini project: apne subject ke liye study helper prompts ka set",
+   "web": "Mini project: apna portfolio page",
+   "data": "Mini project: class ki favourite cheezon pe chart story (bina naam ke)"
+  },
+  "general": [
+   "Roz thoda, hafte mein bada fark."
+  ]
+ },
+ "mvp": {
+  "items": {
+   "design": {
+    "facts": [
+     "Pehle paper pe screens banao.",
+     "Har screen ka ek kaam."
+    ],
+    "topics": [
+     "User ki problem likho",
+     "3 screens sketch",
+     "Flow banao",
+     "Design finalise"
+    ]
+   },
+   "build": {
+    "facts": [
+     "Sabse zaroori feature pehle.",
+     "Roz kuch chalne wala banao."
+    ],
+    "topics": [
+     "Setup",
+     "Feature 1",
+     "Feature 2",
+     "Feature 3",
+     "Bugs theek karo",
+     "Polish"
+    ]
+   },
+   "test": {
+    "facts": [
+     "5 users ko chala ke dekho.",
+     "Sirf dekho, beech mein mat bolo."
+    ],
+    "topics": [
+     "Test plan",
+     "2 users test",
+     "Feedback likho",
+     "3 users test",
+     "Fix list"
+    ]
+   },
+   "launch": {
+    "facts": [
+     "Launch chhota rakho: ek group, ek link.",
+     "Pehle 10 users se seekho."
+    ],
+    "topics": [
+     "Launch post",
+     "Pehle 10 users",
+     "Feedback form",
+     "Next version plan"
+    ]
+   }
+  },
+  "params": {
+   "app": {
+    "study": [
+     "Study helper: ek subject, ek kaam, simple.",
+     "Reminder aur progress dikhana kaafi hai."
+    ],
+    "market": [
+     "Campus marketplace: listing aur contact simple rakho.",
+     "Trust ke liye profile verify ka idea socho."
+    ],
+    "event": [
+     "Event app: schedule aur RSVP sabse zaroori.",
+     "Ek event pe test karo."
+    ],
+    "habit": [
+     "Habit tracker: roz ek tap, bas.",
+     "Streak dikhana motivate karta hai."
+    ],
+    "split": [
+     "Expense splitter: kisne kya diya, bas yahi.",
+     "Calculation hamesha sahi honi chahiye."
+    ]
+   },
+   "user": {
+    "school": [
+     "School students ke liye bade buttons, kam text."
+    ],
+    "college": [
+     "College students ke liye fast aur mobile first."
+    ],
+    "parents": [
+     "Parents ke liye simple language aur clear steps."
+    ],
+    "shops": [
+     "Local shops ke liye WhatsApp jaisa simple flow."
+    ]
+   }
+  },
+  "features": {
+   "study": [
+    "Subject wise to-do list",
+    "Daily reminder",
+    "Progress bar",
+    "Pomodoro timer",
+    "Weekly summary"
+   ],
+   "market": [
+    "Item listing with photo",
+    "Category filter",
+    "Contact seller button",
+    "Report listing",
+    "Saved items"
+   ],
+   "event": [
+    "Event schedule",
+    "RSVP button",
+    "Venue map image",
+    "Announcements",
+    "Feedback form"
+   ],
+   "habit": [
+    "Add habit",
+    "Daily check-in",
+    "Streak counter",
+    "Reminder",
+    "Weekly chart"
+   ],
+   "split": [
+    "Group banao",
+    "Kharcha add karo",
+    "Kaun kitna dega, auto calculate",
+    "Settle up list",
+    "History"
+   ]
+  },
+  "stack": [
+   "Screens: paper sketch, phir koi free design tool",
+   "No-code path: koi no-code app builder",
+   "Code path: HTML, CSS, JavaScript",
+   "Data: ek simple spreadsheet ya database",
+   "Test: 5 users, ek feedback form"
+  ],
+  "general": [
+   "Pehla version chhota rakho, baad mein badhao."
+  ]
+ },
+ "hackathon": {
+  "items": {
+   "design": {
+    "facts": [
+     "Demo ka pehla screen sabse important.",
+     "Simple aur saaf design jeet-ta hai dil."
+    ],
+    "topics": [
+     "Wireframe",
+     "UI polish"
+    ]
+   },
+   "code": {
+    "facts": [
+     "Pehle chalne wala version, phir sundar.",
+     "Har 2 ghante code save aur share."
+    ],
+    "topics": [
+     "Core feature",
+     "Integration"
+    ]
+   },
+   "pitch": {
+    "facts": [
+     "Problem, solution, demo, impact: bas 4 cheezein.",
+     "Demo ki practice 3 baar."
+    ],
+    "topics": [
+     "Pitch story",
+     "Demo practice"
+    ]
+   },
+   "research": {
+    "facts": [
+     "5 log se problem ke baare mein poocho.",
+     "Ek number jo problem dikhaye, wahi kaafi."
+    ],
+    "topics": [
+     "Problem research",
+     "User quotes"
+    ]
+   }
+  },
+  "params": {
+   "theme": {
+    "campus": [
+     "Smart campus: canteen line, lost and found, room booking jaisi problems.",
+     "Apne campus ki asli problem chuno."
+    ],
+    "climate": [
+     "Climate: waste, paani bachana, cycling jaise chhote ideas.",
+     "Impact ek number mein dikhao."
+    ],
+    "edtech": [
+     "Edtech: revision, doubt solving, peer learning.",
+     "Students se hi problem poocho."
+    ],
+    "social": [
+     "Social good: senior citizens, local shops, volunteers.",
+     "Users ki izzat aur privacy ka dhyan rakho."
+    ]
+   }
+  },
+  "agenda": [
+   {
+    "label": "Kickoff aur problem chuno",
+    "min": 60,
+    "tag": "research"
+   },
+   {
+    "label": "Idea aur wireframe",
+    "min": 60,
+    "tag": "design"
+   },
+   {
+    "label": "Chai aur paani break",
+    "min": 15,
+    "tag": "break"
+   },
+   {
+    "label": "Core feature build, part 1",
+    "min": 105,
+    "tag": "code"
+   },
+   {
+    "label": "Lunch",
+    "min": 45,
+    "tag": "meal"
+   },
+   {
+    "label": "Core feature build, part 2",
+    "min": 105,
+    "tag": "code"
+   },
+   {
+    "label": "Snack break",
+    "min": 15,
+    "tag": "break"
+   },
+   {
+    "label": "Integration aur testing",
+    "min": 105,
+    "tag": "code"
+   },
+   {
+    "label": "Stretch break",
+    "min": 15,
+    "tag": "break"
+   },
+   {
+    "label": "Bugs theek karo aur polish",
+    "min": 60,
+    "tag": "design"
+   },
+   {
+    "label": "Dinner",
+    "min": 45,
+    "tag": "meal"
+   },
+   {
+    "label": "Pitch aur demo practice",
+    "min": 45,
+    "tag": "pitch"
+   },
+   {
+    "label": "Final demo",
+    "min": 45,
+    "tag": "pitch"
+   }
+  ],
+  "roles": [
+   "Builder: core feature",
+   "Designer: screens aur flow",
+   "Presenter: pitch aur demo",
+   "Researcher: users aur data"
+  ],
+  "demo": [
+   "Demo 2 minute ka, timer ke saath",
+   "Problem ek line mein",
+   "Live demo ka backup video",
+   "Ek user quote ya number",
+   "Team intro 10 second mein",
+   "Next steps ek slide"
+  ],
+  "general": [
+   "Hackathon din mein, ghar pe raat ki neend poori.",
+   "Breaks aur khana plan ka hissa hain."
+  ]
+ },
+ "cofounder": {
+  "items": {
+   "research": {
+    "facts": [
+     "Problem pehle samjho, solution baad mein.",
+     "10 log se baat, ek survey se zyada seekhoge."
+    ],
+    "topics": [
+     "10 customer interviews",
+     "Problem ek line mein",
+     "Top 3 pain points",
+     "Simple survey form"
+    ]
+   },
+   "prototype": {
+    "facts": [
+     "Pehla version chhota aur jaldi.",
+     "Manually chala ke dekho, phir automate."
+    ],
+    "topics": [
+     "Paper sketch",
+     "Simple landing page",
+     "WhatsApp order flow",
+     "Pehle 5 orders manually"
+    ]
+   },
+   "marketing": {
+    "facts": [
+     "Ek clear line: kis ke liye, kya problem.",
+     "Doston ka referral sabse sasta marketing hai."
+    ],
+    "topics": [
+     "Insta page setup",
+     "3 posts ready",
+     "Common area poster",
+     "Referral offer"
+    ]
+   },
+   "feedback": {
+    "facts": [
+     "Har order ke baad ek sawaal poocho.",
+     "Sabse common complaint pehle fix."
+    ],
+    "topics": [
+     "5 users se feedback",
+     "Top complaint fix",
+     "Rating form",
+     "Weekly review"
+    ]
+   },
+   "partners": {
+    "facts": [
+     "Ek achha partner kaam aadha kar deta hai.",
+     "Mentor se 15 minute ki baat bhi kaam ki."
+    ],
+    "topics": [
+     "Canteen ya shop se baat",
+     "Delivery buddy",
+     "Club tie-up",
+     "Mentor meeting"
+    ]
+   }
+  },
+  "params": {
+   "area": {
+    "hostel_food": [
+     "Late night snacks ki demand dekho.",
+     "Weekly menu poll se demand samjho."
+    ],
+    "kirana": [
+     "Ek mohalla, ek kirana, pehle wahan se.",
+     "Order WhatsApp pe, delivery cycle se."
+    ],
+    "notes": [
+     "Seniors ke notes, juniors ke kaam ke.",
+     "Quality check ke bina kuch upload mat karo."
+    ],
+    "gear": [
+     "Weekend matches pe demand zyada hoti hai.",
+     "Gear ki condition ki photo har baar lo."
+    ],
+    "thrift": [
+     "Achhi photos hi asli dukaan hain.",
+     "Har piece ki size clear likho."
+    ],
+    "tutor": [
+     "Ek subject, ek class, pehle wahan se.",
+     "Pehla session free demo rakho."
+    ]
+   }
+  },
+  "customers": [
+   "Apne 5 dost jinko yeh problem hai",
+   "Ek WhatsApp group mein seedha poocho",
+   "Ek poster jahan tumhare users aate hain",
+   "Pehle users se referral maango",
+   "Ek chhota demo ya free trial"
+  ],
+  "general": [
+   "Mentor ya teacher se bhi apna plan discuss karo."
+  ]
+ },
+ "d2c": {
+  "items": {
+   "reel": {
+    "facts": [
+     "Hook pehle 2 second mein.",
+     "Product ko kaam karte dikhao."
+    ],
+    "topics": [
+     "Product reveal reel",
+     "Making of reel",
+     "Use karte hue reel"
+    ]
+   },
+   "carousel": {
+    "facts": [
+     "Pehli slide pe sawaal.",
+     "Har slide pe ek point."
+    ],
+    "topics": [
+     "5 reasons carousel",
+     "Before and after carousel",
+     "Kaise use karein carousel"
+    ]
+   },
+   "bts": {
+    "facts": [
+     "Banane ka process bhi content hai.",
+     "Galtiyan dikhao, log connect karte hain."
+    ],
+    "topics": [
+     "Workspace tour",
+     "Packing video",
+     "Raw material se final"
+    ]
+   },
+   "story": {
+    "facts": [
+     "Pehle customer ki baat sabse powerful.",
+     "Unki permission se hi share karo."
+    ],
+    "topics": [
+     "Customer unboxing",
+     "Customer quote",
+     "Review repost"
+    ]
+   },
+   "offer": {
+    "facts": [
+     "Offer simple aur clear.",
+     "Deadline ho toh action jaldi hota hai."
+    ],
+    "topics": [
+     "Launch week offer",
+     "Combo offer",
+     "Dost ke saath offer"
+    ]
+   }
+  },
+  "params": {
+   "product": {
+    "candles": [
+     "Candles: khushboo aur rang reels mein chamakte hain.",
+     "Gifting angle pe focus karo."
+    ],
+    "thrift": [
+     "Thrift: har piece unique, yahi kahani hai.",
+     "Size aur condition saaf likho."
+    ],
+    "stickers": [
+     "Stickers aur stationery: desk setup content chalta hai.",
+     "Packs aur combos achhe lagte hain."
+    ],
+    "plants": [
+     "Plant pots: green corner ki photos.",
+     "Care tips content ke saath do."
+    ],
+    "jewellery": [
+     "Handmade jewellery: close up shots zaroori.",
+     "Making process dikhao."
+    ]
+   }
+  },
+  "hooks": {
+   "candles": [
+    "Is Diwali gift dhoondh rahe ho? Yeh dekho.",
+    "Ek candle, teen khushboo. Guess karo kaunsi?",
+    "Room ka mood 10 second mein badlo."
+   ],
+   "thrift": [
+    "Yeh jacket sirf ek hi hai. Kiski hogi?",
+    "Purane kapde, naya style.",
+    "3 looks, 1 piece."
+   ],
+   "stickers": [
+    "Boring notebook ko 5 second mein cool banao.",
+    "Tumhara desk kitna aesthetic hai? Dikhao.",
+    "Exam season ka sabse cute pack."
+   ],
+   "plants": [
+    "Kamre ka sabse chill corner banao.",
+    "Ek pot, ek paudha, zero tension.",
+    "Tumhare desk pe green kahan hai?"
+   ],
+   "jewellery": [
+    "Haath se bana, sirf tumhare liye.",
+    "Yeh earrings 2 ghante mein bani hain.",
+    "Ek outfit, 3 looks, bas jewellery badlo."
+   ]
+  },
+  "audience": {
+   "school": "School students: budget friendly aur fun tone.",
+   "college": "College students: trend aur style pe focus.",
+   "young": "Young professionals: quality aur gifting angle.",
+   "parents": "Parents: trust, quality aur clear details."
+  },
+  "general": [
+   "Har post pe ek clear call to action."
+  ]
+ },
+ "creator": {
+  "items": {
+   "reel": {
+    "facts": [
+     "Hook pehle 2 second mein.",
+     "Ek reel, ek idea."
+    ],
+    "topics": [
+     "Hook likho",
+     "Shoot karo",
+     "Edit aur captions",
+     "Post aur reply"
+    ]
+   },
+   "carousel": {
+    "facts": [
+     "Pehli slide pe sawaal.",
+     "Har slide pe ek point."
+    ],
+    "topics": [
+     "Topic chuno",
+     "5 slides likho",
+     "Design karo",
+     "Caption likho"
+    ]
+   },
+   "tutorial": {
+    "facts": [
+     "Ek problem, ek solution.",
+     "Screen record clear aur slow."
+    ],
+    "topics": [
+     "Script likho",
+     "Record karo",
+     "Cut aur zoom",
+     "Thumbnail banao"
+    ]
+   },
+   "meme": {
+    "facts": [
+     "Relatable topic, apni style.",
+     "Kisi ka mazaak nahi, situation ka mazaak."
+    ],
+    "topics": [
+     "Trend dekho",
+     "Apna twist",
+     "Template banao",
+     "Post karo"
+    ]
+   },
+   "bts": {
+    "facts": [
+     "Process dikhana bhi content hai.",
+     "Galtiyan bhi dikhao, log connect karte hain."
+    ],
+    "topics": [
+     "Setup dikhao",
+     "Process clip",
+     "Before and after",
+     "Thank you note"
+    ]
+   }
+  },
+  "params": {
+   "niche": {
+    "tech": [
+     "Tech ko simple language mein samjhao.",
+     "Ek gadget, ek tip, 15 second."
+    ],
+    "cricket": [
+     "Match ke baad ka quick analysis.",
+     "Gully cricket moments sabko pasand."
+    ],
+    "food": [
+     "Ghar ki simple recipe, kam steps.",
+     "Street food review, positive tone."
+    ],
+    "study": [
+     "Ek study hack, ek reel.",
+     "Apna desk setup dikhao."
+    ],
+    "music": [
+     "30 second cover, achhi audio.",
+     "Practice journey share karo."
+    ],
+    "art": [
+     "Time lapse sabse zyada chalta hai.",
+     "Sketch se final tak dikhao."
+    ]
+   }
+  },
+  "ideas": {
+   "tech": [
+    [
+     "Phone ki 3 hidden settings",
+     "Yeh setting tumhare phone mein bhi hai?"
+    ],
+    [
+     "Ek app, 1 kaam, 15 second",
+     "Is app ne mera 1 ghanta bachaya"
+    ],
+    [
+     "AI se poster banao",
+     "Poster 30 second mein, dekho kaise"
+    ],
+    [
+     "Keyboard shortcuts top 3",
+     "Ctrl ke saath yeh try kiya hai?"
+    ],
+    [
+     "Purane phone ka naya use",
+     "Purana phone phenko mat"
+    ],
+    [
+     "Coding ka pehla din",
+     "Maine pehli line of code likhi"
+    ],
+    [
+     "Tech myth vs fact",
+     "Kya yeh sach hai? Dekho"
+    ]
+   ],
+   "cricket": [
+    [
+     "Gully cricket ke 5 types ke players",
+     "Tumhari team mein kaun hai?"
+    ],
+    [
+     "Ek shot, slow motion breakdown",
+     "Yeh shot kaise khelte hain"
+    ],
+    [
+     "Fielding drill 30 second",
+     "Yeh drill roz karo"
+    ],
+    [
+     "Match ke baad 3 learnings",
+     "Aaj ke match se kya seekha"
+    ],
+    [
+     "Bowling grip guide",
+     "Yeh grip try ki hai?"
+    ],
+    [
+     "Gully rules jo sab maante hain",
+     "One tip one hand, yaad hai?"
+    ],
+    [
+     "Team ka best moment",
+     "Yeh catch dekho"
+    ]
+   ],
+   "food": [
+    [
+     "5 minute maggi upgrade",
+     "Maggi ka naya version"
+    ],
+    [
+     "Hostel room recipe",
+     "Bina gas ke recipe"
+    ],
+    [
+     "Street food rating, positive",
+     "Is chaat ko kitne stars?"
+    ],
+    [
+     "Tiffin idea for the week",
+     "Kal ka tiffin sorted"
+    ],
+    [
+     "Ek ingredient, 3 dishes",
+     "Aloo se 3 cheezein"
+    ],
+    [
+     "Chai ke 3 styles",
+     "Tum kaunsi chai wale ho?"
+    ],
+    [
+     "Cooking fail to win",
+     "Pehli baar jala, doosri baar mast"
+    ]
+   ],
+   "study": [
+    [
+     "Desk setup tour",
+     "Mera study desk dekho"
+    ],
+    [
+     "Pomodoro with me",
+     "25 minute saath padho"
+    ],
+    [
+     "Notes banane ka tareeka",
+     "Mere notes aise bante hain"
+    ],
+    [
+     "Ek formula, ek trick",
+     "Yeh formula aise yaad karo"
+    ],
+    [
+     "Weekly planner setup",
+     "Mera hafte ka plan"
+    ],
+    [
+     "Study playlist",
+     "Padhte waqt yeh sunta hoon"
+    ],
+    [
+     "Revision ka 1 2 3 method",
+     "Revision ka simple method"
+    ]
+   ],
+   "music": [
+    [
+     "30 second cover",
+     "Yeh gaana meri awaaz mein"
+    ],
+    [
+     "Practice journey day 1 vs day 30",
+     "30 din ka fark suno"
+    ],
+    [
+     "Ek riff, 3 styles",
+     "Ek dhun, teen andaaz"
+    ],
+    [
+     "Instrument tour",
+     "Mera instrument dekho"
+    ],
+    [
+     "Duet challenge",
+     "Mere saath gaao"
+    ],
+    [
+     "Beat on desk",
+     "Desk se beat banao"
+    ],
+    [
+     "Behind the cover",
+     "Cover kaise banta hai"
+    ]
+   ],
+   "art": [
+    [
+     "Time lapse sketch",
+     "Blank page se final tak"
+    ],
+    [
+     "Ek pencil, 3 shades",
+     "Sirf ek pencil se"
+    ],
+    [
+     "Art supplies tour",
+     "Mera art kit"
+    ],
+    [
+     "Draw with me",
+     "Saath mein draw karo"
+    ],
+    [
+     "Mistake ko art banao",
+     "Galti se bana masterpiece"
+    ],
+    [
+     "Style challenge",
+     "Ek drawing, teen styles"
+    ],
+    [
+     "Fan art for a friend",
+     "Dost ke liye drawing"
+    ]
+   ]
+  },
+  "minutesPerPost": {
+   "reel": 60,
+   "carousel": 45,
+   "tutorial": 75,
+   "meme": 20,
+   "bts": 30
+  },
+  "general": [
+   "Consistency views se zyada important hai."
+  ]
+ },
+ "fest": {
+  "items": {
+   "theme": {
+    "facts": [
+     "Ek theme, ek colour palette.",
+     "Theme simple ho toh sab samajh jaate hain."
+    ],
+    "topics": [
+     "Theme chuno",
+     "Colour palette",
+     "Stall layout sketch",
+     "Final look"
+    ]
+   },
+   "posters": {
+    "facts": [
+     "Bada title, kam words.",
+     "QR code se info do."
+    ],
+    "topics": [
+     "Poster text",
+     "Design draft",
+     "Print ready",
+     "Lagao aur photo lo"
+    ]
+   },
+   "social": {
+    "facts": [
+     "Countdown posts excitement banate hain.",
+     "Team ki BTS stories daalo."
+    ],
+    "topics": [
+     "Countdown post",
+     "Team intro story",
+     "Teaser reel",
+     "Live day stories"
+    ]
+   },
+   "volunteers": {
+    "facts": [
+     "Har kaam ka ek owner.",
+     "Shift chart sabko pehle bhejo."
+    ],
+    "topics": [
+     "Roles list",
+     "Shift chart",
+     "Briefing",
+     "Thank you note"
+    ]
+   },
+   "setup": {
+    "facts": [
+     "Saman ki checklist ek din pehle.",
+     "Extension board aur tape zaroor."
+    ],
+    "topics": [
+     "Saman list",
+     "Decor items",
+     "Trial setup",
+     "Final setup"
+    ]
+   },
+   "rehearsal": {
+    "facts": [
+     "Ek full run through zaroor.",
+     "Visitor ki tarah stall dekho."
+    ],
+    "topics": [
+     "Script run",
+     "Timing check",
+     "Full run through",
+     "Final tweaks"
+    ]
+   }
+  },
+  "params": {
+   "event": {
+    "tech": [
+     "Ek live demo sabse zyada log kheenchta hai.",
+     "Visitor ko kuch try karne do."
+    ],
+    "art": [
+     "Lighting achhi ho toh art chamakta hai.",
+     "Har piece ke saath ek chhoti story."
+    ],
+    "quiz": [
+     "Sawaal mixed rakho: aasaan aur mushkil.",
+     "Timer aur buzzer se energy aati hai."
+    ],
+    "games": [
+     "Rules 10 second mein samajh aane chahiye.",
+     "Chhote prizes, badi smile."
+    ]
+   }
+  },
+  "agenda": {
+   "tech": [
+    {
+     "label": "Setup aur demo test",
+     "min": 60,
+     "tag": "work"
+    },
+    {
+     "label": "Chai break",
+     "min": 15,
+     "tag": "break"
+    },
+    {
+     "label": "Doors open, welcome",
+     "min": 15,
+     "tag": "work"
+    },
+    {
+     "label": "Live demos, round 1",
+     "min": 90,
+     "tag": "work"
+    },
+    {
+     "label": "Lunch, team rotation",
+     "min": 45,
+     "tag": "meal"
+    },
+    {
+     "label": "Live demos, round 2",
+     "min": 90,
+     "tag": "work"
+    },
+    {
+     "label": "Wrap up aur photo",
+     "min": 30,
+     "tag": "work"
+    }
+   ],
+   "art": [
+    {
+     "label": "Hanging aur lighting",
+     "min": 90,
+     "tag": "work"
+    },
+    {
+     "label": "Chai break",
+     "min": 15,
+     "tag": "break"
+    },
+    {
+     "label": "Doors open, welcome",
+     "min": 15,
+     "tag": "work"
+    },
+    {
+     "label": "Gallery walk, round 1",
+     "min": 90,
+     "tag": "work"
+    },
+    {
+     "label": "Lunch, team rotation",
+     "min": 45,
+     "tag": "meal"
+    },
+    {
+     "label": "Artist talk",
+     "min": 30,
+     "tag": "work"
+    },
+    {
+     "label": "Gallery walk, round 2",
+     "min": 60,
+     "tag": "work"
+    },
+    {
+     "label": "Wrap up aur photo",
+     "min": 30,
+     "tag": "work"
+    }
+   ],
+   "quiz": [
+    {
+     "label": "Setup, buzzer aur screen test",
+     "min": 45,
+     "tag": "work"
+    },
+    {
+     "label": "Registration",
+     "min": 30,
+     "tag": "work"
+    },
+    {
+     "label": "Prelims",
+     "min": 30,
+     "tag": "work"
+    },
+    {
+     "label": "Break aur results",
+     "min": 20,
+     "tag": "break"
+    },
+    {
+     "label": "Finals",
+     "min": 60,
+     "tag": "work"
+    },
+    {
+     "label": "Prizes aur photo",
+     "min": 20,
+     "tag": "work"
+    }
+   ],
+   "games": [
+    {
+     "label": "Setup aur rules board",
+     "min": 45,
+     "tag": "work"
+    },
+    {
+     "label": "Doors open",
+     "min": 15,
+     "tag": "work"
+    },
+    {
+     "label": "Games, slot 1",
+     "min": 60,
+     "tag": "work"
+    },
+    {
+     "label": "Lunch, team rotation",
+     "min": 45,
+     "tag": "meal"
+    },
+    {
+     "label": "Games, slot 2",
+     "min": 90,
+     "tag": "work"
+    },
+    {
+     "label": "Chai break",
+     "min": 15,
+     "tag": "break"
+    },
+    {
+     "label": "Prizes aur wrap up",
+     "min": 30,
+     "tag": "work"
+    }
+   ]
+  },
+  "budget": {
+   "tech": [
+    [
+     "Demo setup",
+     35
+    ],
+    [
+     "Printing",
+     20
+    ],
+    [
+     "Decor",
+     20
+    ],
+    [
+     "Prizes",
+     15
+    ],
+    [
+     "Buffer",
+     10
+    ]
+   ],
+   "art": [
+    [
+     "Lighting",
+     30
+    ],
+    [
+     "Printing aur labels",
+     20
+    ],
+    [
+     "Decor",
+     25
+    ],
+    [
+     "Refreshments",
+     15
+    ],
+    [
+     "Buffer",
+     10
+    ]
+   ],
+   "quiz": [
+    [
+     "Prizes",
+     35
+    ],
+    [
+     "Printing",
+     15
+    ],
+    [
+     "Decor",
+     15
+    ],
+    [
+     "Refreshments",
+     25
+    ],
+    [
+     "Buffer",
+     10
+    ]
+   ],
+   "games": [
+    [
+     "Game material",
+     35
+    ],
+    [
+     "Prizes",
+     25
+    ],
+    [
+     "Decor",
+     20
+    ],
+    [
+     "Printing",
+     10
+    ],
+    [
+     "Buffer",
+     10
+    ]
+   ]
+  },
+  "general": [
+   "Last din ke liye ek buffer rakho.",
+   "Saman aur bijli ka kaam kisi bade ki madad se."
+  ]
+ },
+ "debate": {
+  "items": {
+   "opening": {
+    "facts": [
+     "Opening mein ek sawaal ya ek number.",
+     "Pehle 10 second sabse important."
+    ],
+    "topics": [
+     "Opening likho",
+     "Opening bolke dekho",
+     "Opening chhota karo"
+    ]
+   },
+   "args": {
+    "facts": [
+     "Har point: claim, reason, example.",
+     "3 strong points, 10 weak se behtar."
+    ],
+    "topics": [
+     "Point 1 likho",
+     "Point 2 likho",
+     "Point 3 likho",
+     "Examples jodo"
+    ]
+   },
+   "rebuttal": {
+    "facts": [
+     "Opponent ki baat dhyaan se suno.",
+     "Respect se disagree karo."
+    ],
+    "topics": [
+     "Opposite side ke points",
+     "Rebuttal 1",
+     "Rebuttal 2",
+     "Quick replies practice"
+    ]
+   },
+   "delivery": {
+    "facts": [
+     "Aankh mein aankh, awaaz saaf.",
+     "Pause bhi power hai."
+    ],
+    "topics": [
+     "Mirror practice",
+     "Record aur suno",
+     "Timer ke saath",
+     "Dost ke saamne"
+    ]
+   }
+  },
+  "topics": {
+   "ai_class": {
+    "label": "AI tools classroom mein hone chahiye",
+    "for": [
+     "AI har student ko apni speed se seekhne deta hai.",
+     "Teachers ka time bachta hai, woh students pe focus kar sakte hain.",
+     "Future ke kaam mein AI ka sahi use aana zaroori hai."
+    ],
+    "against": [
+     "Bina soche AI pe depend hona seekhne ko kamzor kar sakta hai.",
+     "Har student ke paas same device aur internet nahi hai.",
+     "AI ke answer kabhi kabhi galat hote hain, check karna padta hai."
+    ],
+    "openFor": "Calculator ne maths khatam nahi kiya, use behtar banaya. AI bhi waisa hi tool hai.",
+    "openAgainst": "Tool tab achha hai jab haath khud bhi kaam karna jaanta ho.",
+    "rebutFor": [
+     "Depend hone ka hal hai sahi use sikhana, ban karna nahi.",
+     "Galat answers pakadna bhi ek skill hai jo classroom mein seekhi ja sakti hai."
+    ],
+    "rebutAgainst": [
+     "Speed se seekhna achha hai, par basics ke bina speed kis kaam ki?",
+     "Teacher ka time bachana achha hai, par student ka sochna bhi bachana hai."
+    ]
+   },
+   "homework": {
+    "label": "Homework optional hona chahiye",
+    "for": [
+     "Har student ki seekhne ki speed alag hoti hai.",
+     "Free time mein hobbies aur skills bhi badhti hain.",
+     "Zabardasti ka kaam aksar copy hota hai."
+    ],
+    "against": [
+     "Practice ke bina concept pakka nahi hota.",
+     "Homework discipline aur time management sikhata hai.",
+     "Teacher ko pata chalta hai kaun sa topic samajh nahi aaya."
+    ],
+    "openFor": "Seekhna zabardasti se nahi, interest se hota hai.",
+    "openAgainst": "Practice ke bina koi khiladi match nahi jeet-ta, padhai bhi waisi hi hai.",
+    "rebutFor": [
+     "Practice zaroori hai, par har din ek jaisa homework zaroori nahi.",
+     "Discipline apne goals se bhi aata hai."
+    ],
+    "rebutAgainst": [
+     "Hobbies achhi hain, par basics ki practice bhi utni hi zaroori.",
+     "Copy ki problem ka hal achha homework design hai, homework hatana nahi."
+    ]
+   },
+   "uniform": {
+    "label": "Uniform hona zaroori hai",
+    "for": [
+     "Uniform se sab barabar mehsoos karte hain.",
+     "Subah kya pehnein, yeh tension khatam.",
+     "Pehchaan aur team spirit badhta hai."
+    ],
+    "against": [
+     "Kapdon se bhi apni personality dikhti hai.",
+     "Uniform har mausam mein comfortable nahi hota.",
+     "Har family ke liye extra kharcha ho sakta hai."
+    ],
+    "openFor": "Jab sab ek jaise dikhte hain, tab sab ki baat suni jaati hai.",
+    "openAgainst": "Har student alag hai, toh dikhne mein bhi thoda alag hone do.",
+    "rebutFor": [
+     "Personality kapdon se zyada ideas aur kaam se dikhti hai.",
+     "Mausam ke hisaab se uniform options diye ja sakte hain."
+    ],
+    "rebutAgainst": [
+     "Barabari ka ehsaas kapdon se nahi, behaviour se aata hai.",
+     "Tension khatam karne ke aur bhi simple tareeke hain."
+    ]
+   },
+   "projects": {
+    "label": "Exams se zyada projects se assessment ho",
+    "for": [
+     "Projects asli skills dikhate hain.",
+     "Team mein kaam karna seekhte hain.",
+     "Ek din ke exam ka pressure kam hota hai."
+    ],
+    "against": [
+     "Exams sab ke liye ek jaisa fair test hai.",
+     "Projects mein kabhi kabhi kaam ek hi insaan karta hai.",
+     "Exam basics ki pakki jaanch karta hai."
+    ],
+    "openFor": "Duniya mein koi ek ghante ka paper nahi deta, sab projects karte hain.",
+    "openAgainst": "Fair game ke liye sab ke liye ek jaisa rule chahiye.",
+    "rebutFor": [
+     "Fairness project ke clear rubric se bhi aa sakti hai.",
+     "Team mein har member ka role likha ja sakta hai."
+    ],
+    "rebutAgainst": [
+     "Skills dikhana achha hai, par basics ke bina project kamzor hota hai.",
+     "Pressure kam karne ke liye exam ka pattern badla ja sakta hai."
+    ]
+   },
+   "sports": {
+    "label": "Sports period roz hona chahiye",
+    "for": [
+     "Khelne se dimaag fresh rehta hai.",
+     "Team work aur discipline seekhte hain.",
+     "Har student ko active rehne ka mauka milta hai."
+    ],
+    "against": [
+     "Time table pehle se bhara hota hai.",
+     "Har din ground available nahi hota.",
+     "Kuch students ko doosri activities pasand hain."
+    ],
+    "openFor": "Ek ghanta ground pe, baaki din class mein zyada focus.",
+    "openAgainst": "Har din sab ke liye ek jaisa plan sahi nahi hota.",
+    "rebutFor": [
+     "Time table mein chhote periods se jagah ban sakti hai.",
+     "Sports mein bhi bahut options ho sakte hain, sirf ek game nahi."
+    ],
+    "rebutAgainst": [
+     "Fresh dimaag achha hai, par roz zaroori nahi, hafte mein 3 din bhi kaafi.",
+     "Team work clubs aur projects se bhi aata hai."
+    ]
+   },
+   "screen": {
+    "label": "Social media se fayda zyada hai, nuksaan kam",
+    "for": [
+     "Naye skills aur ideas seekhne ko milte hain.",
+     "Talent duniya ko dikha sakte hain.",
+     "Doston aur family se judna aasaan hai."
+    ],
+    "against": [
+     "Bahut zyada scroll karne se time waste hota hai.",
+     "Har cheez sach nahi hoti, fact check zaroori hai.",
+     "Comparison se apne baare mein bura lag sakta hai."
+    ],
+    "openFor": "Ek phone mein library, stage aur dost, teeno.",
+    "openAgainst": "Tool achha hai, par kabhi kabhi tool hi humein chalane lagta hai.",
+    "rebutFor": [
+     "Time ka hal screen time limit hai, social media chhodna nahi.",
+     "Fact check karna seekhna bhi social media se aata hai."
+    ],
+    "rebutAgainst": [
+     "Skills seekhne ke liye focus chahiye, jo scroll mein kho jaata hai.",
+     "Talent dikhane ke liye offline stage bhi hai."
+    ]
+   }
+  },
+  "speech": [
+   [
+    "Opening",
+    15
+   ],
+   [
+    "Point 1",
+    25
+   ],
+   [
+    "Point 2",
+    25
+   ],
+   [
+    "Point 3",
+    20
+   ],
+   [
+    "Closing",
+    15
+   ]
+  ],
+  "general": [
+   "Opponent ki izzat karo, ideas pe bahas karo."
+  ]
+ },
+ "career": {
+  "_source": "Splits and skills copied from experiences/career/data/cf_data_v60 (Tasks, outlook and sectors: Zenith School of AI research, 2026).",
+  "items": {
+   "watch": {
+    "facts": [
+     "Field ke logon ke talks aur videos dekho.",
+     "Har video se ek naya shabd likho."
+    ],
+    "topics": [
+     "2 videos dekho",
+     "Ek article padho",
+     "Naye shabd ki list",
+     "Ek podcast suno"
+    ]
+   },
+   "task": {
+    "facts": [
+     "Chhota sa kaam khud karke dekho.",
+     "Karke seekhna sabse pakka hai."
+    ],
+    "topics": [
+     "Mini task chuno",
+     "Mini task karo",
+     "Kya achha laga likho",
+     "Doosra mini task"
+    ]
+   },
+   "talk": {
+    "facts": [
+     "Kisi senior ya teacher se 10 minute baat.",
+     "3 sawaal pehle likh lo."
+    ],
+    "topics": [
+     "Sawaal likho",
+     "Ek senior se baat",
+     "Ek teacher se baat",
+     "Notes likho"
+    ]
+   },
+   "club": {
+    "facts": [
+     "Club ya event mein log aur mauke dono milte hain.",
+     "Ek event attend karo, bas."
+    ],
+    "topics": [
+     "Clubs dhoondo",
+     "Ek event chuno",
+     "Event attend karo",
+     "Kya seekha likho"
+    ]
+   }
+  },
+  "areas": {
+   "coding": {
+    "label": "Computers and coding",
+    "careers": [
+     {
+      "title": "AI / LLM Engineer",
+      "split": [
+       19,
+       43,
+       38
+      ],
+      "holds": [
+       "Evaluation design",
+       "Retrieval and context engineering",
+       "Cost and speed trade-offs"
+      ],
+      "try": "Ek free AI tool se apne subject ka quiz banao aur check karo kahan galti hui."
+     },
+     {
+      "title": "Cybersecurity Analyst",
+      "split": [
+       46,
+       34,
+       20
+      ],
+      "holds": [
+       "Incident response",
+       "Adversarial thinking",
+       "Security architecture"
+      ],
+      "try": "Apne phone ki privacy settings ek baar poori check karo aur list banao."
+     },
+     {
+      "title": "Data Scientist / ML Engineer",
+      "split": [
+       43,
+       24,
+       33
+      ],
+      "holds": [
+       "Experiment design",
+       "Problem framing",
+       "Knowing when the answer is wrong"
+      ],
+      "try": "Class ki favourite cheezon ka chhota data lo, bina naam ke, aur ek chart banao."
+     }
+    ]
+   },
+   "business": {
+    "label": "Business, money, managing",
+    "careers": [
+     {
+      "title": "Product Management",
+      "split": [
+       35,
+       22,
+       43
+      ],
+      "holds": [
+       "Customer discovery",
+       "Prioritisation under ambiguity",
+       "Influence without authority"
+      ],
+      "try": "Apni favourite app ki 3 cheezein likho jo tum badalna chahoge, aur kyun."
+     },
+     {
+      "title": "Enterprise and Field Sales",
+      "split": [
+       24,
+       33,
+       43
+      ],
+      "holds": [
+       "Trust with buyers",
+       "Negotiation",
+       "Listening"
+      ],
+      "try": "Kisi local dukaan wale se poocho woh naye customer kaise banate hain."
+     },
+     {
+      "title": "Operations / Business Analyst",
+      "split": [
+       50,
+       25,
+       25
+      ],
+      "holds": [
+       "Process redesign",
+       "Change management",
+       "Exception judgement"
+      ],
+      "try": "Canteen ki line ka ek flowchart banao aur ek sudhaar socho."
+     }
+    ]
+   },
+   "machines": {
+    "label": "Machines, plants and chemicals",
+    "careers": [
+     {
+      "title": "Maintenance and Reliability Engineer",
+      "split": [
+       24,
+       26,
+       50
+      ],
+      "holds": [
+       "Diagnosis with hands on the machine",
+       "Safety isolation",
+       "Leading a breakdown team"
+      ],
+      "try": "Ghar ki kisi machine ka manual padho aur uske 3 parts samjho."
+     },
+     {
+      "title": "Production / Manufacturing Engineer",
+      "split": [
+       22,
+       36,
+       42
+      ],
+      "holds": [
+       "Problem solving on the floor",
+       "Leading operators",
+       "New line bring-up"
+      ],
+      "try": "Kisi factory ka 'how it is made' video dekho aur steps likho."
+     },
+     {
+      "title": "Field Service / Commissioning Engineer",
+      "split": [
+       22,
+       32,
+       46
+      ],
+      "holds": [
+       "Being physically there",
+       "Customer trust at handover",
+       "Safety on site"
+      ],
+      "try": "Kisi technician se poocho unka ek din kaisa hota hai."
+     }
+    ]
+   },
+   "electronics": {
+    "label": "Electronics and chips",
+    "careers": [
+     {
+      "title": "Embedded Systems Engineer",
+      "split": [
+       44,
+       26,
+       30
+      ],
+      "holds": [
+       "Debugging on hardware",
+       "Safety certification",
+       "Real-time constraints"
+      ],
+      "try": "Ek online circuit simulator mein LED blink circuit banao."
+     },
+     {
+      "title": "Sales / Application Engineer",
+      "split": [
+       26,
+       28,
+       46
+      ],
+      "holds": [
+       "Technical trust with the buyer",
+       "On-site demonstration",
+       "Negotiation"
+      ],
+      "try": "Kisi gadget ko 1 minute mein dost ko samjhao, record karke suno."
+     },
+     {
+      "title": "Field Service / Commissioning Engineer",
+      "split": [
+       22,
+       32,
+       46
+      ],
+      "holds": [
+       "Being physically there",
+       "Customer trust at handover",
+       "Safety on site"
+      ],
+      "try": "Kisi technician se poocho unka ek din kaisa hota hai."
+     }
+    ]
+   },
+   "infra": {
+    "label": "Buildings and infrastructure",
+    "careers": [
+     {
+      "title": "Site / Construction Engineer",
+      "split": [
+       24,
+       24,
+       52
+      ],
+      "holds": [
+       "Running a site",
+       "Contractor management",
+       "Safety"
+      ],
+      "try": "Apne area ki kisi construction site ko door se dekho aur kaam ke stages likho."
+     },
+     {
+      "title": "Structural Design Engineer",
+      "split": [
+       26,
+       34,
+       40
+      ],
+      "holds": [
+       "Choosing the structural system",
+       "Sign-off responsibility",
+       "Coordination with the design team"
+      ],
+      "try": "Ice cream sticks se ek chhota bridge banao aur dekho kitna wazan uthata hai."
+     },
+     {
+      "title": "Planning and Quantity Surveying",
+      "split": [
+       36,
+       42,
+       22
+      ],
+      "holds": [
+       "Claims and variations",
+       "Commercial negotiation"
+      ],
+      "try": "Apne kamre ki lambai chaudai naapo aur tiles ki ginti nikalo."
+     }
+    ]
+   }
+  },
+  "general": [
+   "Yeh outlook hai, guarantee nahi. Apni pasand aur mehnat sabse zaroori."
+  ]
+ },
+ "collegeq": {
+  "items": {
+   "placements": {
+    "facts": [
+     "Official placement report maango, sun-suni baatein nahi.",
+     "Median aur poori list dono dekho."
+    ],
+    "questions": [
+     "Pichhle 2 saal ki official placement report dikha sakte hain?",
+     "Placement support kaise milta hai, training ya mock interviews?",
+     "Kitne students ne placement process mein hissa liya?",
+     "Alumni se baat karne ka mauka milega?"
+    ]
+   },
+   "campus": {
+    "facts": [
+     "Campus visit sabse zyada batata hai.",
+     "Hostel aur canteen bhi dekh lo."
+    ],
+    "questions": [
+     "Kya main ek normal din campus visit kar sakta hoon?",
+     "Clubs aur events kitne active hain?",
+     "Library aur labs kab tak khulte hain?",
+     "Students ki complaint kahan aur kaise sunte hain?"
+    ]
+   },
+   "fees": {
+    "facts": [
+     "Fees ka poora breakup likh ke lo.",
+     "Scholarship ke rules pehle samjho."
+    ],
+    "questions": [
+     "Fees ka poora breakup har saal ka kya hai?",
+     "Hostel, exam aur doosri fees alag hain?",
+     "Scholarship kaise milti hai aur kaise renew hoti hai?",
+     "Refund policy likhit mein mil sakti hai?"
+    ]
+   },
+   "projects": {
+    "facts": [
+     "Students ke asli projects dekho.",
+     "Hackathons aur showcases ka poocho."
+    ],
+    "questions": [
+     "Pehle saal se projects hote hain?",
+     "Students ke 3 projects dikha sakte hain?",
+     "Hackathons ya project showcase hote hain?",
+     "Industry ke saath live projects milte hain?"
+    ]
+   },
+   "faculty": {
+    "facts": [
+     "Faculty profiles padho.",
+     "Ek demo class maango."
+    ],
+    "questions": [
+     "Faculty ka industry ya research experience kya hai?",
+     "Ek demo class attend kar sakta hoon?",
+     "Mentorship ka system hai?",
+     "Ek class mein kitne students hote hain?"
+    ]
+   },
+   "hostel": {
+    "facts": [
+     "Hostel ke rules aur safety pehle samjho.",
+     "Seniors se hostel life ka poocho."
+    ],
+    "questions": [
+     "Hostel ke safety rules aur timings kya hain?",
+     "Ek room mein kitne log rehte hain?",
+     "Medical help campus pe kaise milti hai?",
+     "Mess ka menu aur feedback system kaisa hai?"
+    ]
+   },
+   "internships": {
+    "facts": [
+     "Pichhle saal ke internship examples poocho.",
+     "Internship support ka process samjho."
+    ],
+    "questions": [
+     "Pichhle saal students ne kis tarah ki internships ki?",
+     "Internship dhoondne mein college kaise help karta hai?",
+     "Kya summer internship curriculum ka part hai?",
+     "Seniors se internship ke baare mein baat ho sakti hai?"
+    ]
+   }
+  },
+  "params": {
+   "interest": {
+    "ai": [
+     "AI aur CS ke liye project based learning dekho.",
+     "Coding clubs aur hackathons poocho."
+    ],
+    "business": [
+     "Live projects aur case studies ka poocho.",
+     "Startup cell hai ya nahi, dekho."
+    ],
+    "design": [
+     "Studio aur portfolio reviews ka poocho.",
+     "Student work ki gallery dekho."
+    ],
+    "science": [
+     "Lab hours aur research projects poocho.",
+     "Field visits hote hain, poocho."
+    ]
+   }
+  },
+  "general": [
+   "Yeh sawaal har campus se poocho, jawab likh ke compare karo. Final decision family ke saath."
+  ]
+ },
+ "cricket": {
+  "items": {
+   "batting": {
+    "facts": [
+     "Singles se scoreboard chalta rehta hai.",
+     "Death overs mein gap dhoondo."
+    ],
+    "topics": [
+     "Straight drive",
+     "Strike rotation",
+     "Playing spin",
+     "Death over hitting"
+    ]
+   },
+   "bowling": {
+    "facts": [
+     "Line aur length pehle, speed baad mein.",
+     "Har over ka ek plan socho."
+    ],
+    "topics": [
+     "Line and length",
+     "Yorker practice",
+     "Slower ball",
+     "Spin flight"
+    ]
+   },
+   "fielding": {
+    "facts": [
+     "Achhi fielding runs bachati hai.",
+     "Ball pe nazar, haath ready."
+    ],
+    "topics": [
+     "Ground fielding",
+     "Direct hit practice",
+     "Diving stops",
+     "Boundary riding"
+    ]
+   },
+   "catching": {
+    "facts": [
+     "Soft hands, eyes on the ball.",
+     "High catches ki roz practice."
+    ],
+    "topics": [
+     "Close catches",
+     "High catches",
+     "Reaction drills",
+     "Slip catching"
+    ]
+   },
+   "running": {
+    "facts": [
+     "Call clear aur zor se do.",
+     "Bat ground karo, crease tak pura."
+    ],
+    "topics": [
+     "Calling drill",
+     "Quick singles",
+     "Turning for two",
+     "Bat grounding"
+    ]
+   }
+  },
+  "params": {
+   "format": {
+    "box6": [
+     "6 over mein har ball count karti hai.",
+     "Wickets bacha ke rakho, last over mein khulo."
+    ],
+    "t10": [
+     "Pehle 3 over mein strong start.",
+     "Middle overs mein strike rotate karte raho."
+    ],
+    "t20": [
+     "Partnerships match ka rukh badalti hain.",
+     "Powerplay ka fayda uthao, phir build karo."
+    ]
+   },
+   "situation": {
+    "chase": [
+     "Chase mein required rate pe nazar, wickets haath mein.",
+     "Har over ke baad scoreboard dekho."
+    ],
+    "defend": [
+     "Defend mein dot balls sabse badi taakat.",
+     "Field set karo, bowler ke plan ke hisaab se."
+    ]
+   }
+  },
+  "overs": {
+   "box6": 6,
+   "t10": 10,
+   "t20": 20
+  },
+  "general": [
+   "Practice se pehle 5 minute warm up zaroor.",
+   "Yeh khel ka fun plan hai: koi betting ya fantasy nahi."
+  ]
+ },
+ "lecture": {
+  "items": {
+   "newton": {
+    "label": "Physics: Laws of Motion",
+    "subject": "physics",
+    "episodes": [
+     "Inertia kya hai",
+     "F = m x a",
+     "Action aur reaction",
+     "Friction ka role",
+     "Free body diagram"
+    ],
+    "facts": [
+     "Har episode ek idea, bas.",
+     "Ghar ki cheezon se demo karo."
+    ],
+    "topics": [
+     "Episode 1: Inertia kya hai",
+     "Episode 2: F = m x a",
+     "Episode 3: Action aur reaction",
+     "Episode 4: Friction ka role",
+     "Episode 5: Free body diagram"
+    ]
+   },
+   "current": {
+    "label": "Physics: Electric Current",
+    "subject": "physics",
+    "episodes": [
+     "Charge ka flow",
+     "I = Q / t",
+     "Ohm ka law",
+     "Series aur parallel",
+     "Ghar ki wiring ka basic"
+    ],
+    "facts": [
+     "Simple circuit diagram screen pe.",
+     "Ek number wala example har episode mein."
+    ],
+    "topics": [
+     "Episode 1: Charge ka flow",
+     "Episode 2: I = Q / t",
+     "Episode 3: Ohm ka law",
+     "Episode 4: Series aur parallel",
+     "Episode 5: Ghar ki wiring ka basic"
+    ]
+   },
+   "optics": {
+    "label": "Physics: Ray Optics",
+    "subject": "physics",
+    "episodes": [
+     "Reflection",
+     "Refraction",
+     "Lens ka kaam",
+     "Mirror formula",
+     "Aankh aur chashma"
+    ],
+    "facts": [
+     "Torch aur glass se demo.",
+     "Ray diagram slowly draw karo."
+    ],
+    "topics": [
+     "Episode 1: Reflection",
+     "Episode 2: Refraction",
+     "Episode 3: Lens ka kaam",
+     "Episode 4: Mirror formula",
+     "Episode 5: Aankh aur chashma"
+    ]
+   },
+   "bonding": {
+    "label": "Chemistry: Chemical Bonding",
+    "subject": "chemistry",
+    "episodes": [
+     "Atoms dost kyun bante hain",
+     "Octet rule",
+     "Ionic bond",
+     "Covalent bond",
+     "Molecule ki shape"
+    ],
+    "facts": [
+     "Ball aur stick model kaam aata hai.",
+     "Har episode mein ek real example."
+    ],
+    "topics": [
+     "Episode 1: Atoms dost kyun bante hain",
+     "Episode 2: Octet rule",
+     "Episode 3: Ionic bond",
+     "Episode 4: Covalent bond",
+     "Episode 5: Molecule ki shape"
+    ]
+   },
+   "mole": {
+    "label": "Chemistry: Mole Concept",
+    "subject": "chemistry",
+    "episodes": [
+     "Mole kya hai",
+     "Avogadro number",
+     "Mass se moles",
+     "Molar mass",
+     "Ek numerical, step by step"
+    ],
+    "facts": [
+     "Darzan wala example yaad rehta hai.",
+     "Calculation screen pe likh ke dikhao."
+    ],
+    "topics": [
+     "Episode 1: Mole kya hai",
+     "Episode 2: Avogadro number",
+     "Episode 3: Mass se moles",
+     "Episode 4: Molar mass",
+     "Episode 5: Ek numerical, step by step"
+    ]
+   },
+   "prob": {
+    "label": "Maths: Probability",
+    "subject": "maths",
+    "episodes": [
+     "Chance kya hai",
+     "Favourable by total",
+     "Sikka aur dice",
+     "Not wala rule",
+     "Ek mazedaar puzzle"
+    ],
+    "facts": [
+     "Dice aur cards se demo.",
+     "Har episode ek sawaal se shuru."
+    ],
+    "topics": [
+     "Episode 1: Chance kya hai",
+     "Episode 2: Favourable by total",
+     "Episode 3: Sikka aur dice",
+     "Episode 4: Not wala rule",
+     "Episode 5: Ek mazedaar puzzle"
+    ]
+   },
+   "deriv": {
+    "label": "Maths: Derivatives",
+    "subject": "maths",
+    "episodes": [
+     "Rate of change",
+     "Slope ka matlab",
+     "Power rule",
+     "Chain rule",
+     "Real life mein speed"
+    ],
+    "facts": [
+     "Graph ke saath samjhao.",
+     "Ek example har episode."
+    ],
+    "topics": [
+     "Episode 1: Rate of change",
+     "Episode 2: Slope ka matlab",
+     "Episode 3: Power rule",
+     "Episode 4: Chain rule",
+     "Episode 5: Real life mein speed"
+    ]
+   },
+   "cell": {
+    "label": "Biology: The Cell",
+    "subject": "biology",
+    "episodes": [
+     "Cell kya hai",
+     "Cell ke parts",
+     "Plant vs animal cell",
+     "Nucleus ka kaam",
+     "Cell division ka idea"
+    ],
+    "facts": [
+     "Diagram khud banao.",
+     "Roz ki cheezon se compare karo."
+    ],
+    "topics": [
+     "Episode 1: Cell kya hai",
+     "Episode 2: Cell ke parts",
+     "Episode 3: Plant vs animal cell",
+     "Episode 4: Nucleus ka kaam",
+     "Episode 5: Cell division ka idea"
+    ]
+   }
+  },
+  "visuals": {
+   "physics": [
+    "Ghar ki cheez se live demo",
+    "Slow motion clip",
+    "Whiteboard pe ek diagram",
+    "Before aur after split screen",
+    "Ek number wala on screen sum"
+   ],
+   "chemistry": [
+    "Ball aur stick model",
+    "Rang wale beads se atoms",
+    "Kitchen ka safe example",
+    "Whiteboard pe equation",
+    "Model rotate karke dikhao"
+   ],
+   "maths": [
+    "Graph paper pe sketch",
+    "Dice ya cards se demo",
+    "Step by step on screen",
+    "Real photo pe shape dikhao",
+    "Ek puzzle, answer last mein"
+   ],
+   "biology": [
+    "Haath se bana diagram",
+    "Zoom in animation jaisa sketch",
+    "Paudhe ya patti ka shot",
+    "Labelled diagram reveal",
+    "Compare chart"
+   ]
+  },
+  "hooks": [
+   "60 second mein: {topic}. Chalo!",
+   "Aaj ka sawaal: {topic}",
+   "Ek example, ek idea: {topic}",
+   "Sabse common confusion: {topic}",
+   "Last episode, sab jodo: {topic}"
+  ],
+  "recaps": [
+   "{topic}: apne words mein ek line mein batao.",
+   "{topic}: ek real life example do.",
+   "{topic}: sabse zaroori rule ya formula kya hai?",
+   "{topic}: ek sawaal banao jo dost se poocho.",
+   "Poori series: 5 episodes ka ek line ka summary do."
+  ],
+  "general": [
+   "Har episode 60 second, ek idea, ek recap sawaal.",
+   "Recording se pehle script zor se padho."
+  ]
+ },
+ "mock": {
+  "items": {
+   "physics": {
+    "facts": [
+     "Numericals mein units pehle likho.",
+     "Lambe sawaal pe atko mat, mark karke aage badho."
+    ],
+    "topics": [
+     "Timed PYQ set",
+     "Formula recap",
+     "Mistake review"
+    ]
+   },
+   "chemistry": {
+    "facts": [
+     "Theory sawaal pehle, time bachta hai.",
+     "Organic mein reaction type pehchano."
+    ],
+    "topics": [
+     "Timed PYQ set",
+     "Reactions recap",
+     "Mistake review"
+    ]
+   },
+   "maths": {
+    "facts": [
+     "Aasaan sawaal pehle, mushkil baad mein.",
+     "Rough work saaf rakho."
+    ],
+    "topics": [
+     "Timed practice set",
+     "Formula recap",
+     "Mistake review"
+    ]
+   },
+   "biology": {
+    "facts": [
+     "Diagram wale sawaal mein label zaroor.",
+     "Keywords NCERT wale use karo."
+    ],
+    "topics": [
+     "Timed practice set",
+     "Diagrams recap",
+     "Mistake review"
+    ]
+   },
+   "english": {
+    "facts": [
+     "Reading passage pehle sawaal padho, phir passage.",
+     "Writing ka format pehle likho."
+    ],
+    "topics": [
+     "Timed reading",
+     "Writing format recap",
+     "Mistake review"
+    ]
+   }
+  },
+  "params": {
+   "exam": {
+    "jee": [
+     "Har section mein pehla round sirf aasaan sawaal.",
+     "Galat answer ke negative marks ka dhyaan rakho."
+    ],
+    "boards": [
+     "Pehle 15 minute paper padhne mein lagao.",
+     "Steps aur diagrams se answer saaf banao."
+    ],
+    "unit": [
+     "Poora paper ek baar dekho, phir shuru karo.",
+     "Har sawaal ke marks dekh ke time do."
+    ]
+   }
+  },
+  "tips": {
+   "do": [
+    "Pehle woh section jo tumhe sabse comfortable lagta hai.",
+    "Har section ke baad 1 minute time check.",
+    "Last 10% time revision ke liye rakho."
+   ],
+   "dont": [
+    "Ek sawaal pe 3 minute se zyada mat atko.",
+    "Mock ke score ko apni value mat samjho, yeh practice hai.",
+    "Mock ke din naya topic mat padho."
+   ]
+  },
+  "general": [
+   "Mock ek practice hai: galtiyon se seekhna hi asli fayda hai."
+  ]
+ }
+}

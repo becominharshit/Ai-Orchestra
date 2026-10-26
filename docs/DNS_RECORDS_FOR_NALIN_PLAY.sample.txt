@@ -1,0 +1,23 @@
+SAMPLE ONLY: made-up records to check the layout. Do not add them.
+
+Add new records only. Do not change or delete any existing record.
+
+DNS RECORDS FOR play.zenithschool.ai (zenithschool.ai, in Cloudflare). From Avi, 24 Oct 2026, 12:52 IST.
+2 new CNAME records. For each: Cloudflare > zenithschool.ai > DNS > Records > "Add record",
+fill Type, Name and Target exactly as below, TTL Auto, then Save.
+Proxy status: DNS only (grey cloud), not Proxied, for every record.
+
+1. Certificate check for play.zenithschool.ai
+   Type:    CNAME
+   Name:    _0123456789abcdef0123456789abcdef.play
+   Target:  _fedcba9876543210fedcba9876543210.xlfgrmvvlj.acm-validations.aws
+   Proxy status: DNS only (grey cloud), not Proxied.
+
+2. Address of the stall app (play-web)
+   Type:    CNAME
+   Name:    play
+   Target:  play-web.864gs2gb85a24.ap-south-1.cs.amazonlightsail.com
+   Proxy status: DNS only (grey cloud), not Proxied.
+
+Cloudflare adds ".zenithschool.ai" to each Name by itself. Copy names and targets exactly (no spaces, no dot at the end).
+Please reply to Avi "play records saved" when done.

@@ -1,0 +1,11 @@
+{
+  "label": "Demo squad (fictional, abstract test footage, for filming)",
+  "profile": {
+    "template": "heist",
+    "squad": 4
+  },
+  "fixtures": {
+    "captions_heist": 0,
+    "hook_heist": 0
+  }
+}

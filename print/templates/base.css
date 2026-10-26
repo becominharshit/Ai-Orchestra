@@ -1,0 +1,77 @@
+/* Shared print styles for every Zenith stall print file (standee, tent, poster, spec).
+   All sizes are in mm so the PDF is true to physical size. */
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 500; src: url("../fonts/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 600; src: url("../fonts/plus-jakarta-sans-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 700; src: url("../fonts/plus-jakarta-sans-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 800; src: url("../fonts/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-weight: 500; src: url("../fonts/newsreader-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-weight: 600; src: url("../fonts/newsreader-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-weight: 700; src: url("../fonts/newsreader-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-style: italic; font-weight: 500; src: url("../fonts/newsreader-latin-500-italic.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-style: italic; font-weight: 600; src: url("../fonts/newsreader-latin-600-italic.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-style: italic; font-weight: 700; src: url("../fonts/newsreader-latin-700-italic.woff2") format("woff2"); }
+
+:root {
+  --ink: #19173D;      /* Zenith ink */
+  --deep: #0B0A22;     /* stage background, darker than ink */
+  --paper: #F7F6F2;    /* Zenith paper */
+  --a1: #62BBF3;       /* gradient start (sky) */
+  --a2: #4E308D;       /* gradient end (violet) */
+  --a3: #9C86F2;       /* light violet, readable on dark */
+  --muted: #B8B5DA;    /* secondary text on dark */
+  --grad: linear-gradient(100deg, var(--a1), var(--a2));
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: "Plus Jakarta Sans", Helvetica, Arial, sans-serif; color: var(--paper); }
+
+/* sheet = full PDF page (trim + bleed + slug for crop marks) */
+.sheet { position: relative; overflow: hidden; background: #fff; }
+.bleed { position: absolute; overflow: hidden; background: var(--deep); }
+.bleed > svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.trim { position: absolute; overflow: visible; }
+.marks { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+/* type */
+.display { font-family: "Newsreader", Georgia, serif; font-weight: 600; letter-spacing: -0.01em; line-height: 0.98; color: #fff; }
+.display em { font-style: italic; font-weight: 600; color: var(--a1); }
+.hook { font-weight: 700; line-height: 1.12; color: #fff; letter-spacing: -0.01em; }
+.sub { font-weight: 500; line-height: 1.3; color: var(--muted); }
+.eyebrow { font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
+
+/* chips */
+.chip { display: inline-flex; align-items: center; border-radius: 999px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+.chip.grad { background: var(--grad); color: #fff; }
+.chip.line { border: solid var(--a1); color: var(--a1); background: #110E2E; } /* solid, so the network never shows through */
+.chip.fun { background: #FFE27A; color: var(--ink); }
+.chip.new { background: #fff; color: var(--a2); } /* flagship experiences (print v5) */
+
+/* QR card: gradient frame, white inner, QR svg, scanner brackets */
+.qrwrap { position: relative; display: flex; flex-direction: column; align-items: center; }
+.qrframe { background: var(--grad); }
+.qrcard { background: #fff; display: flex; flex-direction: column; align-items: center; color: var(--ink); }
+.qrcard .qrlabel { font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); }
+.qrcard .qrurl { font-weight: 700; color: var(--a2); white-space: nowrap; }
+.qr { position: relative; display: block; }
+.qr svg { display: block; width: 100%; height: 100%; }
+.qr .mark { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #fff; display: flex; align-items: center; justify-content: center; }
+.qr .mark img { display: block; height: 100%; width: auto; }
+.brackets { position: absolute; pointer-events: none; }
+
+/* steps */
+.steps { display: flex; }
+.step { display: flex; align-items: flex-start; }
+.step .n { flex: none; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--grad); color: #fff; font-weight: 800; }
+.step .t { font-weight: 700; color: #fff; line-height: 1.12; }
+
+.handle { display: inline-flex; align-items: center; font-weight: 800; color: #fff; white-space: nowrap; }
+.handle svg { flex: none; }
+.prog { font-weight: 600; color: var(--paper); }
+.site { font-weight: 700; color: var(--a1); letter-spacing: 0.04em; }
+/* follow QR card (second QR on counter standees and tents) and the photo-frame cue */
+.fcard { background: #fff; display: flex; flex-direction: column; align-items: center; flex: none; }
+.fcard .flabel { font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--ink); }
+.photo { display: flex; align-items: center; font-weight: 700; color: #FFE27A; white-space: nowrap; }
+.photo svg { flex: none; }
+.photo span { min-width: 0; overflow: hidden; }
+.viral { font-weight: 700; color: var(--a1); white-space: nowrap; text-align: center; }

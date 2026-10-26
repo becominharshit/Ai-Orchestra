@@ -1,0 +1,416 @@
+/* Agent Orchestra styles. Loaded automatically by orchestra.js. Three layouts:
+   .orx--phone (px based), .orx--landscape (TV 16:9) and .orx--portrait (TV 9:16); TV layouts are em based and
+   orchestra.js sets the font-size from the stage size, so everything scales with the screen. */
+
+.orx {
+  --orb: 50px; --orb-lead: 64px; --lw: 96px;
+  --edge: rgba(170, 182, 255, 0.16);
+  position: relative; isolation: isolate; overflow: hidden; color: var(--stage-ink, #F1F2FF);
+  font-family: var(--font-ui); background: linear-gradient(180deg, #0d0a2c 0%, #070618 100%);
+  border: 1px solid rgba(186, 196, 255, 0.14); border-radius: 26px;
+  box-shadow: 0 30px 80px rgba(7, 6, 24, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- ambient background ---------- */
+.orx-bg { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.orx-bg::before {
+  content: ''; position: absolute; inset: -2px;
+  background-image:
+    linear-gradient(rgba(150, 165, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(150, 165, 255, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 45%, #000 0%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 45%, #000 0%, transparent 75%);
+}
+.orx-bg::after {
+  content: ''; position: absolute; left: 50%; top: 42%; width: 90%; aspect-ratio: 1; translate: -50% -50%;
+  background:
+    radial-gradient(closest-side, rgba(98, 187, 243, 0.20), transparent 70%),
+    radial-gradient(closest-side at 65% 60%, rgba(143, 107, 255, 0.24), transparent 70%);
+  animation: orx-breathe 7s ease-in-out infinite;
+}
+@keyframes orx-breathe { 0%, 100% { transform: scale(0.94); opacity: 0.75; } 50% { transform: scale(1.06); opacity: 1; } }
+
+/* ---------- mission panel / header ---------- */
+.orx-top { display: flex; align-items: center; gap: 10px; }
+.orx-kicker { font-family: var(--font-mono); font-weight: 700; font-size: 11px; letter-spacing: 0.18em; color: #9fd8ff; }
+.orx-live {
+  display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px 3px 7px; border-radius: 999px;
+  font-family: var(--font-mono); font-weight: 800; font-size: 10px; letter-spacing: 0.14em;
+  background: rgba(255, 92, 150, 0.14); color: #ff9cc4; border: 1px solid rgba(255, 92, 150, 0.35);
+}
+.orx-live i { width: 7px; height: 7px; border-radius: 50%; background: #ff5c96; box-shadow: 0 0 10px #ff5c96; animation: orx-blink 1.2s ease-in-out infinite; }
+.orx.is-finished .orx-live { background: rgba(62, 230, 168, 0.14); color: #7ff3c7; border-color: rgba(62, 230, 168, 0.4); }
+.orx.is-finished .orx-live i { background: #3EE6A8; box-shadow: 0 0 10px #3EE6A8; animation: none; }
+@keyframes orx-blink { 50% { opacity: 0.25; } }
+.orx-clock { margin-left: auto; font-family: var(--font-mono); font-size: 12px; font-weight: 600; color: rgba(222, 226, 255, 0.75); font-variant-numeric: tabular-nums; }
+.orx-title { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.01em; line-height: 1.02; }
+.orx-now { display: flex; gap: 8px; align-items: baseline; min-width: 0; }
+.orx-now-k { font-family: var(--font-mono); font-weight: 800; font-size: 10px; letter-spacing: 0.16em; color: #0b0a24; background: #9fd8ff; padding: 2px 6px; border-radius: 5px; flex: none; }
+.orx-now-v { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: rgba(241, 242, 255, 0.92); font-weight: 600; }
+.orx-meter { position: relative; }
+.orx-bar { height: 5px; border-radius: 9px; background: rgba(255, 255, 255, 0.08); overflow: hidden; }
+.orx-bar i { display: block; height: 100%; width: 100%; transform-origin: left; transform: scaleX(0); background: linear-gradient(90deg, #62BBF3, #8F6BFF, #FF8FC0); transition: transform 0.6s var(--ease); box-shadow: 0 0 12px rgba(124, 203, 255, 0.8); }
+.orx-ring { display: none; position: relative; }
+.orx-ring-svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.orx-ring-bg { fill: none; stroke: rgba(255, 255, 255, 0.08); stroke-width: 7; }
+.orx-ring-fg { fill: none; stroke-width: 7; stroke-linecap: round; transition: stroke-dashoffset 0.7s var(--ease); filter: drop-shadow(0 0 6px rgba(124, 203, 255, 0.7)); }
+.orx-pct { position: absolute; inset: 0; display: grid; place-content: center; grid-auto-flow: column; align-items: baseline; font-variant-numeric: tabular-nums; }
+.orx-pct b { font-family: var(--font-display); font-weight: 600; }
+.orx-stats { display: none; }
+.orx-stat b { display: block; font-family: var(--font-mono); font-weight: 700; font-variant-numeric: tabular-nums; }
+.orx-stat span { color: rgba(222, 226, 255, 0.6); font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; }
+
+/* ---------- graph ---------- */
+.orx-graph { position: relative; }
+.orx-wires { position: absolute; inset: 0; overflow: visible; pointer-events: none; }
+.orx-edge { fill: none; stroke: var(--edge); stroke-width: 1.5; transition: stroke 0.5s; }
+.orx-edge.done { stroke: rgba(62, 230, 168, 0.38); }
+.orx-edge-flow { fill: none; stroke-width: 2; stroke-dasharray: 5 11; opacity: 0; transition: opacity 0.4s; animation: orx-flow 0.9s linear infinite; }
+.orx-edge-flow.on { opacity: 0.95; }
+@keyframes orx-flow { to { stroke-dashoffset: -32; } }
+.orx-beam { fill: none; stroke: #F2FAFF; stroke-width: 2.5; stroke-linecap: round; }
+.orx-beam-glow { fill: none; stroke: #7CCBFF; stroke-width: 10; stroke-linecap: round; opacity: 0.32; }
+.orx-beam-glow.k-back { stroke: #3EE6A8; }
+.orx-beam-glow.k-hand { stroke: #C49BFF; opacity: 0.42; }
+.orx-head-dot { fill: #fff; }
+
+.orx-nodes { position: absolute; inset: 0; }
+.orx-node { position: absolute; left: 0; top: 0; width: 0; height: 0; transition: transform 0.7s var(--ease); --sz: var(--orb); }
+.orx-node--lead { --sz: var(--orb-lead); z-index: 2; }
+.orx-orb { position: absolute; width: var(--sz); height: var(--sz); left: calc(var(--sz) / -2); top: calc(var(--sz) / -2); }
+.orx-core {
+  position: absolute; inset: 0; border-radius: 50%; display: grid; place-items: center; color: var(--c);
+  background: radial-gradient(circle at 34% 28%, #2b2570 0%, #120e3a 55%, #0a0822 100%);
+  border: 1.5px solid color-mix(in srgb, var(--c) 38%, transparent);
+  box-shadow: inset 0 0 18px color-mix(in srgb, var(--c) 22%, transparent), 0 6px 18px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.4s, color 0.4s;
+}
+.orx-core svg { width: 46%; height: 46%; filter: drop-shadow(0 0 6px color-mix(in srgb, var(--c) 70%, transparent)); }
+.orx-glyph { font-weight: 800; font-size: calc(var(--sz) * 0.36); line-height: 1; }
+.orx-halo {
+  position: absolute; inset: -55%; border-radius: 50%; opacity: 0; transition: opacity 0.5s;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--c) 55%, transparent) 0%, color-mix(in srgb, var(--c) 18%, transparent) 45%, transparent 72%);
+}
+.orx-ring2 {
+  position: absolute; inset: -6px; border-radius: 50%; opacity: 0; transition: opacity 0.4s;
+  background: conic-gradient(from 0deg, transparent 0deg, var(--c) 110deg, #fff 160deg, transparent 230deg);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2.5px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2.5px));
+  animation: orx-spin 1.4s linear infinite;
+}
+.orx-badge {
+  position: absolute; right: -2px; bottom: -2px; width: 38%; height: 38%; border-radius: 50%; display: grid; place-items: center;
+  background: #3EE6A8; color: #062519; box-shadow: 0 0 0 3px #0b0926, 0 0 14px rgba(62, 230, 168, 0.8);
+  transform: scale(0); transition: transform 0.45s cubic-bezier(.3, 1.6, .5, 1);
+}
+.orx-badge svg { width: 64%; height: 64%; stroke-width: 3; }
+@keyframes orx-spin { to { transform: rotate(360deg); } }
+@keyframes orx-pulse { 0%, 100% { transform: scale(0.85); opacity: 0.45; } 50% { transform: scale(1.08); opacity: 0.95; } }
+
+.orx-node.is-thinking .orx-halo { opacity: 1; animation: orx-pulse 1.6s ease-in-out infinite; }
+.orx-node.is-thinking .orx-ring2 { opacity: 0.55; animation-duration: 2.6s; }
+.orx-node.is-working .orx-halo { opacity: 0.9; animation: orx-pulse 0.9s ease-in-out infinite; }
+.orx-node.is-working .orx-ring2 { opacity: 1; }
+.orx-node.is-working .orx-core, .orx-node.is-thinking .orx-core { border-color: var(--c); }
+.orx-node.is-done { --c: #3EE6A8; }
+.orx-node.is-done .orx-halo { opacity: 0.4; }
+.orx-node.is-done .orx-badge { transform: scale(1); }
+.orx-node.is-done .orx-core { border-color: rgba(62, 230, 168, 0.75); }
+.orx-node.is-retry { --c: #FFC15E; }
+.orx-node.is-retry .orx-halo { opacity: 1; animation: orx-pulse 0.5s ease-in-out infinite; }
+.orx-node--lead .orx-ring2 { opacity: 0.7; animation-duration: 5s; inset: -8px; background: conic-gradient(from 0deg, #62BBF3, #8F6BFF, #FF8FC0, #62BBF3); }
+.orx-node--lead .orx-halo { opacity: 0.55; }
+.orx-node--lead.is-working .orx-ring2 { opacity: 1; animation-duration: 1.6s; }
+.orx-node--lead.is-working .orx-halo { opacity: 1; animation: orx-pulse 1.4s ease-in-out infinite; }
+.orx-node--lead .orx-core { background: radial-gradient(circle at 34% 28%, #3a3196 0%, #1a1452 55%, #0c0a2a 100%); }
+.orx-node--lead.is-done { --c: #8FD3FF; }
+.orx-node--lead.is-done .orx-badge { transform: scale(0); }
+.orx-node.pulse .orx-core { animation: orx-hit 0.55s ease-out; }
+@keyframes orx-hit { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--c) 80%, transparent); } 100% { box-shadow: 0 0 0 18px transparent; } }
+
+.orx-label { position: absolute; left: 0; top: calc(var(--sz) / 2 + 8px); width: var(--lw); translate: -50% 0; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.orx-name { text-shadow: 0 2px 10px #070618, 0 0 3px #070618; font-weight: 800; font-size: 12px; line-height: 1.15; letter-spacing: -0.005em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.orx-role { text-shadow: 0 1px 6px #070618; display: none; color: rgba(222, 226, 255, 0.6); font-size: 10.5px; font-weight: 600; }
+.orx-task { display: none; color: rgba(222, 226, 255, 0.78); font-size: 11px; line-height: 1.3; }
+.orx-task:not(:empty) { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.orx-chip {
+  display: inline-flex; align-items: center; gap: 5px; padding: 2px 7px; border-radius: 999px; white-space: nowrap;
+  font-family: var(--font-mono); font-weight: 800; font-size: 8.5px; letter-spacing: 0.1em;
+  color: rgba(222, 226, 255, 0.55); background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background 0.3s, color 0.3s;
+}
+.orx-chip i { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+.is-thinking .orx-chip { color: #b4e2ff; background: rgba(98, 187, 243, 0.16); border-color: rgba(98, 187, 243, 0.4); }
+.is-thinking .orx-chip i { animation: orx-blink 0.9s infinite; }
+.is-working .orx-chip { color: #fff; background: linear-gradient(90deg, #3d8fd0, #6a46d6); border-color: transparent; box-shadow: 0 0 14px rgba(124, 140, 255, 0.55); }
+.is-working .orx-chip i { animation: orx-blink 0.5s infinite; }
+.is-done .orx-chip { color: #052116; background: #3EE6A8; border-color: transparent; }
+.is-retry .orx-chip { color: #2b1a00; background: #FFC15E; border-color: transparent; }
+.orx-node--lead .orx-chip { color: #cfe9ff; background: rgba(143, 107, 255, 0.22); border-color: rgba(143, 107, 255, 0.5); }
+
+.orx-beam-labels { position: absolute; inset: 0; pointer-events: none; }
+.orx-beam-label {
+  position: absolute; left: 0; top: 0; translate: -50% -50%; white-space: nowrap; max-width: 22em; overflow: hidden; text-overflow: ellipsis;
+  font-family: var(--font-mono); font-weight: 700; font-size: 0.95em; padding: 0.3em 0.75em; border-radius: 999px;
+  color: #eaf6ff; background: rgba(16, 13, 52, 0.88); border: 1px solid rgba(124, 203, 255, 0.55);
+  box-shadow: 0 0 18px rgba(98, 187, 243, 0.35); animation: orx-label 2.2s var(--ease) forwards;
+}
+.orx-beam-label.k-hand { border-color: rgba(196, 155, 255, 0.7); box-shadow: 0 0 18px rgba(196, 155, 255, 0.4); }
+@keyframes orx-label { 0% { opacity: 0; scale: 0.8; } 12% { opacity: 1; scale: 1; } 78% { opacity: 1; } 100% { opacity: 0; scale: 0.96; } }
+
+.orx-banner {
+  position: absolute; left: 50%; bottom: 10px; translate: -50% 0; display: flex; align-items: center; gap: 10px;
+  padding: 8px 16px 8px 8px; border-radius: 999px; max-width: calc(100% - 16px); opacity: 0; pointer-events: none;
+  background: linear-gradient(#120f38, #120f38) padding-box, linear-gradient(90deg, #62BBF3, #8F6BFF, #3EE6A8) border-box;
+  border: 1.5px solid transparent; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(98, 187, 243, 0.25);
+}
+.orx-banner.show { animation: orx-banner 0.6s var(--ease) forwards; }
+@keyframes orx-banner { from { opacity: 0; transform: translateY(14px) scale(0.96); } to { opacity: 1; transform: none; } }
+.orx-banner-i { flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: #3EE6A8; color: #052116; }
+.orx-banner-i svg { width: 62%; height: 62%; stroke-width: 3; }
+.orx-banner-t { display: flex; flex-direction: column; min-width: 0; }
+.orx-banner-t b { font-size: 13px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.orx-banner-t small { font-family: var(--font-mono); font-size: 10px; color: rgba(222, 226, 255, 0.65); }
+
+.orx.burst .orx-node--lead .orx-orb::after {
+  content: ''; position: absolute; inset: 0; border-radius: 50%; border: 2px solid #9fd8ff; animation: orx-burst 1.1s ease-out forwards;
+}
+@keyframes orx-burst { from { transform: scale(1); opacity: 1; } to { transform: scale(3.2); opacity: 0; } }
+
+/* ---------- log ---------- */
+.orx-log { position: relative; min-height: 0; display: flex; flex-direction: column; }
+.orx-log-head { display: flex; justify-content: space-between; font-family: var(--font-mono); font-weight: 700; font-size: 10px; letter-spacing: 0.16em; color: rgba(222, 226, 255, 0.5); padding-bottom: 6px; border-bottom: 1px solid rgba(186, 196, 255, 0.1); }
+.orx-log-count { letter-spacing: 0.05em; }
+.orx-lines {
+  list-style: none; margin: 0; padding: 6px 0 0; overflow: hidden; flex: 1; min-height: 0;
+  font-family: var(--font-mono); font-size: 11px; line-height: 1.55; display: flex; flex-direction: column; justify-content: flex-end;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 34%); mask-image: linear-gradient(to bottom, transparent 0, #000 34%);
+}
+.orx-lines li { display: grid; grid-template-columns: auto auto 1fr; gap: 0 8px; align-items: baseline; animation: orx-line 0.35s var(--ease); flex: none; }
+.orx-lines time { color: rgba(222, 226, 255, 0.38); font-variant-numeric: tabular-nums; }
+.orx-lines b { font-weight: 800; letter-spacing: 0.04em; }
+.orx-msg { color: rgba(241, 242, 255, 0.9); overflow-wrap: break-word; }
+.orx-msg.typing::after { content: ''; display: inline-block; width: 0.55em; height: 1em; margin-left: 2px; vertical-align: -0.15em; background: #9fd8ff; animation: orx-blink 0.6s steps(2) infinite; }
+.orx-lines li.k-sys .orx-msg { color: rgba(190, 220, 255, 0.85); }
+.orx-lines li.k-ok .orx-msg { color: #7ff3c7; }
+.orx-lines li.k-warn .orx-msg { color: #FFC15E; }
+.orx-lines li.k-hand .orx-msg { color: #d9c6ff; }
+@keyframes orx-line { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* ================= phone ================= */
+.orx--phone { padding: 14px 14px 12px; display: flex; flex-direction: column; gap: 10px; }
+.orx--phone .orx-mission { display: flex; flex-direction: column; gap: 9px; }
+.orx--phone .orx-title { display: none; }
+.orx--phone .orx-now { font-size: 12.5px; }
+.orx--phone .orx-graph { margin: 4px -6px 0; }
+.orx--phone .orx-node--lead .orx-label { top: calc(var(--sz) / 2 + 7px); }
+.orx--phone .orx-node--lead .orx-name { font-size: 13px; }
+.orx--phone .orx-banner { display: none; }
+.orx--phone .orx-beam-glow { stroke-width: 6; opacity: 0.4; }
+.orx--phone .orx-beam { stroke-width: 2; }
+.orx--phone .orx-log { height: 118px; margin-top: 2px; }
+.orx--phone.orx--many { --orb: 44px; --lw: 84px; }
+.orx--phone .orx-task, .orx--phone .orx-task:not(:empty) { display: none; }
+.orx--phone .orx-node--lead { --lw: 170px; }
+.orx-roster { display: none; }
+
+/* ================= TV landscape 16:9 ================= */
+.orx--landscape, .orx--portrait {
+  --orb: 7.4em; --orb-lead: 11.2em; --lw: 15em;
+  width: 100%; height: 100%; border-radius: 0; border: 0; box-shadow: none;
+  background: radial-gradient(ellipse 60% 70% at 50% 46%, #15104a 0%, #0a0824 55%, #05040f 100%);
+}
+.orx--landscape { display: grid; grid-template-columns: 25em 1fr 25em; gap: 2.5em; padding: 2.75em 3em; }
+.orx--landscape .orx-bg::before, .orx--portrait .orx-bg::before { background-size: 3.2em 3.2em; }
+.orx--landscape .orx-bg::after { width: 62%; top: 46%; }
+
+.orx--landscape .orx-mission, .orx--portrait .orx-mission { display: flex; flex-direction: column; gap: 1.6em; min-width: 0; }
+:is(.orx--landscape, .orx--portrait) .orx-kicker { font-size: 1em; }
+:is(.orx--landscape, .orx--portrait) .orx-live { font-size: 0.9em; padding: 0.3em 0.8em 0.3em 0.65em; gap: 0.5em; }
+:is(.orx--landscape, .orx--portrait) .orx-live i { width: 0.6em; height: 0.6em; }
+:is(.orx--landscape, .orx--portrait) .orx-clock { display: none; }
+:is(.orx--landscape, .orx--portrait) .orx-title { font-size: 3.6em; }
+:is(.orx--landscape, .orx--portrait) .orx-title:empty { display: none; }
+:is(.orx--landscape, .orx--portrait) .orx-now {
+  flex-direction: column; gap: 0.6em; padding: 1.1em 1.25em; border-radius: 1.1em; background: rgba(255, 255, 255, 0.045); border: 1px solid rgba(186, 196, 255, 0.13);
+}
+:is(.orx--landscape, .orx--portrait) .orx-now-k { font-size: 0.85em; padding: 0.2em 0.55em; border-radius: 0.35em; }
+:is(.orx--landscape, .orx--portrait) .orx-now-v { font-size: 1.45em; line-height: 1.3; white-space: normal; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; min-height: 3.9em; }
+:is(.orx--landscape, .orx--portrait) .orx-ring { display: block; width: 13em; height: 13em; margin: 0 auto; }
+:is(.orx--landscape, .orx--portrait) .orx-bar { display: none; }
+:is(.orx--landscape, .orx--portrait) .orx-pct b { font-size: 4.4em; line-height: 1; }
+:is(.orx--landscape, .orx--portrait) .orx-pct small { font-size: 1.6em; color: rgba(222, 226, 255, 0.6); margin-left: 0.1em; }
+:is(.orx--landscape, .orx--portrait) .orx-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8em; }
+:is(.orx--landscape, .orx--portrait) .orx-stat { padding: 0.9em 0.8em; border-radius: 0.9em; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(186, 196, 255, 0.1); }
+:is(.orx--landscape, .orx--portrait) .orx-stat b { font-size: 1.6em; }
+:is(.orx--landscape, .orx--portrait) .orx-stat span { font-size: 0.72em; }
+
+:is(.orx--landscape, .orx--portrait) .orx-graph { min-height: 0; }
+:is(.orx--landscape, .orx--portrait) .orx-edge { stroke-width: 2.4; }
+:is(.orx--landscape, .orx--portrait) .orx-edge-flow { stroke-width: 3.2; stroke-dasharray: 9 18; }
+@keyframes orx-flow-tv { to { stroke-dashoffset: -54; } }
+:is(.orx--landscape, .orx--portrait) .orx-edge-flow { animation-name: orx-flow-tv; }
+:is(.orx--landscape, .orx--portrait) .orx-beam { stroke-width: 4.5; }
+:is(.orx--landscape, .orx--portrait) .orx-beam-glow { stroke-width: 18; }
+:is(.orx--landscape, .orx--portrait) .orx-ring2 { inset: -0.5em; -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 0.28em), #000 calc(100% - 0.24em)); mask: radial-gradient(farthest-side, transparent calc(100% - 0.28em), #000 calc(100% - 0.24em)); }
+:is(.orx--landscape, .orx--portrait) .orx-node--lead .orx-ring2 { inset: -0.7em; }
+:is(.orx--landscape, .orx--portrait) .orx-core { border-width: 0.14em; }
+:is(.orx--landscape, .orx--portrait) .orx-badge { box-shadow: 0 0 0 0.25em #0b0926, 0 0 1em rgba(62, 230, 168, 0.8); }
+:is(.orx--landscape, .orx--portrait) .orx-label { top: calc(var(--sz) / 2 + 0.85em); gap: 0.35em; }
+:is(.orx--landscape, .orx--portrait) .orx-name { font-size: 1.75em; }
+:is(.orx--landscape, .orx--portrait) .orx-node--lead .orx-name { font-size: 1.9em; }
+:is(.orx--landscape, .orx--portrait) .orx-role { display: block; font-size: 1.02em; }
+:is(.orx--landscape, .orx--portrait) .orx-task { font-size: 1.05em; max-width: 100%; }
+:is(.orx--landscape, .orx--portrait) .orx-chip { font-size: 0.92em; padding: 0.3em 0.8em; gap: 0.45em; margin-top: 0.15em; }
+:is(.orx--landscape, .orx--portrait) .orx-chip i { width: 0.5em; height: 0.5em; }
+:is(.orx--landscape, .orx--portrait) .orx-banner { bottom: 1.2em; gap: 1em; padding: 0.8em 1.8em 0.8em 0.8em; }
+:is(.orx--landscape, .orx--portrait) .orx-banner-i { width: 3em; height: 3em; }
+:is(.orx--landscape, .orx--portrait) .orx-banner-t b { font-size: 1.5em; }
+:is(.orx--landscape, .orx--portrait) .orx-banner-t small { font-size: 0.95em; }
+
+:is(.orx--landscape, .orx--portrait) .orx-log { padding: 1.3em 1.4em; border-radius: 1.2em; background: rgba(6, 5, 20, 0.55); border: 1px solid rgba(186, 196, 255, 0.12); }
+:is(.orx--landscape, .orx--portrait) .orx-log-head { font-size: 0.9em; padding-bottom: 0.8em; }
+:is(.orx--landscape, .orx--portrait) .orx-lines { font-size: 1.22em; line-height: 1.55; padding-top: 0.6em; }
+:is(.orx--landscape, .orx--portrait) .orx-lines li { gap: 0 0.7em; padding: 0.12em 0; }
+.orx--landscape .orx-lines li { grid-template-columns: auto 1fr; }
+.orx--landscape .orx-lines li time { grid-row: span 1; }
+.orx--landscape .orx-lines li .orx-msg { grid-column: 1 / -1; padding-left: 0; margin-bottom: 0.35em; }
+
+/* ================= TV portrait 9:16 ================= */
+.orx--portrait { display: grid; grid-template-rows: auto 1fr 21em; gap: 1.6em; padding: 4em 3.5em 3.5em; }
+.orx--portrait .orx-mission { display: grid; grid-template-columns: 1fr 11em; grid-template-areas: 'top top' 'title ring' 'now ring' 'stats stats'; gap: 1.2em 2em; align-items: start; }
+.orx--portrait .orx-top { grid-area: top; }
+.orx--portrait .orx-title { grid-area: title; font-size: 4.4em; }
+.orx--portrait .orx-now { grid-area: now; }
+.orx--portrait .orx-meter { grid-area: ring; }
+.orx--portrait .orx-ring { width: 11em; height: 11em; }
+.orx--portrait .orx-pct b { font-size: 3.6em; }
+.orx--portrait .orx-stats { grid-area: stats; }
+.orx--portrait .orx-bg::after { width: 110%; top: 48%; }
+.orx--portrait .orx-lines { font-size: 1.3em; }
+
+@media (prefers-reduced-motion: reduce) {
+  .orx *, .orx *::before, .orx *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; }
+}
+
+/* roster (TV): one row per agent with a live status chip */
+:is(.orx--landscape, .orx--portrait) .orx-roster { display: grid; gap: 0.5em; list-style: none; margin: 0; padding: 0; }
+.orx-roster-row { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.8em; padding: 0.65em 0.9em; border-radius: 0.8em;
+  background: rgba(255, 255, 255, 0.035); border: 1px solid rgba(186, 196, 255, 0.09); transition: background 0.4s, border-color 0.4s; }
+.orx-roster-row b { font-size: 1.15em; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.orx-roster-dot { width: 0.75em; height: 0.75em; border-radius: 50%; background: var(--c); box-shadow: 0 0 0.8em var(--c); }
+.orx-roster-row.is-working, .orx-roster-row.is-thinking { background: rgba(98, 187, 243, 0.08); border-color: rgba(124, 203, 255, 0.3); }
+.orx-roster-row.is-done .orx-roster-dot { background: #3EE6A8; box-shadow: 0 0 0.8em #3EE6A8; }
+.orx--portrait .orx-roster { display: none; }
+
+/* entrance */
+.orx-node.enter .orx-orb { animation: orx-enter 0.7s var(--ease) both; }
+.orx-node.enter .orx-label { animation: orx-enter-l 0.7s var(--ease) 0.12s both; }
+@keyframes orx-enter { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: none; } }
+@keyframes orx-enter-l { from { opacity: 0; transform: translateY(0.6em); } to { opacity: 1; transform: none; } }
+
+/* grid tracks never grow past the stage */
+.orx--landscape { grid-template-columns: 25em minmax(0, 1fr) 25em; grid-template-rows: minmax(0, 1fr); }
+.orx--landscape .orx-mission { overflow: hidden; }
+.orx--landscape.orx--many .orx-mission { gap: 1.1em; }
+.orx--landscape.orx--many .orx-ring { width: 9.5em; height: 9.5em; }
+.orx--landscape.orx--many .orx-pct b { font-size: 3.4em; }
+.orx--landscape.orx--many .orx-roster { gap: 0.35em; }
+.orx--landscape.orx--many .orx-roster-row { padding: 0.45em 0.8em; }
+.orx--landscape.orx--many .orx-now-v { min-height: 2.6em; -webkit-line-clamp: 2; }
+.orx--portrait { grid-template-rows: auto minmax(0, 1fr) 21em; }
+
+/* 5+ agents on TV: smaller orbs, no task line (the task is in the log and the NOW panel) */
+:is(.orx--landscape, .orx--portrait).orx--many { --orb: 6.2em; --orb-lead: 9.4em; --lw: 13em; }
+:is(.orx--landscape, .orx--portrait).orx--many .orx-task { display: none; }
+:is(.orx--landscape, .orx--portrait).orx--many .orx-name { font-size: 1.5em; }
+
+/* ================= TV sizing for camera (CHECK-01 F2) =================
+   1em = 16px on a 1920x1080 TV. Minimums at 1080p: agent names 36px, roles and status chips 24px, log 22px.
+   Task captions are not drawn on TV nodes (the NOW card and the log carry them), so nothing collides. */
+.orx--landscape, .orx--portrait { --orb: 6em; --orb-lead: 9.5em; }
+.orx--landscape { grid-template-columns: 22em minmax(0, 1fr) 27em; gap: 2em; padding: 2.2em 2.4em; }
+:is(.orx--landscape, .orx--portrait) .orx-label { width: max-content; max-width: 22em; gap: 0.3em; top: calc(var(--sz) / 2 + 0.75em + 0.5em); }
+:is(.orx--landscape, .orx--portrait) .orx-name { font-size: 2.3em; line-height: 1.12; max-width: 9.5em; }
+:is(.orx--landscape, .orx--portrait) .orx-node--lead .orx-name { font-size: 2.6em; }
+:is(.orx--landscape, .orx--portrait) .orx-role { font-size: 1.55em; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 14em; }
+:is(.orx--landscape, .orx--portrait) .orx-chip { font-size: 1.55em; padding: 0.22em 0.7em; gap: 0.4em; letter-spacing: 0.06em; margin-top: 0.1em; }
+:is(.orx--landscape, .orx--portrait) .orx-chip i { width: 0.42em; height: 0.42em; }
+:is(.orx--landscape, .orx--portrait) .orx-task, :is(.orx--landscape, .orx--portrait) .orx-task:not(:empty) { display: none; }
+:is(.orx--landscape, .orx--portrait).orx--many { --orb: 5.2em; --orb-lead: 8.4em; }
+:is(.orx--landscape, .orx--portrait).orx--many .orx-name { font-size: 2.3em; }
+:is(.orx--landscape, .orx--portrait).orx--many .orx-role { display: none; }
+:is(.orx--landscape, .orx--portrait).orx--many .orx-node--lead .orx-role { display: block; }
+:is(.orx--landscape, .orx--portrait) .orx-beam-label { font-size: 1.4em; }
+:is(.orx--landscape, .orx--portrait) .orx-banner { display: none; }
+
+/* mission panel */
+:is(.orx--landscape, .orx--portrait) .orx-kicker { font-size: 1.15em; }
+:is(.orx--landscape, .orx--portrait) .orx-live { font-size: 1.05em; }
+.orx--landscape .orx-title { font-size: 3.2em; }
+:is(.orx--landscape, .orx--portrait) .orx-now-k { font-size: 1em; }
+:is(.orx--landscape, .orx--portrait) .orx-now-v { font-size: 1.6em; }
+:is(.orx--landscape, .orx--portrait) .orx-now.is-done { border-color: rgba(62, 230, 168, 0.55); background: rgba(62, 230, 168, 0.08); }
+:is(.orx--landscape, .orx--portrait) .orx-now.is-done .orx-now-k { background: #3EE6A8; }
+.orx--landscape .orx-ring { width: 11em; height: 11em; }
+.orx--landscape .orx-pct b { font-size: 3.8em; }
+:is(.orx--landscape, .orx--portrait) .orx-stat b { font-size: 1.7em; }
+:is(.orx--landscape, .orx--portrait) .orx-stat span { font-size: 0.85em; }
+.orx--landscape.orx--many .orx-ring { width: 11em; height: 11em; }
+
+/* right column: agent roster (status chips) above the mission log */
+.orx--landscape .orx-log { gap: 0.9em; }
+.orx--landscape .orx-roster { display: grid; gap: 0.4em; list-style: none; margin: 0; padding: 0; flex: none; }
+.orx--landscape .orx-roster-row { padding: 0.35em 0.7em; gap: 0.6em; }
+.orx--landscape .orx-roster-row b { font-size: 1.35em; }
+.orx--landscape .orx-roster-row .orx-chip { font-size: 1.55em; }
+:is(.orx--landscape, .orx--portrait) .orx-log-head { font-size: 1.05em; }
+:is(.orx--landscape, .orx--portrait) .orx-lines { font-size: 1.4em; line-height: 1.45; }
+.orx--landscape .orx-lines li .orx-msg { margin-bottom: 0.3em; }
+.orx--portrait .orx-lines { font-size: 1.4em; }
+
+/* org-chart columns (TV, many agents): caption on the outer side of the orb */
+.orx-node--side-l .orx-label, .orx-node--side-r .orx-label { top: 50%; translate: 0 -50%; width: max-content; }
+.orx-node--side-l .orx-label { left: auto; right: calc(var(--sz) / 2 + 1em); align-items: flex-end; text-align: right; }
+.orx-node--side-r .orx-label { left: calc(var(--sz) / 2 + 1em); align-items: flex-start; text-align: left; }
+.orx-node--side-l.enter .orx-label, .orx-node--side-r.enter .orx-label { animation-name: orx-fade; }
+@keyframes orx-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* stats: elapsed gets its own row so the clock never clips */
+.orx--landscape .orx-stats { grid-template-columns: 1fr 1fr; }
+.orx--landscape .orx-stat:last-child { grid-column: 1 / -1; }
+/* long agent names wrap onto two balanced lines on TV instead of widening the graph */
+:is(.orx--landscape, .orx--portrait) .orx-name { white-space: normal; overflow: visible; max-width: 7.6em; text-wrap: balance; }
+:is(.orx--landscape, .orx--portrait) .orx-node--lead .orx-name { max-width: 8em; }
+.orx--landscape.orx--many { grid-template-columns: 20em minmax(0, 1fr) 24em; }
+:is(.orx--landscape, .orx--portrait).orx--many .orx-name { max-width: 7em; }
+/* chips are opaque so a beam passing behind never shows through the text */
+.orx-chip { background: #1a1739; }
+.is-thinking .orx-chip { background: #1b2a4f; }
+.orx-node--lead .orx-chip { background: #2a2160; }
+
+/* ===== Camera minimums are core defaults (CONTRACT Clarification 12) =====
+   On TV layouts these four sizes cannot be lowered by experience CSS (1em = 16px at 1080p):
+   names 36px, roles and status chips 24px, log 22px. Bigger is allowed via the orchestra `scale` option. */
+/* px floors hold in every TV layout and at any stage size (landscape, portrait, capture) */
+:is(.orx--landscape, .orx--portrait) .orx-name { font-size: max(2.3em, 36px) !important; }
+:is(.orx--landscape, .orx--portrait) .orx-node--lead .orx-name { font-size: max(2.6em, 40px) !important; }
+:is(.orx--landscape, .orx--portrait) .orx-role { font-size: max(1.55em, 24px) !important; }
+:is(.orx--landscape, .orx--portrait) .orx-chip { font-size: max(1.55em, 24px) !important; }
+:is(.orx--landscape, .orx--portrait) .orx-lines { font-size: max(1.4em, 22px) !important; }
+
+/* portrait 9:16: the graph gets the height. NOW card hugs its text; with 5+ agents the stats row (the ring
+   already shows progress) is dropped and the log gets shorter */
+.orx--portrait .orx-now-v { min-height: 0; -webkit-line-clamp: 2; }
+.orx--portrait.orx--many { grid-template-rows: auto minmax(0, 1fr) 14em; gap: 1.2em; }
+.orx--portrait.orx--many .orx-stats { display: none; }
+.orx--portrait.orx--many .orx-mission { gap: 0.9em 2em; }
+
+/* floors also on the text people read inside the log and the roster (CHECK-01 re-check 2) */
+:is(.orx--landscape, .orx--portrait) .orx-lines li, :is(.orx--landscape, .orx--portrait) .orx-lines li > *,
+:is(.orx--landscape, .orx--portrait) .orx-msg { font-size: max(1em, 22px) !important; }
+.orx--landscape .orx-roster-row { font-size: max(1em, 16px) !important; }
+.orx--landscape .orx-roster-row b { font-size: max(1.35em, 22px) !important; }
+.orx--landscape .orx-roster-row .orx-chip { font-size: max(1.55em, 24px) !important; }

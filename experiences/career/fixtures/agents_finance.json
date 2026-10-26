@@ -1,0 +1,14 @@
+[
+  { "plan": "Research audit sample check karega, Draft MIS banayega, Analyst scenarios, Review ledger match.",
+    "research": ["Audit sample mein do bills ke receipts missing hain", "Weekend sales weekdays se zyada strong hain", "Milk supplier ka bill har mahine thoda upar ja raha hai"],
+    "drafts": ["Safe plan: kharcha same, cash buffer strong rakho", "Balanced plan: weekend combos pe thoda marketing", "Bold plan: hostel ke paas ek chhota kiosk try karo"],
+    "analysis": "Weekend combos sabse healthy margin de rahe hain",
+    "review": "Ledger aur bank match ho gaye, ek entry flag ki hai. Usse dekhna tumhara kaam hai.",
+    "call_options": ["Weekend combos badhao, supplier se rate baat karo", "Abhi kharcha hold karo, agle mahine dekho", "Naya kiosk pilot karo, chhote scale pe"] },
+  { "plan": "Boring entries AI karega, tum business team ke saath asli faisle loge.",
+    "research": ["Card payments cash se zyada ho gaye", "Printer ink ka bill do baar entered hai", "Evening chai sabse fast bikti hai"],
+    "drafts": ["Chai pe focus: evening slot ka stock badhao", "Cost control: duplicate bills band karo", "Growth: naye snacks ka chhota trial"],
+    "analysis": "Evening slot ne is mahine sabse zyada growth di",
+    "review": "Duplicate entry pakdi gayi. Kya yeh galti hai ya kuch aur, yeh judgement tumhara.",
+    "call_options": ["Evening menu badhao", "Pehle duplicate bills ka process theek karo", "Snacks trial ek outlet mein karo"] }
+]

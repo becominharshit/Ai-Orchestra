@@ -1,0 +1,14 @@
+[
+  { "plan": "Research logs padhega, Draft code likhega, Analyst tests chalayega, Review code check karega.",
+    "research": ["Dinner time pe menu API sabse slow hai", "Login bug ek typo ki wajah se tha", "Same menu baar baar database se aa raha hai"],
+    "drafts": ["Menu pe short cache lagao, har kuch minute refresh", "Menu query mein index add karo", "Menu ko app khulte hi ek baar load karo"],
+    "analysis": "Saare tests pass, cache wale draft pe page sabse fast khula",
+    "review": "Code safe hai. Kaunsa trade-off users ke liye sahi hai, yeh tum decide karo.",
+    "call_options": ["Live order tracking", "Hostel group orders", "Pehle app ko fast banao"] },
+  { "plan": "Routine code AI likhega, system aur product ke faisle tumhare.",
+    "research": ["Peak time pe ek hi server pe load hai", "Cart total function mein rounding ka chhota bug", "Users ko order status samajh nahi aa raha"],
+    "drafts": ["Cache plus clear loading state", "Queue lagao taaki orders line mein process hon", "Do server, beech mein load balancer"],
+    "analysis": "Rounding bug fix ke baad saare cart tests green",
+    "review": "Teeno fixes kaam karenge. Cost aur speed ka balance tumhari call.",
+    "call_options": ["Order status screen better karo", "Group order feature", "Speed pe poora sprint"] }
+]

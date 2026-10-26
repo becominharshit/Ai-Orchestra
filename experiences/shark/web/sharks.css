@@ -1,0 +1,29 @@
+/* Shared shark avatar styles (phone v1, phone v2, TV). Used by sharks.js avatars. */
+[hidden] { display: none !important; }
+@keyframes sk-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+/* ---------- shark avatars ---------- */
+.sk-av { position: relative; width: 100%; --sk-c: #62BBF3; transition: transform .45s var(--ease), opacity .45s, filter .45s; }
+.sk-av svg { width: 100%; height: auto; overflow: visible; animation: sk-bob 3.4s ease-in-out infinite; transform-origin: 50% 100%; }
+.sk-av[data-shark='mkt'] svg { animation-delay: -1.1s; }
+.sk-av[data-shark='fin'] svg { animation-delay: -2.2s; }
+@keyframes sk-bob { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-4%) rotate(-1.5deg); } }
+.sk-av .sk-glow { opacity: .35; transition: opacity .4s; }
+.sk-av .sk-mouth { transform-box: fill-box; transform-origin: 50% 20%; }
+.sk-av.talk .sk-mouth { animation: sk-talk .16s ease-in-out infinite alternate; }
+@keyframes sk-talk { from { transform: scaleY(.55); } to { transform: scaleY(1.12); } }
+.sk-av .sk-eyes { transform-box: fill-box; transform-origin: 50% 50%; animation: sk-blink 4.6s infinite; }
+@keyframes sk-blink { 0%, 94%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
+.sk-av .sk-fin { transform-box: fill-box; transform-origin: 50% 100%; animation: sk-fin 2.8s ease-in-out infinite; }
+@keyframes sk-fin { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(6deg); } }
+.sk-av .sk-twinkle { transform-box: fill-box; transform-origin: center; animation: sk-tw 1.8s ease-in-out infinite; }
+.sk-av .sk-twinkle.b { animation-delay: -.9s; }
+@keyframes sk-tw { 0%, 100% { transform: scale(.6) rotate(0); opacity: .5; } 50% { transform: scale(1.15) rotate(30deg); opacity: 1; } }
+.sk-av.is-active { transform: scale(1.12); }
+.sk-av.is-active .sk-glow { opacity: 1; }
+.sk-av.is-dim { opacity: .45; filter: saturate(.6); transform: scale(.92); }
+.sk-av.is-done::after { content: ''; position: absolute; right: 6%; top: 34%; width: 24px; height: 24px; border-radius: 50%; background: var(--ok) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%230b0a24' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat; box-shadow: 0 0 12px rgba(62,230,168,.7); }
+.sk-plate { text-align: center; margin-top: 2px; }
+.sk-plate b { display: block; font-size: 13px; font-weight: 800; color: var(--sk-c); letter-spacing: .01em; white-space: nowrap; }
+.sk-plate small { display: block; font-size: 11px; color: var(--stage-dim); }
+@media (prefers-reduced-motion: reduce) { .sk-av svg, .sk-av .sk-fin, .sk-av .sk-twinkle { animation: none; } }
+

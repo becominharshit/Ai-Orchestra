@@ -1,0 +1,14 @@
+[
+  {"dating":{"title":"dt08","forecast":"dr30","flags":["df09","df11","df14"],"signs":["ds39","ds36","ds22"],"adj":"electric"},"health":{"type":"ht19","superfoods":["hf19","hf41","hf01"],"skip":["hs29","hs13","hs30"],"adj":"chill"}},
+  {"dating":{"title":"dt10","forecast":"dr42","flags":["df23","df03","df45"],"signs":["ds33","ds17","ds30"],"adj":"chill"},"health":{"type":"ht15","superfoods":["hf27","hf11","hf42"],"skip":["hs01","hs26","hs18"],"adj":"cheerful"}},
+  {"dating":{"title":"dt18","forecast":"dr41","flags":["df37","df07","df36"],"signs":["ds07","ds28","ds31"],"adj":"breezy"},"health":{"type":"ht22","superfoods":["hf13","hf12","hf10"],"skip":["hs23","hs26","hs38"],"adj":"electric"}},
+  {"dating":{"title":"dt20","forecast":"dr09","flags":["df04","df25","df22"],"signs":["ds01","ds26","ds16"],"adj":"sunny"},"health":{"type":"ht16","superfoods":["hf31","hf42","hf09"],"skip":["hs17","hs32","hs39"],"adj":"calm"}},
+  {"dating":{"title":"dt13","forecast":"dr11","flags":["df18","df17","df02"],"signs":["ds20","ds14","ds07"],"adj":"sparkly"},"health":{"type":"ht16","superfoods":["hf14","hf15","hf27"],"skip":["hs38","hs39","hs07"],"adj":"zen"}},
+  {"dating":{"title":"dt22","forecast":"dr07","flags":["df29","df22","df33"],"signs":["ds40","ds29","ds41"],"adj":"bright"},"health":{"type":"ht10","superfoods":["hf28","hf21","hf32"],"skip":["hs15","hs07","hs01"],"adj":"witty"}},
+  {"dating":{"title":"dt12","forecast":"dr03","flags":["df27","df39","df29"],"signs":["ds12","ds28","ds17"],"adj":"kind"},"health":{"type":"ht17","superfoods":["hf27","hf25","hf41"],"skip":["hs10","hs11","hs22"],"adj":"playful"}},
+  {"dating":{"title":"dt23","forecast":"dr29","flags":["df37","df44","df14"],"signs":["ds20","ds21","ds17"],"adj":"sparkly"},"health":{"type":"ht02","superfoods":["hf04","hf01","hf41"],"skip":["hs05","hs04","hs24"],"adj":"radiant"}},
+  {"dating":{"title":"dt13","forecast":"dr40","flags":["df20","df22","df07"],"signs":["ds07","ds05","ds20"],"adj":"calm"},"health":{"type":"ht08","superfoods":["hf14","hf42","hf26"],"skip":["hs12","hs37","hs01"],"adj":"curious"}},
+  {"dating":{"title":"dt14","forecast":"dr14","flags":["df38","df09","df26"],"signs":["ds05","ds24","ds13"],"adj":"steady"},"health":{"type":"ht19","superfoods":["hf04","hf14","hf22"],"skip":["hs33","hs38","hs30"],"adj":"chill"}},
+  {"dating":{"title":"dt21","forecast":"dr18","flags":["df43","df31","df22"],"signs":["ds09","ds02","ds11"],"adj":"witty"},"health":{"type":"ht09","superfoods":["hf24","hf06","hf27"],"skip":["hs11","hs37","hs15"],"adj":"sunny"}},
+  {"dating":{"title":"dt22","forecast":"dr13","flags":["df36","df24","df13"],"signs":["ds05","ds32","ds23"],"adj":"bright"},"health":{"type":"ht10","superfoods":["hf09","hf19","hf15"],"skip":["hs37","hs09","hs04"],"adj":"electric"}}
+]

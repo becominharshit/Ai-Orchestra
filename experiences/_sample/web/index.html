@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070618">
+  <title>Vibe Scanner (sample) · Zenith</title>
+  <link rel="stylesheet" href="/core/tokens.css">
+  <link rel="stylesheet" href="/core/orchestra.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="stage">
+  <main class="pz-wrap sx">
+    <header class="sx-head">
+      <a class="pz-brand" href="/"><i></i>Zenith</a>
+      <span class="pz-forfun">For fun only</span>
+    </header>
+
+    <!-- 1. input -->
+    <section id="s-form" class="sx-screen">
+      <div class="pz-kicker">Sample experience</div>
+      <h1 class="pz-display sx-title">Vibe <span class="pz-grad-text">Scanner</span></h1>
+      <p class="pz-dim">3 AI agents milke tumhari vibe padhenge. Ek word do, ek subject chuno.</p>
+      <form id="form" class="pz-stack" autocomplete="off">
+        <label class="pz-field"><span>Ek word jo tumhe describe kare</span>
+          <input class="pz-input" name="word" maxlength="20" placeholder="jaise: curious" required pattern="[A-Za-z ]+"></label>
+        <label class="pz-field"><span>Favourite subject</span>
+          <select class="pz-input" name="subject">
+            <option value="coding">Coding</option><option value="maths">Maths</option><option value="science">Science</option>
+            <option value="art">Art</option><option value="sports">Sports</option><option value="music">Music</option>
+          </select></label>
+        <div id="tv-toggle"></div>
+        <div id="bigscreen"></div>
+        <button class="pz-btn block" type="submit">Scan shuru karo</button>
+      </form>
+      <p class="sx-hero-note" id="hero-note" hidden></p>
+    </section>
+
+    <!-- 2. orchestra -->
+    <section id="s-run" class="sx-screen" hidden>
+      <div id="orx"></div>
+    </section>
+
+    <!-- 3. result -->
+    <section id="s-result" class="sx-screen" hidden>
+      <div class="pz-kicker">Tumhara vibe report</div>
+      <h2 class="pz-display sx-result-title" id="r-title"></h2>
+      <p class="sx-super" id="r-super"></p>
+      <ol class="sx-lines" id="r-lines"></ol>
+      <button class="pz-btn block" id="unlock">Secret vibe unlock karo</button>
+      <div id="share-box" class="sx-share" hidden>
+        <img id="card-img" alt="Share card preview" width="1080" height="1920">
+        <button class="pz-btn block" id="share">Story pe share karo</button>
+        <button class="pz-btn ghost block" id="friends">Doston ko bhejo</button>
+      </div>
+      <button class="pz-btn ghost block" id="again">Phir se khelo</button>
+      <p class="sx-src pz-mono" id="r-src"></p>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "play-zenith-print",
+  "private": true,
+  "version": "1.0.0",
+  "description": "QR standees, table tents and posters for the Zenith stall at KRMU Ideas 4.0. Run: npm install && npm run make",
+  "type": "module",
+  "scripts": {
+    "make": "node make.mjs",
+    "verify": "node verify.mjs"
+  },
+  "dependencies": {
+    "@zxing/library": "0.21.3",
+    "jsqr": "1.4.0",
+    "pdf-lib": "1.17.1",
+    "pngjs": "7.0.0",
+    "puppeteer-core": "23.11.1",
+    "qrcode-generator": "1.4.4"
+  }
+}

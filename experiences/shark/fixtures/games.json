@@ -1,0 +1,1099 @@
+[
+  {
+    "id": "chai",
+    "prompt": "Chai ka startup",
+    "keywords": [
+      "chai",
+      "tea",
+      "kulhad",
+      "cutting chai",
+      "adrak"
+    ],
+    "parts": {
+      "idea": "Kulhad chai ka cart, college gate ke bahar.",
+      "customer": "Subah 8 baje class jaane wale students.",
+      "problem": "Achhi garam chai paas mein nahi milti, sab late ho jaate hain.",
+      "paisa": "15 rupaye ki chai, bun maska combo 30 ka."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "Kulhad Chai Express",
+        "tvTitle": "Kulhad Chai Startup",
+        "category": "food"
+      },
+      "hostLine": "Garam chai, garam pitch! Sharks, kulhad ready hai, sawaal ready rakho.",
+      "questions": {
+        "seth": {
+          "q": "Beta, ek kulhad chai ka kharcha kitna, aur 15 rupaye mein bachega kitna?",
+          "chips": [
+            "Cost 7, price 15, 8 bachega",
+            "Combo se margin badhega",
+            "Abhi calculate karna hai"
+          ]
+        },
+        "riya": {
+          "q": "Bahut chai waale hain. Student tumhari chai hi kyun pakdega?",
+          "chips": [
+            "Har hafte naya flavour drop",
+            "Kulhad aur bun maska combo",
+            "Fast service, 2 min mein chai"
+          ]
+        },
+        "kabir": {
+          "q": "Ek gate se 100 college gates tak: kya same rakhoge har jagah, recipe ya vibe?",
+          "chips": [
+            "Same recipe, same kulhad vibe",
+            "Franchise carts, mera brand",
+            "Abhi ek gate perfect karunga"
+          ]
+        },
+        "mummy": {
+          "q": "Beta, baarish aa gayi toh dukaan ka nuksaan kaun uthayega?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Ek chai ka cost 7 rupaye, price 15, toh 8 rupaye margin",
+      "riya": "Insta pe 'chai with strangers' reels, har kulhad pe QR",
+      "kabir": "Pehle 3 campus, phir har city ke college gate pe ek cart",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "Kulhad chai ka cart, college gate ke bahar.",
+        "Kulhad chai aur bun maska ka stall",
+        "Har hafte naye flavour wali chai"
+      ],
+      "customer": [
+        "Subah 8 baje class jaane wale students.",
+        "Office jaane wale log",
+        "Coaching ke students"
+      ],
+      "problem": [
+        "Achhi garam chai paas mein nahi milti, sab late ho jaate hain.",
+        "Subah jaldi mein achhi chai nahi milti",
+        "Plastic cup wali chai boring hai"
+      ],
+      "paisa": [
+        "15 rupaye ki chai, bun maska combo 30 ka.",
+        "Chai 15, combo 30 rupaye",
+        "Monthly chai pass 299 ka"
+      ]
+    }
+  },
+  {
+    "id": "laundry",
+    "prompt": "App for hostel laundry",
+    "keywords": [
+      "laundry",
+      "kapde",
+      "dhobi",
+      "washing",
+      "iron",
+      "dhulai"
+    ],
+    "parts": {
+      "idea": "Hostel laundry app: pickup, wash, iron, delivery.",
+      "customer": "Hostel ke busy students, khaas kar exam week mein.",
+      "problem": "Kapde dhona sabse bada time waste hai.",
+      "paisa": "99 rupaye ka ek bag, ya 499 ka monthly plan."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "Hostel Laundry Express",
+        "tvTitle": "Hostel Laundry App",
+        "category": "campus"
+      },
+      "hostLine": "Ganda kapda, saaf idea! Sharks, laundry bag khul gaya hai.",
+      "questions": {
+        "seth": {
+          "q": "Beta, ek bag dhone ka kharcha kitna, aur 99 mein bachega kitna?",
+          "chips": [
+            "Cost 55, price 99, 44 margin",
+            "Monthly plan se steady paisa",
+            "Abhi numbers nikalne hain"
+          ]
+        },
+        "riya": {
+          "q": "Tumhara pehla customer kaun hai, aur Insta pe iska hook kya hoga?",
+          "chips": [
+            "Exam week wale busy students",
+            "Reel: kapde hum dho denge, tum padho",
+            "Hostel warden se tie-up"
+          ]
+        },
+        "kabir": {
+          "q": "Ek hostel se poore India ke hostels tak: yeh kitna bada market hai?",
+          "chips": [
+            "Har hostel mein 300+ students",
+            "Lakhs of hostel students India mein",
+            "Pehle apna campus jeetunga"
+          ]
+        },
+        "mummy": {
+          "q": "Beta, kisi ka kapda kho gaya toh bharosa kaise banaoge?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Ek bag ka kharcha 55 rupaye, price 99, toh 44 ka margin",
+      "riya": "Exam week ke time 'kapde hum dho denge, tum padho' wala reel",
+      "kabir": "Har hostel mein 300+ students, pehle 5 hostels phir poore campus",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "Hostel laundry app: pickup, wash, iron, delivery.",
+        "Kapde pickup karke dhulai aur iron",
+        "Hostel ke liye weekly laundry plan"
+      ],
+      "customer": [
+        "Hostel ke busy students, khaas kar exam week mein.",
+        "PG mein rehne wale students",
+        "Working log jinke paas time nahi"
+      ],
+      "problem": [
+        "Kapde dhona sabse bada time waste hai.",
+        "Hostel mein machine ki lambi line",
+        "Iron ke liye koi jagah nahi"
+      ],
+      "paisa": [
+        "99 rupaye ka ek bag, ya 499 ka monthly plan.",
+        "Per kg 49 rupaye",
+        "Monthly plan 499, roz pickup"
+      ]
+    }
+  },
+  {
+    "id": "tiffin",
+    "prompt": "Ghar ka khana, tiffin app",
+    "keywords": [
+      "tiffin",
+      "dabba",
+      "ghar ka khana",
+      "home food",
+      "home cooks",
+      "aunty",
+      "aunties"
+    ],
+    "parts": {
+      "idea": "Ghar jaisa tiffin, paas ki home cooks se.",
+      "customer": "PG aur hostel mein rehne wale students.",
+      "problem": "Bahar ka khana roz roz bore aur mehenga hai.",
+      "paisa": "Monthly subscription, har tiffin pe chhota commission."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "Ghar Ka Dabba",
+        "tvTitle": "Home Tiffin App",
+        "category": "food"
+      },
+      "hostLine": "Maa ke haath ka swaad, ab app pe? Sharks, bhook lag gayi!",
+      "questions": {
+        "seth": {
+          "q": "Beta, ek tiffin ka price kitna, aur aunty aur tumhe kitna milega?",
+          "chips": [
+            "80 ka tiffin, 20 hamara",
+            "Monthly plan, discount ke saath",
+            "Abhi socha nahi, pata karunga"
+          ]
+        },
+        "riya": {
+          "q": "Student ko kaise bharosa hoga ki aunty ka khana saaf aur tasty hai?",
+          "chips": [
+            "Kitchen ki live photos aur ratings",
+            "Pehla tiffin free trial",
+            "Aunty ki kahaani wale reels"
+          ]
+        },
+        "kabir": {
+          "q": "Har city mein PG students hain. Tum kitni jaldi 10 cities tak jaa sakte ho?",
+          "chips": [
+            "Har city mein local aunties",
+            "Pehle Gurugram, phir NCR",
+            "Ek city mein perfect karke"
+          ]
+        },
+        "mummy": {
+          "q": "Khana saaf aur fresh hai, yeh sabko kaise pata chalega? Safe hai na?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Ek tiffin 80 ka, aunty ko 60, hum 20 rakhenge",
+      "riya": "Aunty ki kahaani wale reels",
+      "kabir": "Har city mein PG wale lakhs mein hain",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "Ghar jaisa tiffin, paas ki home cooks se.",
+        "Home cooks ka daily tiffin",
+        "Healthy ghar ka khana subscription"
+      ],
+      "customer": [
+        "PG aur hostel mein rehne wale students.",
+        "Office ke log",
+        "Coaching students"
+      ],
+      "problem": [
+        "Bahar ka khana roz roz bore aur mehenga hai.",
+        "Mess ka khana roz same",
+        "Bahar ka khana mehenga aur oily"
+      ],
+      "paisa": [
+        "Monthly subscription, har tiffin pe chhota commission.",
+        "Tiffin 80, cook ko 60",
+        "Monthly plan 1999 ka"
+      ]
+    }
+  },
+  {
+    "id": "pets",
+    "prompt": "Pet sitter app",
+    "keywords": [
+      "pet sitter",
+      "pet sitting",
+      "pet care",
+      "pets",
+      "dog",
+      "cat",
+      "puppy",
+      "kitten"
+    ],
+    "parts": {
+      "idea": "Pet sitter app, verified pet lovers ke saath.",
+      "customer": "Families jo trip pe jaati hain aur unke pets.",
+      "problem": "Pet ko akela chhodna mushkil hai.",
+      "paisa": "Har visit 300 rupaye, sitter ko 220."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "Paw Pals",
+        "tvTitle": "Pet Sitter App",
+        "category": "pets"
+      },
+      "hostLine": "Sharks bhi pet lovers hain! Dekhte hain yeh idea kitna cute hai.",
+      "questions": {
+        "seth": {
+          "q": "Beta, ek visit ka price kitna, aur sitter ko kitna doge?",
+          "chips": [
+            "300 visit, 220 sitter ko",
+            "Monthly plan for busy owners",
+            "Abhi market check karunga"
+          ]
+        },
+        "riya": {
+          "q": "Pet owner kisi anjaan ko apna dog kyun dega? Trust kaise banaoge?",
+          "chips": [
+            "Verified sitters aur reviews",
+            "Live photos har ghante",
+            "Pehle free meet and greet"
+          ]
+        },
+        "kabir": {
+          "q": "Kitne ghar pets rakhte hain? Yeh idea kitna bada ho sakta hai?",
+          "chips": [
+            "Har society mein 50+ pets",
+            "Har saal pets badh rahe hain",
+            "Pehle apni society se start"
+          ]
+        },
+        "mummy": {
+          "q": "Kisi ka pet bimaar pad gaya toh itna bada risk kaise sambhaloge?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Ek visit 300 ka, sitter ko 220",
+      "riya": "Cute dog ki daily update reels",
+      "kabir": "Har society mein 50+ pets",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "Pet sitter app, verified pet lovers ke saath.",
+        "Ghar aake pet ki dekhbhaal",
+        "Daily dog walking service"
+      ],
+      "customer": [
+        "Families jo trip pe jaati hain aur unke pets.",
+        "Office jaane wale pet parents",
+        "Bade buzurg jinke paas pet hai"
+      ],
+      "problem": [
+        "Pet ko akela chhodna mushkil hai.",
+        "Trip pe pet kaun sambhaale",
+        "Pet ko roz walk nahi mil paati"
+      ],
+      "paisa": [
+        "Har visit 300 rupaye, sitter ko 220.",
+        "Ek visit 300 rupaye",
+        "Monthly walking plan 1499"
+      ]
+    }
+  },
+  {
+    "id": "thrift",
+    "prompt": "Thrift fashion store",
+    "keywords": [
+      "thrift",
+      "preloved",
+      "second hand",
+      "fashion",
+      "clothes",
+      "hoodie",
+      "sneakers",
+      "outfit"
+    ],
+    "parts": {
+      "idea": "Insta pe thrift fashion store.",
+      "customer": "College students jo cool par sasta style chahte hain.",
+      "problem": "Naye kapde mehnge hain aur purane pade rehte hain.",
+      "paisa": "80 mein khareedo, 299 mein becho."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "Second Drip Thrift",
+        "tvTitle": "Thrift Fashion Store",
+        "category": "fashion"
+      },
+      "hostLine": "Purana kapda, naya swag! Sharks, fashion show shuru.",
+      "questions": {
+        "seth": {
+          "q": "Beta, ek kapda kitne mein khareedoge, aur kitne mein bechoge?",
+          "chips": [
+            "80 mein lo, 299 mein becho",
+            "Exchange model, kam kharcha",
+            "Abhi pricing test karunga"
+          ]
+        },
+        "riya": {
+          "q": "Tumhare store ka vibe kya hai? Ek line mein brand batao.",
+          "chips": [
+            "Sasta, cool, planet-friendly",
+            "Har drop limited edition",
+            "College ka apna style"
+          ]
+        },
+        "kabir": {
+          "q": "Insta store se badi company kaise banegi? Agla step kya hai?",
+          "chips": [
+            "Har college mein thrift pop-up",
+            "Apni website aur app",
+            "Pehle 1000 followers"
+          ]
+        },
+        "mummy": {
+          "q": "Purane kapde saaf hain, customer ko kaise yakeen hoga?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Kapda 80 mein lo, 299 mein becho",
+      "riya": "Outfit transformation reels",
+      "kabir": "Har college mein thrift lovers",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "Insta pe thrift fashion store.",
+        "Preloved kapdon ka Insta store",
+        "College mein thrift pop-up"
+      ],
+      "customer": [
+        "College students jo cool par sasta style chahte hain.",
+        "Fashion pasand students",
+        "Sasta style chahne wale log"
+      ],
+      "problem": [
+        "Naye kapde mehnge hain aur purane pade rehte hain.",
+        "Naye kapde bahut mehnge",
+        "Purane kapde bekaar pade rehte hain"
+      ],
+      "paisa": [
+        "80 mein khareedo, 299 mein becho.",
+        "80 mein lo, 299 mein becho",
+        "Har drop pe 20 pieces"
+      ]
+    }
+  },
+  {
+    "id": "study",
+    "prompt": "Study buddy finder",
+    "keywords": [
+      "study buddy",
+      "study partner",
+      "padhai",
+      "study",
+      "notes",
+      "revision",
+      "exam prep",
+      "doubts"
+    ],
+    "parts": {
+      "idea": "Study buddy match karne wali app.",
+      "customer": "Same exam ki taiyari karne wale students.",
+      "problem": "Akele padhai boring lagti hai, doubts reh jaate hain.",
+      "paisa": "App free, premium mentor sessions 99 per month."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "Study Buddy Match",
+        "tvTitle": "Study Buddy App",
+        "category": "education"
+      },
+      "hostLine": "Padhai bhi, dosti bhi! Sharks, notebook khol lo.",
+      "questions": {
+        "seth": {
+          "q": "Beta, free app hai toh paisa kahan se aayega? Premium mein kya hoga?",
+          "chips": [
+            "Premium 99 per month",
+            "Mentor sessions paid",
+            "Abhi free rakhunga"
+          ]
+        },
+        "riya": {
+          "q": "Student ko pehli baar app kholne ka reason kya milega?",
+          "chips": [
+            "Same exam ka buddy turant",
+            "Study with me reels",
+            "Doubts 5 min mein solve"
+          ]
+        },
+        "kabir": {
+          "q": "Bahut saare study apps hain. Tumhara app 10 lakh students tak kaise pahunchega?",
+          "chips": [
+            "School groups se viral",
+            "Streaks aur leaderboards",
+            "Pehle apne school mein"
+          ]
+        },
+        "mummy": {
+          "q": "Bachche app pe safe rahenge na? Anjaan logon se kaise bachaoge?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Premium 99 per month",
+      "riya": "Study with me reels",
+      "kabir": "Har saal crores students exams dete hain",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "Study buddy match karne wali app.",
+        "Same exam wale study partners",
+        "Group study ki app"
+      ],
+      "customer": [
+        "Same exam ki taiyari karne wale students.",
+        "Board exam ke students",
+        "Entrance ki taiyari wale"
+      ],
+      "problem": [
+        "Akele padhai boring lagti hai, doubts reh jaate hain.",
+        "Akele padhai boring",
+        "Doubts solve karne wala koi nahi"
+      ],
+      "paisa": [
+        "App free, premium mentor sessions 99 per month.",
+        "Premium 99 per month",
+        "Mentor session 49 ka"
+      ]
+    }
+  },
+  {
+    "id": "plants",
+    "prompt": "Plant care subscription",
+    "keywords": [
+      "plant care",
+      "plant subscription",
+      "paudhe",
+      "plants",
+      "garden",
+      "gardening",
+      "balcony"
+    ],
+    "parts": {
+      "idea": "Plant care subscription box.",
+      "customer": "Flat mein rehne wale log jinhe plants pasand hain.",
+      "problem": "Plants 2 hafte mein sookh jaate hain.",
+      "paisa": "349 ka monthly box, cost 200."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "Hara Bhara Box",
+        "tvTitle": "Plant Care Box",
+        "category": "environment"
+      },
+      "hostLine": "Green idea, green signal milega kya? Sharks, paani taiyaar rakho.",
+      "questions": {
+        "seth": {
+          "q": "Beta, ek box ka cost kitna, aur subscription kitne ki hogi?",
+          "chips": [
+            "Cost 200, price 349",
+            "Yearly plan pe discount",
+            "Abhi supplier dhoondhna hai"
+          ]
+        },
+        "riya": {
+          "q": "Insta pe tumhara 3 second ka hook kya hoga?",
+          "chips": [
+            "Plant jo kabhi nahi marega",
+            "Before vs after balcony reel",
+            "Plant parents ki community"
+          ]
+        },
+        "kabir": {
+          "q": "Plant lovers kitne hain? Yeh subscription kitne gharon tak jaa sakti hai?",
+          "chips": [
+            "Har flat mein balcony hai",
+            "Offices bhi customer hain",
+            "Pehle 100 ghar"
+          ]
+        },
+        "mummy": {
+          "q": "Paudha phir bhi sookh gaya toh customer ka paisa doob jayega?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Box 349, cost 200",
+      "riya": "Plant parents ki community",
+      "kabir": "Har flat mein balcony hai",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "Plant care subscription box.",
+        "Har mahine ek easy plant",
+        "Balcony garden setup service"
+      ],
+      "customer": [
+        "Flat mein rehne wale log jinhe plants pasand hain.",
+        "Flat mein rehne wale log",
+        "Office desks"
+      ],
+      "problem": [
+        "Plants 2 hafte mein sookh jaate hain.",
+        "Plants jaldi sookh jaate hain",
+        "Paani dena yaad nahi rehta"
+      ],
+      "paisa": [
+        "349 ka monthly box, cost 200.",
+        "Box 349 ka, cost 200",
+        "Setup 999 one time"
+      ]
+    }
+  },
+  {
+    "id": "cycle",
+    "prompt": "Campus cycle rental",
+    "keywords": [
+      "cycle rental",
+      "cycle",
+      "bicycle",
+      "cycles",
+      "ride",
+      "e-bike"
+    ],
+    "parts": {
+      "idea": "Campus cycle rental, QR scan karo aur chalao.",
+      "customer": "Bade campus ke students.",
+      "problem": "Class tak chalna thaka deta hai.",
+      "paisa": "10 rupaye per ride, 199 ka monthly pass."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "Campus Pedal",
+        "tvTitle": "Campus Cycle Rental",
+        "category": "campus"
+      },
+      "hostLine": "Class late? Ab nahi! Sharks, pedal maaro.",
+      "questions": {
+        "seth": {
+          "q": "Beta, ek cycle kitne ki, aur kitni rides mein paisa wapas aayega?",
+          "chips": [
+            "5000 ki cycle, 500 rides",
+            "Monthly pass se jaldi",
+            "Abhi hisaab lagaunga"
+          ]
+        },
+        "riya": {
+          "q": "Students ko pehli ride ke liye kaise convince karoge?",
+          "chips": [
+            "Pehli ride free",
+            "Late for class? Cycle lo reel",
+            "Cycle pe cool colours"
+          ]
+        },
+        "kabir": {
+          "q": "Kitne campus itne bade hain ki yeh chal sake? Scale kaise karoge?",
+          "chips": [
+            "India ke 1000+ bade campus",
+            "Tech parks bhi customer",
+            "Pehle apna campus"
+          ]
+        },
+        "mummy": {
+          "q": "Cycle chori ho gayi ya toot gayi toh nuksaan kiska?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Ek cycle 5000 ki, 6 mahine mein paisa wapas",
+      "riya": "Late for class? Cycle lo",
+      "kabir": "Har bade campus mein",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "Campus cycle rental, QR scan karo aur chalao.",
+        "QR scan karke campus cycle",
+        "Electric cycle rental"
+      ],
+      "customer": [
+        "Bade campus ke students.",
+        "Bade campus ke students",
+        "Hostel se class jaane wale"
+      ],
+      "problem": [
+        "Class tak chalna thaka deta hai.",
+        "Class tak chalna thaka deta hai",
+        "Auto mehenga aur late"
+      ],
+      "paisa": [
+        "10 rupaye per ride, 199 ka monthly pass.",
+        "10 rupaye per ride",
+        "Monthly pass 199"
+      ]
+    }
+  },
+  {
+    "id": "snacks",
+    "prompt": "Desi snacks brand",
+    "keywords": [
+      "snacks brand",
+      "desi snacks",
+      "snacks",
+      "namkeen",
+      "makhana",
+      "mathri",
+      "achaar",
+      "pickle",
+      "laddoo"
+    ],
+    "parts": {
+      "idea": "Desi healthy snacks brand.",
+      "customer": "Students aur office log jo healthy snack chahte hain.",
+      "problem": "Bazaar ke snacks unhealthy hain.",
+      "paisa": "Packet 60 ka, banane ka cost 30."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "Dadi Ke Crunchies",
+        "tvTitle": "Desi Snacks Brand",
+        "category": "food"
+      },
+      "hostLine": "Crunchy pitch aa raha hai! Sharks, plate aage karo.",
+      "questions": {
+        "seth": {
+          "q": "Beta, ek packet banane mein kitna lagta hai, aur kitne mein bechoge?",
+          "chips": [
+            "Cost 30, price 60",
+            "Bulk mein sasta banega",
+            "Abhi test batch banaunga"
+          ]
+        },
+        "riya": {
+          "q": "Tumhare snack ki story kya hai? Log isse yaad kyun rakhenge?",
+          "chips": [
+            "Dadi ki secret recipe",
+            "Har packet pe fun quote",
+            "Cute desi packaging"
+          ]
+        },
+        "kabir": {
+          "q": "Bade snack brands ke beech tumhara brand kaise jagah banayega?",
+          "chips": [
+            "Healthy desi, ghar ki recipe",
+            "Pehle school canteens",
+            "Online, har city mein"
+          ]
+        },
+        "mummy": {
+          "q": "Har packet mein quality same rahegi na? Bharosa kaise doge?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Packet 60 ka, cost 30",
+      "riya": "Dadi ki recipe story",
+      "kabir": "Har ghar mein snacks",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "Desi healthy snacks brand.",
+        "Healthy desi namkeen brand",
+        "Makhana aur mathri ke packets"
+      ],
+      "customer": [
+        "Students aur office log jo healthy snack chahte hain.",
+        "School canteens",
+        "Office snack corners"
+      ],
+      "problem": [
+        "Bazaar ke snacks unhealthy hain.",
+        "Snacks unhealthy hote hain",
+        "Ghar jaisa swaad nahi milta"
+      ],
+      "paisa": [
+        "Packet 60 ka, banane ka cost 30.",
+        "Packet 60, cost 30",
+        "Bulk order pe discount"
+      ]
+    }
+  },
+  {
+    "id": "eco",
+    "prompt": "Eco-friendly packaging",
+    "keywords": [
+      "eco packaging",
+      "eco-friendly packaging",
+      "packaging",
+      "plastic",
+      "paper bags",
+      "recycle",
+      "biodegradable",
+      "sustainable"
+    ],
+    "parts": {
+      "idea": "Local dukaano ke liye eco-friendly packaging.",
+      "customer": "Chhote dukaandaar aur cafes.",
+      "problem": "Plastic bags se kachra badhta hai.",
+      "paisa": "Bulk orders, har bag 2 ka banta 4 mein bikta."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "Green Thaila Co",
+        "tvTitle": "Eco Packaging Startup",
+        "category": "environment"
+      },
+      "hostLine": "Planet bhi khush, sharks bhi? Dekhte hain!",
+      "questions": {
+        "seth": {
+          "q": "Beta, eco bag plastic se mehenga hai. Price kaise compete karega?",
+          "chips": [
+            "Bulk orders se sasta",
+            "Brand printing se extra kamai",
+            "Abhi cost compare karunga"
+          ]
+        },
+        "riya": {
+          "q": "Dukaandaar plastic chhodke tumhara bag kyun lega?",
+          "chips": [
+            "Brand ka naam bag pe free",
+            "Plastic-free dukaan badge",
+            "Customers ko pasand aata hai"
+          ]
+        },
+        "kabir": {
+          "q": "Kitni dukaanein plastic use karti hain? Market kitna bada hai?",
+          "chips": [
+            "India mein lakhs dukaan",
+            "Cafes aur cloud kitchens bhi",
+            "Pehle apne market se"
+          ]
+        },
+        "mummy": {
+          "q": "Dukaandaar ne order nahi diya toh stock ka paisa doob toh nahi jayega?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Bag 2 ka banta, 4 mein",
+      "riya": "Plastic-free dukaan badge",
+      "kabir": "India mein lakhs dukaan",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "Local dukaano ke liye eco-friendly packaging.",
+        "Patton ke dabbe aur paper bags",
+        "Dukaano ke liye cloth bags"
+      ],
+      "customer": [
+        "Chhote dukaandaar aur cafes.",
+        "Chhote cafes",
+        "Sabzi wale aur kirana stores"
+      ],
+      "problem": [
+        "Plastic bags se kachra badhta hai.",
+        "Plastic bags se kachra",
+        "Eco packaging mehengi hai"
+      ],
+      "paisa": [
+        "Bulk orders, har bag 2 ka banta 4 mein bikta.",
+        "Bag 2 mein banta, 4 mein bikta",
+        "Brand print se extra kamai"
+      ]
+    }
+  },
+  {
+    "id": "esports",
+    "prompt": "School esports league",
+    "keywords": [
+      "esports",
+      "gaming league",
+      "tournament",
+      "tournaments",
+      "gaming",
+      "minecraft",
+      "chess",
+      "gamers"
+    ],
+    "parts": {
+      "idea": "School esports league, har weekend.",
+      "customer": "School students jinhe games pasand hain.",
+      "problem": "Safe aur fair tournaments kam hain.",
+      "paisa": "Brand sponsors aur chhota entry pass."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "School Gamers League",
+        "tvTitle": "School Esports League",
+        "category": "gaming"
+      },
+      "hostLine": "Game on! Sharks, controller pakdo, sawaal chalao.",
+      "questions": {
+        "seth": {
+          "q": "Beta, prizes ka paisa kahan se aayega?",
+          "chips": [
+            "Brand sponsors",
+            "Chhota entry pass",
+            "Abhi sponsor dhoondhunga"
+          ]
+        },
+        "riya": {
+          "q": "Parents ko kaise convince karoge ki yeh safe aur healthy hai?",
+          "chips": [
+            "Time limits aur fair play",
+            "Prizes mein books",
+            "Teachers as referees"
+          ]
+        },
+        "kabir": {
+          "q": "Ek school se 1000 schools ki league: yeh kaise badhega?",
+          "chips": [
+            "School vs school rivalry",
+            "Har city ki league",
+            "Pehle 5 schools"
+          ]
+        },
+        "mummy": {
+          "q": "Parents ko bharosa kaise doge ki sab safe aur fair hai?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Sponsors aur entry pass",
+      "riya": "Live streams aur highlights",
+      "kabir": "Har school mein gamers",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "School esports league, har weekend.",
+        "Weekend school chess league",
+        "Fair aur safe school tournaments"
+      ],
+      "customer": [
+        "School students jinhe games pasand hain.",
+        "Gaming pasand students",
+        "Schools ke clubs"
+      ],
+      "problem": [
+        "Safe aur fair tournaments kam hain.",
+        "Safe tournaments kam hain",
+        "Parents ko bharosa nahi hota"
+      ],
+      "paisa": [
+        "Brand sponsors aur chhota entry pass.",
+        "Brand sponsors",
+        "School registration fee"
+      ]
+    }
+  },
+  {
+    "id": "elders",
+    "prompt": "Dadi-dada tech helper",
+    "keywords": [
+      "grandparents",
+      "dadi dada",
+      "senior citizens",
+      "dadi",
+      "dada",
+      "nani",
+      "nana",
+      "elderly",
+      "buzurg"
+    ],
+    "parts": {
+      "idea": "Dadi-dada ke liye tech helper service.",
+      "customer": "Seniors aur unke bachche jo bahar rehte hain.",
+      "problem": "Seniors ko UPI aur video call mein dikkat hoti hai.",
+      "paisa": "199 rupaye ka session, monthly family plan."
+    },
+    "answer": {
+      "safe": true,
+      "safety": "ok",
+      "idea": {
+        "title": "Tech Wale Pote",
+        "tvTitle": "Senior Tech Helper",
+        "category": "services"
+      },
+      "hostLine": "Dil jeetne wala idea! Sharks, dhyaan se suno.",
+      "questions": {
+        "seth": {
+          "q": "Beta, ek session ka price kitna, aur student helper ko kitna doge?",
+          "chips": [
+            "199 session, 150 helper ko",
+            "Monthly family plan",
+            "Abhi test karunga"
+          ]
+        },
+        "riya": {
+          "q": "Yeh service kaun khareedega: dadi-dada ya unke bachche?",
+          "chips": [
+            "Bahar rehne wale bachche",
+            "Seniors khud",
+            "Societies aur clubs"
+          ]
+        },
+        "kabir": {
+          "q": "India mein kitne senior citizens hain jinhe yeh chahiye? Kitna bada hai?",
+          "chips": [
+            "Har ghar mein dadi-dada",
+            "Crores seniors, badh rahe hain",
+            "Pehle apni colony"
+          ]
+        },
+        "mummy": {
+          "q": "Dadi-dada ke phone pe fraud se kaise bachaoge? Safe hai na?",
+          "chips": [
+            "Insurance aur clear rules",
+            "Pehle chhota test karunga",
+            "Customers ke reviews dikhaunga"
+          ]
+        }
+      }
+    },
+    "heroAnswers": {
+      "seth": "Session 199, student ko 150",
+      "riya": "Dadi ki pehli video call reel",
+      "kabir": "Har ghar mein dadi-dada",
+      "mummy": "Pehle chhota test, phir bada"
+    },
+    "cardChips": {
+      "idea": [
+        "Dadi-dada ke liye tech helper service.",
+        "Seniors ko phone sikhane ki service",
+        "UPI aur video call help line"
+      ],
+      "customer": [
+        "Seniors aur unke bachche jo bahar rehte hain.",
+        "Dadi-dada",
+        "Bahar rehne wale bachche"
+      ],
+      "problem": [
+        "Seniors ko UPI aur video call mein dikkat hoti hai.",
+        "Seniors ko apps mushkil lagte hain",
+        "Online fraud ka darr"
+      ],
+      "paisa": [
+        "199 rupaye ka session, monthly family plan.",
+        "Session 199 ka",
+        "Family plan 499 per month"
+      ]
+    }
+  }
+]

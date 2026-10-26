@@ -1,0 +1,30 @@
+# Keep secrets, local data and everything the web server does not need out of the play-web image.
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+node_modules
+**/node_modules
+data
+tmp
+*.log
+.DS_Store
+test
+test-results
+playwright-report
+docs
+print
+ops
+reel-worker
+Dockerfile
+.dockerignore
+**/test
+**/*.test.js
+**/*.test.mjs
+# visitor data an experience keeps on disk at run time is never baked into the image
+experiences/*/data/leads
+experiences/*/data/pdfs
+experiences/*/data/whatsapp
+experiences/*/content/inbox
+experiences/*/ops

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-exp="jyotish">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070618">
+  <title>Dost Compatibility · AI Jyotish · Zenith</title>
+  <link rel="stylesheet" href="/core/tokens.css">
+  <link rel="stylesheet" href="/core/orchestra.css">
+  <link rel="stylesheet" href="./palm.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="stage">
+  <div class="jy-sky" aria-hidden="true"></div>
+  <main class="pz-wrap jy">
+    <header class="jy-head">
+      <a class="pz-brand" href="/"><i></i>Zenith</a>
+      <span class="pz-forfun">For fun only</span>
+    </header>
+
+    <!-- 1. squad -->
+    <section id="s-squad" class="jy-screen">
+      <div class="jy-hero">
+        <div class="jy-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="pz-kicker">AI Jyotish · squad mode</div>
+        <h1 class="pz-display jy-title">Dost <span class="pz-grad-text">Compatibility</span></h1>
+        <p class="pz-dim jy-sub">2 se 4 dost, ek phone. Agents batayenge squad ki energy aur kaun kya role nibhata hai. Sirf dosti ki vibes.</p>
+      </div>
+      <form id="squad" class="pz-stack" autocomplete="off" novalidate>
+        <div id="friends" class="dq-friends"></div>
+        <button class="pz-btn ghost block" id="add" type="button">+ Ek aur dost</button>
+        <p class="jy-err" id="squad-err" role="alert" hidden></p>
+        <div id="tv-toggle"></div>
+        <p class="jy-tvnote" id="tv-note" hidden>TV pe sirf squad energy aur nicknames dikhenge. Naam aur DOB kabhi nahi.</p>
+        <div id="big"></div>
+        <button class="jy-link" id="nick" type="button">Squad board pe naam chahiye? Stage naam chuno</button>
+        <p class="jy-fine" id="nick-note" hidden></p>
+        <button class="pz-btn block" type="submit">Squad report banao</button>
+      </form>
+      <p class="jy-fine">Naam sirf is phone pe dikhte hain. Server ko sirf sun sign aur life path jaata hai.</p>
+      <p class="jy-hero-note" id="hero-note" hidden></p>
+      <a class="jy-link" href="./">Akele reading chahiye? AI Jyotish pe jao</a>
+    </section>
+
+    <!-- 2. agents -->
+    <section id="s-run" class="jy-screen" hidden>
+      <div id="orx"></div>
+    </section>
+
+    <!-- 3. report -->
+    <section id="s-result" class="jy-screen" hidden>
+      <div class="pz-kicker">Is squad ka energy</div>
+      <h2 class="pz-display jy-rtitle dq-title" id="r-energy"></h2>
+      <p class="dq-line" id="r-line"></p>
+      <div class="jy-forfun-row"><span class="pz-forfun">For fun only</span><span class="jy-badge num" id="r-score"></span></div>
+      <p class="dq-board" id="r-board" hidden></p>
+      <div class="jy-card">
+        <div class="jy-card-k">Kaun kya role nibhata hai</div>
+        <ol class="dq-roles" id="r-roles"></ol>
+      </div>
+      <div class="jy-card jy-who">
+        <div class="jy-card-k">Squad vibes</div>
+        <ol class="jy-wholines" id="r-lines"></ol>
+      </div>
+      <button class="pz-btn block" id="unlock" type="button">Squad card unlock karo</button>
+      <div class="jy-share" id="share-box" hidden>
+        <img id="card-img" alt="Hamari squad ka AI vibe report share card" width="1080" height="1920">
+        <button class="pz-btn block" id="friends-share" type="button">Doston ko bhejo</button>
+        <button class="pz-btn ghost block" id="story" type="button">Story pe share karo</button>
+      </div>
+      <button class="pz-btn ghost block" id="again" type="button">Naya squad</button>
+      <a class="jy-link" href="./">Apni akele ki reading bhi dekho</a>
+      <p class="jy-src pz-mono" id="r-src"></p>
+    </section>
+  </main>
+  <script type="module" src="./dost.js"></script>
+</body>
+</html>

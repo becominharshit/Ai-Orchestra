@@ -1,0 +1,83 @@
+/* Palm overlay + constellation styles, shared by the phone page and the counter TV (tv.js loads this file). */
+.jp-palm { position: relative; }
+.jp-frame { position: relative; aspect-ratio: var(--ar, 0.75); height: var(--ph, 300px); max-width: 100%; margin: 0 auto; }
+.jp-clip { position: absolute; inset: 0; overflow: hidden; border-radius: var(--pr, 22px); background: #0b0926;
+  box-shadow: 0 0 0 1px rgba(159, 216, 255, 0.22), 0 18px 50px rgba(0, 0, 0, 0.55), 0 0 60px rgba(98, 187, 243, 0.18); }
+.jp-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; transition: filter 0.8s; filter: saturate(0.95) contrast(1.04); }
+.is-scanning .jp-img { filter: brightness(0.8) saturate(0.85) contrast(1.08) hue-rotate(-8deg); }
+.is-drawing .jp-img, .is-drawn .jp-img { filter: brightness(0.74) saturate(0.8) contrast(1.1); }
+.no-img .jp-clip { background: radial-gradient(circle at 50% 45%, #2a2170, #0b0926 70%); }
+.jp-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+
+/* scan */
+.jp-grid circle { fill: #bfe6ff; opacity: 0; }
+.is-scanning .jp-grid circle { animation: jp-twinkle 2.2s ease-in-out infinite; animation-delay: calc(var(--d) * -2.2s); }
+@keyframes jp-twinkle { 0%, 100% { opacity: 0; } 50% { opacity: 0.6; } }
+.jp-scanbar { position: absolute; left: 0; right: 0; top: -24%; height: 24%; opacity: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(124, 203, 255, 0) 0%, rgba(124, 203, 255, 0.1) 55%, rgba(168, 139, 255, 0.45) 94%, rgba(255, 255, 255, 0.95) 100%); }
+.jp-scanbar::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: #fff; box-shadow: 0 0 18px 4px rgba(124, 203, 255, 0.9), 0 0 40px 10px rgba(143, 107, 255, 0.5); }
+.is-scanning .jp-scanbar { opacity: 1; animation: jp-scan 1.9s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; }
+@keyframes jp-scan { from { top: -24%; } to { top: 100%; } }
+
+/* HUD corners + status */
+.jp-hud { position: absolute; inset: -8px; pointer-events: none; opacity: 0.35; transition: opacity 0.4s; }
+.is-scanning .jp-hud, .is-drawing .jp-hud { opacity: 1; }
+.jp-corner { position: absolute; width: 26px; height: 26px; border: 3px solid #7CCBFF; filter: drop-shadow(0 0 6px rgba(124, 203, 255, 0.8)); }
+.jp-corner.tl { left: 0; top: 0; border-right: 0; border-bottom: 0; border-radius: 10px 0 0 0; }
+.jp-corner.tr { right: 0; top: 0; border-left: 0; border-bottom: 0; border-radius: 0 10px 0 0; }
+.jp-corner.bl { left: 0; bottom: 0; border-right: 0; border-top: 0; border-radius: 0 0 0 10px; border-color: #A88BFF; }
+.jp-corner.br { right: 0; bottom: 0; border-left: 0; border-top: 0; border-radius: 0 0 10px 0; border-color: #A88BFF; }
+.jp-status { position: absolute; left: 50%; bottom: 12px; translate: -50% 0; white-space: nowrap; font-family: var(--font-mono); font-weight: 800; font-size: 10px; letter-spacing: 0.14em;
+  padding: 5px 10px; border-radius: 99px; background: rgba(7, 6, 24, 0.75); border: 1px solid rgba(124, 203, 255, 0.45); color: #bfe6ff; opacity: 0; transition: opacity 0.3s; }
+.is-scanning .jp-status { opacity: 1; animation: orx-blink 1.2s infinite; }
+
+/* lines */
+.jp-line path { fill: none; stroke: var(--c); stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+.jp-halo { stroke-width: 44; opacity: 0.6; }
+.jp-core { stroke-width: 13; }
+.jp-hot { stroke: #fff !important; stroke-width: 4.5; opacity: 0.85; }
+.jp-line.go path { animation: jp-draw 1.15s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+.jp-line.static path { stroke-dashoffset: 0; }
+.is-drawn .jp-line .jp-halo { stroke-dashoffset: 0; animation: jp-pulse 2.8s ease-in-out infinite; animation-delay: calc(var(--i) * -0.7s); }
+.is-drawn .jp-line .jp-core, .is-drawn .jp-line .jp-hot { stroke-dashoffset: 0; }
+@keyframes jp-draw { to { stroke-dashoffset: 0; } }
+@keyframes jp-pulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 0.95; } }
+.jp-spark { fill: #fff; opacity: 0; filter: drop-shadow(0 0 10px var(--c)) drop-shadow(0 0 4px #fff); }
+.jp-line.go .jp-spark { animation: jp-spark 1.15s linear forwards; }
+@keyframes jp-spark { 0% { opacity: 0; } 8% { opacity: 1; } 88% { opacity: 1; } 100% { opacity: 0; } }
+
+/* label chips */
+.jp-labels { position: absolute; inset: 0; pointer-events: none; }
+.jp-chip { position: absolute; display: flex; align-items: center; gap: 6px; padding: 4px 9px 4px 7px; border-radius: 99px; white-space: nowrap;
+  background: rgba(8, 7, 28, 0.82); border: 1px solid var(--c); box-shadow: 0 0 14px color-mix(in srgb, var(--c) 55%, transparent);
+  font-size: 10.5px; line-height: 1.1; color: #fff; animation: jp-chip 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.jp-chip::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--c); box-shadow: 0 0 8px var(--c); }
+.jp-chip-k { font-weight: 800; }
+.jp-chip-v { font-family: var(--font-mono); font-weight: 700; color: color-mix(in srgb, var(--c) 70%, #fff); }
+.jp-chip.side-l { translate: calc(-100% - 8px) -50%; }
+.jp-chip.side-r { translate: 8px -50%; }
+@keyframes jp-chip { from { opacity: 0; transform: scale(0.7); } to { opacity: 1; transform: none; } }
+
+/* TV size (em based; the TV stage sets the font size) */
+.jp-tv .jp-frame { height: var(--ph, 30em); }
+.jp-tv .jp-clip { --pr: 1.6em; }
+.jp-tv .jp-halo { stroke-width: 34; }
+.jp-tv .jp-core { stroke-width: 9; }
+.jp-tv .jp-hot { stroke-width: 3.2; }
+.jp-tv .jp-chip { font-size: 1.05em; padding: 0.35em 0.8em 0.35em 0.6em; gap: 0.5em; }
+.jp-tv .jp-chip::before { width: 0.65em; height: 0.65em; }
+.jp-tv .jp-corner { width: 2.2em; height: 2.2em; border-width: 0.22em; }
+.jp-tv .jp-hud { inset: -0.7em; }
+.jp-tv .jp-status { font-size: 0.95em; bottom: 1.2em; padding: 0.45em 1em; }
+
+/* constellation */
+.jp-const { overflow: visible; }
+.jp-const-lines line { stroke: rgba(159, 216, 255, 0.6); stroke-width: 1.4; stroke-dasharray: 1; stroke-dashoffset: 1; animation: jp-draw 1.6s 0.2s ease forwards; }
+.jp-const-stars circle { fill: #fff; filter: drop-shadow(0 0 3px #9fd8ff) drop-shadow(0 0 6px #8F6BFF); animation: jp-star 2.6s ease-in-out infinite; animation-delay: calc(var(--i) * -0.37s); }
+@keyframes jp-star { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .jp-palm *, .jp-const * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; }
+}
+.jp-palm.is-fit { display: grid; place-items: center; }
+.jp-palm.is-fit .jp-frame { aspect-ratio: auto; }

@@ -1,0 +1,19 @@
+{
+  "name": "play-zenith-career",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Career Studio (counter 5, plus 4 while Agent Builder is off): forecast preview, Job Time Machine, WhatsApp PDF. Own dependencies only; core deps (express, @aws-sdk/client-s3) come from the repo root.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 ../../test/career/*.test.js",
+    "check-data": "node ops/check-data.mjs",
+    "keygen": "node ops/leads-keygen.mjs",
+    "export": "node ops/leads-export.mjs",
+    "purge": "node ops/leads-purge.mjs",
+    "batch": "node ops/whatsapp-batch.mjs"
+  },
+  "dependencies": {
+    "pdf-lib": "1.17.1"
+  }
+}

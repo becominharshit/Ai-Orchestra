@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" data-exp="shark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070618">
+  <title>AI Sharks · Zenith School of AI</title>
+  <link rel="stylesheet" href="/core/tokens.css">
+  <link rel="stylesheet" href="/core/orchestra.css">
+  <link rel="stylesheet" href="../sharks.css">
+  <link rel="stylesheet" href="../v1/style.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="stage">
+  <main class="pz-wrap sk sk2">
+    <header class="sk-head">
+      <a class="pz-brand" href="/"><i></i>Zenith</a>
+      <span class="pz-forfun">For fun only</span>
+    </header>
+
+    <!-- 1. intro -->
+    <section id="s-intro" class="sk-screen">
+      <div class="pz-kicker sk-center">Counter <span data-pz-counter-of="shark">3</span> pe live · AI Sharks</div>
+      <h1 class="pz-display sk-title sk-center">AI <span class="pz-grad-text">Sharks</span></h1>
+      <p class="sk-tag sk-center">4 cards ka pitch. 3 sharks. <b>Deal ya out?</b></p>
+      <div class="sk2-panel" id="intro-panel"></div>
+      <div class="sk-cta sk2-cta-main" id="cta-main"></div>
+      <p class="sk2-mummy" id="intro-mummy"></p>
+      <div class="sk-ribbon"><span>ASLI PAISA NAHI</span><span>Fictional sharks, asli seekh</span></div>
+      <div class="sk2-mode" role="radiogroup" aria-label="Kaun pitch karega">
+        <button type="button" class="sk2-seg on" data-mode="solo" role="radio" aria-checked="true">Solo</button>
+        <button type="button" class="sk2-seg" data-mode="coop" role="radio" aria-checked="false">Co-founders (2 dost)</button>
+      </div>
+      <p class="sk-fine" id="coop-note" hidden>Dono baari baari se cards bolenge: Founder 1, Founder 2.</p>
+      <div class="sk2-nick" id="nick-box" hidden>
+        <div class="sk-prompts-h">Leaderboard pe aana hai? (optional)</div>
+        <div class="sk-chips" id="nick-chips"></div>
+      </div>
+      <div id="big-screen"></div>
+      <div id="tv-toggle"></div>
+      <div class="pz-stack sk-cta" id="cta">
+        <button class="pz-btn block" id="go-pick" type="button" data-pz="go-pick">Type karna nahi? Idea type chuno</button>
+        <button class="pz-btn block" id="go-voice" type="button"><span class="sk-mic-glyph" aria-hidden="true"></span>Bolke pitch karo</button>
+        <button class="pz-btn ghost block" id="go-text" type="button">Type karke pitch karo</button>
+      </div>
+      <p class="sk-fine" id="voice-note">Awaaz se text tumhare phone ka browser banata hai. Hamare server tak sirf text aata hai, audio nahi.</p>
+      <p class="sk-hero-note" id="hero-note" hidden></p>
+    </section>
+
+    <!-- 2. four pitch cards -->
+    <section id="s-cards" class="sk-screen" hidden>
+      <div class="sk-tank-top">
+        <div class="pz-kicker" id="card-kicker">Card 1/4 · Idea</div>
+        <div class="sk-dots sk2-dots4" id="card-dots"><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="sk2-card" id="card">
+        <div class="sk2-turn" id="card-turn" hidden></div>
+        <h2 class="pz-display sk2-card-q" id="card-q"></h2>
+        <p class="pz-dim sk2-card-hint" id="card-hint"></p>
+        <div class="sk2-cardbar">
+          <button class="sk-mic" id="card-mic" type="button" aria-label="Bolo">
+            <svg class="sk-ring" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" class="sk-ring-bg"/><circle cx="60" cy="60" r="54" class="sk-ring-fg" id="card-ring"/></svg>
+            <span class="sk-mic-core"><span class="sk-mic-glyph big" aria-hidden="true"></span></span>
+          </button>
+          <div class="sk-micinfo"><b id="card-state">Tap karke bolo</b><span class="pz-mono" id="card-time">15s</span></div>
+        </div>
+        <textarea id="card-text" class="pz-input sk-text" maxlength="220" rows="3" placeholder="Yahan tumhara jawab dikhega. Edit bhi kar sakte ho."></textarea>
+        <button class="pz-btn ghost block sk2-type" id="card-type" type="button">Type karo</button>
+      </div>
+      <div class="sk-prompts" id="card-prompts">
+        <div class="sk-prompts-h">Idea nahi aa raha? Ek pick karo (chaaron cards bhar jayenge)</div>
+        <div class="sk-chips" id="prompt-chips"></div>
+      </div>
+      <p class="sk-err" id="card-err" hidden></p>
+      <button class="pz-btn block" id="card-next" type="button">Agla card</button>
+    </section>
+
+    <!-- 2b. chip path: pick an idea type, then one reviewed answer per card -->
+    <section id="s-pick" class="sk-screen" hidden>
+      <div class="pz-kicker">Idea type chuno</div>
+      <h2 class="pz-display sk-h2">Kaunsa startup?</h2>
+      <p class="pz-dim sk-sub">Ek tap, phir har card pe ek jawab chuno. Typing ki zaroorat nahi.</p>
+      <div class="sk2-types" id="types"></div>
+      <button class="pz-btn ghost block" id="pick-own" type="button">Apna idea bolo ya likho</button>
+    </section>
+    <section id="s-pickcard" class="sk-screen" hidden>
+      <div class="sk-tank-top">
+        <div class="pz-kicker" id="pc-kicker">Card 1/4 · Idea</div>
+        <div class="sk-dots sk2-dots4" id="pc-dots"><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="sk2-card" id="pc-card">
+        <div class="sk2-turn" id="pc-turn" hidden></div>
+        <h2 class="pz-display sk2-card-q" id="pc-q"></h2>
+        <div class="sk2-opts" id="pc-opts"></div>
+        <div id="pc-own" hidden>
+          <textarea id="pc-text" class="pz-input sk-text small" maxlength="220" rows="2" placeholder="Apne shabdon mein likho..."></textarea>
+          <button class="pz-btn block" id="pc-own-next" type="button">Aage</button>
+        </div>
+        <button class="pz-btn ghost block sk2-type" id="pc-own-btn" type="button">Khud likho</button>
+      </div>
+    </section>
+
+    <!-- 3. review -->
+    <section id="s-review" class="sk-screen" hidden>
+      <div class="pz-kicker">Ek baar check karo</div>
+      <h2 class="pz-display sk-h2">Tumhara pitch</h2>
+      <div class="sk2-review" id="review"></div>
+      <p class="sk-err" id="review-err" hidden></p>
+      <button class="pz-btn block" id="send" type="button">Sharks ko bhejo</button>
+    </section>
+
+    <!-- 4. orchestra -->
+    <section id="s-run" class="sk-screen" hidden><div id="orx"></div></section>
+
+    <!-- 5. follow-ups -->
+    <section id="s-tank" class="sk-screen" hidden>
+      <div class="sk-tank-top">
+        <div class="pz-kicker" id="tank-kicker">Sawaal 1/3</div>
+        <div class="sk-dots" id="tank-dots"><i></i><i></i><i></i></div>
+      </div>
+      <h2 class="pz-display sk-idea" id="tank-idea"></h2>
+      <p class="sk-hostline" id="tank-host"></p>
+      <div class="sk-row" id="tank-row"></div>
+      <div class="sk-bubble" id="bubble">
+        <div class="sk-bubble-who" id="bubble-who"></div>
+        <p class="sk-bubble-q" id="bubble-q"></p>
+        <div class="sk-timer"><i id="timer-bar"></i></div>
+      </div>
+      <div class="sk2-turn" id="answer-turn" hidden></div>
+      <div class="sk-answer">
+        <div class="sk-chips" id="answer-chips"></div>
+        <button class="pz-btn ghost block sk2-own-answer" id="answer-own" type="button" hidden>Khud likho ya bolo</button>
+        <div class="sk-answer-row" id="answer-row">
+          <textarea id="answer" class="pz-input sk-text small" rows="2" maxlength="200" placeholder="Bolo ya likho..."></textarea>
+          <button class="sk-mic small" id="answer-mic" type="button" aria-label="Jawab bolo"><span class="sk-mic-core"><span class="sk-mic-glyph" aria-hidden="true"></span></span></button>
+        </div>
+        <div class="sk-answer-actions">
+          <button class="pz-btn ghost" id="skip" type="button">Pass</button>
+          <button class="pz-btn" id="send-answer" type="button">Jawab bhejo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. polite redirect -->
+    <section id="s-redirect" class="sk-screen" hidden>
+      <div class="pz-kicker sk-center" id="redirect-kicker">Sharks ka chhota sa request</div>
+      <h2 class="pz-display sk-h2 sk-center" id="redirect-title">Chalo, naya idea!</h2>
+      <p class="sk-redirect-msg" id="redirect-msg"></p>
+      <div class="sk-chips center" id="redirect-prompts"></div>
+      <button class="pz-btn block" id="redirect-again" type="button">Naya pitch karo</button>
+    </section>
+
+    <!-- 7. scorecard -->
+    <section id="s-result" class="sk-screen" hidden>
+      <div class="pz-kicker sk-center">Scorecard</div>
+      <h2 class="pz-display sk-idea sk-center" id="r-idea"></h2>
+      <div class="sk-stampbox" id="stampbox"><div class="sk-stamp" id="stamp">?</div><div class="sk-total" id="total"></div></div>
+      <div class="sk2-axes" id="axes"></div>
+      <div class="sk-cards" id="cards"></div>
+      <button class="pz-btn block" id="unlock" type="button">Scorecard dekho</button>
+      <div id="after" hidden>
+        <p class="sk2-board" id="r-board" hidden></p>
+        <div class="sk-note good"><b>Sharks ko pasand aaya</b><p id="r-compliment"></p></div>
+        <div class="sk-note fix"><b>Ek upgrade</b><p id="r-fix"></p></div>
+        <div class="sk-lesson">
+          <div class="pz-kicker">Tumhara mini-MBA lesson</div>
+          <h3 class="pz-display" id="r-lesson-title"></h3>
+          <p id="r-lesson-explain"></p>
+          <p class="sk-lesson-z" id="r-lesson-z"></p>
+          <small id="r-programme"></small>
+        </div>
+        <div id="reward"></div>
+        <div class="sk-share">
+          <img id="card-img" alt="AI Sharks share card" width="1080" height="1920">
+          <button class="pz-btn block" id="share" type="button">Story pe share karo</button>
+          <button class="pz-btn ghost block" id="friends" type="button">Doston ko bhejo</button>
+        </div>
+      </div>
+      <button class="pz-btn ghost block" id="again" type="button">Naya pitch karo</button>
+      <p class="sk-fine sk-center">For fun only. Fictional sharks. Asli paisa nahi.</p>
+      <p class="sk-src pz-mono" id="r-src"></p>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

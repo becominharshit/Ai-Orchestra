@@ -1,0 +1,43 @@
+{
+  "label": "Demo profile (fictional, for filming)",
+  "profile": {
+    "nick": "ChillMomo42",
+    "plan": [
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true
+    ],
+    "pace": [
+      2400,
+      1800,
+      2600,
+      3100,
+      2200,
+      2900,
+      2000,
+      1500,
+      3300,
+      1700
+    ]
+  },
+  "rounds": [
+    "t008",
+    "t048",
+    "c010",
+    "t042",
+    "t014",
+    "t035",
+    "t025",
+    "c001",
+    "t003",
+    "t053"
+  ],
+  "fixtures": {}
+}

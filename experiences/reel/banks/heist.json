@@ -1,0 +1,435 @@
+{
+ "template": "heist",
+ "reviewed": "Avi / BRAIN line-bank review, 24 Oct 2026 (TODO(student): add lines, keep ids stable)",
+ "slots": {
+  "n": "squad size 2-5, as a digit"
+ },
+ "captions": {
+  "1": [
+   {
+    "id": "he-c1-01",
+    "text": "Plan ready. Squad ready."
+   },
+   {
+    "id": "he-c1-02",
+    "text": "Target: future. Plan: AI."
+   },
+   {
+    "id": "he-c1-03",
+    "text": "Briefing shuru, phones on"
+   },
+   {
+    "id": "he-c1-04",
+    "text": "Har heist ko ek squad chahiye"
+   },
+   {
+    "id": "he-c1-05",
+    "text": "Codename: Squad Zenith"
+   },
+   {
+    "id": "he-c1-06",
+    "text": "Plan A: AI. Plan B: bhi AI."
+   },
+   {
+    "id": "he-c1-07",
+    "text": "Secret mission, full focus"
+   },
+   {
+    "id": "he-c1-08",
+    "text": "{n} agents, ek plan"
+   },
+   {
+    "id": "he-c1-09",
+    "text": "Map ready, team steady"
+   },
+   {
+    "id": "he-c1-10",
+    "text": "Mission briefing: top secret"
+   },
+   {
+    "id": "he-c1-11",
+    "text": "Sab ki nazar plan pe"
+   },
+   {
+    "id": "he-c1-12",
+    "text": "Step 1: plan. Step 2: swag."
+   },
+   {
+    "id": "he-c1-13",
+    "text": "Operation shuru hone wala hai"
+   },
+   {
+    "id": "he-c1-14",
+    "text": "Team assemble, mission on"
+   }
+  ],
+  "2": [
+   {
+    "id": "he-c2-01",
+    "text": "Mission: Zenith. Status: on"
+   },
+   {
+    "id": "he-c2-02",
+    "text": "Slow motion, full confidence"
+   },
+   {
+    "id": "he-c2-03",
+    "text": "Crew in position"
+   },
+   {
+    "id": "he-c2-04",
+    "text": "Entry silent, swag loud"
+   },
+   {
+    "id": "he-c2-05",
+    "text": "Sunglasses on, doubts off"
+   },
+   {
+    "id": "he-c2-06",
+    "text": "Walk mein confidence 200 percent"
+   },
+   {
+    "id": "he-c2-07",
+    "text": "Agents on the move"
+   },
+   {
+    "id": "he-c2-08",
+    "text": "Koi rok sakta hai? Nahi"
+   },
+   {
+    "id": "he-c2-09",
+    "text": "Cool walk, cooler squad"
+   },
+   {
+    "id": "he-c2-10",
+    "text": "Ek line, ek mission"
+   },
+   {
+    "id": "he-c2-11",
+    "text": "Stealth mode: on"
+   },
+   {
+    "id": "he-c2-12",
+    "text": "Har kadam calculated"
+   },
+   {
+    "id": "he-c2-13",
+    "text": "Beat on, crew on"
+   },
+   {
+    "id": "he-c2-14",
+    "text": "Target lock ho gaya"
+   }
+  ],
+  "3": [
+   {
+    "id": "he-c3-01",
+    "text": "Mission complete, crew legendary"
+   },
+   {
+    "id": "he-c3-02",
+    "text": "Heist successful: skills unlocked"
+   },
+   {
+    "id": "he-c3-03",
+    "text": "Zenith vault: unlocked"
+   },
+   {
+    "id": "he-c3-04",
+    "text": "Mission accomplished"
+   },
+   {
+    "id": "he-c3-05",
+    "text": "Loot: unlimited memories"
+   },
+   {
+    "id": "he-c3-06",
+    "text": "Kaam ho gaya, crew forever"
+   },
+   {
+    "id": "he-c3-07",
+    "text": "Operation Zenith: complete"
+   },
+   {
+    "id": "he-c3-08",
+    "text": "Jackpot: dosti"
+   },
+   {
+    "id": "he-c3-09",
+    "text": "Crew ne kar dikhaya"
+   },
+   {
+    "id": "he-c3-10",
+    "text": "Mission pass, respect plus"
+   },
+   {
+    "id": "he-c3-11",
+    "text": "Vault khula, squad jeeti"
+   },
+   {
+    "id": "he-c3-12",
+    "text": "Next mission kab hai?"
+   },
+   {
+    "id": "he-c3-13",
+    "text": "Plan perfect, squad perfect"
+   },
+   {
+    "id": "he-c3-14",
+    "text": "Zenith bolo, zor se!"
+   }
+  ]
+ },
+ "hooks": [
+  {
+   "id": "he-h-01",
+   "text": "Operation Zenith shuru",
+   "style": "countdown"
+  },
+  {
+   "id": "he-h-02",
+   "text": "Mission briefing: 2s",
+   "style": "title"
+  },
+  {
+   "id": "he-h-03",
+   "text": "Squad Zenith, ready",
+   "style": "title"
+  },
+  {
+   "id": "he-h-04",
+   "text": "The Zenith Heist",
+   "style": "title"
+  },
+  {
+   "id": "he-h-05",
+   "text": "Codename: Squad",
+   "style": "title"
+  },
+  {
+   "id": "he-h-06",
+   "text": "Plan ready hai?",
+   "style": "question"
+  },
+  {
+   "id": "he-h-07",
+   "text": "Top secret mission",
+   "style": "alert"
+  },
+  {
+   "id": "he-h-08",
+   "text": "Agents, ready?",
+   "style": "question"
+  },
+  {
+   "id": "he-h-09",
+   "text": "Heist mode: ON",
+   "style": "alert"
+  },
+  {
+   "id": "he-h-10",
+   "text": "Target: Zenith vault",
+   "style": "title"
+  },
+  {
+   "id": "he-h-11",
+   "text": "Mission impossible? Nahi",
+   "style": "title"
+  },
+  {
+   "id": "he-h-12",
+   "text": "3, 2, 1, mission!",
+   "style": "countdown"
+  },
+  {
+   "id": "he-h-13",
+   "text": "POV: tum crew mein ho",
+   "style": "pov"
+  },
+  {
+   "id": "he-h-14",
+   "text": "Sabse smart heist",
+   "style": "title"
+  },
+  {
+   "id": "he-h-15",
+   "text": "Plan A: AI",
+   "style": "title"
+  },
+  {
+   "id": "he-h-16",
+   "text": "Crew assemble!",
+   "style": "alert"
+  },
+  {
+   "id": "he-h-17",
+   "text": "Kya plan safal hoga?",
+   "style": "question"
+  },
+  {
+   "id": "he-h-18",
+   "text": "Classified: squad file",
+   "style": "title"
+  },
+  {
+   "id": "he-h-19",
+   "text": "Mission log: day 1",
+   "style": "title"
+  },
+  {
+   "id": "he-h-20",
+   "text": "Is heist ka hero kaun?",
+   "style": "question"
+  },
+  {
+   "id": "he-h-21",
+   "text": "Vault kholne chale",
+   "style": "title"
+  },
+  {
+   "id": "he-h-22",
+   "text": "Stealth squad incoming",
+   "style": "alert"
+  },
+  {
+   "id": "he-h-23",
+   "text": "Ek plan, ek crew",
+   "style": "title"
+  },
+  {
+   "id": "he-h-24",
+   "text": "Operation: dosti",
+   "style": "title"
+  },
+  {
+   "id": "he-h-25",
+   "text": "Secret agents, live",
+   "style": "alert"
+  },
+  {
+   "id": "he-h-26",
+   "text": "Kaun hai mastermind?",
+   "style": "question"
+  },
+  {
+   "id": "he-h-27",
+   "text": "Mission start in 3",
+   "style": "countdown"
+  },
+  {
+   "id": "he-h-28",
+   "text": "Code red: squad aa gayi",
+   "style": "alert"
+  },
+  {
+   "id": "he-h-29",
+   "text": "POV: plan tumhara hai",
+   "style": "pov"
+  },
+  {
+   "id": "he-h-30",
+   "text": "Heist of the year",
+   "style": "title"
+  },
+  {
+   "id": "he-h-31",
+   "text": "Spy squad, on duty",
+   "style": "title"
+  },
+  {
+   "id": "he-h-32",
+   "text": "Plan sun lo dhyan se",
+   "style": "title"
+  },
+  {
+   "id": "he-h-33",
+   "text": "Access granted",
+   "style": "alert"
+  },
+  {
+   "id": "he-h-34",
+   "text": "Mission file: open",
+   "style": "title"
+  },
+  {
+   "id": "he-h-35",
+   "text": "Is crew se milo",
+   "style": "callout"
+  },
+  {
+   "id": "he-h-36",
+   "text": "Zenith files, part 1",
+   "style": "title"
+  },
+  {
+   "id": "he-h-37",
+   "text": "Ready for the heist?",
+   "style": "countdown"
+  },
+  {
+   "id": "he-h-38",
+   "text": "Agent squad, report!",
+   "style": "alert"
+  },
+  {
+   "id": "he-h-39",
+   "text": "Sabse cool mission",
+   "style": "alert"
+  },
+  {
+   "id": "he-h-40",
+   "text": "The plan starts now",
+   "style": "countdown"
+  }
+ ],
+ "posts": [
+  {
+   "id": "he-p-01",
+   "text": "Operation Zenith: complete"
+  },
+  {
+   "id": "he-p-02",
+   "text": "Heist successful, crew legendary"
+  },
+  {
+   "id": "he-p-03",
+   "text": "Zenith vault unlocked"
+  },
+  {
+   "id": "he-p-04",
+   "text": "Entry silent, swag loud"
+  },
+  {
+   "id": "he-p-05",
+   "text": "Codename: Squad Zenith"
+  },
+  {
+   "id": "he-p-06",
+   "text": "Plan A: AI. Plan B: bhi AI."
+  },
+  {
+   "id": "he-p-07",
+   "text": "{n} agents, ek mission"
+  },
+  {
+   "id": "he-p-08",
+   "text": "Mission accomplished, memories unlocked"
+  },
+  {
+   "id": "he-p-09",
+   "text": "Crew forever"
+  },
+  {
+   "id": "he-p-10",
+   "text": "Next mission kab hai, squad?"
+  },
+  {
+   "id": "he-p-11",
+   "text": "Top secret: yeh squad best hai"
+  },
+  {
+   "id": "he-p-12",
+   "text": "Loot: unlimited memories"
+  }
+ ]
+}

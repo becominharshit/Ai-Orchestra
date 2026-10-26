@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+/data/
+# visitor data inside experiences: never in git
+experiences/*/data/leads/
+experiences/*/data/pdfs/
+experiences/*/data/whatsapp/
+experiences/*/content/inbox/*
+!experiences/*/content/inbox/README.md
+tmp/
+*.log
+test-results/
+playwright-report/
+.DS_Store
+reel-worker/storage/
+!.env.example

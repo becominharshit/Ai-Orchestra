@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070618">
+  <title>AI Startup Studio · Zenith</title>
+  <link rel="stylesheet" href="/core/tokens.css">
+  <link rel="stylesheet" href="/core/orchestra.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="stage">
+  <main class="pz-wrap st">
+    <header class="st-head">
+      <a class="pz-brand" href="/"><i></i>Zenith</a>
+      <span class="st-step" id="step-chip" hidden></span>
+    </header>
+
+    <!-- 0. intro -->
+    <section id="s-intro" class="st-screen">
+      <div class="pz-kicker">AI Startup Studio</div>
+      <h1 class="pz-display st-title">Apni startup, <span class="pz-grad-text">90 second</span> mein.</h1>
+      <p class="st-lead">Ek Founder Agent apni team ke 5 AI agents ko kaam dega. Tum bas chips chuno: naam, logo, product, price aur ek live website, sab ready.</p>
+      <ol class="st-crew" aria-label="AI agents">
+        <li><b>Founder</b><span>Team lead</span></li>
+        <li><b>Research</b><span>Kitne log</span></li>
+        <li><b>Product</b><span>3 features</span></li>
+        <li><b>Brand</b><span>Naam aur logo</span></li>
+        <li><b>Finance</b><span>Price</span></li>
+        <li><b>Pitch</b><span>Ek line</span></li>
+      </ol>
+      <button class="pz-btn block" id="go" type="button" data-pz="start">Shuru karo</button>
+      <div id="tv-toggle"></div>
+      <div id="bigscreen"></div>
+      <p class="st-hero-note" id="hero-note" hidden></p>
+    </section>
+
+    <!-- 1. problem area -->
+    <section id="s-area" class="st-screen" hidden>
+      <div class="pz-kicker">Step 1 / 2</div>
+      <h2 class="pz-display st-h2">Kaunsi problem solve karni hai?</h2>
+      <div class="st-areas" id="areas"></div>
+    </section>
+
+    <!-- 2. brief -->
+    <section id="s-brief" class="st-screen" hidden>
+      <div class="pz-kicker">Step 2 / 2</div>
+      <button class="st-picked" id="picked" type="button"><span id="picked-label"></span><small>badlo</small></button>
+      <h3 class="st-q">Kiske liye?</h3>
+      <div class="st-chips" id="who"></div>
+      <h3 class="st-q">Vibe kya ho?</h3>
+      <div class="st-chips" id="vibes"></div>
+      <div class="st-idea" id="idea-box" hidden>
+        <label class="pz-field"><span>Apne idea ki ek line (optional)</span>
+          <input class="pz-input" id="idea" maxlength="100" autocomplete="off" placeholder="jaise: raat ko bhi garam khana" data-care-net></label>
+        <p class="st-fine">Yeh line sirf tumhare phone pe rehti hai. TV ya website pe kabhi nahi aati.</p>
+      </div>
+      <button class="pz-btn block" id="build" type="button" disabled data-pz="build">Company banao</button>
+    </section>
+
+    <!-- 2b. typed line: waiting for the server's safety check (no orchestra, nothing on the TV yet) -->
+    <section id="s-wait" class="st-screen st-wait" hidden>
+      <div class="pz-spinner"></div>
+      <p>Founder Agent tumhara brief padh raha hai...</p>
+    </section>
+
+    <!-- 3. orchestra -->
+    <section id="s-run" class="st-screen" hidden>
+      <div id="orx"></div>
+    </section>
+
+    <!-- 4. result -->
+    <section id="s-result" class="st-screen" hidden>
+      <article class="st-card" id="card">
+        <div class="st-card-top">
+          <div class="st-logo" id="r-logo"></div>
+          <span class="st-area" id="r-area"></span>
+        </div>
+        <h2 class="st-name" id="r-name"></h2>
+        <p class="st-tag" id="r-tag"></p>
+        <blockquote class="st-pitch" id="r-pitch"></blockquote>
+        <p class="st-note" id="r-note" hidden><b>Founder Agent:</b> <span></span></p>
+      </article>
+
+      <div class="st-sec">
+        <div class="st-sec-k">Research</div>
+        <p class="st-sec-main" id="r-research"></p>
+        <div class="st-pills"><span id="r-who"></span><span class="hi" id="r-market"></span></div>
+      </div>
+      <div class="st-sec">
+        <div class="st-sec-k">Product</div>
+        <ol class="st-feat" id="r-feat"></ol>
+      </div>
+      <div class="st-sec">
+        <div class="st-sec-k">Finance</div>
+        <div class="st-tiles"><div><small>Price</small><b id="r-price"></b></div><div><small>Margin (rough)</small><b id="r-margin"></b></div></div>
+        <p class="st-rev" id="r-rev"></p>
+        <div class="st-sec-k st-sub-k">Pehle 1,000 customers</div>
+        <ol class="st-plan" id="r-plan"></ol>
+      </div>
+
+      <button class="pz-btn block" id="unlock" type="button" data-pz="unlock">Live website unlock karo</button>
+      <div class="st-site" id="site-box" hidden>
+        <div class="st-site-link"><small>Tumhari startup ki website, 7 din live</small><b id="site-url"></b></div>
+        <a class="pz-btn block" id="site-open" href="#" target="_blank" rel="noopener">Website kholo</a>
+        <button class="pz-btn ghost block" id="site-share" type="button">Website ka link bhejo</button>
+        <img id="card-img" alt="Share card preview" width="1080" height="1920">
+        <button class="pz-btn block" id="share" type="button">Story pe share karo</button>
+        <button class="pz-btn ghost block" id="friends" type="button">Doston ko bhejo</button>
+      </div>
+      <a class="st-shark" id="shark" href="/shark/" data-pz="shark-link">Isse AI Sharks ko pitch karna hai? <small>(optional)</small></a>
+      <button class="pz-btn ghost block" id="again" type="button">Nayi startup banao</button>
+      <p class="st-src pz-mono" id="r-src"></p>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

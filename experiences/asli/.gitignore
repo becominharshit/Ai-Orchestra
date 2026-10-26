@@ -1,0 +1,6 @@
+# Raw drops from students and the team are never committed. Only processed, reviewed files in content/media are.
+content/inbox/**/*
+!content/inbox/README.md
+!content/inbox/**/
+!content/inbox/**/.keep
+content/inbox/_done/

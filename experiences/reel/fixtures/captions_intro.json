@@ -1,0 +1,38 @@
+[
+ {
+  "shot1": "in-c1-01",
+  "shot2": "in-c2-01",
+  "shot3": "in-c3-01",
+  "post": "in-p-01"
+ },
+ {
+  "shot1": "in-c1-02",
+  "shot2": "in-c2-04",
+  "shot3": "in-c3-06",
+  "post": "in-p-02"
+ },
+ {
+  "shot1": "in-c1-03",
+  "shot2": "in-c2-07",
+  "shot3": "in-c3-11",
+  "post": "in-p-03"
+ },
+ {
+  "shot1": "in-c1-04",
+  "shot2": "in-c2-10",
+  "shot3": "in-c3-02",
+  "post": "in-p-04"
+ },
+ {
+  "shot1": "in-c1-05",
+  "shot2": "in-c2-13",
+  "shot3": "in-c3-07",
+  "post": "in-p-05"
+ },
+ {
+  "shot1": "in-c1-06",
+  "shot2": "in-c2-02",
+  "shot3": "in-c3-12",
+  "post": "in-p-06"
+ }
+]

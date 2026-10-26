@@ -1,0 +1,247 @@
+{
+  "preview_rule": "Free preview (S3) shows 3 full cards per area: the top Growing, the top Changing and the top Shrinking career (if the area has one). The rest appear as locked titles.",
+  "areas": [
+    {
+      "id": "computers-coding",
+      "label": "Computers and coding",
+      "short_label": "Computers and coding",
+      "careers": [
+        {
+          "career_id": "ai-engineer",
+          "rank": 1
+        },
+        {
+          "career_id": "security",
+          "rank": 2
+        },
+        {
+          "career_id": "data-scientist",
+          "rank": 3
+        },
+        {
+          "career_id": "devops",
+          "rank": 4
+        },
+        {
+          "career_id": "data-engineer",
+          "rank": 5
+        },
+        {
+          "career_id": "uiux",
+          "rank": 6
+        },
+        {
+          "career_id": "software-engineer",
+          "rank": 7
+        },
+        {
+          "career_id": "it-support",
+          "rank": 8
+        },
+        {
+          "career_id": "qa",
+          "rank": 9
+        }
+      ],
+      "free_preview": [
+        "ai-engineer",
+        "software-engineer",
+        "qa"
+      ],
+      "free_preview_basis": "approved_design",
+      "label_hi": "कंप्यूटर और कोडिंग",
+      "short_label_hi": "कंप्यूटर और कोडिंग"
+    },
+    {
+      "id": "machines-making",
+      "label": "Machines, plants and chemicals",
+      "short_label": "Machines and chemicals",
+      "careers": [
+        {
+          "career_id": "maintenance",
+          "rank": 1
+        },
+        {
+          "career_id": "production",
+          "rank": 2
+        },
+        {
+          "career_id": "field-service",
+          "rank": 3
+        },
+        {
+          "career_id": "mech-design",
+          "rank": 4
+        },
+        {
+          "career_id": "application-eng",
+          "rank": 5
+        },
+        {
+          "career_id": "process",
+          "rank": 6
+        },
+        {
+          "career_id": "cae",
+          "rank": 7
+        },
+        {
+          "career_id": "quality",
+          "rank": 8
+        }
+      ],
+      "free_preview": [
+        "maintenance",
+        "quality"
+      ],
+      "free_preview_basis": "rule",
+      "label_hi": "मशीन, प्लांट और केमिकल",
+      "short_label_hi": "मशीन और केमिकल"
+    },
+    {
+      "id": "electronics-chips",
+      "label": "Electronics and chips",
+      "short_label": "Electronics and chips",
+      "careers": [
+        {
+          "career_id": "embedded",
+          "rank": 1
+        },
+        {
+          "career_id": "application-eng",
+          "rank": 2
+        },
+        {
+          "career_id": "field-service",
+          "rank": 3
+        },
+        {
+          "career_id": "elec-design",
+          "rank": 4
+        },
+        {
+          "career_id": "vlsi",
+          "rank": 5
+        }
+      ],
+      "free_preview": [
+        "field-service",
+        "embedded"
+      ],
+      "free_preview_basis": "rule",
+      "label_hi": "इलेक्ट्रॉनिक्स और चिप",
+      "short_label_hi": "इलेक्ट्रॉनिक्स और चिप"
+    },
+    {
+      "id": "buildings-infra",
+      "label": "Buildings and infrastructure",
+      "short_label": "Buildings",
+      "careers": [
+        {
+          "career_id": "site-civil",
+          "rank": 1
+        },
+        {
+          "career_id": "structural",
+          "rank": 2
+        },
+        {
+          "career_id": "qs",
+          "rank": 3
+        }
+      ],
+      "free_preview": [
+        "site-civil",
+        "qs"
+      ],
+      "free_preview_basis": "rule",
+      "label_hi": "बिल्डिंग, सड़क और पुल",
+      "short_label_hi": "बिल्डिंग"
+    },
+    {
+      "id": "business-managing",
+      "label": "Business, money, managing",
+      "short_label": "Business, money",
+      "careers": [
+        {
+          "career_id": "product",
+          "rank": 1
+        },
+        {
+          "career_id": "enterprise-sales",
+          "rank": 2
+        },
+        {
+          "career_id": "ops-analyst",
+          "rank": 3
+        },
+        {
+          "career_id": "supply-chain",
+          "rank": 4
+        },
+        {
+          "career_id": "consulting",
+          "rank": 5
+        },
+        {
+          "career_id": "hr",
+          "rank": 6
+        },
+        {
+          "career_id": "support",
+          "rank": 7
+        },
+        {
+          "career_id": "sdr",
+          "rank": 8
+        },
+        {
+          "career_id": "marketing",
+          "rank": 9
+        },
+        {
+          "career_id": "finance",
+          "rank": 10
+        }
+      ],
+      "free_preview": [
+        "product",
+        "ops-analyst",
+        "support"
+      ],
+      "free_preview_basis": "rule",
+      "label_hi": "बिज़नेस, पैसा, मैनेजमेंट",
+      "short_label_hi": "बिज़नेस, पैसा"
+    }
+  ],
+  "not_sure_yet": {
+    "id": "not-sure",
+    "label": "Not sure yet",
+    "rule": "Strongest career in each of the 5 areas (approved design). Sheet note: Show the top Growing career from each area, in forecast-score order",
+    "careers": [
+      {
+        "area_id": "computers-coding",
+        "career_id": "ai-engineer"
+      },
+      {
+        "area_id": "machines-making",
+        "career_id": "maintenance"
+      },
+      {
+        "area_id": "electronics-chips",
+        "career_id": "embedded"
+      },
+      {
+        "area_id": "buildings-infra",
+        "career_id": "site-civil"
+      },
+      {
+        "area_id": "business-managing",
+        "career_id": "product"
+      }
+    ],
+    "label_hi": "अभी तय नहीं"
+  },
+  "note": "How rank is set (DF-30): rank is the order of the Interest_Map tab of Career_Forecast_Data_v6.xlsx. For Computers and coding, Buildings and infrastructure and Business, money, managing it is Forecast Score order, high to low. For Machines, plants and chemicals and for Electronics and chips it is the order of the careers in the Careers tab, which follows the Atlas v7.1 core career list (branch-led), so it is not score order. Screens: the Forecast tab sorts by forecast_score; the S3 preview, the area's free cards and Not sure yet (rank 1 of each area) follow rank. Free preview: top Growing, top Changing and top Shrinking career by Forecast Score (preview_rule).",
+  "hi_required": true
+}

@@ -1,0 +1,30 @@
+[
+ {
+  "steps": [
+   {
+    "tool": "lookup",
+    "item": "all"
+   },
+   {
+    "tool": "calculator",
+    "item": "all"
+   },
+   {
+    "tool": "calendar",
+    "item": "all"
+   },
+   {
+    "tool": "notes",
+    "item": "all"
+   }
+  ],
+  "weights": [
+   3,
+   2,
+   2
+  ],
+  "sessionMin": 30,
+  "breakMin": 10,
+  "lightDay": false
+ }
+]

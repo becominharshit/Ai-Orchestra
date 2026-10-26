@@ -1,0 +1,79 @@
+<!doctype html>
+<!-- Template: roll-up standee 850 x 2000 mm. Filled by make.mjs (tokens in double braces). Numbers are mm on the trim. -->
+<html lang="en"><head><meta charset="utf-8"><title>{{TITLE}}</title>
+<link rel="stylesheet" href="../../templates/base.css">
+<style>
+@page { size: {{SHEET_W}}mm {{SHEET_H}}mm; margin: 0; }
+.sheet { width: {{SHEET_W}}mm; height: {{SHEET_H}}mm; }
+.trim > * { position: absolute; left: 50mm; right: 50mm; }
+.header { top: 58mm; height: 100mm; display: flex; align-items: center; justify-content: space-between; }
+.header img { height: 96mm; display: block; }
+.header .ev { display: flex; flex-direction: column; align-items: flex-end; gap: 6mm; }
+.header .ev .chip { font-size: 19mm; padding: 5mm 11mm; }
+.header .ev .date { font-size: 17mm; font-weight: 700; color: var(--muted); letter-spacing: .1em; }
+.crow { top: 200mm; display: flex; gap: 10mm; align-items: center; }
+.crow .chip { font-size: 25mm; padding: 6mm 15mm; }
+.crow .chip.line { border-width: 1.6mm; }
+.namebox { top: 268mm; height: 392mm; display: flex; flex-direction: column; justify-content: center; gap: 16mm; overflow: hidden; }
+.namebox .display { font-size: 150mm; }
+.namebox .hook { font-size: 54mm; }
+.namebox .sub { font-size: 32mm; }
+.labels { display: flex; gap: 8mm; flex-wrap: wrap; }
+.labels .chip { font-size: 21mm; padding: 5mm 12mm; }
+.qrwrap { top: {{QR_TOP}}mm; left: 0; right: 0; }
+.qrframe { padding: 4mm; border-radius: 30mm; }
+.qrcard { padding: 22mm 22mm 20mm; border-radius: 26mm; }
+.qrcard .qrlabel { font-size: 30mm; margin-bottom: 10mm; display: flex; align-items: center; gap: 8mm; }
+.qrcard .qrlabel .arr { width: 22mm; height: 22mm; }
+.qr { width: {{QR_MM}}mm; height: {{QR_MM}}mm; }
+.qrcard .qrurl { font-size: 24mm; margin-top: 12mm; }
+.brackets { left: 50%; transform: translateX(-50%); top: -22mm; }
+.steps { top: 1222mm; height: 180mm; justify-content: space-between; }
+.step { width: 238mm; flex-direction: column; align-items: center; text-align: center; gap: 10mm; }
+.step .n { width: 62mm; height: 62mm; font-size: 34mm; }
+.step .t { font-size: 31mm; width: 100%; }
+.orch { top: 1590mm; height: 186mm; display: flex; flex-direction: column; align-items: center; gap: 8mm; }
+.orch .cap:empty { display: none; }
+.orch .cap { font-size: 21mm; font-weight: 700; color: var(--a1); letter-spacing: .02em; text-align: center; white-space: nowrap; width: 100%; }
+/* footer: follow QR card + handle, photo-frame cue, programme line. Lowest text stays >= 220 mm above the trim. */
+.footer { top: 1410mm; height: 168mm; display: flex; align-items: center; justify-content: center; gap: 26mm; }
+.footer .fcard { padding: 5mm 5mm 4mm; border-radius: 10mm; }
+.footer .flabel { font-size: 12mm; margin-top: 3mm; }
+.footer .ftext { display: flex; flex-direction: column; align-items: flex-start; gap: 3.5mm; min-width: 0; flex: 1; }
+.footer .handle { font-size: 34mm; gap: 9mm; }
+.footer .photo { font-size: 17mm; gap: 6mm; width: 100%; }
+.footer .prog { font-size: 20mm; white-space: nowrap; }
+.footer .site { font-size: 18mm; }
+.footer .viral { font-size: 17mm; text-align: left; }
+</style></head>
+<body>
+<div class="sheet">
+  <div class="bleed" style="left: {{BLEED_X}}mm; top: {{BLEED_X}}mm; width: {{BLEED_W}}mm; height: {{BLEED_H}}mm;">{{BG}}</div>
+  <div class="trim" style="left: {{SLUG}}mm; top: {{SLUG}}mm; width: {{TRIM_W}}mm; height: {{TRIM_H}}mm;">
+    <div class="header"><img src="../../assets/logo/zenith_logo_white.png" alt="Zenith School of AI">
+      <div class="ev"><span class="chip line" style="border-width:1.4mm">{{EVENT}}</span><span class="date">27 + 28 OCT 2026</span></div></div>
+    <div class="crow"><span class="chip grad">{{CHIP}}</span><span class="chip line">{{PILLAR}}</span>{{NEW}}</div>
+    <div class="namebox" data-fitbox>
+      <h1 class="display" data-fit="2">{{NAME_HTML}}</h1>
+      <p class="hook" data-fit="2">{{HOOK}}</p>
+      <p class="sub" data-fit="2">{{SUB}}</p>
+      {{LABELS}}
+    </div>
+    {{QR_BLOCK}}
+    <div class="steps">{{STEPS}}</div>
+    <div class="orch"><div class="cap" data-fit="1">{{TV_LINE}}</div>{{ORCH}}</div>
+    <div class="footer">
+      {{FOLLOW_QR}}
+      <div class="ftext">
+        <div class="handle">{{CAM}}<span>{{HANDLE}}</span></div>
+        {{PHOTO}}
+        <span class="prog" data-fit="1">{{PROGRAMME}}</span>
+        <span class="site">{{SITE}}</span>
+        {{HERO_LINE}}
+      </div>
+    </div>
+  </div>
+  {{MARKS}}
+</div>
+<script src="../../templates/fit.js"></script>
+</body></html>

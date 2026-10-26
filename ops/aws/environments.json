@@ -1,0 +1,69 @@
+{
+  "about": "play.zenithschool.ai (KRMU Ideas 4.0 stall, 27-28 Oct 2026) on AWS Lightsail in Mumbai, the Field App way. Names and sizes only, no secrets. Used by ops/aws/lightsail.mjs and ops/set-claude-key.mjs. Every name must start with play- (the script refuses anything else).",
+  "region": "ap-south-1",
+  "profile": "zenith",
+  "account": "372492155621",
+  "domain": "play.zenithschool.ai",
+  "neverTouch": [
+    "field-*",
+    "zenith-*",
+    "cf-*"
+  ],
+  "web": {
+    "service": "play-web",
+    "about": "The one Node app (hub, 5 experiences, Claude proxy, analytics, SSE live bus to the TVs). Scale stays 1: the live bus and the leaderboard live in memory, so one node by design.",
+    "power": "medium",
+    "scale": 1,
+    "container": "app",
+    "port": 8080,
+    "dockerfile": "Dockerfile",
+    "context": ".",
+    "healthPath": "/healthz",
+    "statusPath": "/status.json",
+    "settings": {
+      "APP_ENV": "production",
+      "NODE_ENV": "production",
+      "PORT": "8080",
+      "TRUST_PROXY": "1",
+      "CLAUDE_MODEL": "claude-opus-5-5",
+      "SPEND_CAP_USD": "350",
+      "DATA_DIR": "/app/data",
+      "PUBLIC_URL": "https://play.zenithschool.ai",
+      "BUDGET_USD_JYOTISH": "90",
+      "BUDGET_USD_SHARK": "30",
+      "BUDGET_USD_CAREER": "25",
+      "BUDGET_USD_STARTUP": "20",
+      "BUDGET_USD_AGENT": "20"
+    }
+  },
+  "reel": {
+    "service": "play-reel",
+    "about": "Squad Reel worker (Node + ffmpeg), built from reel-worker/Dockerfile (TASK-04 owns it). Scale 1: the job queue is in memory and files live on the container disk for at most 48h.",
+    "power": "medium",
+    "scale": 1,
+    "container": "worker",
+    "port": 8080,
+    "dockerfile": "reel-worker/Dockerfile",
+    "context": "reel-worker",
+    "healthPath": "/healthz",
+    "settings": {
+      "NODE_ENV": "production",
+      "PORT": "8080",
+      "REEL_TTL_HOURS": "48"
+    }
+  },
+  "bucket": {
+    "name": "play-data",
+    "about": "Private. Only the anonymous counters snapshot (counts per experience per day). No photos, audio, video or names, ever.",
+    "bundle": "small_1_0",
+    "fallbackName": "play-zenith-data"
+  },
+  "certificate": {
+    "name": "play-cert",
+    "domain": "play.zenithschool.ai"
+  },
+  "tags": {
+    "project": "play-zenith",
+    "event": "krmu-ideas-4-2026"
+  }
+}

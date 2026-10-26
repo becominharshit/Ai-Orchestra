@@ -1,0 +1,10 @@
+{
+  "label": "Demo profile (fictional, for filming)",
+  "profile": { "area": "hostel_food", "who": "hostel", "vibe": "desi" },
+  "picks": {
+    "area": "hostel_food", "who": "hostel", "vibe": "desi",
+    "pre": 0, "suf": 3, "tagline": 0, "research": 2, "features": [1, 0, 3], "palette": 1, "logo": 0,
+    "price": 89, "market": 38, "pitch": 0, "plan": [0, 1, 2]
+  },
+  "fixtures": {}
+}

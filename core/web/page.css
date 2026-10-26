@@ -1,0 +1,8 @@
+/* Public pages (/s/:code ...): core frame around the experience's own template. */
+body.pz-page { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--stage-bg, #07061a); color: var(--stage-ink, #f1f2ff); }
+body.pz-page > :not(.pz-page-foot) { flex: 1 0 auto; }
+.pz-page-foot { padding: 24px 16px 32px; text-align: center; font-size: 14px; color: rgba(241, 242, 255, .7); border-top: 1px solid rgba(255, 255, 255, .08); }
+.pz-page-foot p { margin: 0 0 6px; }
+.pz-page-exp { font-size: 13px; opacity: .8; }
+.pz-page-foot form { margin-top: 10px; }
+.pz-page-foot button { font: inherit; font-size: 13px; padding: 8px 14px; min-height: 40px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .25); background: transparent; color: inherit; cursor: pointer; }

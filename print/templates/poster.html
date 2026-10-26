@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- Template: A3 poster 297 x 420 mm. Filled by make.mjs (tokens in double braces). Numbers are mm on the trim. -->
+<html lang="en"><head><meta charset="utf-8"><title>{{TITLE}}</title>
+<link rel="stylesheet" href="../../templates/base.css">
+<style>
+@page { size: {{SHEET_W}}mm {{SHEET_H}}mm; margin: 0; }
+.sheet { width: {{SHEET_W}}mm; height: {{SHEET_H}}mm; }
+/* A2 renders this A3 layout scaled by {{SCALE}} (vector) */
+.scaler { position: absolute; left: 0; top: 0; width: 297mm; height: 420mm; transform: scale({{SCALE}}); transform-origin: 0 0; }
+.scaler > * { position: absolute; left: 20mm; right: 20mm; }
+.header { top: 18mm; height: 28mm; display: flex; align-items: center; justify-content: space-between; }
+.header img { height: 26mm; display: block; }
+.header .ev { display: flex; flex-direction: column; align-items: flex-end; gap: 1.6mm; }
+.header .ev .chip { font-size: 4.6mm; padding: 1.3mm 3mm; border-width: .4mm; }
+.header .ev .date { font-size: 4.2mm; font-weight: 700; color: var(--muted); letter-spacing: .1em; }
+.crow { top: 56mm; display: flex; gap: 2.6mm; }
+.crow .chip { font-size: 6mm; padding: 1.6mm 4mm; }
+.crow .chip.line { border-width: .45mm; }
+.namebox { top: 72mm; height: 110mm; display: flex; flex-direction: column; justify-content: center; gap: 4mm; overflow: hidden; }
+.namebox .display { font-size: 46mm; }
+.namebox .hook { font-size: 14.5mm; }
+.namebox .sub { font-size: 8.6mm; }
+.labels { display: flex; gap: 2.2mm; flex-wrap: wrap; }
+.labels .chip { font-size: 5.2mm; padding: 1.3mm 3.2mm; }
+.qrwrap { top: {{QR_TOP}}mm; left: 0; right: 0; }
+.qrframe { padding: 1.4mm; border-radius: 10mm; }
+.qrcard { padding: 7mm 7mm 6mm; border-radius: 9mm; }
+.qrcard .qrlabel { font-size: 7mm; margin-bottom: 3mm; display: flex; align-items: center; gap: 2mm; }
+.qrcard .qrlabel .arr { width: 5.4mm; height: 5.4mm; }
+.qr { width: {{QR_MM}}mm; height: {{QR_MM}}mm; }
+.qrcard .qrurl { font-size: 5mm; margin-top: 3.4mm; }
+.brackets { left: 50%; transform: translateX(-50%); top: -6mm; }
+.steps { top: 347mm; height: 31mm; justify-content: space-between; }
+.step { width: 82mm; gap: 2.6mm; align-items: center; }
+.step .n { width: 11mm; height: 11mm; font-size: 6mm; }
+.step .t { font-size: 6mm; }
+.poster-viral { top: 380mm; height: 7mm; }
+.poster-viral .viral { font-size: 4.6mm; width: 100%; }
+.footer { top: 391mm; height: 19mm; display: flex; align-items: center; justify-content: space-between; }
+.footer .handle { font-size: 7.6mm; gap: 2mm; }
+.footer .right { text-align: right; font-size: 4.6mm; line-height: 1.35; }
+.footer .right .site { display: block; }
+</style></head>
+<body>
+<div class="sheet">
+  <div class="bleed" style="left: {{BLEED_X}}mm; top: {{BLEED_X}}mm; width: {{BLEED_W}}mm; height: {{BLEED_H}}mm;">{{BG}}</div>
+  <div class="trim" style="left: {{SLUG}}mm; top: {{SLUG}}mm; width: {{TRIM_W}}mm; height: {{TRIM_H}}mm;">
+  <div class="scaler">
+    <div class="header"><img src="../../assets/logo/zenith_logo_white.png" alt="Zenith School of AI">
+      <div class="ev"><span class="chip line">{{EVENT}}</span><span class="date">27 + 28 OCT 2026</span></div></div>
+    <div class="crow"><span class="chip grad">{{CHIP}}</span><span class="chip line">{{PILLAR}}</span>{{NEW}}</div>
+    <div class="namebox" data-fitbox>
+      <h1 class="display" data-fit="2">{{NAME_HTML}}</h1>
+      <p class="hook" data-fit="2">{{HOOK}}</p>
+      <p class="sub" data-fit="2">{{SUB}}</p>
+      {{LABELS}}
+    </div>
+    {{QR_BLOCK}}
+    <div class="steps">{{STEPS}}</div>
+    <div class="poster-viral">{{HERO_LINE}}</div>
+    <div class="footer">
+      <div class="handle">{{CAM}}<span>{{HANDLE}}</span></div>
+      <div class="right"><span class="prog">{{PROGRAMME}}</span><span class="site">{{SITE}}</span></div>
+    </div>
+  </div>
+  </div>
+  {{MARKS}}
+</div>
+<script src="../../templates/fit.js"></script>
+</body></html>

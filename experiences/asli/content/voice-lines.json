@@ -1,0 +1,27 @@
+{
+  "note": "Voice round script. The SAME lines are read by macOS say voices (AI clips, npm run asli:voices) and by Zenith students (real clips, see inbox/README.md). Max about 4 seconds each. The Curator never puts two clips of the same line in one game.",
+  "lines": [
+    { "line": "E1", "lang": "en", "text": "Hi! I just built my first chatbot, and it actually works." },
+    { "line": "E2", "lang": "en", "text": "Welcome to Ideas four point oh. Come play with us!" },
+    { "line": "E3", "lang": "en", "text": "My favourite subject is maths. Don't tell anyone." },
+    { "line": "E4", "lang": "en", "text": "The canteen chai today was really good." },
+    { "line": "E5", "lang": "en", "text": "Can you guess if this voice is real or AI?" },
+    { "line": "E6", "lang": "en", "text": "Our robot team meets every Friday after class." },
+    { "line": "H1", "lang": "hi", "text": "आज कैंटीन में समोसे बहुत अच्छे थे।", "roman": "Aaj canteen mein samose bahut achchhe the." },
+    { "line": "H2", "lang": "hi", "text": "मेरा पहला प्रोजेक्ट एक छोटा सा रोबोट था।", "roman": "Mera pehla project ek chhota sa robot tha." },
+    { "line": "H3", "lang": "hi", "text": "चलो, आज लाइब्रेरी में साथ पढ़ते हैं।", "roman": "Chalo, aaj library mein saath padhte hain." },
+    { "line": "H4", "lang": "hi", "text": "क्या तुम बता सकते हो कि यह आवाज़ असली है?", "roman": "Kya tum bata sakte ho ki yeh awaaz asli hai?" }
+  ],
+  "ai": [
+    { "id": "a001", "line": "E1", "voice": "Rishi" },
+    { "id": "a002", "line": "E2", "voice": "Tara" },
+    { "id": "a003", "line": "E3", "voice": "Aman" },
+    { "id": "a004", "line": "E4", "voice": "Tara" },
+    { "id": "a005", "line": "E5", "voice": "Rishi" },
+    { "id": "a006", "line": "E6", "voice": "Aman" },
+    { "id": "a007", "line": "H1", "voice": "Lekha" },
+    { "id": "a008", "line": "H2", "voice": "Lekha" },
+    { "id": "a009", "line": "H3", "voice": "Lekha" },
+    { "id": "a010", "line": "H4", "voice": "Lekha" }
+  ]
+}

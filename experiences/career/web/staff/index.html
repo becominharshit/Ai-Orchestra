@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-exp="career">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>Career Studio staff · Zenith</title>
+  <link rel="stylesheet" href="/core/tokens.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="stage">
+  <main class="pz-wrap cs">
+    <header class="cs-head"><a class="pz-brand" href="/"><i></i>Zenith</a><span class="cs-head-name">Staff only</span></header>
+    <section class="cs-screen">
+      <div class="pz-kicker">Career Studio · WhatsApp</div>
+      <h1 class="pz-display cs-h2">Staff panel</h1>
+      <p class="pz-dim">Counts only, never a number. The key stays in this tab only.</p>
+      <form id="key-form" class="pz-stack" autocomplete="off">
+        <label class="pz-field"><span>Admin key</span><input class="pz-input" type="password" name="key" required></label>
+        <button class="pz-btn block" type="submit">Status dekho</button>
+      </form>
+      <div id="panel" hidden>
+        <ol class="cs-taglist" id="stats"></ol>
+        <div class="cs-cta">
+          <b>Live WhatsApp send</b>
+          <span class="pz-dim" id="switch-line"></span>
+          <button class="pz-btn block" id="sw-on" type="button">Switch ON</button>
+          <button class="pz-btn ghost block" id="sw-off" type="button">Switch OFF</button>
+        </div>
+        <form id="caps-form" class="cs-cta" autocomplete="off">
+          <b>Per-IP limits</b>
+          <span class="pz-dim">Raise these if the venue Wi-Fi shows every phone with one public IP.</span>
+          <label class="pz-field"><span>WhatsApp forms per IP per 10 min</span><input class="pz-input" name="lead" type="number" min="1" max="100000" required></label>
+          <label class="pz-field"><span>Live sends per IP per hour</span><input class="pz-input" name="live" type="number" min="1" max="100000" required></label>
+          <label class="pz-field"><span>STOP requests per IP per hour</span><input class="pz-input" name="stop" type="number" min="1" max="100000" required></label>
+          <button class="pz-btn block" type="submit">Limits save karo</button>
+        </form>
+        <p class="cs-err" id="msg" role="status" hidden></p>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./staff.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- Template: 16:9 loop slide (1920 x 1080 px) for a spare TV, Live Projects wall. Filled by make.mjs. -->
+<html lang="en"><head><meta charset="utf-8"><title>{{TITLE}}</title>
+<link rel="stylesheet" href="../../templates/base.css">
+<style>
+@page { size: 1920px 1080px; margin: 0; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; background: #0B0A22; }
+.sheet { width: 1920px; height: 1080px; }
+.bleed { left: 0; top: 0; width: 1920px; height: 1080px; }
+.trim { left: 0; top: 0; width: 1920px; height: 1080px; }
+.trim > * { position: absolute; }
+.header { left: 110px; top: 80px; right: 110px; display: flex; justify-content: space-between; align-items: center; }
+.header img { height: 120px; }
+.header .chip { font-size: 26px; padding: 8px 22px; border-width: 3px; }
+.left { left: 110px; top: 270px; width: 1060px; height: 640px; display: flex; flex-direction: column; gap: 26px; justify-content: center; }
+.left .crow { display: flex; gap: 16px; }
+.left .crow .chip { font-size: 30px; padding: 9px 24px; }
+.left .crow .chip.line { border-width: 3px; }
+.left .display { font-size: 170px; }
+.left .hook { font-size: 64px; }
+.left .sub { font-size: 38px; }
+.right { left: 1290px; top: 270px; width: 520px; display: flex; flex-direction: column; align-items: center; gap: 26px; }
+.qrframe { padding: 6px; border-radius: 40px; }
+.qrcard { padding: 30px 30px 24px; border-radius: 34px; }
+.qrcard .qrlabel { font-size: 34px; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.qrcard .qrlabel .arr { width: 28px; height: 28px; }
+.qr { width: 400px; height: 400px; }
+.qrcard .qrurl { font-size: 24px; margin-top: 14px; }
+.brackets { display: none; }
+.right .handle { font-size: 42px; gap: 14px; }
+.foot { left: 110px; right: 110px; bottom: 60px; display: flex; justify-content: space-between; font-size: 30px; }
+</style></head>
+<body>
+<div class="sheet">
+  <div class="bleed">{{BG}}</div>
+  <div class="trim">
+    <div class="header"><img src="../../assets/logo/zenith_logo_white.png" alt="Zenith School of AI"><span class="chip line">{{EVENT}} · 27 + 28 OCT 2026</span></div>
+    <div class="left" data-fitbox>
+      <div class="crow"><span class="chip grad">{{CHIP}}</span><span class="chip line">{{PILLAR}}</span></div>
+      <h1 class="display" data-fit="1">{{NAME_HTML}}</h1>
+      <p class="hook" data-fit="2">{{HOOK}}</p>
+      <p class="sub" data-fit="2">{{SUB}}</p>
+    </div>
+    <div class="right">{{QR_BLOCK}}<div class="handle">{{CAM}}<span>{{HANDLE}}</span></div></div>
+    <div class="foot"><span class="prog">{{PROGRAMME}}</span><span class="viral">{{HERO_SHORT}}</span><span class="site">{{SITE}}</span></div>
+  </div>
+</div>
+<script src="../../templates/fit.js"></script>
+</body></html>

@@ -1,0 +1,276 @@
+{
+  "src": "zenith_site_2026_10_07",
+  "tooltip": "As published on zenithschool.ai",
+  "programme": "B.Tech in AI + Mini MBA",
+  "degree_line": "Degree awarded by K.R. Mangalam University (NAAC A-Grade, UGC-recognized).",
+  "footer": "Degree awarded by K.R. Mangalam University. 28-acre campus, Gurugram.",
+  "usps": [
+    {
+      "id": "btech-ai-mini-mba",
+      "title": "B.Tech in AI + Mini MBA",
+      "lines": [
+        "4-year residential degree."
+      ]
+    },
+    {
+      "id": "curriculum",
+      "title": "Curriculum by Top AI Researchers",
+      "lines": [
+        "Updated annually."
+      ]
+    },
+    {
+      "id": "paid-internships",
+      "title": "Paid internships from year 1",
+      "lines": [
+        "Mandatory 2 internships.",
+        "Earn up to 2L per year while you learn."
+      ]
+    },
+    {
+      "id": "live-projects",
+      "title": "4 mandatory real-world live projects with 30+ companies",
+      "lines": []
+    },
+    {
+      "id": "global-exposure",
+      "title": "On-ground exposure in Dubai, Singapore & Shenzhen",
+      "lines": []
+    }
+  ],
+  "figures": [
+    {
+      "id": "avg-placement",
+      "value": "16 LPA+",
+      "label": "Avg Placement",
+      "text": "16 LPA+ Avg Placement"
+    },
+    {
+      "id": "highest-package",
+      "value": "2.7 Cr",
+      "label": "Highest Package",
+      "text": "2.7 Cr Highest Package"
+    },
+    {
+      "id": "maang-unicorns",
+      "value": "1000+",
+      "label": "At MAANG/Unicorns",
+      "text": "1000+ At MAANG/Unicorns"
+    },
+    {
+      "id": "students-trained",
+      "value": "20K+",
+      "label": "Students Trained",
+      "text": "20K+ Students Trained"
+    },
+    {
+      "id": "accreditation",
+      "value": "NAAC A-Grade",
+      "label": "UGC-recognized",
+      "text": "NAAC A-Grade, UGC-recognized"
+    },
+    {
+      "id": "scholarships",
+      "value": "Up to 100%",
+      "label": "Scholarships",
+      "text": "Up to 100% Scholarships"
+    },
+    {
+      "id": "seats",
+      "value": "Only 120 Seats",
+      "label": "for 2026 Batch",
+      "text": "Only 120 Seats for 2026 Batch"
+    }
+  ],
+  "skill_map": {
+    "evaluation-design": [
+      {
+        "course": "Classical Machine Learning and Optimizations",
+        "semester": 3,
+        "elective": false
+      }
+    ],
+    "retrieval-context": [
+      {
+        "course": "AI Engineering: LLM-based Systems",
+        "semester": 7,
+        "elective": false
+      }
+    ],
+    "machine-learning-basics": [
+      {
+        "course": "Classical Machine Learning and Optimizations",
+        "semester": 3,
+        "elective": false
+      },
+      {
+        "course": "Deep Learning Systems",
+        "semester": 5,
+        "elective": false
+      }
+    ],
+    "system-design": [
+      {
+        "course": "Building scalable AI Products: Advanced Full Stack + System Design",
+        "semester": 4,
+        "elective": false
+      }
+    ],
+    "debugging-live-systems": [
+      {
+        "course": "Machine Learning Engineering",
+        "semester": 5,
+        "elective": false
+      }
+    ],
+    "data-structures-programming": [
+      {
+        "course": "Python Programming Foundations for AI Builders",
+        "semester": 1,
+        "elective": false
+      },
+      {
+        "course": "C Programming for Systems Engineering",
+        "semester": 2,
+        "elective": false
+      },
+      {
+        "course": "OOPs & Clean Coding",
+        "semester": 2,
+        "elective": false
+      },
+      {
+        "course": "Data Structures & Algorithms",
+        "semester": 2,
+        "elective": false
+      },
+      {
+        "course": "DSA – Advanced",
+        "semester": 3,
+        "elective": false
+      }
+    ],
+    "real-projects-companies": [
+      {
+        "course": "Internship",
+        "semester": 6,
+        "elective": false
+      },
+      {
+        "course": "Self-driven Capstone / Internship",
+        "semester": 8,
+        "elective": false
+      }
+    ],
+    "building-with-ai": [
+      {
+        "course": "Components of a Full Stack AI Product",
+        "semester": 2,
+        "elective": false
+      },
+      {
+        "course": "Building scalable AI Products: Advanced Full Stack + System Design",
+        "semester": 4,
+        "elective": false
+      },
+      {
+        "course": "AI Engineering: LLM-based Systems",
+        "semester": 7,
+        "elective": false
+      },
+      {
+        "course": "Elective E3: Advanced Generative AI & Multimodal Systems / Optimization, Search & Reasoning for AI Systems",
+        "semester": 8,
+        "elective": true
+      }
+    ],
+    "how-businesses-make-money": [
+      {
+        "course": "Finance & Unit Economics",
+        "semester": 3,
+        "elective": false
+      },
+      {
+        "course": "Product, Market & GTM",
+        "semester": 2,
+        "elective": false
+      },
+      {
+        "course": "Mini-MBA: AI Law, Ethics, Venture Deals, Strategy, Decision-Making & Competition",
+        "semester": 7,
+        "elective": false
+      }
+    ],
+    "talking-to-users": [
+      {
+        "course": "Product Thinking for AI Startups: Design Thinking & Problem Discovery",
+        "semester": 1,
+        "elective": false
+      },
+      {
+        "course": "Product Management for AI I: Discovery & Zero-to-One",
+        "semester": 4,
+        "elective": false
+      }
+    ],
+    "pick-one-domain": [
+      {
+        "course": "Open Elective I",
+        "semester": 3,
+        "elective": true
+      },
+      {
+        "course": "Open Elective II",
+        "semester": 5,
+        "elective": true
+      },
+      {
+        "course": "Open Elective III",
+        "semester": 7,
+        "elective": true
+      }
+    ],
+    "product-thinking": [
+      {
+        "course": "Product, Market & GTM",
+        "semester": 2,
+        "elective": false
+      },
+      {
+        "course": "Product Management for AI I: Discovery & Zero-to-One",
+        "semester": 4,
+        "elective": false
+      },
+      {
+        "course": "Product Management for AI II: Execution, Experiments & Metrics",
+        "semester": 5,
+        "elective": false
+      }
+    ],
+    "business-finance-basics": [
+      {
+        "course": "Finance & Unit Economics",
+        "semester": 3,
+        "elective": false
+      }
+    ],
+    "explaining-decisions": [
+      {
+        "course": "Professional Communication - 1",
+        "semester": 1,
+        "elective": false
+      },
+      {
+        "course": "Professional Communication & negotiation",
+        "semester": 2,
+        "elective": false
+      }
+    ]
+  },
+  "course_check_id": null,
+  "skills_mode": "interim",
+  "interim_note": "Detailed syllabus check coming soon",
+  "tooltip_hi": "zenithschool.ai पर जैसा छपा है",
+  "interim_note_hi": "विस्तृत सिलेबस जाँच जल्द आ रही है",
+  "hi_required": true
+}

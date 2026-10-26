@@ -1,0 +1,85 @@
+{
+  "label": "Demo pitch (fictional, for filming)",
+  "profile": {
+    "mode": "text",
+    "pitch": "Hostel mein kapde dhona sabse bada time waste hai. Meri laundry app pe students pickup book karenge, hum 24 ghante mein kapde dhoke, iron karke room tak denge. 99 rupaye ka ek bag, ya 499 ka monthly plan.",
+    "answers": {
+      "vc": "Har hostel mein 300+ students, pehle 5 hostels phir poore campus",
+      "mkt": "Exam week ke time 'kapde hum dho denge, tum padho' wala reel",
+      "fin": "Ek bag ka kharcha 55 rupaye, price 99, toh 44 ka margin"
+    },
+    "v2": {
+      "parts": {
+        "idea": "Hostel laundry app: pickup, wash, iron, delivery.",
+        "customer": "Hostel ke busy students, khaas kar exam week mein.",
+        "problem": "Kapde dhona sabse bada time waste hai.",
+        "paisa": "99 rupaye ka ek bag, ya 499 ka monthly plan."
+      },
+      "answers": {
+        "seth": "Ek bag ka kharcha 55 rupaye, price 99, toh 44 ka margin",
+        "riya": "Exam week mein 'kapde hum dho denge, tum padho' wala reel",
+        "kabir": "Har hostel mein 300+ students, pehle 5 hostels phir poore campus"
+      }
+    }
+  },
+  "fixtures": {
+    "pitches": 1,
+    "verdict": {
+      "safe": true,
+      "category": "ok",
+      "sharks": {
+        "vc": {
+          "score": 9,
+          "why": "Har hostel mein yeh problem hai, 5 hostels se campus tak ka plan solid hai.",
+          "line": "Main in hoon, rocket ready!"
+        },
+        "mkt": {
+          "score": 8,
+          "why": "Exam week wala reel hook ekdum sahi customer pe laga hai.",
+          "line": "Brand vibe on point, main in!"
+        },
+        "fin": {
+          "score": 6,
+          "why": "44 ka margin mast hai, bas pickup aur delivery ka kharcha bhi jodo.",
+          "line": "Main out, par hisaab sudhaar ke aao!"
+        }
+      },
+      "compliment": "Tumne ek real hostel problem pakdi aur numbers ke saath pitch kiya. Founder energy!",
+      "fix": "Ek order ka poora kharcha likho: dhulai, iron, pickup aur delivery. Phir dekho kitna bachta hai.",
+      "lesson": {
+        "concept": "unit_economics",
+        "explain": "Unit economics matlab ek bag ka poora hisaab: 99 aaye, dhulai aur delivery mein kitna gaya. Ek bag profit mein hai toh 1000 bags bhi honge."
+      },
+      "tvLine": "Hostel Laundry App: 2 sharks in, DEAL pakki!"
+    },
+    "games": 1,
+    "verdictV2": {
+      "safe": true,
+      "category": "ok",
+      "axes": {
+        "idea": 8,
+        "customer": 9,
+        "money": 5,
+        "energy": 8
+      },
+      "sharks": {
+        "seth": {
+          "take": "Beta, margin dikhao, phir baat karenge. Abhi main out hoon."
+        },
+        "riya": {
+          "take": "Exam week wala reel ekdum sahi customer pe hai. Deal!"
+        },
+        "kabir": {
+          "take": "Har hostel ka market hai, 10x ka scope dikh raha hai. Deal!"
+        }
+      },
+      "compliment": "Tumne ek real hostel problem pakdi aur numbers ke saath pitch kiya. Founder energy!",
+      "fix": "Ek order ka poora kharcha likho: dhulai, iron, pickup aur delivery. Phir dekho kitna bachta hai.",
+      "lesson": {
+        "concept": "unit_economics",
+        "explain": "Unit economics matlab ek bag ka poora hisaab: 99 aaye, dhulai aur delivery mein kitna gaya. Ek bag profit mein hai toh 1000 bags bhi honge."
+      },
+      "tvLine": "Sharks ko idea pasand aaya. DEAL pakki!"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+  { "plan": "Research reviews padhega, Draft specs likhega, Analyst usage dekhega, Review roadmap update karega.",
+    "research": ["Sabse common complaint: lunch time pe lambi line", "Students class ke beech jaldi khana chahte hain", "Competitor apps mein order tracking confusing hai"],
+    "drafts": ["Pre-order: class se pehle order karo, counter pe seedha pick up", "Pre-order: slot chuno, ready hone pe notification", "Pre-order: favourite meal ek tap mein repeat"],
+    "analysis": "Lunch se pehle app opens sabse zyada hote hain",
+    "review": "Specs clear hain, roadmap update ho gaya. Kya pehle banega, yeh call tumhari.",
+    "call_options": ["Pre-order pehle: line wali problem solve", "Loyalty points pehle: students wapas aayein", "Dark mode pehle: quick win"] },
+  { "plan": "Docs aur research AI ka, priorities aur team ko saath lana tumhara.",
+    "research": ["Reviews mein 'wait' sabse zyada likha gaya", "Hostel students raat ko snacks order karte hain", "Payment fail hone pe log app chhod dete hain"],
+    "drafts": ["Pre-order with time slots", "Late night snacks menu", "One tap reorder"],
+    "analysis": "Payment fail wale users wapas kam aate hain",
+    "review": "Teeno ideas data se jude hain. Trade-off ka faisla insaan ka.",
+    "call_options": ["Payment fix pehle", "Pre-order pehle", "Night menu pehle"] }
+]

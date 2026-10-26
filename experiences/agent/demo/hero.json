@@ -1,0 +1,32 @@
+{
+ "label": "Demo profile (fictional, for filming)",
+ "profile": {
+  "job": "jee",
+  "items": [
+   "physics",
+   "chemistry",
+   "maths"
+  ],
+  "params": {
+   "cls": "c12",
+   "weak": "p_elec",
+   "perDay": 180,
+   "start": "16:00"
+  },
+  "sliders": [
+   1,
+   3,
+   3
+  ],
+  "voice": "coach",
+  "tools": [
+   "lookup",
+   "calculator",
+   "calendar",
+   "notes"
+  ],
+  "name": "0.0",
+  "age17": false
+ },
+ "fixtures": {}
+}

@@ -1,0 +1,129 @@
+/* AI ya Asli? TV layout. Loaded by web/tv.js. 1em = 1/120 of the stage width (16 px on a 1920 px TV).
+   Minimum sizes at 1920x1080: names 1.7em (27 px), body text 1.5em (24 px) and up, small print 1.4em (22 px). */
+.asli-tv [hidden] { display: none !important; }
+
+/* Scenes: idle = QR + crowd teaser + leaderboard. Live = the agent orchestra keeps the WHOLE stage (core sizes its
+   text from its box: names 36 px only at full width). During rounds the round card takes the place of the
+   orchestra's mission panel (the Quizmaster's "now" view, widened here; tv.js measures it), the graph keeps its full
+   height, so every agent stays visible. Result = score spotlight + leaderboard, with the live area narrowed so the
+   leaderboard never clips a node. */
+.asli-tv > .tv-idle, .asli-tv > .tv-spot { right: 37em; }
+.asli-board { transition: opacity .5s var(--ease), transform .5s var(--ease); }
+.tv-frame[data-mode='live']:not(.has-spot) .asli-board { opacity: 0; transform: translateX(2em); pointer-events: none; }
+
+/* leaderboard */
+.asli-board { position: absolute; z-index: 5; right: 2.5em; top: 7.4em; bottom: 5.6em; width: 33em; padding: 1.6em 1.6em 1.2em; border-radius: 2em;
+  display: flex; flex-direction: column; gap: 0.8em;
+  background: linear-gradient(170deg, rgba(30,24,90,.92), rgba(10,8,34,.94)) padding-box, linear-gradient(160deg, #62BBF3, #8F6BFF 60%, #FF8FC0) border-box;
+  border: 0.15em solid transparent; box-shadow: 0 0 4em rgba(98,187,243,.22), 0 2em 4em rgba(0,0,0,.5); }
+.asli-board-head { display: flex; align-items: center; gap: 0.7em; font-family: var(--font-mono); }
+.asli-board-head b { font-size: 1.6em; letter-spacing: 0.16em; }
+.asli-live-dot { width: 0.8em; height: 0.8em; border-radius: 50%; background: #3EE6A8; box-shadow: 0 0 1em #3EE6A8; animation: orx-blink 1.4s infinite; }
+.asli-players { margin-left: auto; font-size: 1.4em; font-weight: 700; color: var(--stage-dim); }
+.asli-board-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.45em; flex: 1; }
+.asli-row { position: relative; display: grid; grid-template-columns: 2.6em minmax(0, 1fr) auto auto; align-items: center; gap: 0.6em; padding: 0.55em 0.9em; border-radius: 1em; background: rgba(255,255,255,.05); border: 1px solid rgba(186,196,255,.1); animation: asli-row-in .5s var(--ease) both; }
+.asli-row:nth-child(1) { background: linear-gradient(90deg, rgba(255,193,94,.25), rgba(255,255,255,.04)); border-color: rgba(255,193,94,.5); }
+.asli-row:nth-child(2) { background: linear-gradient(90deg, rgba(207,233,255,.2), rgba(255,255,255,.04)); }
+.asli-row:nth-child(3) { background: linear-gradient(90deg, rgba(255,160,110,.2), rgba(255,255,255,.04)); }
+.asli-rank { display: grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; font-size: 1.5em; font-weight: 800; color: #0b0a24; background: var(--grad-glow); }
+.asli-row:nth-child(1) .asli-rank { background: linear-gradient(135deg, #FFE08A, #FFB347); }
+.asli-nick { font-size: 1.6em; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.asli-right { font-family: var(--font-mono); font-size: 1.7em; font-weight: 800; color: #fff; }
+.asli-points { font-family: var(--font-mono); font-size: 1.4em; font-weight: 700; color: #9fd8ff; min-width: 2.6em; text-align: right; }
+.asli-row.is-new { border-color: #3EE6A8; box-shadow: 0 0 0 0.15em rgba(62,230,168,.6), 0 0 2.4em rgba(62,230,168,.45); animation: asli-new 1.2s var(--ease) both; }
+.asli-row.is-new::after { content: 'NEW'; position: absolute; left: 0.5em; top: -0.75em; padding: 0.1em 0.5em; border-radius: 0.4em; font-family: var(--font-mono); font-weight: 800; font-size: 1.05em; letter-spacing: 0.1em; background: #3EE6A8; color: #052a24; }
+@keyframes asli-row-in { from { opacity: 0; transform: translateX(1em); } to { opacity: 1; transform: none; } }
+@keyframes asli-new { 0% { transform: scale(1.08); } 100% { transform: none; } }
+.asli-board-empty { margin: auto 0; text-align: center; font-size: 1.8em; font-weight: 700; color: var(--stage-dim); }
+.asli-board-foot { font-size: 1.4em; color: var(--stage-dim); text-align: center; }
+
+/* live: graph on top of its column, round card below it (position set by tv.js from the graph's box) */
+.asli-tv.asli-rounds > .tv-live .orx--landscape { grid-template-columns: 32em minmax(0, 1fr) 27em; }
+.asli-tv.asli-rounds > .tv-live .orx--portrait { grid-template-rows: 34em minmax(0, 1fr) 21em; }
+.asli-tv.asli-rounds > .tv-live .orx-mission > * { visibility: hidden; }
+.tv-frame.has-spot .asli-tv > .tv-live { right: 37em; }
+.asli-round { position: absolute; z-index: 3; left: 26em; right: 31em; top: 39em; bottom: 6.8em; padding: 1.1em 1.8em; border-radius: 2em; opacity: 0; transform: translateY(1em); transition: opacity .4s, transform .4s var(--ease); pointer-events: none;
+  background: linear-gradient(165deg, rgba(30,24,90,.92), rgba(12,10,40,.94)) padding-box, linear-gradient(135deg, rgba(98,187,243,.8), rgba(143,107,255,.7)) border-box; border: 0.15em solid transparent;
+  display: grid; grid-template-rows: auto 1fr auto auto; gap: 0.45em; overflow: hidden; }
+.tv-frame[data-mode='live'] .asli-round.on { opacity: 1; transform: none; }
+.asli-round { box-shadow: 0 0 0 100vmax rgba(5,4,15,0); transition: opacity .4s, transform .4s var(--ease), box-shadow .4s; }
+.tv-frame[data-mode='live'] .asli-round.on { box-shadow: 0 0 5em rgba(98,187,243,.25), 0 2em 5em rgba(0,0,0,.6); }
+.tv-frame.has-spot .asli-round { opacity: 0 !important; }
+.asli-round-head { font-family: var(--font-mono); font-weight: 800; font-size: 1.5em; letter-spacing: 0.18em; color: #9fd8ff; }
+.asli-round-body { display: flex; flex-direction: column; justify-content: center; min-height: 0; }
+.asli-quote { margin: 0; font-family: var(--font-display); font-size: 2.3em; line-height: 1.22; font-weight: 500; }
+.asli-quote.small { font-size: 1.95em; }
+.asli-code { margin: 0; font-family: var(--font-mono); font-size: 1.45em; line-height: 1.45; color: #d9e8ff; white-space: pre-wrap; }
+.asli-img { max-height: 13em; max-width: 100%; object-fit: contain; border-radius: 1em; }
+.asli-wave { display: flex; gap: 0.4em; align-items: center; height: 6em; }
+.asli-wave i { width: 0.55em; border-radius: 0.3em; background: var(--grad-glow); height: 20%; animation: asli-wave 1s ease-in-out infinite; animation-delay: calc(var(--k) * -0.07s); }
+@keyframes asli-wave { 0%, 100% { height: 18%; } 50% { height: 95%; } }
+.asli-round-picks { display: flex; gap: 1em; }
+.asli-tag { font-family: var(--font-mono); font-weight: 800; font-size: 1.5em; padding: 0.2em 0.8em; border-radius: 0.6em; }
+.asli-tag.ai { background: rgba(255,122,182,.18); border: 0.1em solid rgba(255,122,182,.7); color: #ffd1e6; }
+.asli-tag.real { background: rgba(62,230,168,.14); border: 0.1em solid rgba(62,230,168,.7); color: #c9fff0; }
+.asli-round-timer { height: 0.5em; border-radius: 0.25em; background: rgba(255,255,255,.08); overflow: hidden; }
+.asli-round-timer i { display: block; height: 100%; background: var(--grad-glow); transform-origin: left; }
+.asli-round.revealed .asli-round-picks, .asli-round.revealed .asli-round-timer { display: none; }
+.asli-round-reveal { display: none; }
+.asli-round.revealed .asli-round-reveal { display: flex; flex-direction: column; gap: 0.35em; }
+.asli-round.revealed .asli-round-body { opacity: .5; }
+.asli-rv-top { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5em 1em; }
+.asli-stamp { white-space: nowrap; display: inline-block; font-family: var(--font-mono); font-weight: 800; font-size: 2em; letter-spacing: 0.08em; padding: 0.15em 0.6em; border-radius: 0.4em; transform: rotate(-3deg); }
+.ans-ai .asli-stamp { color: #ffd1e6; background: rgba(255,92,150,.2); border: 0.1em solid rgba(255,122,182,.85); }
+.ans-real .asli-stamp { color: #c9fff0; background: rgba(62,230,168,.16); border: 0.1em solid rgba(62,230,168,.85); }
+.asli-verdict { font-size: 2em; font-weight: 800; }
+.is-right .asli-verdict { color: #3EE6A8; }
+.is-wrong .asli-verdict { color: #FFC15E; }
+.asli-tip { margin: 0; font-size: 1.6em; font-weight: 600; line-height: 1.3; }
+.asli-credit { margin: 0; font-size: 1.4em; color: var(--stage-dim); }
+.asli-det { margin: 0; font-size: 1.5em; font-weight: 700; color: #cfe9ff; }
+.asli-det.confused { color: #ffe2b0; }
+
+/* crowd round: a panel inside core's idle stage loop (rendered by core, centred in the idle area) */
+.asli-crowd { max-width: 60em; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.2em; }
+.asli-crowd-q { margin: 0; font-family: var(--font-display); font-size: 3.6em; line-height: 1.2; font-weight: 500; }
+.asli-crowd-ask { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.8em; font-size: 2.2em; font-weight: 700; color: var(--stage-dim); min-height: 2em; }
+.asli-crowd-ask .asli-stamp { font-size: 1em; }
+.asli-crowd-tip { font-size: 0.8em; color: var(--stage-ink); max-width: 30em; }
+.asli-crowd.revealed .asli-crowd-q { opacity: .6; }
+
+/* result spotlight */
+.asli-spot { text-align: center; }
+.asli-spot-nick { font-size: 3em; font-weight: 800; margin: 0.2em 0 0; }
+.asli-spot-score { display: flex; justify-content: center; align-items: baseline; gap: 0.1em; margin: 0.1em 0 0.3em; }
+.asli-spot-score b { font-family: var(--font-display); font-size: 11em; line-height: 1; font-weight: 600; background: linear-gradient(120deg, #fff, #cfe9ff 45%, #b9a2ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.asli-spot-score span { font-family: var(--font-display); font-size: 4em; color: var(--stage-dim); }
+.asli-spot-lines { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4em; }
+.asli-spot-lines li { font-size: 2em; font-weight: 700; }
+.asli-spot-lines li:first-child { color: #FFC15E; }
+
+/* capture mode: no top bar, so the panels start higher */
+.tv-frame.is-capture .asli-board { top: 2.5em; bottom: 4em; }
+
+/* portrait 9:16 (1em = 16 px on a 1080 px wide stage): leaderboard across the bottom */
+.tv-frame[data-layout='portrait'] .asli-tv > .tv-idle,
+.tv-frame[data-layout='portrait'] .asli-tv > .tv-spot { right: 0; bottom: 46em; }
+.tv-frame[data-layout='portrait'] .asli-board { left: 3.5em; right: 3.5em; width: auto; top: auto; bottom: 9.5em; height: 37.5em; }
+.tv-frame[data-layout='portrait'] .asli-board-foot { font-size: 1.4em; line-height: 1.2; }
+.tv-frame[data-layout='portrait'] .asli-board-list { gap: 0.3em; }
+.tv-frame[data-layout='portrait'] .asli-row { padding: 0.35em 0.9em; }
+/* portrait: the top 8 fit the panel with a full board (CHECK-14 F2); landscape shows all 10 */
+.tv-frame[data-layout='portrait'] .asli-row:nth-child(n+9) { display: none; }
+
+.tv-frame[data-layout='portrait'].is-capture .asli-board { bottom: 5em; } /* clear of core's capture strip (4.2em) */
+.tv-frame[data-layout='portrait'].is-capture .asli-tv > :is(.tv-idle, .tv-live, .tv-spot) { bottom: 40em; }
+
+
+/* duel: live scores on top of the round card, one row per player (names at least 28 px and never cut for
+   12-character nicknames, scores at least 40 px at 1920x1080: CHECK-14 F3) */
+.asli-duel { display: none; }
+.asli-round.is-duel .asli-duel { display: grid; grid-template-columns: 1fr; gap: 0.4em; margin-bottom: 0.5em; }
+.asli-duel-side { position: relative; overflow: hidden; padding: 0.35em 0.9em 0.5em; border-radius: 0.9em; background: rgba(255,255,255,.06); border: 1px solid var(--stage-line); display: flex; justify-content: space-between; align-items: center; gap: 0.6em; min-width: 0; }
+.asli-duel-side b { font-size: 1.85em; font-weight: 800; white-space: nowrap; letter-spacing: -0.01em; }
+.asli-duel-side.a b { color: #c9fff0; } .asli-duel-side.b b { color: #ffd1e6; }
+.asli-duel-score { font-family: var(--font-mono); font-weight: 800; font-size: 2.6em; line-height: 1; color: #fff; }
+.asli-duel-side i { position: absolute; left: 0; bottom: 0; height: 0.3em; background: var(--grad-glow); transition: width .4s; }
+.asli-duel-side.done { border-color: rgba(62,230,168,.6); }
+.asli-duel-vs { display: none; }
+.asli-spot-winner { font-size: 4.6em; margin: 0.2em 0 0.3em; background: linear-gradient(120deg, #fff, #ffe7a8 50%, #b9a2ff); -webkit-background-clip: text; background-clip: text; color: transparent; }

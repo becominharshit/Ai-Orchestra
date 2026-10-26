@@ -1,0 +1,51 @@
+<!doctype html>
+<!-- Template: A4 table tent. A4 portrait folded in half at 148.5 mm: two identical landscape faces,
+     the top face printed upside down so both sides read upright on the table. Filled by make.mjs. -->
+<html lang="en"><head><meta charset="utf-8"><title>{{TITLE}}</title>
+<link rel="stylesheet" href="../../templates/base.css">
+<style>
+@page { size: {{SHEET_W}}mm {{SHEET_H}}mm; margin: 0; }
+.sheet { width: {{SHEET_W}}mm; height: {{SHEET_H}}mm; }
+.face { position: absolute; left: 0; width: 210mm; height: 148.5mm; }
+.face.top { top: 0; transform: rotate(180deg); }
+.face.bot { top: 148.5mm; }
+.face .qrwrap { position: absolute; left: 10mm; top: 12mm; }
+.qrframe { padding: 1.2mm; border-radius: 8mm; }
+.qrcard { padding: 5mm 5mm 4.5mm; border-radius: 7mm; }
+.qrcard .qrlabel { font-size: 4.6mm; margin-bottom: 2.5mm; display: flex; align-items: center; gap: 1.6mm; }
+.qrcard .qrlabel .arr { width: 3.6mm; height: 3.6mm; }
+.qr { width: {{QR_MM}}mm; height: {{QR_MM}}mm; }
+.qrcard .qrurl { font-size: 3.3mm; margin-top: 2.6mm; }
+.brackets { display: none; }
+.col { position: absolute; left: 112mm; right: 10mm; top: 13mm; bottom: 11mm; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; }
+.col img { height: 10.5mm; align-self: flex-start; }
+.crow { display: flex; gap: 1.8mm; }
+.crow .chip { font-size: 3.2mm; padding: 1mm 2.6mm; }
+.crow .chip.line { border-width: .35mm; }
+.col .display { font-size: 13.5mm; }
+.col .hook { font-size: 5.4mm; }
+.labels { display: flex; gap: 1.4mm; flex-wrap: wrap; }
+.labels .chip { font-size: 2.8mm; padding: .9mm 2.2mm; }
+.steps { flex-direction: column; gap: 1.5mm; }
+.step { gap: 2mm; align-items: center; }
+.step .n { width: 5.6mm; height: 5.6mm; font-size: 3.2mm; }
+.step .t { font-size: 3.7mm; }
+.foot { display: flex; align-items: center; gap: 2.6mm; }
+.foot .fcard { padding: 1.1mm 1.1mm .8mm; border-radius: 2.4mm; }
+.foot .flabel { font-size: 2.1mm; margin-top: .5mm; }
+.foot .ftext { min-width: 0; flex: 1; }
+.foot .photo { font-size: 2.5mm; gap: 1mm; margin-top: .8mm; }
+.foot .handle { font-size: 4.2mm; gap: 1.4mm; }
+.foot .prog { font-size: 2.7mm; margin-top: .8mm; display: block; }
+.foot .viral { font-size: 2.5mm; margin-top: .5mm; display: block; text-align: left; }
+</style></head>
+<body>
+<div class="sheet">
+  <div class="bleed" style="left: {{BLEED_X}}mm; top: {{BLEED_X}}mm; width: {{BLEED_W}}mm; height: {{BLEED_H}}mm;">{{BG}}</div>
+  <div class="trim" style="left: {{SLUG}}mm; top: {{SLUG}}mm; width: {{TRIM_W}}mm; height: {{TRIM_H}}mm;">
+    {{FACES}}
+  </div>
+  {{MARKS}}
+</div>
+<script src="../../templates/fit.js"></script>
+</body></html>

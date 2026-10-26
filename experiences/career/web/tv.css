@@ -1,0 +1,32 @@
+/* Career Studio TV hook styles (1 em = 16 px at 1920x1080). Text sizes: titles >= 3.4em, body >= 1.6em, chips >= 1.4em. */
+.cst-r1 { position: absolute; left: 0; right: 0; top: 6.5em; bottom: 4.6em; z-index: 3; display: grid; place-items: center; background: radial-gradient(ellipse at center, #120c3d, #070618 75%); }
+.tv-frame.is-capture .cst-r1 { top: 0; bottom: 0; }
+.cst-r1-card { width: min(70em, 90%); }
+.cst-kicker { font-family: var(--font-mono); font-weight: 800; font-size: 1.5em; letter-spacing: .2em; text-transform: uppercase; color: #9fd8ff; }
+.cst-year { display: inline-block; font-family: var(--font-display); font-size: 5.2em; line-height: 1; margin: .15em 0 .1em; padding: .05em .3em; border-radius: .25em; background: rgba(255,255,255,.08); color: #fff; }
+.cst-job { font-size: 2.6em; font-weight: 800; color: #F1F2FF; margin: .3em 0 .2em; }
+.cst-step { font-size: 1.7em; color: var(--stage-dim); font-weight: 700; }
+.cst-prompt { font-size: 2.6em; line-height: 1.3; font-weight: 600; margin-top: .6em; padding: .7em .9em; border-radius: .6em; background: rgba(255,255,255,.06); border: 1px solid var(--stage-line); }
+.cst-dots { display: flex; gap: .8em; margin-top: 1.4em; }
+.cst-dots i { width: 1.4em; height: 1.4em; border-radius: 50%; background: rgba(255,255,255,.15); }
+.cst-dots i.on { background: linear-gradient(135deg, #7CCBFF, #8F6BFF); }
+.cst-call { position: absolute; left: 50%; bottom: 5.6em; transform: translateX(-50%); z-index: 3; width: min(62em, 62%); padding: 1em 1.4em; border-radius: 1.2em; background: rgba(255,193,94,.14); border: 2px solid rgba(255,193,94,.55); animation: tv-pop .6s var(--ease); }
+.cst-call b { display: block; font-family: var(--font-mono); font-size: 1.4em; letter-spacing: .14em; color: #FFC15E; text-transform: uppercase; }
+.cst-call span { display: block; font-size: 1.9em; font-weight: 700; margin-top: .25em; color: #fff; }
+.cst-res { width: min(84em, 94%); padding: 3em 3.6em; border-radius: 2.4em; background: #14103a; /* opaque: nothing of the graph shows through */ border: 1px solid var(--stage-line); box-shadow: 0 2em 6em rgba(0,0,0,.5); }
+.cst-res h2 { font-size: 4.4em; margin: .15em 0 .4em; background: linear-gradient(120deg, #fff, #d6c8ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.cst-vs { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4em; margin-bottom: 1.6em; }
+.cst-vs > div { padding: 1em 1.3em; border-radius: 1.2em; background: rgba(255,255,255,.06); }
+.cst-vs > div:last-child { background: linear-gradient(135deg, rgba(98,187,243,.22), rgba(143,107,255,.22)); }
+.cst-vs .y { font-family: var(--font-display); font-size: 3em; line-height: 1; }
+.cst-vs small { display: block; font-size: 1.7em; color: #dfe3ff; margin-top: .3em; font-weight: 600; }
+.cst-bar { display: flex; height: 2.2em; border-radius: 1em; overflow: hidden; margin: .4em 0 .6em; }
+.cst-bar i { display: block; height: 100%; }
+.cst-key { display: flex; gap: 2em; font-size: 1.6em; font-weight: 700; color: #dfe3ff; margin-bottom: 1.4em; }
+.cst-key span::before { content: ''; display: inline-block; width: .8em; height: .8em; border-radius: .2em; margin-right: .4em; background: var(--c); }
+.cst-skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em; }
+.cst-skills div { padding: 1em 1.1em; border-radius: 1em; background: rgba(255,255,255,.07); border: 1px solid var(--stage-line); font-size: 1.8em; font-weight: 700; line-height: 1.3; }
+.cst-foot { display: flex; gap: 1em; align-items: center; margin-top: 1.4em; font-size: 1.4em; color: var(--stage-dim); }
+.tv-frame[data-layout='portrait'] .cst-skills { grid-template-columns: 1fr; }
+.tv-frame[data-layout='portrait'] .cst-res h2 { font-size: 4em; }
+.cst-foot .pz-forfun { font-size: 1em; padding: .25em .7em; } /* 22.4 px at 1080p, landscape and portrait */

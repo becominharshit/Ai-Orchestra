@@ -1,0 +1,38 @@
+[
+ {
+  "shot1": "he-c1-01",
+  "shot2": "he-c2-01",
+  "shot3": "he-c3-01",
+  "post": "he-p-01"
+ },
+ {
+  "shot1": "he-c1-02",
+  "shot2": "he-c2-04",
+  "shot3": "he-c3-06",
+  "post": "he-p-02"
+ },
+ {
+  "shot1": "he-c1-03",
+  "shot2": "he-c2-07",
+  "shot3": "he-c3-11",
+  "post": "he-p-03"
+ },
+ {
+  "shot1": "he-c1-04",
+  "shot2": "he-c2-10",
+  "shot3": "he-c3-02",
+  "post": "he-p-04"
+ },
+ {
+  "shot1": "he-c1-05",
+  "shot2": "he-c2-13",
+  "shot3": "he-c3-07",
+  "post": "he-p-05"
+ },
+ {
+  "shot1": "he-c1-06",
+  "shot2": "he-c2-02",
+  "shot3": "he-c3-12",
+  "post": "he-p-06"
+ }
+]

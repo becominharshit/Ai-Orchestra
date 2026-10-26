@@ -1,0 +1,4681 @@
+{
+  "src": "badge_rule_2026_10",
+  "badge_rule": {
+    "growing_at_or_above": 110,
+    "shrinking_at_or_below": 80
+  },
+  "careers": [
+    {
+      "id": "ai-engineer",
+      "title": "AI / LLM Engineer",
+      "family": "tech",
+      "interest_areas": [
+        "computers-coding"
+      ],
+      "badge": "Growing",
+      "forecast_score": 85,
+      "card_line": "Hiring for AI is outpacing every tech role",
+      "reason": "Companies are hiring for AI faster than for any other tech role, and few people have deep AI skills",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "low-med",
+        "note": "AI-core vs AI-support split is sharp; senior band estimated (few people with 10+ yrs in LLM titles)",
+        "sources_detail": "instahyre AI engineer salary; CIOL on TeamLease FY27 AI premiums; payscale.com Machine_Learning_Engineer; glassdoor.co.in ai-engineer",
+        "entry": {
+          "low": 6,
+          "high": 13,
+          "label": "Rs 6-13 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 16,
+          "high": 32,
+          "label": "Rs 16-32 L"
+        },
+        "senior": {
+          "low": 28,
+          "high": 50,
+          "label": "Rs 28-50 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 159.9,
+        "if_ai_spreads_fast": 143,
+        "if_ai_spreads_slowly": 176.8
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 19,
+        "with_ai": 43,
+        "led_by_people": 38
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Building retrieval and context pipelines",
+            "share": 16,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "AI को सही जानकारी देने वाली pipeline बनाना"
+          },
+          {
+            "text": "Prompt, spec and eval design",
+            "share": 15,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "prompt, spec और AI की जाँच के टेस्ट तैयार करना"
+          },
+          {
+            "text": "Integrating models into product surfaces",
+            "share": 15,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "AI मॉडल को प्रोडक्ट में लगाना"
+          },
+          {
+            "text": "Monitoring quality, drift and cost in production",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "चलते सिस्टम में क्वालिटी, बदलाव और खर्च पर नज़र रखना"
+          },
+          {
+            "text": "Fine-tuning and model adaptation",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "मॉडल को fine-tune करना और काम के हिसाब से ढालना"
+          },
+          {
+            "text": "Writing glue and infrastructure code",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "जोड़ने वाला और इंफ्रास्ट्रक्चर कोड लिखना"
+          },
+          {
+            "text": "Safety, guardrails and red-teaming",
+            "share": 9,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "सुरक्षा, guardrails और red-teaming"
+          },
+          {
+            "text": "Documentation and internal enablement",
+            "share": 7,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "डॉक्यूमेंटेशन और टीम को सिखाना"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Evaluation design",
+        "Retrieval and context engineering",
+        "Cost and speed trade-offs"
+      ],
+      "skills_fading": [
+        "Prompt tricks as a standalone skill",
+        "Wrapper-app building with no evaluation layer"
+      ],
+      "new_tasks_emerging": [
+        "Evaluation engineering: building the golden sets a business trusts",
+        "Agent orchestration and failure-mode design",
+        "Cost-per-task optimisation across model tiers"
+      ],
+      "evidence": "Naukri JobSpeak: AI/ML is the fastest-growing hiring category in every month reviewed through 2026 (+25% to +33% YoY). foundit: AI-linked postings 290,256 in 2025, projected ~380,000 in 2026. NASSCOM: only 200,000–300,000 Indians hold deep AI skills against a market growing 25–35% a year.",
+      "card_line_hi": "AI की भर्ती हर दूसरी टेक नौकरी से तेज़ है",
+      "reason_hi": "कंपनियाँ बाकी सभी टेक नौकरियों से तेज़ी से AI के लिए भर्ती कर रही हैं, और गहरी AI स्किल वाले लोग कम हैं।",
+      "skills_that_hold_hi": [
+        "AI के काम की जाँच",
+        "AI को सही जानकारी देना",
+        "AI में खर्च और रफ़्तार का संतुलन"
+      ],
+      "skills_fading_hi": [
+        "prompt की तरकीबें, अकेली स्किल के तौर पर",
+        "बिना evaluation के wrapper ऐप बनाना"
+      ],
+      "new_tasks_emerging_hi": [
+        "Evaluation engineering: ऐसे golden set बनाना जिन पर बिज़नेस भरोसा करे",
+        "एजेंट orchestration और failure mode का design",
+        "अलग-अलग मॉडल tier में हर काम का खर्च घटाना"
+      ],
+      "evidence_hi": "Naukri JobSpeak: 2026 तक जितने भी महीने देखे गए, हर महीने AI/ML भर्ती की सबसे तेज़ बढ़ने वाली श्रेणी रही (साल-दर-साल +25% से +33%)। foundit: AI से जुड़ी नौकरियों के विज्ञापन 2025 में 290,256 रहे, और 2026 में करीब 380,000 रहने का अनुमान है। NASSCOM: गहरी AI स्किल सिर्फ़ 200,000 से 300,000 भारतीयों के पास है, जबकि बाज़ार हर साल 25 से 35% बढ़ रहा है।"
+    },
+    {
+      "id": "security",
+      "title": "Cybersecurity Analyst",
+      "family": "tech",
+      "interest_areas": [
+        "computers-coding"
+      ],
+      "badge": "Growing",
+      "forecast_score": 73,
+      "card_line": "More software and AI means more to defend",
+      "reason": "More software and AI means more to defend; security talent is short",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med-low",
+        "note": "SOC analyst (low) vs security engineer (high); senior top estimated",
+        "sources_detail": "payscale.com Cyber_Security_Analyst; glassdoor.co.in cyber-security-analyst, security-engineer",
+        "entry": {
+          "low": 3.5,
+          "high": 7,
+          "label": "Rs 3.5-7 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 10,
+          "high": 20,
+          "label": "Rs 10-20 L"
+        },
+        "senior": {
+          "low": 18,
+          "high": 35,
+          "label": "Rs 18-35 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 114.4,
+        "if_ai_spreads_fast": 86,
+        "if_ai_spreads_slowly": 142.9
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 46,
+        "with_ai": 34,
+        "led_by_people": 20
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "SOC alert triage and log review",
+            "share": 20,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "SOC alert छाँटना और log जाँचना"
+          },
+          {
+            "text": "Vulnerability scanning and reporting",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "सिस्टम की कमज़ोरियाँ स्कैन करना और रिपोर्ट बनाना"
+          },
+          {
+            "text": "Threat hunting and investigation",
+            "share": 14,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "खतरे ढूँढना और उनकी जाँच करना"
+          },
+          {
+            "text": "Incident response and containment",
+            "share": 13,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "हमला होने पर जवाब देना और उसे रोकना"
+          },
+          {
+            "text": "Compliance evidence and audit prep",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "नियमों के पालन के सबूत और ऑडिट की तैयारी"
+          },
+          {
+            "text": "Security architecture and control design",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "सुरक्षा का ढाँचा और कंट्रोल डिज़ाइन करना"
+          },
+          {
+            "text": "Red-teaming and adversarial testing",
+            "share": 8,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "red-teaming: हमलावर की तरह सिस्टम को परखना"
+          },
+          {
+            "text": "Risk communication to the business",
+            "share": 7,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "बिज़नेस को खतरे समझाना"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Incident response",
+        "Adversarial thinking",
+        "Security architecture",
+        "Regulatory translation"
+      ],
+      "skills_fading": [
+        "Manual alert triage",
+        "Checklist compliance work",
+        "Report writing as the deliverable"
+      ],
+      "new_tasks_emerging": [
+        "Securing AI systems: prompt injection, data exfiltration, agent permissions",
+        "Model and data supply-chain assurance",
+        "AI governance and audit evidence (RBI FREE-AI in Indian BFSI)"
+      ],
+      "evidence": "WEF 2025 lists security-management specialists among fastest-growing roles. ISC2 2025 Workforce Study: budgets stable, skills gap widening, skills mattering more than headcount. Help Net Security (Aug 2026): job ads requiring AI skills in security roughly doubled year on year.",
+      "card_line_hi": "जितना ज़्यादा सॉफ़्टवेयर और AI, उतनी ज़्यादा सुरक्षा की ज़रूरत",
+      "reason_hi": "जितना ज़्यादा सॉफ़्टवेयर और AI, उतनी ज़्यादा सुरक्षा की ज़रूरत। सुरक्षा के जानकार लोग कम हैं।",
+      "skills_that_hold_hi": [
+        "हमला होने पर जवाब देना",
+        "हमलावर की तरह सोचना",
+        "सुरक्षा का ढाँचा बनाना",
+        "नियमों को काम की भाषा में समझाना"
+      ],
+      "skills_fading_hi": [
+        "alert को हाथ से छाँटना",
+        "चेकलिस्ट वाला compliance का काम",
+        "रिपोर्ट लिखना ही पूरा काम होना"
+      ],
+      "new_tasks_emerging_hi": [
+        "AI सिस्टम को सुरक्षित रखना: prompt injection, data exfiltration, एजेंट की permissions",
+        "मॉडल और डेटा की supply chain की भरोसेमंद जाँच",
+        "AI governance और ऑडिट के सबूत (भारतीय BFSI में RBI FREE-AI)"
+      ],
+      "evidence_hi": "WEF 2025 ने security-management specialists को सबसे तेज़ बढ़ने वाली नौकरियों में गिना है। ISC2 2025 Workforce Study: बजट स्थिर हैं, स्किल की कमी बढ़ रही है, और लोगों की गिनती से ज़्यादा स्किल मायने रखती है। Help Net Security (अगस्त 2026): security की जिन नौकरियों के विज्ञापनों में AI स्किल माँगी गई, वे साल-दर-साल करीब दोगुने हो गए।"
+    },
+    {
+      "id": "data-scientist",
+      "title": "Data Scientist / ML Engineer",
+      "family": "tech",
+      "interest_areas": [
+        "computers-coding"
+      ],
+      "badge": "Changing",
+      "forecast_score": 67,
+      "card_line": "AI does basic analysis; judgement grows",
+      "reason": "Turning data into decisions grows; basic analysis is increasingly done by AI tools",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Fresher DS roles scarce; many enter as analysts at 4-6L",
+        "sources_detail": "payscale.com Data_Scientist; glassdoor.co.in data-scientist; kaam.work",
+        "entry": {
+          "low": 5,
+          "high": 10,
+          "label": "Rs 5-10 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 14,
+          "high": 25,
+          "label": "Rs 14-25 L"
+        },
+        "senior": {
+          "low": 24,
+          "high": 40,
+          "label": "Rs 24-40 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 106,
+        "if_ai_spreads_fast": 79.8,
+        "if_ai_spreads_slowly": 132.2
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 43,
+        "with_ai": 24,
+        "led_by_people": 33
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Data cleaning and feature preparation",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "डेटा साफ़ करना और features तैयार करना"
+          },
+          {
+            "text": "Standard model prototyping and benchmarking",
+            "share": 15,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "आम मॉडल का पहला रूप बनाना और उनकी तुलना करना"
+          },
+          {
+            "text": "Dashboards and recurring reporting",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "dashboard और हर हफ़्ते, हर महीने की रिपोर्ट"
+          },
+          {
+            "text": "Experiment design and causal reasoning",
+            "share": 13,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "experiment डिज़ाइन करना और असली वजह समझना"
+          },
+          {
+            "text": "Model architecture and method choice",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "मॉडल का ढाँचा और तरीका चुनना"
+          },
+          {
+            "text": "Productionising and monitoring models",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "मॉडल को असली सिस्टम में चलाना और उस पर नज़र रखना"
+          },
+          {
+            "text": "Turning business questions into problems",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "बिज़नेस के सवालों को हल करने लायक समस्या में बदलना"
+          },
+          {
+            "text": "Presenting findings and defending conclusions",
+            "share": 8,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "नतीजे बताना और उनके पीछे का तर्क समझाना"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Causal inference and experiment design",
+        "Problem framing",
+        "Knowing when the answer is wrong",
+        "Communicating uncertainty"
+      ],
+      "skills_fading": [
+        "Library-level model fitting",
+        "Manual feature engineering",
+        "Dashboard production"
+      ],
+      "new_tasks_emerging": [
+        "Deciding when a model should not be trusted",
+        "Measuring the business effect of AI features",
+        "Evaluation and benchmark design for generative systems"
+      ],
+      "evidence": "Microsoft Research places Data Scientists in the 21–40 applicability band (0.36). WEF Future of Jobs 2025 lists AI/ML specialists and big-data specialists among the fastest-growing roles to 2030.",
+      "card_line_hi": "आसान analysis AI करता है, सही फ़ैसले की समझ की माँग बढ़ रही है",
+      "reason_hi": "डेटा से फ़ैसले निकालने का काम बढ़ रहा है। आसान analysis अब ज़्यादा से ज़्यादा AI टूल करते हैं।",
+      "skills_that_hold_hi": [
+        "असली वजह ढूँढना और experiment डिज़ाइन करना",
+        "सही सवाल तय करना",
+        "पहचानना कि जवाब कब गलत है",
+        "यह समझाना कि नतीजा कितना पक्का है"
+      ],
+      "skills_fading_hi": [
+        "library से मॉडल फ़िट करना",
+        "feature engineering हाथ से करना",
+        "dashboard बनाते रहना"
+      ],
+      "new_tasks_emerging_hi": [
+        "यह तय करना कि मॉडल पर कब भरोसा नहीं करना चाहिए",
+        "AI फ़ीचर का बिज़नेस पर असर नापना",
+        "generative सिस्टम के लिए evaluation और benchmark बनाना"
+      ],
+      "evidence_hi": "Microsoft Research ने Data Scientists को applicability के 21 से 40 वाले दायरे (0.36) में रखा है। WEF Future of Jobs 2025 के मुताबिक 2030 तक AI/ML specialists और big-data specialists सबसे तेज़ बढ़ने वाली नौकरियों में हैं।"
+    },
+    {
+      "id": "devops",
+      "title": "DevOps / SRE / Platform",
+      "family": "tech",
+      "interest_areas": [
+        "computers-coding"
+      ],
+      "badge": "Changing",
+      "forecast_score": 62,
+      "card_line": "More AI systems need reliable cloud operations",
+      "reason": "More software and AI systems need reliable cloud operations; routine scripting is automated",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "SRE about 10% above DevOps",
+        "sources_detail": "payscale.com DevOps Engineer; glassdoor.co.in devops-engineer; kaam.work",
+        "entry": {
+          "low": 4,
+          "high": 8,
+          "label": "Rs 4-8 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 12,
+          "high": 22,
+          "label": "Rs 12-22 L"
+        },
+        "senior": {
+          "low": 22,
+          "high": 35,
+          "label": "Rs 22-35 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 101,
+        "if_ai_spreads_fast": 73,
+        "if_ai_spreads_slowly": 129
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 46,
+        "with_ai": 34,
+        "led_by_people": 20
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Writing CI/CD and infrastructure-as-code",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "CI/CD और infrastructure-as-code लिखना"
+          },
+          {
+            "text": "Routine deployments and environment config",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "रोज़ के deployment और environment की सेटिंग"
+          },
+          {
+            "text": "Alert triage and on-call toil",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "alert छाँटना और on-call का रोज़ का काम"
+          },
+          {
+            "text": "Incident command and post-mortems",
+            "share": 13,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "गड़बड़ी के समय टीम को संभालना और बाद में कारण जाँचना"
+          },
+          {
+            "text": "Platform architecture decisions",
+            "share": 13,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "प्लेटफ़ॉर्म के ढाँचे के फ़ैसले"
+          },
+          {
+            "text": "Capacity, cost and performance analysis",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "क्षमता, खर्च और रफ़्तार की जाँच"
+          },
+          {
+            "text": "Security hardening and compliance",
+            "share": 9,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "सिस्टम की सुरक्षा मज़बूत करना और नियमों का पालन"
+          },
+          {
+            "text": "Unblocking product teams",
+            "share": 7,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "प्रोडक्ट टीमों की रुकावटें दूर करना"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Incident command",
+        "Architecture under cost pressure",
+        "Observability design",
+        "Security posture"
+      ],
+      "skills_fading": [
+        "Hand-written pipeline YAML",
+        "Manual environment babysitting",
+        "Alert-by-alert triage"
+      ],
+      "new_tasks_emerging": [
+        "Running the inference layer: GPU capacity, routing, cost",
+        "Observability for agentic systems",
+        "Guardrails and blast-radius limits for autonomous deploys"
+      ],
+      "evidence": "No rigorous employment data was found for this role family; searches returned vendor marketing. Score derives from the task mix. The countervailing signal is real: AI workloads are creating new platform demand (GPU scheduling, inference cost, agent observability) that did not exist in 2023.",
+      "card_line_hi": "ज़्यादा AI सिस्टम, यानी cloud को भरोसे से चलाने की ज़्यादा ज़रूरत",
+      "reason_hi": "ज़्यादा सॉफ़्टवेयर और AI सिस्टम को cloud पर भरोसे से चलाना ज़रूरी है। रोज़ की scripting अब अपने-आप होती है।",
+      "skills_that_hold_hi": [
+        "गड़बड़ी के समय टीम को संभालना",
+        "कम खर्च में सही ढाँचा बनाना",
+        "सिस्टम पर नज़र रखने का इंतज़ाम बनाना",
+        "सिस्टम की पूरी सुरक्षा"
+      ],
+      "skills_fading_hi": [
+        "pipeline का YAML हाथ से लिखना",
+        "environment की निगरानी हाथ से करते रहना",
+        "एक-एक alert को छाँटना"
+      ],
+      "new_tasks_emerging_hi": [
+        "inference layer चलाना: GPU की क्षमता, routing, खर्च",
+        "agentic सिस्टम की observability",
+        "अपने आप चलने वाले deploy के लिए guardrail और blast-radius की सीमा"
+      ],
+      "evidence_hi": "इस तरह की नौकरियों के लिए रोज़गार का कोई पक्का आँकड़ा नहीं मिला; खोज में सिर्फ़ बेचने वाली कंपनियों का प्रचार मिला। स्कोर काम की बनावट (task mix) से निकाला गया है। उलटा संकेत असली है: AI workload से platform की नई माँग बन रही है (GPU scheduling, inference cost, agent observability), जो 2023 में थी ही नहीं।"
+    },
+    {
+      "id": "data-engineer",
+      "title": "Data Engineer",
+      "family": "tech",
+      "interest_areas": [
+        "computers-coding"
+      ],
+      "badge": "Changing",
+      "forecast_score": 60,
+      "card_line": "Every AI system needs clean data pipelines",
+      "reason": "Every AI system needs clean, reliable data pipelines; routine pipeline work is being automated",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": null,
+        "sources_detail": "payscale.com Data_Engineer; glassdoor.co.in data-engineer; kaam.work",
+        "entry": {
+          "low": 4.5,
+          "high": 9,
+          "label": "Rs 4.5-9 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 12,
+          "high": 22,
+          "label": "Rs 12-22 L"
+        },
+        "senior": {
+          "low": 22,
+          "high": 38,
+          "label": "Rs 22-38 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 100.9,
+        "if_ai_spreads_fast": 76.5,
+        "if_ai_spreads_slowly": 125.4
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 37,
+        "with_ai": 46,
+        "led_by_people": 17
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Building and maintaining ETL/ELT pipelines",
+            "share": 22,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "ETL/ELT pipeline बनाना और चलाते रहना"
+          },
+          {
+            "text": "Writing SQL and transformation logic",
+            "share": 15,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "SQL और डेटा बदलने का logic लिखना"
+          },
+          {
+            "text": "Schema and warehouse modelling",
+            "share": 13,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "schema और warehouse का ढाँचा बनाना"
+          },
+          {
+            "text": "Data quality checks and reconciliation",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "डेटा की क्वालिटी जाँचना और आँकड़े मिलाना"
+          },
+          {
+            "text": "Pipeline incident response",
+            "share": 11,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "pipeline टूटने पर उसे ठीक करना"
+          },
+          {
+            "text": "Cost and performance tuning",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "खर्च और रफ़्तार बेहतर करना"
+          },
+          {
+            "text": "Agreeing definitions with domain owners",
+            "share": 10,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "हर आँकड़े का मतलब बिज़नेस टीम के साथ तय करना"
+          },
+          {
+            "text": "Governance, lineage and access control",
+            "share": 7,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "डेटा के नियम, वह कहाँ से आया, और किसे access मिले"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Warehouse and lakehouse modelling",
+        "Data contracts and definitions",
+        "Cost control at scale",
+        "Governance for AI access"
+      ],
+      "skills_fading": [
+        "Hand-written pipeline code",
+        "Ad-hoc SQL as the core deliverable"
+      ],
+      "new_tasks_emerging": [
+        "Building the retrieval substrate AI systems read from",
+        "Data contracts and lineage that survive agent access",
+        "Unstructured-data pipelines (documents, audio, video)"
+      ],
+      "evidence": "Anthropic Economic Index names database architects as having high task coverage. Gartner (Oct 2025, 700+ CIOs): by 2030 it projects 0% of IT work done by humans without AI, 75% human+AI, 25% AI alone.",
+      "card_line_hi": "हर AI सिस्टम को साफ़ data pipeline चाहिए",
+      "reason_hi": "हर AI सिस्टम को साफ़ और भरोसेमंद data pipeline चाहिए। रोज़ का pipeline काम अब अपने-आप होने लगा है।",
+      "skills_that_hold_hi": [
+        "warehouse और lakehouse का ढाँचा बनाना",
+        "डेटा के नियम और मतलब तय करना",
+        "बड़े पैमाने पर खर्च पर काबू",
+        "AI को कौन-सा डेटा मिले, इसके नियम"
+      ],
+      "skills_fading_hi": [
+        "pipeline का कोड हाथ से लिखना",
+        "ज़रूरत पड़ने पर SQL लिखना ही मुख्य काम होना"
+      ],
+      "new_tasks_emerging_hi": [
+        "वह retrieval की बुनियाद बनाना जिससे AI सिस्टम जानकारी पढ़ते हैं",
+        "ऐसे data contract और lineage जो एजेंट के पहुँचने पर भी टिके रहें",
+        "unstructured डेटा की pipeline (डॉक्यूमेंट, ऑडियो, वीडियो)"
+      ],
+      "evidence_hi": "Anthropic Economic Index ने database architects को ऐसा बताया है जिनके ज़्यादातर काम AI के दायरे में आते हैं। Gartner (अक्टूबर 2025, 700+ CIO): उसका अनुमान है कि 2030 तक IT का 0% काम बिना AI के इंसान करेंगे, 75% इंसान और AI मिलकर, और 25% सिर्फ़ AI।"
+    },
+    {
+      "id": "uiux",
+      "title": "UI/UX & Product Design",
+      "family": "tech",
+      "interest_areas": [
+        "computers-coding"
+      ],
+      "badge": "Changing",
+      "forecast_score": 57,
+      "card_line": "AI draws screens; people decide what users need",
+      "reason": "AI can draw screens; people who understand what users need still decide what gets built",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Product companies pay well above agencies",
+        "sources_detail": "payscale.com UX_Designer; glassdoor.co.in ui-ux-designer, senior-ux-designer",
+        "entry": {
+          "low": 3.5,
+          "high": 7,
+          "label": "Rs 3.5-7 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 10,
+          "high": 18,
+          "label": "Rs 10-18 L"
+        },
+        "senior": {
+          "low": 18,
+          "high": 32,
+          "label": "Rs 18-32 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 93.2,
+        "if_ai_spreads_fast": 65.7,
+        "if_ai_spreads_slowly": 120.8
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 41,
+        "with_ai": 40,
+        "led_by_people": 19
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Producing screens, states and variants",
+            "share": 20,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "screen, state और उनके अलग-अलग रूप बनाना"
+          },
+          {
+            "text": "User research: running and synthesising",
+            "share": 15,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "यूज़र रिसर्च करना और उसका निचोड़ निकालना"
+          },
+          {
+            "text": "Interaction and flow architecture",
+            "share": 15,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "ऐप में कदम-दर-कदम रास्ता डिज़ाइन करना"
+          },
+          {
+            "text": "Design-system maintenance and handoff specs",
+            "share": 13,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "design system सँभालना और डेवलपर के लिए spec बनाना"
+          },
+          {
+            "text": "Stakeholder alignment and critique",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "टीम और बिज़नेस को एक राय पर लाना, और डिज़ाइन पर राय देना"
+          },
+          {
+            "text": "Prototyping and usability testing",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "prototype बनाना और यूज़र के साथ टेस्ट करना"
+          },
+          {
+            "text": "Copy and microcopy drafting",
+            "share": 8,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "ऐप के शब्द और छोटे संदेश लिखना"
+          },
+          {
+            "text": "Brand and visual judgement",
+            "share": 7,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "ब्रांड और दिखावट की समझ"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Interaction architecture",
+        "Research synthesis",
+        "Taste and critique",
+        "Designing for uncertainty"
+      ],
+      "skills_fading": [
+        "Screen production as the main output",
+        "Variant generation",
+        "Design-system upkeep by hand"
+      ],
+      "new_tasks_emerging": [
+        "Designing interfaces for non-deterministic systems",
+        "Designing the human-review step in an automated flow",
+        "Trust, disclosure and error affordances for AI features"
+      ],
+      "evidence": "Figma State of the Designer 2026 (n=906): 89% report working faster with AI and 91% say the tools improve their designs — but it is a vendor sentiment survey with no headcount data in it. The nearest adjacent figure is Wynter/MarTech (May 2026), where 37% of B2B firms name design as an exposed function. Product UI/UX headcount is a genuine evidence gap: no employment study for it was found, so this score rests on the task mix alone.",
+      "card_line_hi": "स्क्रीन AI बनाता है, यूज़र को क्या चाहिए यह लोग तय करते हैं",
+      "reason_hi": "स्क्रीन AI बना सकता है। पर क्या बनेगा, यह वही लोग तय करते हैं जो समझते हैं कि यूज़र को क्या चाहिए।",
+      "skills_that_hold_hi": [
+        "ऐप में कदम-दर-कदम रास्ते की समझ",
+        "रिसर्च का निचोड़ निकालना",
+        "अच्छे और कमज़ोर डिज़ाइन की परख",
+        "जब सब पता न हो, तब भी डिज़ाइन करना"
+      ],
+      "skills_fading_hi": [
+        "स्क्रीन बनाना ही मुख्य काम होना",
+        "variant बनाना",
+        "design system की देखरेख हाथ से करना"
+      ],
+      "new_tasks_emerging_hi": [
+        "non-deterministic सिस्टम के लिए इंटरफ़ेस बनाना",
+        "automated flow में इंसान की जाँच वाला कदम बनाना",
+        "AI फ़ीचर में भरोसा, जानकारी बताना और गलती दिखाने के तरीके"
+      ],
+      "evidence_hi": "Figma State of the Designer 2026 (n=906): 89% ने बताया कि AI से वे तेज़ काम करते हैं और 91% ने कहा कि टूल उनके design बेहतर करते हैं। पर यह टूल बेचने वाली कंपनी का राय-सर्वे है, इसमें लोगों की गिनती का कोई आँकड़ा नहीं है। सबसे पास का आँकड़ा Wynter/MarTech (मई 2026) का है, जिसमें 37% B2B कंपनियाँ design को सबसे ज़्यादा प्रभावित काम बताती हैं। Product UI/UX में कितने लोग काम करते हैं, इसका सबूत सच में कम है: इसके लिए कोई रोज़गार अध्ययन नहीं मिला, इसलिए यह स्कोर सिर्फ़ काम की बनावट पर टिका है।"
+    },
+    {
+      "id": "software-engineer",
+      "title": "Software Engineer",
+      "family": "tech",
+      "interest_areas": [
+        "computers-coding"
+      ],
+      "badge": "Changing",
+      "forecast_score": 52,
+      "card_line": "AI writes routine code; fewer entry seats",
+      "reason": "AI now writes routine code; developers who design, review and fix systems stay in demand, but there are fewer entry seats",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Fresher floor 3.5L = mass IT-services offers; product companies 8L+",
+        "sources_detail": "payscale.com Software_Engineer; glassdoor.co.in software-engineer and senior-software-engineer; kaam.work India tech salary report",
+        "entry": {
+          "low": 3.5,
+          "high": 8,
+          "label": "Rs 3.5-8 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 10,
+          "high": 18,
+          "label": "Rs 10-18 L"
+        },
+        "senior": {
+          "low": 18,
+          "high": 32,
+          "label": "Rs 18-32 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 83.4,
+        "if_ai_spreads_fast": 53.7,
+        "if_ai_spreads_slowly": 113
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 50,
+        "with_ai": 32,
+        "led_by_people": 18
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Writing standard application and CRUD code",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "आम application कोड लिखना"
+          },
+          {
+            "text": "Fixing bugs and failing builds",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "bug और फ़ेल होते build ठीक करना"
+          },
+          {
+            "text": "Writing unit and integration tests",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "unit और integration टेस्ट लिखना"
+          },
+          {
+            "text": "Writing docs, tickets and release notes",
+            "share": 8,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "docs, ticket और release notes लिखना"
+          },
+          {
+            "text": "Reviewing other people’s code",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "दूसरों का कोड जाँचना"
+          },
+          {
+            "text": "Designing systems and choosing trade-offs",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "सिस्टम डिज़ाइन करना और सही समझौते चुनना"
+          },
+          {
+            "text": "Debugging live production incidents",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "चलते सिस्टम की गड़बड़ी ठीक करना"
+          },
+          {
+            "text": "Working out what to build with the business",
+            "share": 11,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "बिज़नेस के साथ तय करना कि क्या बनाना है"
+          },
+          {
+            "text": "Mentoring, interviewing, team judgement",
+            "share": 7,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "जूनियर को सिखाना, इंटरव्यू लेना, टीम के फ़ैसले"
+          }
+        ]
+      },
+      "n_tasks": 9,
+      "skills_that_hold": [
+        "System design under real limits",
+        "Debugging live systems",
+        "Judgement on what not to build"
+      ],
+      "skills_fading": [
+        "Syntax fluency as the main signal",
+        "Hand-written boilerplate and CRUD",
+        "Leetcode-style pattern recall"
+      ],
+      "new_tasks_emerging": [
+        "Reviewing and correcting AI-written pull requests at volume",
+        "Writing specs and evals precise enough for an agent to execute",
+        "Owning security, licence and provenance risk of generated code"
+      ],
+      "evidence": "Stanford Digital Economy Lab (ADP payroll, Aug 2026): 22–25 year-olds in the most AI-exposed occupations show a ~19% employment gap, up from 15% a year earlier; software developers among the steepest. Mechanism is reduced hiring, not firing. Counterpoint: Microsoft’s task-applicability ranking does not place general software developers in its top 40.",
+      "card_line_hi": "रोज़मर्रा का कोड AI लिखता है, शुरुआती सीटें कम हैं",
+      "reason_hi": "AI अब रोज़मर्रा का कोड लिखता है। जो डेवलपर सिस्टम डिज़ाइन करते हैं, कोड जाँचते हैं और गड़बड़ी ठीक करते हैं, उनकी माँग बनी रहेगी, पर शुरुआती सीटें कम हैं।",
+      "skills_that_hold_hi": [
+        "असली हालात में System design",
+        "चलते सिस्टम की गड़बड़ी ठीक करना",
+        "क्या नहीं बनाना, यह तय करने की समझ"
+      ],
+      "skills_fading_hi": [
+        "syntax पर पकड़ को ही मुख्य पैमाना मानना",
+        "boilerplate और CRUD कोड हाथ से लिखना",
+        "Leetcode जैसे pattern याद रखना"
+      ],
+      "new_tasks_emerging_hi": [
+        "AI के लिखे pull request बड़ी संख्या में जाँचना और सुधारना",
+        "spec और eval इतने सटीक लिखना कि एजेंट उन्हें चला सके",
+        "AI के बनाए कोड के security, licence और provenance के जोखिम की ज़िम्मेदारी लेना"
+      ],
+      "evidence_hi": "Stanford Digital Economy Lab (ADP payroll, अगस्त 2026): AI से सबसे ज़्यादा प्रभावित पेशों में 22 से 25 साल के लोगों के रोज़गार में करीब 19% का फ़र्क है, जो एक साल पहले 15% था; software developers सबसे ज़्यादा प्रभावित लोगों में हैं। वजह नौकरी से निकालना नहीं, भर्ती घटाना है। दूसरी तरफ़: Microsoft की task-applicability रैंकिंग में आम software developers टॉप 40 में नहीं आते।"
+    },
+    {
+      "id": "it-support",
+      "title": "IT Support / Helpdesk",
+      "family": "tech",
+      "interest_areas": [
+        "computers-coding"
+      ],
+      "badge": "Shrinking",
+      "forecast_score": 42,
+      "card_line": "Chat assistants now solve most routine tickets",
+      "reason": "Chat assistants now resolve most routine tickets, so fewer entry roles",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "low",
+        "note": "Mid and senior assume a move into infra/IT manager; helpdesk plateaus at 4-6L",
+        "sources_detail": "payscale.com Desktop_Support_Engineer; glassdoor.co.in it-support-engineer, it-support-manager",
+        "entry": {
+          "low": 2,
+          "high": 4,
+          "label": "Rs 2-4 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 4.5,
+          "high": 8,
+          "label": "Rs 4.5-8 L"
+        },
+        "senior": {
+          "low": 8,
+          "high": 16,
+          "label": "Rs 8-16 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 69.6,
+        "if_ai_spreads_fast": 41.1,
+        "if_ai_spreads_slowly": 100.9
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 64,
+        "with_ai": 26,
+        "led_by_people": 10
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Tier-1 tickets: access, passwords, how-to",
+            "share": 30,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "पहले स्तर के ticket: access, password, कैसे करें"
+          },
+          {
+            "text": "Complex multi-system troubleshooting",
+            "share": 16,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "कई सिस्टम से जुड़ी मुश्किल गड़बड़ी ढूँढना"
+          },
+          {
+            "text": "Knowledge-base authoring and updates",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "मदद के लेख लिखना और अपडेट करना"
+          },
+          {
+            "text": "Device provisioning and asset admin",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "लैपटॉप और डिवाइस तैयार करना, सामान का हिसाब रखना"
+          },
+          {
+            "text": "Ticket routing and categorisation",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "ticket छाँटना और सही टीम तक भेजना"
+          },
+          {
+            "text": "On-site and physical fixes",
+            "share": 10,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "मौके पर जाकर हाथ से ठीक करना"
+          },
+          {
+            "text": "User training and change support",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "लोगों को सिखाना और बदलाव में मदद करना"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Physical and on-site work",
+        "Escalation judgement",
+        "Change management with anxious users"
+      ],
+      "skills_fading": [
+        "Scripted Tier-1 resolution",
+        "Ticket triage",
+        "FAQ authoring"
+      ],
+      "new_tasks_emerging": [
+        "Supervising the AI support agent and handling its escalations",
+        "Internal AI-tool enablement and adoption support"
+      ],
+      "evidence": "Gartner forecasts 80% of common customer-service issues resolved autonomously by AI by 2029. No employment statistic specific to IT helpdesk as distinct from customer support was located — the score is inferred from an adjacent, well-measured task set.",
+      "card_line_hi": "ज़्यादातर आम ticket अब chat assistant हल कर देते हैं",
+      "reason_hi": "ज़्यादातर आम ticket अब chat assistant हल कर देते हैं, इसलिए शुरुआती नौकरियाँ कम हैं।",
+      "skills_that_hold_hi": [
+        "मौके पर जाकर हाथ का काम",
+        "कब मामला ऊपर भेजना है, यह समझ",
+        "घबराए यूज़र को बदलाव में साथ लेकर चलना"
+      ],
+      "skills_fading_hi": [
+        "तय स्क्रिप्ट से Tier-1 के सवाल सुलझाना",
+        "ticket छाँटना",
+        "FAQ लिखना"
+      ],
+      "new_tasks_emerging_hi": [
+        "AI support एजेंट की निगरानी करना और उसके escalation संभालना",
+        "कंपनी के अंदर AI टूल शुरू कराना और लोगों से इस्तेमाल करवाने में मदद"
+      ],
+      "evidence_hi": "Gartner का अनुमान है कि 2029 तक ग्राहक सेवा के 80% आम मसले AI अपने आप सुलझा देगा। IT helpdesk के लिए, ग्राहक सेवा से अलग, रोज़गार का कोई खास आँकड़ा नहीं मिला। स्कोर पास के, अच्छी तरह नापे गए कामों से निकाला गया है।"
+    },
+    {
+      "id": "qa",
+      "title": "QA & Test Engineer",
+      "family": "tech",
+      "interest_areas": [
+        "computers-coding"
+      ],
+      "badge": "Shrinking",
+      "forecast_score": 41,
+      "card_line": "Testing is among the first tasks AI automates",
+      "reason": "Testing is among the first tasks AI automates; manual testing roles are shrinking fastest",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Manual testers at the bottom; automation/SDET at the top",
+        "sources_detail": "payscale.com QA Engineer; glassdoor.co.in qa-engineer; kaam.work",
+        "entry": {
+          "low": 3,
+          "high": 5.5,
+          "label": "Rs 3-5.5 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 7,
+          "high": 12,
+          "label": "Rs 7-12 L"
+        },
+        "senior": {
+          "low": 12,
+          "high": 22,
+          "label": "Rs 12-22 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 66.2,
+        "if_ai_spreads_fast": 38.3,
+        "if_ai_spreads_slowly": 100.7
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 66,
+        "with_ai": 24,
+        "led_by_people": 10
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Writing and maintaining test scripts",
+            "share": 24,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "टेस्ट script लिखना और सँभालना"
+          },
+          {
+            "text": "Manual regression execution",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "हाथ से बार-बार वही टेस्ट चलाना"
+          },
+          {
+            "text": "Bug triage and reproduction",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "bug छाँटना और उन्हें दोबारा करके दिखाना"
+          },
+          {
+            "text": "Test data and environment setup",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "टेस्ट का डेटा और environment तैयार करना"
+          },
+          {
+            "text": "Exploratory testing for edge cases",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "अनोखे मामलों को खोजकर टेस्ट करना"
+          },
+          {
+            "text": "Test strategy and risk-based prioritisation",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "टेस्ट का प्लान, और ज़्यादा खतरे वाली चीज़ें पहले"
+          },
+          {
+            "text": "Release sign-off and stakeholder judgement",
+            "share": 10,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "release को हरी झंडी देना और टीम के साथ फ़ैसला"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Risk-based test strategy",
+        "Adversarial thinking",
+        "Testing AI systems"
+      ],
+      "skills_fading": [
+        "Scripted regression authoring",
+        "Manual test execution",
+        "Click-through UI testing"
+      ],
+      "new_tasks_emerging": [
+        "Testing non-deterministic AI output",
+        "Building eval harnesses and golden datasets",
+        "Adversarial and red-team testing of AI features"
+      ],
+      "evidence": "Evidence for QA specifically is thin: the searchable material is dominated by vendor content with no primary labour data. The exposure score here follows from the task mix, which is unusually concentrated in scripted, checkable work — treat it as a structural inference, not a measured outcome.",
+      "card_line_hi": "टेस्टिंग उन पहले कामों में है जो AI अपने-आप करने लगा है",
+      "reason_hi": "टेस्टिंग उन पहले कामों में है जो AI अपने-आप करने लगा है। हाथ से टेस्टिंग वाली नौकरियाँ सबसे तेज़ी से घट रही हैं।",
+      "skills_that_hold_hi": [
+        "खतरे के हिसाब से टेस्ट का प्लान",
+        "हमलावर की तरह सोचना",
+        "AI सिस्टम की टेस्टिंग"
+      ],
+      "skills_fading_hi": [
+        "regression test की स्क्रिप्ट लिखना",
+        "टेस्ट हाथ से चलाना",
+        "क्लिक करके UI टेस्ट करना"
+      ],
+      "new_tasks_emerging_hi": [
+        "non-deterministic AI आउटपुट की टेस्टिंग",
+        "eval harness और golden dataset बनाना",
+        "AI फ़ीचर की adversarial और red-team टेस्टिंग"
+      ],
+      "evidence_hi": "QA के बारे में सबूत कम है: जो मिलता है, उसमें ज़्यादातर बेचने वाली कंपनियों का कंटेंट है, नौकरी बाज़ार का कोई सीधा आँकड़ा नहीं। यहाँ का exposure स्कोर काम की बनावट से निकला है, जिसमें स्क्रिप्ट वाला, जाँचा जा सकने वाला काम बहुत ज़्यादा है। इसे नापा हुआ नतीजा नहीं, ढाँचे से निकला अनुमान समझें।"
+    },
+    {
+      "id": "product",
+      "title": "Product Management",
+      "family": "biz",
+      "interest_areas": [
+        "business-managing"
+      ],
+      "badge": "Growing",
+      "forecast_score": 75,
+      "card_line": "Faster building means deciding what to build matters more",
+      "reason": "When building gets faster, deciding what to build matters more",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Entry usually needs an MBA, or B.Tech plus 2-3 yrs as engineer/analyst",
+        "sources_detail": "glassdoor.co.in associate-product-manager, product-manager, senior-product-manager; payscale.com Product_Manager_Software",
+        "entry": {
+          "low": 8,
+          "high": 16,
+          "label": "Rs 8-16 L",
+          "basis": "after_experience",
+          "basis_label": "after a few years",
+          "basis_label_hi": "कुछ साल बाद"
+        },
+        "mid": {
+          "low": 18,
+          "high": 35,
+          "label": "Rs 18-35 L"
+        },
+        "senior": {
+          "low": 35,
+          "high": 65,
+          "label": "Rs 35-65 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 124.4,
+        "if_ai_spreads_fast": 104.9,
+        "if_ai_spreads_slowly": 144
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 35,
+        "with_ai": 22,
+        "led_by_people": 43
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Prioritisation and trade-off decisions",
+            "share": 15,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "क्या पहले करना है और क्या छोड़ना है, यह तय करना"
+          },
+          {
+            "text": "Cross-functional alignment and influence",
+            "share": 15,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "अलग-अलग टीमों को एक राय पर लाना"
+          },
+          {
+            "text": "Writing specs, PRDs and tickets",
+            "share": 15,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "spec, PRD और ticket लिखना"
+          },
+          {
+            "text": "Customer discovery interviews",
+            "share": 13,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "ग्राहकों से बात करके उनकी असली ज़रूरत समझना"
+          },
+          {
+            "text": "Analysing usage data and experiment results",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "यूज़र के इस्तेमाल का डेटा और experiment के नतीजे समझना"
+          },
+          {
+            "text": "Competitive and market research",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "बाज़ार और दूसरी कंपनियों पर रिसर्च"
+          },
+          {
+            "text": "Status reporting and roadmap upkeep",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "काम कहाँ तक पहुँचा, इसकी रिपोर्ट और roadmap अपडेट रखना"
+          },
+          {
+            "text": "Pricing, packaging and commercial calls",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "कीमत और प्लान तय करना, और पैसों से जुड़े फ़ैसले"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Customer discovery",
+        "Prioritisation under ambiguity",
+        "Influence without authority",
+        "Commercial judgement"
+      ],
+      "skills_fading": [
+        "Spec writing as the core skill",
+        "Market research decks",
+        "Roadmap maintenance"
+      ],
+      "new_tasks_emerging": [
+        "Product management for non-deterministic features",
+        "Defining acceptable failure rates and the human-in-the-loop",
+        "Unit economics when cost of goods is inference"
+      ],
+      "evidence": "Lenny’s Newsletter (2026): PM openings at their highest in three years, >7,300 globally, up 75% from the early-2023 low. The AI-specific causal story and the entry-level breakdown are both evidence gaps — growth is real, but it is not cleanly attributable to AI.",
+      "card_line_hi": "चीज़ें तेज़ी से बनती हैं, इसलिए क्या बनाना है, यह तय करना ज़्यादा ज़रूरी है",
+      "reason_hi": "जब चीज़ें बनाना तेज़ हो जाता है, तो क्या बनाना है, यह तय करना ज़्यादा ज़रूरी हो जाता है।",
+      "skills_that_hold_hi": [
+        "ग्राहक की असली ज़रूरत खोजना",
+        "जब सब साफ़ न हो, तब भी सही काम पहले चुनना",
+        "बिना बॉस बने लोगों को अपनी बात पर राज़ी करना",
+        "पैसे और बिज़नेस से जुड़े फ़ैसलों की समझ"
+      ],
+      "skills_fading_hi": [
+        "spec लिखना ही मुख्य स्किल होना",
+        "market research की slide बनाना",
+        "roadmap को अपडेट रखना"
+      ],
+      "new_tasks_emerging_hi": [
+        "non-deterministic फ़ीचर के लिए product management",
+        "कितनी गलतियाँ चल सकती हैं और इंसान कहाँ शामिल रहे (human-in-the-loop), यह तय करना",
+        "unit economics, जब माल की लागत inference हो"
+      ],
+      "evidence_hi": "Lenny’s Newsletter (2026): PM की खुली जगहें तीन साल में सबसे ऊँचे स्तर पर हैं, दुनिया भर में 7,300 से ज़्यादा, और 2023 की शुरुआत के सबसे निचले स्तर से 75% ऊपर। AI की वजह से ऐसा हुआ, इसका सबूत और शुरुआती स्तर की नौकरियों का ब्योरा, दोनों में सबूत की कमी है: बढ़त असली है, पर उसे साफ़ तौर पर AI से नहीं जोड़ा जा सकता।"
+    },
+    {
+      "id": "enterprise-sales",
+      "title": "Enterprise & Field Sales",
+      "family": "biz",
+      "interest_areas": [
+        "business-managing"
+      ],
+      "badge": "Growing",
+      "forecast_score": 65,
+      "card_line": "Big deals still run on trust; AI helps prepare, people close",
+      "reason": "Big deals still run on trust and relationships; AI helps prepare but does not close",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med/low",
+        "note": "Incentives are a large share; senior estimated",
+        "sources_detail": "payscale.com Key_Account_Manager; glassdoor.co.in enterprise-sales-manager, regional-sales-manager",
+        "entry": {
+          "low": 4,
+          "high": 8,
+          "label": "Rs 4-8 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 10,
+          "high": 20,
+          "label": "Rs 10-20 L"
+        },
+        "senior": {
+          "low": 20,
+          "high": 40,
+          "label": "Rs 20-40 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 114.1,
+        "if_ai_spreads_fast": 102.1,
+        "if_ai_spreads_slowly": 126.1
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 24,
+        "with_ai": 33,
+        "led_by_people": 43
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Relationship building with the buying committee",
+            "share": 18,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "खरीद का फ़ैसला करने वाले लोगों से रिश्ता बनाना"
+          },
+          {
+            "text": "Negotiation and commercial closing",
+            "share": 16,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "मोल-भाव और सौदा पक्का करना"
+          },
+          {
+            "text": "Discovery and solution shaping",
+            "share": 15,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "ग्राहक की ज़रूरत समझना और उसके हिसाब से हल तैयार करना"
+          },
+          {
+            "text": "Proposal, RFP and deck production",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "proposal, RFP का जवाब और presentation बनाना"
+          },
+          {
+            "text": "Account research and planning",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "ग्राहक कंपनी पर रिसर्च और उसका प्लान"
+          },
+          {
+            "text": "CRM updates and forecasting admin",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "CRM अपडेट और बिक्री के अनुमान का कागज़ी काम"
+          },
+          {
+            "text": "On-site visits and field presence",
+            "share": 9,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "ग्राहक से मिलने खुद जाना और मौके पर मौजूद रहना"
+          },
+          {
+            "text": "Internal deal orchestration",
+            "share": 6,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "सौदे के लिए अपनी कंपनी की टीमों को साथ लाना"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Trust with senior buyers",
+        "Negotiation",
+        "Navigating internal politics on both sides",
+        "Field presence"
+      ],
+      "skills_fading": [
+        "Proposal and deck production",
+        "Account research",
+        "Forecasting admin"
+      ],
+      "new_tasks_emerging": [
+        "Selling AI products to sceptical buyers",
+        "Commercial modelling of consumption and outcome-based pricing"
+      ],
+      "evidence": "The same Microsoft applicability data that puts inside sales at #4 finds relationship-led enterprise selling far less exposed. No direct headcount-decline statistic for enterprise sellers was found. Gartner’s productivity caveat applies here too.",
+      "card_line_hi": "बड़े सौदे अब भी भरोसे पर चलते हैं, AI तैयारी में मदद करता है, सौदा लोग पक्का करते हैं",
+      "reason_hi": "बड़े सौदे अब भी भरोसे और रिश्तों पर चलते हैं। AI तैयारी में मदद करता है, पर सौदा पक्का नहीं करता।",
+      "skills_that_hold_hi": [
+        "बड़े खरीदारों का भरोसा जीतना",
+        "मोल-भाव",
+        "दोनों कंपनियों के अंदर की राजनीति समझकर चलना",
+        "ग्राहक के पास खुद मौजूद रहना"
+      ],
+      "skills_fading_hi": [
+        "proposal और slide बनाना",
+        "अकाउंट की रिसर्च",
+        "फ़ोरकास्ट का एडमिन काम"
+      ],
+      "new_tasks_emerging_hi": [
+        "शक करने वाले खरीदारों को AI प्रोडक्ट बेचना",
+        "इस्तेमाल और नतीजे के हिसाब से कीमत का commercial मॉडल बनाना"
+      ],
+      "evidence_hi": "वही Microsoft applicability आँकड़े, जो inside sales को #4 पर रखते हैं, रिश्तों पर टिकी enterprise बिक्री को बहुत कम प्रभावित पाते हैं। enterprise बेचने वालों की संख्या घटने का कोई सीधा आँकड़ा नहीं मिला। Gartner की productivity वाली चेतावनी यहाँ भी लागू होती है।"
+    },
+    {
+      "id": "ops-analyst",
+      "title": "Operations / Business Analyst",
+      "family": "biz",
+      "interest_areas": [
+        "business-managing"
+      ],
+      "badge": "Changing",
+      "forecast_score": 56,
+      "card_line": "AI builds the reports; solving business problems stays with people",
+      "reason": "Reporting and routine analysis are automated; problem-solving with the business remains",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "B.Tech entry common",
+        "sources_detail": "payscale.com Business_Analyst_IT, Operations_Manager; glassdoor.co.in business-analyst, operations-manager",
+        "entry": {
+          "low": 4,
+          "high": 8,
+          "label": "Rs 4-8 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 9,
+          "high": 17,
+          "label": "Rs 9-17 L"
+        },
+        "senior": {
+          "low": 16,
+          "high": 30,
+          "label": "Rs 16-30 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 88,
+        "if_ai_spreads_fast": 62.2,
+        "if_ai_spreads_slowly": 113.8
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 50,
+        "with_ai": 25,
+        "led_by_people": 25
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Building and refreshing reports and dashboards",
+            "share": 20,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "रिपोर्ट और dashboard बनाना और अपडेट करना"
+          },
+          {
+            "text": "Data pulls, reconciliation and spreadsheet work",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "डेटा निकालना, आँकड़े मिलाना और Excel का काम"
+          },
+          {
+            "text": "Root-cause analysis of process failures",
+            "share": 13,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "काम में गड़बड़ी की असली वजह ढूँढना"
+          },
+          {
+            "text": "Process redesign and change management",
+            "share": 13,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "काम का तरीका नए सिरे से बनाना और बदलाव लागू करवाना"
+          },
+          {
+            "text": "Process documentation and SOPs",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "काम का तरीका लिखना और SOP"
+          },
+          {
+            "text": "Vendor and cross-team coordination",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "वेंडर और दूसरी टीमों से तालमेल"
+          },
+          {
+            "text": "Requirements gathering from users",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "यूज़र से उनकी ज़रूरत समझना"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Process redesign",
+        "Change management",
+        "Exception judgement",
+        "Getting cross-functional agreement"
+      ],
+      "skills_fading": [
+        "Report building",
+        "Spreadsheet reconciliation",
+        "SOP documentation"
+      ],
+      "new_tasks_emerging": [
+        "Designing the process around an agent rather than a team",
+        "Exception handling: owning what the automation hands back",
+        "Measuring whether automation actually worked"
+      ],
+      "evidence": "A genuine evidence gap — no credible primary labour data was found for this role family. McKinsey’s State of AI (Aug 2026) reports service operations and supply-chain management as the two functions where organisations expect the largest workforce declines, which is the closest adjacent signal.",
+      "card_line_hi": "रिपोर्ट AI बनाता है, बिज़नेस की समस्याएँ लोग सुलझाते हैं",
+      "reason_hi": "रिपोर्ट और रोज़ का analysis अब अपने-आप होता है। बिज़नेस के साथ मिलकर समस्याएँ सुलझाने का काम बना रहता है।",
+      "skills_that_hold_hi": [
+        "काम का तरीका नए सिरे से बनाना",
+        "लोगों को बदलाव के लिए तैयार करना",
+        "हटकर आए मामलों में सही फ़ैसला",
+        "अलग-अलग टीमों की सहमति लेना"
+      ],
+      "skills_fading_hi": [
+        "रिपोर्ट बनाना",
+        "spreadsheet का हिसाब मिलाना",
+        "SOP का डॉक्यूमेंटेशन"
+      ],
+      "new_tasks_emerging_hi": [
+        "टीम की जगह एजेंट को ध्यान में रखकर process बनाना",
+        "Exception संभालना: जो काम automation वापस लौटाए, उसकी ज़िम्मेदारी लेना",
+        "यह नापना कि automation सच में काम आया या नहीं"
+      ],
+      "evidence_hi": "सबूत की असली कमी: इस तरह की नौकरियों के लिए कोई भरोसेमंद सीधा आँकड़ा नहीं मिला। McKinsey की State of AI (अगस्त 2026) के मुताबिक service operations और supply-chain management वे दो काम हैं जहाँ संगठनों को सबसे ज़्यादा कर्मचारी घटने की उम्मीद है, यही सबसे पास का संकेत है।"
+    },
+    {
+      "id": "supply-chain",
+      "title": "Supply Chain & Procurement",
+      "family": "biz",
+      "interest_areas": [
+        "business-managing"
+      ],
+      "badge": "Changing",
+      "forecast_score": 54,
+      "card_line": "AI does routine forecasting; supplier and disruption work stays human",
+      "reason": "Planning tools automate routine forecasting; managing suppliers and disruptions stays human",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med/low",
+        "note": "Senior estimated; MNC/FMCG pay above",
+        "sources_detail": "payscale.com Supply_Chain_Manager, Procurement_Manager; glassdoor.co.in supply-chain-manager, procurement-manager",
+        "entry": {
+          "low": 3.5,
+          "high": 7,
+          "label": "Rs 3.5-7 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 8,
+          "high": 16,
+          "label": "Rs 8-16 L"
+        },
+        "senior": {
+          "low": 18,
+          "high": 35,
+          "label": "Rs 18-35 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 85.7,
+        "if_ai_spreads_fast": 60.1,
+        "if_ai_spreads_slowly": 111.5
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 56,
+        "with_ai": 29,
+        "led_by_people": 15
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Demand forecasting and replenishment planning",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "माँग का अनुमान और माल दोबारा मँगाने का प्लान"
+          },
+          {
+            "text": "Purchase order processing and admin",
+            "share": 15,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "purchase order बनाना और उसका कागज़ी काम"
+          },
+          {
+            "text": "Supplier negotiation and relationship management",
+            "share": 15,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "सप्लायर से मोल-भाव और रिश्ते संभालना"
+          },
+          {
+            "text": "Inventory and exception reporting",
+            "share": 13,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "स्टॉक की रिपोर्ट और गड़बड़ी वाले मामलों की रिपोर्ट"
+          },
+          {
+            "text": "Network and sourcing strategy",
+            "share": 11,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "माल कहाँ से लें और कहाँ रखें, इसका बड़ा प्लान"
+          },
+          {
+            "text": "Supplier discovery and RFQ preparation",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "नए सप्लायर ढूँढना और रेट माँगने के कागज़ (RFQ) तैयार करना"
+          },
+          {
+            "text": "Disruption response and escalation",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "सप्लाई रुकने पर तुरंत कदम उठाना और मामला ऊपर ले जाना"
+          },
+          {
+            "text": "Compliance, customs and quality audits",
+            "share": 8,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "नियमों का पालन, कस्टम और क्वालिटी ऑडिट"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Supplier negotiation",
+        "Disruption response",
+        "Physical-world judgement",
+        "Sourcing strategy"
+      ],
+      "skills_fading": [
+        "Forecast production",
+        "PO processing",
+        "Exception reporting"
+      ],
+      "new_tasks_emerging": [
+        "Supervising autonomous planning agents",
+        "Supplier risk and resilience under geopolitical volatility",
+        "Sustainability and traceability reporting"
+      ],
+      "evidence": "Gartner (Feb 2026, n=509 supply-chain leaders): 55% expect agentic AI to reduce entry-level hiring needs, 51% expect overall workforce reduction, 86% say new talent-pipeline models are needed. These are expectations, not outcomes. BCG (Jan 2026): Asia-Pacific leads on AI embedding (31% of logistics providers vs 14% North America, 6% Europe) but its binding constraint is talent shortage, cited by 54%.",
+      "card_line_hi": "माँग का आम अनुमान AI लगाता है, सप्लायर और रुकावटों का काम लोगों के पास रहता है",
+      "reason_hi": "Planning टूल माँग का आम अनुमान अपने-आप लगाते हैं। सप्लायर संभालना और अचानक आई रुकावटें सुलझाना लोगों का काम है।",
+      "skills_that_hold_hi": [
+        "सप्लायर से मोल-भाव",
+        "सप्लाई रुकने पर हालात संभालना",
+        "गोदाम, ट्रक और माल की ज़मीनी समझ",
+        "माल कहाँ से लें, इसका सही प्लान"
+      ],
+      "skills_fading_hi": [
+        "फ़ोरकास्ट बनाना",
+        "PO प्रोसेस करना",
+        "exception की रिपोर्ट बनाना"
+      ],
+      "new_tasks_emerging_hi": [
+        "अपने आप planning करने वाले एजेंट की निगरानी",
+        "दुनिया की राजनीतिक उथल-पुथल के समय सप्लायर का जोखिम और झटके सहने की क्षमता",
+        "sustainability और traceability की रिपोर्टिंग"
+      ],
+      "evidence_hi": "Gartner (फ़रवरी 2026, n=509 supply-chain लीडर): 55% को उम्मीद है कि agentic AI शुरुआती स्तर की भर्ती की ज़रूरत घटाएगा, 51% को कुल कर्मचारी घटने की उम्मीद है, और 86% कहते हैं कि प्रतिभा तैयार करने के नए मॉडल चाहिए। ये उम्मीदें हैं, नतीजे नहीं। BCG (जनवरी 2026): AI को अपनाने में Asia-Pacific आगे है (31% logistics कंपनियाँ, जबकि North America में 14% और Europe में 6%), पर उसकी सबसे बड़ी रुकावट प्रतिभा की कमी है, जिसे 54% ने बताया।"
+    },
+    {
+      "id": "consulting",
+      "title": "Consulting / Strategy",
+      "family": "biz",
+      "interest_areas": [
+        "business-managing"
+      ],
+      "badge": "Changing",
+      "forecast_score": 51,
+      "card_line": "AI does research and slides; clients pay for judgement",
+      "reason": "AI does the research and slides; clients still pay for judgement and trust",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med/low",
+        "note": "Associate track mostly needs an MBA; B.Tech analysts start 5-9L; MBB excluded",
+        "sources_detail": "payscale.com Management_Consultant; glassdoor.co.in management-consultant, associate-consultant, engagement-manager",
+        "entry": {
+          "low": 7,
+          "high": 15,
+          "label": "Rs 7-15 L",
+          "basis": "after_mba_or_experience",
+          "basis_label": "after an MBA or a few years",
+          "basis_label_hi": "MBA या कुछ साल के अनुभव के बाद"
+        },
+        "mid": {
+          "low": 16,
+          "high": 30,
+          "label": "Rs 16-30 L"
+        },
+        "senior": {
+          "low": 28,
+          "high": 50,
+          "label": "Rs 28-50 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 84.5,
+        "if_ai_spreads_fast": 56.6,
+        "if_ai_spreads_slowly": 112.5
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 50,
+        "with_ai": 20,
+        "led_by_people": 30
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Desk research and market scans",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "बैठकर रिसर्च करना और बाज़ार की जानकारी जुटाना"
+          },
+          {
+            "text": "Slide production and deliverable drafting",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "slide बनाना और क्लाइंट की रिपोर्ट का पहला ड्राफ़्ट लिखना"
+          },
+          {
+            "text": "Client interviews and stakeholder management",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "क्लाइंट से बातचीत और जुड़े सभी लोगों को साथ लेकर चलना"
+          },
+          {
+            "text": "Data collection and model building",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "डेटा जुटाना और हिसाब का मॉडल बनाना"
+          },
+          {
+            "text": "Analysis framing and hypothesis design",
+            "share": 13,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "सवाल को सही ढंग से रखना और जाँचने लायक अंदाज़ा तय करना"
+          },
+          {
+            "text": "Recommendation judgement and risk calls",
+            "share": 11,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "क्या सलाह देनी है और कितना जोखिम लेना है, यह तय करना"
+          },
+          {
+            "text": "Implementation support on the ground",
+            "share": 7,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "ज़मीन पर सलाह लागू करवाने में मदद"
+          },
+          {
+            "text": "Selling work and building client trust",
+            "share": 5,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "नया काम लाना और क्लाइंट का भरोसा बनाना"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Client trust",
+        "Hypothesis framing",
+        "Judgement under incomplete data",
+        "Implementation on the ground"
+      ],
+      "skills_fading": [
+        "Desk research",
+        "Slide production",
+        "Model building as the deliverable"
+      ],
+      "new_tasks_emerging": [
+        "AI transformation delivery (currently the sector’s growth engine)",
+        "Change management for displaced teams",
+        "Independent assurance of clients’ AI systems"
+      ],
+      "evidence": "Accenture cut 11,000+ roles in ~3 months of 2025 while nearly doubling AI/data specialists to 77,000 and training 550,000+ staff in generative AI — restructuring the base, not shrinking the firm. McKinsey announced a ~10% cut in Dec 2025. The junior delivery layer is precisely the layer being compressed.",
+      "card_line_hi": "रिसर्च और slide AI बनाता है, क्लाइंट सही सलाह के पैसे देते हैं",
+      "reason_hi": "रिसर्च और slide AI बना देता है। क्लाइंट अब भी सही सलाह और भरोसे के पैसे देते हैं।",
+      "skills_that_hold_hi": [
+        "क्लाइंट का भरोसा",
+        "जाँचने लायक सही अंदाज़ा बनाना",
+        "अधूरी जानकारी में भी सही फ़ैसला",
+        "ज़मीन पर काम लागू करवाना"
+      ],
+      "skills_fading_hi": [
+        "डेस्क पर बैठकर रिसर्च करना",
+        "slide बनाना",
+        "मॉडल बनाना ही पूरा काम होना"
+      ],
+      "new_tasks_emerging_hi": [
+        "AI transformation का काम पूरा करके देना (अभी इस सेक्टर की तरक्की का इंजन)",
+        "काम खो चुकी टीमों के लिए change management",
+        "क्लाइंट के AI सिस्टम की स्वतंत्र जाँच"
+      ],
+      "evidence_hi": "Accenture ने 2025 के करीब 3 महीनों में 11,000+ नौकरियाँ घटाईं, जबकि AI/data specialists लगभग दोगुने करके 77,000 कर दिए और 550,000+ कर्मचारियों को generative AI की ट्रेनिंग दी। यानी कंपनी छोटी नहीं हुई, उसका आधार नए सिरे से बना। McKinsey ने दिसंबर 2025 में करीब 10% कटौती की घोषणा की। जूनियर delivery वाली परत ही सबसे ज़्यादा दबाई जा रही है।"
+    },
+    {
+      "id": "hr",
+      "title": "HR & Talent",
+      "family": "biz",
+      "interest_areas": [
+        "business-managing"
+      ],
+      "badge": "Changing",
+      "forecast_score": 49,
+      "card_line": "AI screens CVs and routine HR work; people judgement stays",
+      "reason": "Screening and routine HR work is automated; people judgement remains",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "MBA-HR from a good college starts 8-12L (estimate)",
+        "sources_detail": "payscale.com Talent_Acquisition_Specialist, HR_Manager; glassdoor.co.in hr-manager, hr-business-partner",
+        "entry": {
+          "low": 3,
+          "high": 6,
+          "label": "Rs 3-6 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 7,
+          "high": 14,
+          "label": "Rs 7-14 L"
+        },
+        "senior": {
+          "low": 15,
+          "high": 30,
+          "label": "Rs 15-30 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 81.6,
+        "if_ai_spreads_fast": 55.3,
+        "if_ai_spreads_slowly": 108
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 55,
+        "with_ai": 23,
+        "led_by_people": 22
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "CV screening and candidate shortlisting",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "CV छाँटना और उम्मीदवारों की छोटी लिस्ट बनाना"
+          },
+          {
+            "text": "HR ops: letters, records, payroll queries",
+            "share": 15,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "HR का रोज़ का काम: लेटर, रिकॉर्ड, सैलरी से जुड़े सवाल"
+          },
+          {
+            "text": "Interviewing and assessing candidates",
+            "share": 13,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "इंटरव्यू लेना और उम्मीदवार को परखना"
+          },
+          {
+            "text": "Interview scheduling and coordination",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "इंटरव्यू का समय तय करना और तालमेल"
+          },
+          {
+            "text": "Employee relations and conflict handling",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "कर्मचारियों की परेशानियाँ और झगड़े सुलझाना"
+          },
+          {
+            "text": "Policy drafting and L&D content",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "कंपनी के नियम लिखना और ट्रेनिंग का कंटेंट बनाना"
+          },
+          {
+            "text": "Org design and workforce planning",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "टीमों का ढाँचा बनाना और कितने लोग चाहिए, इसका प्लान"
+          },
+          {
+            "text": "Culture, engagement and manager coaching",
+            "share": 10,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "कंपनी का माहौल, लोगों का जुड़ाव और मैनेजरों को सिखाना"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Conflict handling",
+        "Assessing people in person",
+        "Org design",
+        "Manager coaching"
+      ],
+      "skills_fading": [
+        "CV screening",
+        "Scheduling and coordination",
+        "Policy and L&D content drafting"
+      ],
+      "new_tasks_emerging": [
+        "Skills-based hiring design as degrees lose signal value",
+        "Reskilling architecture for displaced mid-career staff",
+        "Governance of AI used in hiring decisions"
+      ],
+      "evidence": "Thin overall. The one function-specific data point is IBM replacing roughly 200 HR roles with AI agents in 2026 while tripling entry-level AI hiring. India Skills Report 2026: AI-based recruitment tools are already used by 70% of IT companies and 50% of BFSI firms. NITI Aayog (Aug 2026) warns mid-career workers lack structured reskilling pathways — which is itself a demand signal for this role.",
+      "card_line_hi": "CV छाँटना और HR का रोज़ का काम AI करता है, लोगों को परखने का काम बना रहता है",
+      "reason_hi": "CV छाँटना और HR का रोज़ का काम अब अपने-आप होता है। लोगों को परखने और समझने का काम बना रहता है।",
+      "skills_that_hold_hi": [
+        "झगड़े सुलझाना",
+        "आमने-सामने लोगों को परखना",
+        "टीमों का ढाँचा बनाना",
+        "मैनेजरों को सिखाना"
+      ],
+      "skills_fading_hi": [
+        "CV छाँटना",
+        "शेड्यूल और तालमेल का काम",
+        "policy और L&D कंटेंट का ड्राफ़्ट लिखना"
+      ],
+      "new_tasks_emerging_hi": [
+        "डिग्री की अहमियत घटने पर स्किल पर आधारित भर्ती का तरीका बनाना",
+        "करियर के बीच में काम खो चुके कर्मचारियों के लिए नई स्किल सिखाने की योजना",
+        "भर्ती के फ़ैसलों में इस्तेमाल होने वाले AI की governance"
+      ],
+      "evidence_hi": "कुल मिलाकर सबूत कम है। इस काम का अकेला खास आँकड़ा: IBM ने 2026 में करीब 200 HR नौकरियाँ AI एजेंट से बदलीं, और शुरुआती स्तर की AI भर्ती तीन गुना की। India Skills Report 2026: AI वाले recruitment टूल अभी ही 70% IT कंपनियाँ और 50% BFSI कंपनियाँ इस्तेमाल करती हैं। NITI Aayog (अगस्त 2026) चेताता है कि करियर के बीच वाले कर्मचारियों के पास नई स्किल सीखने का कोई तय रास्ता नहीं है, जो अपने आप में इस नौकरी की माँग का संकेत है।"
+    },
+    {
+      "id": "support",
+      "title": "Customer Support & Success",
+      "family": "biz",
+      "interest_areas": [
+        "business-managing"
+      ],
+      "badge": "Shrinking",
+      "forecast_score": 49,
+      "card_line": "AI answers routine queries; complex customers still need people",
+      "reason": "AI handles most routine queries; complex and high-value customers still need people",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med/low",
+        "note": "BPO support 2-3.5L vs SaaS customer success 4-7L; band blends both",
+        "sources_detail": "payscale.com Customer_Success_Manager, CSR; glassdoor.co.in customer-success-manager",
+        "entry": {
+          "low": 3,
+          "high": 6,
+          "label": "Rs 3-6 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 8,
+          "high": 15,
+          "label": "Rs 8-15 L"
+        },
+        "senior": {
+          "low": 16,
+          "high": 30,
+          "label": "Rs 16-30 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 77.9,
+        "if_ai_spreads_fast": 51.1,
+        "if_ai_spreads_slowly": 104.9
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 50,
+        "with_ai": 38,
+        "led_by_people": 12
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Tier-1 FAQ and routine ticket resolution",
+            "share": 28,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "पहले स्तर के आम सवाल और रोज़ के ticket हल करना"
+          },
+          {
+            "text": "Complex disputes, exceptions and escalations",
+            "share": 16,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "मुश्किल विवाद, नियम से हटकर मामले और ऊपर पहुँची शिकायतें"
+          },
+          {
+            "text": "Ticket tagging, routing and macros",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "ticket पर टैग लगाना, सही टीम तक भेजना और तैयार जवाब"
+          },
+          {
+            "text": "Proactive retention and renewal conversations",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "ग्राहक छोड़कर न जाए, इसके लिए पहले से बात करना और renewal करवाना"
+          },
+          {
+            "text": "Onboarding and customer training",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "नए ग्राहक को शुरू करवाना और सिखाना"
+          },
+          {
+            "text": "Help-centre content and canned responses",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "मदद के लेख और पहले से लिखे जवाब"
+          },
+          {
+            "text": "Voice-of-customer feedback into product",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "ग्राहकों की बात प्रोडक्ट टीम तक पहुँचाना"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Exception and dispute handling",
+        "Retention conversations",
+        "De-escalation",
+        "Judgement on policy exceptions"
+      ],
+      "skills_fading": [
+        "Tier-1 resolution",
+        "Macro and canned-response upkeep",
+        "Ticket routing"
+      ],
+      "new_tasks_emerging": [
+        "Handling the escalations the agent cannot close",
+        "Tuning and auditing the support agent’s behaviour",
+        "Retention work on high-value accounts"
+      ],
+      "evidence": "The clearest realised-headcount evidence anywhere: Salesforce cut support from ~9,000 to ~5,000 with AI agents (CEO-confirmed, Sept 2025). Klarna said its AI assistant was doing the work of ~700 agents in 2024, then reversed: by May 2025 its CEO confirmed customers would always have a path to a human, after the system fell down on multi-step billing disputes, fraud and policy exceptions. That is the best-documented reversal in the evidence base, and the reason the complex tail here is modelled as held rather than automated.",
+      "card_line_hi": "आम सवालों के जवाब AI देता है, मुश्किल मामलों में ग्राहकों को अब भी लोग चाहिए",
+      "reason_hi": "ज़्यादातर आम सवाल AI संभाल लेता है। मुश्किल और बड़े ग्राहकों को अब भी लोग चाहिए।",
+      "skills_that_hold_hi": [
+        "नियम से हटकर मामले और विवाद सुलझाना",
+        "ग्राहक को जोड़े रखने वाली बातचीत",
+        "नाराज़ ग्राहक को शांत करना",
+        "कब नियम से हटकर छूट देनी है, इसकी समझ"
+      ],
+      "skills_fading_hi": [
+        "Tier-1 के सवाल सुलझाना",
+        "macro और तैयार जवाबों की देखरेख",
+        "ticket को सही जगह भेजना"
+      ],
+      "new_tasks_emerging_hi": [
+        "वे escalation संभालना जो एजेंट नहीं सुलझा पाता",
+        "support एजेंट के व्यवहार को ठीक करना और उसका ऑडिट करना",
+        "बड़े ग्राहकों को साथ बनाए रखने का काम"
+      ],
+      "evidence_hi": "कहीं भी मिला सबसे साफ़ सबूत कि कितने लोग सच में घटे: Salesforce ने AI एजेंट से support को करीब 9,000 से घटाकर करीब 5,000 कर दिया (CEO ने पुष्टि की, सितंबर 2025)। Klarna ने 2024 में कहा कि उसका AI assistant करीब 700 एजेंट का काम कर रहा है, फिर फ़ैसला पलटा: मई 2025 तक उसके CEO ने पुष्टि की कि ग्राहकों के पास हमेशा इंसान तक पहुँचने का रास्ता रहेगा, क्योंकि सिस्टम multi-step billing विवाद, fraud और policy exception में फेल हो गया। सबूतों में यह सबसे अच्छी तरह दर्ज उलटफेर है, और इसी वजह से यहाँ मुश्किल मामलों वाले हिस्से को automate होने वाला नहीं, बचा रहने वाला माना गया है।"
+    },
+    {
+      "id": "sdr",
+      "title": "Inside Sales / SDR",
+      "family": "biz",
+      "interest_areas": [
+        "business-managing"
+      ],
+      "badge": "Shrinking",
+      "forecast_score": 46,
+      "card_line": "AI writes and sends sales outreach, so fewer junior seats",
+      "reason": "AI writes and sends outreach at scale, so fewer junior sales seats",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med/low",
+        "note": "About half variable; generic inside sales pays far less; mid and senior estimated from title ladder",
+        "sources_detail": "glassdoor.co.in sales-development-representative; payscale.com Inside_Sales_Representative; in.indeed.com inside-sales-executive",
+        "entry": {
+          "low": 4,
+          "high": 8,
+          "label": "Rs 4-8 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 8,
+          "high": 16,
+          "label": "Rs 8-16 L"
+        },
+        "senior": {
+          "low": 15,
+          "high": 30,
+          "label": "Rs 15-30 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 76.2,
+        "if_ai_spreads_fast": 50.1,
+        "if_ai_spreads_slowly": 102.7
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 56,
+        "with_ai": 38,
+        "led_by_people": 6
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Outbound email and message sequencing",
+            "share": 22,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "नए ग्राहकों को एक के बाद एक email और message भेजना"
+          },
+          {
+            "text": "Prospect research and list building",
+            "share": 20,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "जो ग्राहक बन सकते हैं, उन पर रिसर्च और उनकी लिस्ट बनाना"
+          },
+          {
+            "text": "Qualification calls",
+            "share": 16,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "कॉल पर परखना कि ग्राहक खरीदने को कितना तैयार है"
+          },
+          {
+            "text": "Objection handling and discovery",
+            "share": 14,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "ग्राहक के शक और सवालों का जवाब देना, और उसकी ज़रूरत समझना"
+          },
+          {
+            "text": "CRM data entry and pipeline hygiene",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "CRM में डेटा भरना और सौदों की लिस्ट साफ़-सुथरी रखना"
+          },
+          {
+            "text": "Handing over account context to AEs",
+            "share": 8,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "ग्राहक की पूरी जानकारी सीनियर सेल्स टीम (AE) को सौंपना"
+          },
+          {
+            "text": "Building rapport with repeat contacts",
+            "share": 6,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "बार-बार बात करने वाले लोगों से अच्छा रिश्ता बनाना"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Live conversation and objection handling",
+        "Reading a buying committee",
+        "Qualification judgement"
+      ],
+      "skills_fading": [
+        "Manual prospect research",
+        "Sequence writing",
+        "CRM hygiene as a job"
+      ],
+      "new_tasks_emerging": [
+        "Running and tuning a fleet of outbound agents",
+        "Deliverability and reputation management as channels saturate"
+      ],
+      "evidence": "Microsoft Research ranks Sales Representatives of Services #4 of all US occupations for AI task applicability (0.46). Gartner (Nov 2025): by 2028 AI agents will outnumber human sellers 10:1, yet fewer than 40% of sellers will report a productivity gain — adoption is running ahead of realised value.",
+      "card_line_hi": "बिक्री के संदेश AI लिखता और भेजता है, इसलिए जूनियर सीटें कम हैं",
+      "reason_hi": "AI बड़ी संख्या में बिक्री के संदेश लिखता और भेजता है, इसलिए sales में जूनियर सीटें कम हैं।",
+      "skills_that_hold_hi": [
+        "फ़ोन पर बात करते हुए ग्राहक के शक दूर करना",
+        "खरीद का फ़ैसला करने वाले लोगों को समझना",
+        "कौन ग्राहक सच में खरीदेगा, इसकी परख"
+      ],
+      "skills_fading_hi": [
+        "संभावित ग्राहकों की रिसर्च हाथ से करना",
+        "sequence लिखना",
+        "CRM डेटा ठीक रखना ही पूरा काम होना"
+      ],
+      "new_tasks_emerging_hi": [
+        "outbound एजेंट के पूरे समूह को चलाना और ठीक रखना",
+        "चैनल भर जाने पर deliverability और साख संभालना"
+      ],
+      "evidence_hi": "Microsoft Research ने Sales Representatives of Services को AI task applicability में अमेरिका के सभी पेशों में #4 पर रखा है (0.46)। Gartner (नवंबर 2025): 2028 तक AI एजेंट इंसानी सेल्स वालों से 10:1 के अनुपात में ज़्यादा होंगे, फिर भी 40% से कम सेल्स वाले productivity में फ़ायदा बताएँगे: AI को अपनाना असली फ़ायदे से आगे दौड़ रहा है।"
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing (Performance & Content)",
+      "family": "biz",
+      "interest_areas": [
+        "business-managing"
+      ],
+      "badge": "Shrinking",
+      "forecast_score": 46,
+      "card_line": "AI drafts content and campaigns fast; fewer entry roles",
+      "reason": "AI produces content and campaigns quickly; fewer entry roles, more need for judgement",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Digital entry 3-6L for B.Tech; brand management mostly needs an MBA (10-18L)",
+        "sources_detail": "payscale.com Digital_Marketing_Manager, Brand_Manager; glassdoor.co.in marketing-manager",
+        "entry": {
+          "low": 4,
+          "high": 8,
+          "label": "Rs 4-8 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 9,
+          "high": 18,
+          "label": "Rs 9-18 L"
+        },
+        "senior": {
+          "low": 18,
+          "high": 35,
+          "label": "Rs 18-35 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 69.9,
+        "if_ai_spreads_fast": 41.5,
+        "if_ai_spreads_slowly": 101.8
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 58,
+        "with_ai": 24,
+        "led_by_people": 18
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "First-draft copy, posts and creative variants",
+            "share": 22,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "विज्ञापन के शब्द, post और डिज़ाइन के अलग-अलग रूप का पहला ड्राफ़्ट"
+          },
+          {
+            "text": "Recurring campaign reporting",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "कैंपेन की हर हफ़्ते, हर महीने की रिपोर्ट"
+          },
+          {
+            "text": "Campaign setup, tagging and trafficking",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "कैंपेन सेट करना, टैग लगाना और विज्ञापन सही जगह चलाना"
+          },
+          {
+            "text": "Creative direction and brand judgement",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "विज्ञापन कैसा दिखे, यह तय करना और ब्रांड की समझ"
+          },
+          {
+            "text": "Channel strategy and budget allocation",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "विज्ञापन कहाँ दें और बजट कैसे बाँटें, यह तय करना"
+          },
+          {
+            "text": "Keyword, audience and competitor research",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "keyword, ग्राहकों और दूसरी कंपनियों पर रिसर्च"
+          },
+          {
+            "text": "Positioning and messaging architecture",
+            "share": 10,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "ब्रांड की पहचान और उसकी बात कहने का तरीका तय करना"
+          },
+          {
+            "text": "Partner, PR and community relationships",
+            "share": 8,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "पार्टनर, PR और कम्युनिटी से रिश्ते"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Positioning and messaging",
+        "Creative direction and taste",
+        "Budget allocation under uncertainty",
+        "Relationships and distribution"
+      ],
+      "skills_fading": [
+        "First-draft copywriting",
+        "Templated design production",
+        "Weekly reporting"
+      ],
+      "new_tasks_emerging": [
+        "Brand and creative direction over AI production at volume",
+        "Optimising for AI answer engines rather than search results",
+        "Provenance, disclosure and brand-safety governance"
+      ],
+      "evidence": "Wynter/MarTech (May 2026): 47% of B2B companies have reduced marketing roles because of AI; 60% name copywriting as the most exposed function, 37% design, and 20% junior and entry-level roles specifically. A caution worth carrying: the widely circulated figures claiming junior copywriting down 23% and senior strategy up 14–18% could not be traced to any named study when re-checked in September 2026 — they appear only in content-marketing blogs, so they are deliberately not used here. Counterpoint: LinkedIn’s own platform data (Apr 2026) found no accelerated decline in marketing hiring yet. The junior-versus-senior split in this model comes from the task mix, not from those numbers.",
+      "card_line_hi": "कंटेंट और कैंपेन का पहला ड्राफ़्ट AI तेज़ी से बनाता है, शुरुआती नौकरियाँ कम हैं",
+      "reason_hi": "AI कंटेंट और कैंपेन जल्दी बना देता है। शुरुआती नौकरियाँ कम हैं, और सही फ़ैसले की समझ की ज़रूरत ज़्यादा है।",
+      "skills_that_hold_hi": [
+        "ब्रांड की पहचान और उसकी बात",
+        "विज्ञापन की दिशा तय करना और अच्छे की परख",
+        "नतीजा पक्का न हो, तब भी बजट सही बाँटना",
+        "रिश्ते, और लोगों तक पहुँचने के रास्ते"
+      ],
+      "skills_fading_hi": [
+        "copywriting का पहला ड्राफ़्ट लिखना",
+        "टेम्पलेट से डिज़ाइन बनाना",
+        "हफ़्ते की रिपोर्ट बनाना"
+      ],
+      "new_tasks_emerging_hi": [
+        "बड़े पैमाने पर AI से बनते काम पर ब्रांड और creative direction देना",
+        "सर्च रिज़ल्ट की जगह AI answer engine के लिए optimise करना",
+        "provenance, जानकारी बताने और brand-safety की governance"
+      ],
+      "evidence_hi": "Wynter/MarTech (मई 2026): 47% B2B कंपनियों ने AI की वजह से marketing की नौकरियाँ घटाई हैं; 60% कंपनियाँ copywriting को सबसे ज़्यादा प्रभावित काम बताती हैं, 37% design को, और 20% खास तौर पर जूनियर और शुरुआती स्तर की नौकरियों को। एक सावधानी: जो आँकड़े खूब फैले हैं कि जूनियर copywriting 23% घटी और सीनियर strategy 14 से 18% बढ़ी, वे सितंबर 2026 में दोबारा जाँचने पर किसी नाम वाले अध्ययन से जुड़े नहीं मिले। वे सिर्फ़ content-marketing ब्लॉग में दिखते हैं, इसलिए उन्हें जान-बूझकर इस्तेमाल नहीं किया गया है। दूसरा पक्ष: LinkedIn के अपने प्लेटफ़ॉर्म डेटा (अप्रैल 2026) में marketing की भर्ती में अभी तेज़ गिरावट नहीं दिखी। इस मॉडल में जूनियर और सीनियर का फ़र्क उन आँकड़ों से नहीं, काम की बनावट से आता है।"
+    },
+    {
+      "id": "finance",
+      "title": "Finance & Accounting",
+      "family": "biz",
+      "interest_areas": [
+        "business-managing"
+      ],
+      "badge": "Shrinking",
+      "forecast_score": 44,
+      "card_line": "Entry-level bookkeeping and reporting are now heavily automated",
+      "reason": "Bookkeeping, reconciliation and reporting are heavily automated at entry level",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "CA or MBA-Finance starts 8-14L (estimate)",
+        "sources_detail": "payscale.com Financial_Analyst; glassdoor.co.in financial-analyst, finance-manager",
+        "entry": {
+          "low": 4,
+          "high": 7.5,
+          "label": "Rs 4-7.5 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 8,
+          "high": 16,
+          "label": "Rs 8-16 L"
+        },
+        "senior": {
+          "low": 18,
+          "high": 35,
+          "label": "Rs 18-35 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 70.1,
+        "if_ai_spreads_fast": 42.7,
+        "if_ai_spreads_slowly": 101.1
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 59,
+        "with_ai": 31,
+        "led_by_people": 10
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Bookkeeping, entries and reconciliations",
+            "share": 20,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "खाते लिखना, entry करना और हिसाब मिलाना"
+          },
+          {
+            "text": "Standard reporting packs and MIS",
+            "share": 15,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "आम रिपोर्ट और MIS"
+          },
+          {
+            "text": "Budgeting, forecasting and scenario work",
+            "share": 13,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "बजट, आगे का अनुमान और अलग-अलग हालात का हिसाब"
+          },
+          {
+            "text": "First-pass audit testing and sampling",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "ऑडिट की पहली जाँच और जाँच के लिए नमूने चुनना"
+          },
+          {
+            "text": "Invoice processing and AP/AR chasing",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "बिल निपटाना और लेने-देने के बकाया पैसों का पीछा करना"
+          },
+          {
+            "text": "Controls design and judgement calls",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "गड़बड़ी रोकने के नियम (control) बनाना और मुश्किल फ़ैसले"
+          },
+          {
+            "text": "Business partnering and decision support",
+            "share": 10,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "बिज़नेस टीम के साथ बैठकर फ़ैसलों में मदद"
+          },
+          {
+            "text": "Regulatory filings and auditor negotiation",
+            "share": 8,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "सरकारी फ़ाइलिंग और ऑडिटर से बातचीत"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Controls and judgement",
+        "Business partnering",
+        "Regulatory negotiation",
+        "Knowing when a number is wrong"
+      ],
+      "skills_fading": [
+        "Reconciliation",
+        "Reporting-pack production",
+        "First-pass audit testing"
+      ],
+      "new_tasks_emerging": [
+        "Controls over AI-generated numbers",
+        "Continuous close and real-time assurance",
+        "Auditing model-driven decisions"
+      ],
+      "evidence": "Among the best-evidenced role families. BambooHR (Mar–Apr 2026, n=1,248 plus a 480,000-record panel): firms now hire senior to entry-level finance staff at 3:1. Big Four UK graduate intake: KPMG down 29–33%, Deloitte down 18%, EY down 11%. WEF 2025 lists accountants and auditors among the fastest-declining roles.",
+      "card_line_hi": "शुरुआती स्तर का हिसाब-किताब और रिपोर्ट बनाना अब ज़्यादातर अपने-आप होता है",
+      "reason_hi": "शुरुआती स्तर पर हिसाब-किताब, आँकड़े मिलाना और रिपोर्ट बनाना अब ज़्यादातर अपने-आप होता है।",
+      "skills_that_hold_hi": [
+        "गड़बड़ी रोकने के नियम और सही फ़ैसला",
+        "बिज़नेस टीम का साथी बनकर काम करना",
+        "टैक्स और नियमों के मामलों में अफ़सरों से बात करना",
+        "पहचानना कि कोई आँकड़ा कब गलत है"
+      ],
+      "skills_fading_hi": [
+        "हिसाब मिलाना",
+        "reporting pack बनाना",
+        "ऑडिट की पहली जाँच"
+      ],
+      "new_tasks_emerging_hi": [
+        "AI के बनाए आँकड़ों पर नियंत्रण",
+        "continuous close और रियल-टाइम assurance",
+        "मॉडल से लिए गए फ़ैसलों का ऑडिट"
+      ],
+      "evidence_hi": "सबसे अच्छे सबूत वाली नौकरियों में से एक। BambooHR (मार्च-अप्रैल 2026, n=1,248 और 480,000 रिकॉर्ड का पैनल): कंपनियाँ अब finance में सीनियर और शुरुआती स्तर के स्टाफ़ को 3:1 के अनुपात में रखती हैं। Big Four UK की ग्रेजुएट भर्ती: KPMG में 29 से 33% कम, Deloitte में 18% कम, EY में 11% कम। WEF 2025 के मुताबिक accountants और auditors सबसे तेज़ घटने वाली नौकरियों में हैं।"
+    },
+    {
+      "id": "maintenance",
+      "title": "Maintenance & Reliability Engineer",
+      "family": "core",
+      "interest_areas": [
+        "machines-making"
+      ],
+      "badge": "Growing",
+      "forecast_score": 68,
+      "card_line": "More automation means more machines to keep running",
+      "reason": "Keeping machines and plants running is hands-on and growing with automation",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": null,
+        "sources_detail": "payscale.com Maintenance_Engineer; glassdoor.co.in maintenance-engineer",
+        "entry": {
+          "low": 2.5,
+          "high": 4,
+          "label": "Rs 2.5-4 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 5,
+          "high": 8,
+          "label": "Rs 5-8 L"
+        },
+        "senior": {
+          "low": 8,
+          "high": 13,
+          "label": "Rs 8-13 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 128.8,
+        "if_ai_spreads_fast": 117.2,
+        "if_ai_spreads_slowly": 140.3
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 24,
+        "with_ai": 26,
+        "led_by_people": 50
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Hands-on breakdown diagnosis and repair supervision",
+            "share": 22,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "मशीन बंद होने पर खुद गड़बड़ी ढूँढना और मरम्मत करवाना"
+          },
+          {
+            "text": "Managing technicians and contractors",
+            "share": 16,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "टेक्नीशियन और ठेकेदारों से काम करवाना"
+          },
+          {
+            "text": "Condition monitoring and failure prediction",
+            "share": 14,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "मशीन की हालत पर नज़र रखना और खराबी का पहले से अंदाज़ा लगाना"
+          },
+          {
+            "text": "Preventive maintenance scheduling",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "समय-समय पर मशीन की देखभाल का शेड्यूल बनाना"
+          },
+          {
+            "text": "Maintenance records, CMMS and spares",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "मरम्मत का रिकॉर्ड, CMMS और स्पेयर पार्ट का हिसाब"
+          },
+          {
+            "text": "Root-cause analysis of failures",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "खराबी की असली वजह ढूँढना"
+          },
+          {
+            "text": "Safety permits, isolation and statutory compliance",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "सेफ़्टी परमिट, काम से पहले मशीन को सुरक्षित बंद करना और कानूनी नियमों का पालन"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Diagnosis with hands on the machine",
+        "Safety isolation",
+        "Leading a breakdown team"
+      ],
+      "skills_fading": [
+        "Calendar-based PM scheduling",
+        "Manual logbooks"
+      ],
+      "new_tasks_emerging": [
+        "Acting on predictive-maintenance alerts",
+        "Maintaining sensor and monitoring infrastructure",
+        "Deciding when to trust a failure prediction"
+      ],
+      "evidence": "Albemarle reports more than $150m in annual savings from AI and analytics, with 5% to 20% OEE gains from predictive maintenance (Chemical Processing, Jul 2026, self-reported). The same article carries ARC Advisory Group calling much of the new AI in process industries \"a fresh coat of paint on an old car.\" The physical half of this role is not exposed at all.",
+      "card_line_hi": "ज़्यादा ऑटोमेशन यानी चालू रखने के लिए ज़्यादा मशीनें",
+      "reason_hi": "मशीनों और प्लांट को चालू रखना हाथ का काम है, और automation के साथ यह काम बढ़ रहा है।",
+      "skills_that_hold_hi": [
+        "मशीन पर हाथ लगाकर गड़बड़ी पकड़ना",
+        "काम से पहले मशीन को सुरक्षित बंद करना",
+        "मशीन बंद होने पर मरम्मत टीम को संभालना"
+      ],
+      "skills_fading_hi": [
+        "कैलेंडर के हिसाब से PM शेड्यूल करना",
+        "logbook हाथ से भरना"
+      ],
+      "new_tasks_emerging_hi": [
+        "predictive-maintenance के alert पर कदम उठाना",
+        "sensor और monitoring का ढाँचा चालू रखना",
+        "यह तय करना कि खराबी के अनुमान पर कब भरोसा करें"
+      ],
+      "evidence_hi": "Albemarle के मुताबिक AI और analytics से सालाना $150m से ज़्यादा की बचत हुई, और predictive maintenance से OEE में 5% से 20% सुधार हुआ (Chemical Processing, जुलाई 2026, कंपनी का खुद बताया हुआ)। उसी लेख में ARC Advisory Group प्रोसेस इंडस्ट्री के बहुत से नए AI को \"पुरानी गाड़ी पर रंग की नई परत\" कहता है। इस काम का शारीरिक आधा हिस्सा बिल्कुल प्रभावित नहीं है।"
+    },
+    {
+      "id": "production",
+      "title": "Production / Manufacturing Engineer",
+      "family": "core",
+      "interest_areas": [
+        "machines-making"
+      ],
+      "badge": "Growing",
+      "forecast_score": 64,
+      "card_line": "Factories need engineers on the floor; fewer people choose it",
+      "reason": "Factories need engineers on the floor; this is hard to automate and fewer people choose it",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Large OEMs and PSUs pay above",
+        "sources_detail": "payscale.com Production_Engineer; glassdoor.co.in production-engineer",
+        "entry": {
+          "low": 2.5,
+          "high": 4.5,
+          "label": "Rs 2.5-4.5 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 5,
+          "high": 8,
+          "label": "Rs 5-8 L"
+        },
+        "senior": {
+          "low": 8,
+          "high": 14,
+          "label": "Rs 8-14 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 121.1,
+        "if_ai_spreads_fast": 108.9,
+        "if_ai_spreads_slowly": 133.3
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 22,
+        "with_ai": 36,
+        "led_by_people": 42
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Shop-floor problem solving and firefighting",
+            "share": 18,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "फ़ैक्ट्री में अचानक आई दिक्कतें तुरंत सुलझाना"
+          },
+          {
+            "text": "Managing operators, shifts and contractors",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "ऑपरेटर, शिफ़्ट और ठेकेदारों को संभालना"
+          },
+          {
+            "text": "Line balancing, cycle time and capacity planning",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "line balancing, cycle time और प्रोडक्शन क्षमता का प्लान"
+          },
+          {
+            "text": "Process documentation, SOPs and work instructions",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "काम के तरीके लिखना: SOP और work instruction"
+          },
+          {
+            "text": "CNC and PLC programming, process parameters",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "CNC और PLC programming, मशीन की सेटिंग तय करना"
+          },
+          {
+            "text": "Kaizen, lean and improvement projects",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "Kaizen, lean और सुधार के project"
+          },
+          {
+            "text": "Production reporting and OEE tracking",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "प्रोडक्शन की रिपोर्ट और OEE (मशीन कितनी अच्छी चली) पर नज़र"
+          },
+          {
+            "text": "Tooling, fixtures and new line set-up",
+            "share": 10,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "tooling, fixture और नई प्रोडक्शन लाइन लगाना"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Firefighting on the floor",
+        "Leading operators",
+        "New line bring-up"
+      ],
+      "skills_fading": [
+        "Manual reporting",
+        "SOP writing",
+        "Hand-coded CNC programs"
+      ],
+      "new_tasks_emerging": [
+        "Running lines with cobots and automated cells",
+        "Interpreting digital-twin and OEE analytics",
+        "Managing the operator-to-robot transition on the floor"
+      ],
+      "evidence": "Microsoft Research flags CNC tool programmers at 0.44 applicability, the only production-adjacent role in its top-40 most exposed list, which is why CNC programming is modelled as augmented here. The rest of the role is physical, supervisory and site-bound. The larger threat is not AI but robotics, which is modelled separately in the blue-collar module.",
+      "card_line_hi": "फ़ैक्ट्री के अंदर काम करने वाले इंजीनियर चाहिए, पर कम लोग यह काम चुनते हैं",
+      "reason_hi": "फ़ैक्ट्री के अंदर, मशीनों के पास इंजीनियर चाहिए। यह काम आसानी से अपने-आप नहीं होता, और कम लोग इसे चुनते हैं।",
+      "skills_that_hold_hi": [
+        "फ़ैक्ट्री में अचानक आई मुश्किल संभालना",
+        "ऑपरेटर की टीम को साथ लेकर चलना",
+        "नई प्रोडक्शन लाइन चालू करना"
+      ],
+      "skills_fading_hi": [
+        "रिपोर्ट हाथ से बनाना",
+        "SOP लिखना",
+        "CNC प्रोग्राम हाथ से लिखना"
+      ],
+      "new_tasks_emerging_hi": [
+        "cobot और automated cell वाली लाइनें चलाना",
+        "digital twin और OEE analytics को समझना",
+        "फ़्लोर पर operator से robot की ओर बदलाव संभालना"
+      ],
+      "evidence_hi": "Microsoft Research ने CNC tool programmers को 0.44 applicability पर रखा है, जो उसकी सबसे ज़्यादा प्रभावित 40 नौकरियों की सूची में production से जुड़ी अकेली नौकरी है; इसीलिए यहाँ CNC programming को augmented माना गया है। बाकी काम शारीरिक है, निगरानी का है और साइट से बँधा है। बड़ा खतरा AI नहीं, robotics है, जिसे blue-collar module में अलग से मॉडल किया गया है।"
+    },
+    {
+      "id": "field-service",
+      "title": "Field Service / Commissioning Engineer",
+      "family": "core",
+      "interest_areas": [
+        "machines-making",
+        "electronics-chips"
+      ],
+      "badge": "Growing",
+      "forecast_score": 65,
+      "card_line": "Installing and fixing equipment on site needs a person there",
+      "reason": "Installing and fixing equipment on site cannot be done remotely or by software",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Travel and site allowances add a lot; MNC OEMs at the top",
+        "sources_detail": "payscale.com Field_Service_Engineer; glassdoor.co.in field-service-engineer, commissioning-engineer",
+        "entry": {
+          "low": 2.5,
+          "high": 4.5,
+          "label": "Rs 2.5-4.5 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 5,
+          "high": 9,
+          "label": "Rs 5-9 L"
+        },
+        "senior": {
+          "low": 8,
+          "high": 14,
+          "label": "Rs 8-14 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 122.6,
+        "if_ai_spreads_fast": 112.4,
+        "if_ai_spreads_slowly": 132.8
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 22,
+        "with_ai": 32,
+        "led_by_people": 46
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "On-site installation and commissioning",
+            "share": 24,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "साइट पर मशीन लगाना और चालू करना"
+          },
+          {
+            "text": "Troubleshooting equipment at customer sites",
+            "share": 20,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "ग्राहक की साइट पर मशीन की गड़बड़ी ढूँढना और ठीक करना"
+          },
+          {
+            "text": "Service reports and documentation",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "सर्विस रिपोर्ट और काम का लिखित रिकॉर्ड"
+          },
+          {
+            "text": "Remote diagnostics from equipment data",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "मशीन के डेटा से दूर बैठे गड़बड़ी पकड़ना"
+          },
+          {
+            "text": "Customer training and handover",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "ग्राहक को मशीन चलाना सिखाना और उसे सौंपना"
+          },
+          {
+            "text": "Spares, logistics and scheduling",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "स्पेयर पार्ट, सामान पहुँचाना और दौरों का शेड्यूल"
+          },
+          {
+            "text": "On-site safety and statutory checks",
+            "share": 10,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "साइट पर सेफ़्टी और कानूनी जाँच"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Being physically there",
+        "Customer trust at handover",
+        "Safety on site"
+      ],
+      "skills_fading": [
+        "Report writing",
+        "Scheduling and spares admin"
+      ],
+      "new_tasks_emerging": [
+        "Remote-assisted repair via AR, one expert across many sites",
+        "Commissioning renewables, EV chargers and automated cells"
+      ],
+      "evidence": "AR remote-assist tools (PTC, Microsoft Dynamics 365 Remote Assist) are mature products, but every productivity figure found was vendor or reseller content. The tools extend a present human rather than replace one. This is among the least AI-exposed roles in the whole model.",
+      "card_line_hi": "मशीन लगाने और ठीक करने के लिए किसी को मौके पर जाना पड़ता है",
+      "reason_hi": "साइट पर मशीन लगाना और ठीक करना दूर बैठकर या software से नहीं हो सकता।",
+      "skills_that_hold_hi": [
+        "खुद मौके पर मौजूद होना",
+        "मशीन सौंपते समय ग्राहक का भरोसा जीतना",
+        "साइट पर सेफ़्टी"
+      ],
+      "skills_fading_hi": [
+        "रिपोर्ट लिखना",
+        "शेड्यूल और spares का एडमिन काम"
+      ],
+      "new_tasks_emerging_hi": [
+        "AR के ज़रिए दूर से मदद वाली मरम्मत, एक expert कई साइट पर",
+        "renewables, EV charger और automated cell को चालू करना (commissioning)"
+      ],
+      "evidence_hi": "AR से दूर से मदद वाले टूल (PTC, Microsoft Dynamics 365 Remote Assist) पक्के प्रोडक्ट हैं, पर productivity के जितने भी आँकड़े मिले वे बनाने या बेचने वाली कंपनियों के कंटेंट थे। ये टूल मौजूद इंसान की पहुँच बढ़ाते हैं, उसकी जगह नहीं लेते। पूरे मॉडल में यह AI से सबसे कम प्रभावित नौकरियों में से एक है।"
+    },
+    {
+      "id": "mech-design",
+      "title": "Mechanical Design Engineer",
+      "family": "core",
+      "interest_areas": [
+        "machines-making"
+      ],
+      "badge": "Growing",
+      "forecast_score": 63,
+      "card_line": "Design demand holds while fewer students choose mechanical",
+      "reason": "Fewer students enter mechanical while design demand holds; AI speeds up drafting",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Senior estimated",
+        "sources_detail": "payscale.com Mechanical_Design_Engineer; glassdoor.co.in mechanical-design-engineer; in.indeed.com design-engineer",
+        "entry": {
+          "low": 2.5,
+          "high": 4.5,
+          "label": "Rs 2.5-4.5 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 5,
+          "high": 9,
+          "label": "Rs 5-9 L"
+        },
+        "senior": {
+          "low": 9,
+          "high": 16,
+          "label": "Rs 9-16 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 117.4,
+        "if_ai_spreads_fast": 101.6,
+        "if_ai_spreads_slowly": 133.1
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 24,
+        "with_ai": 42,
+        "led_by_people": 34
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "3D part and assembly modelling",
+            "share": 18,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "पार्ट और असेंबली का 3D मॉडल बनाना"
+          },
+          {
+            "text": "2D drawings, BOMs and documentation",
+            "share": 16,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "2D drawing, BOM (पुर्ज़ों की लिस्ट) और डॉक्यूमेंटेशन"
+          },
+          {
+            "text": "Supplier, manufacturing and test coordination on prototypes",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "prototype के लिए सप्लायर, फ़ैक्ट्री और टेस्ट टीम से तालमेल"
+          },
+          {
+            "text": "Concept generation and design alternatives",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "नए आइडिया सोचना और design के अलग-अलग विकल्प बनाना"
+          },
+          {
+            "text": "Design calculations and standards checks",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "design की calculation और standard से जाँच"
+          },
+          {
+            "text": "Design reviews, DFM and tolerance judgement",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "design review, DFM (आसानी से बनने लायक design) और tolerance की परख"
+          },
+          {
+            "text": "Engineering change management and records",
+            "share": 8,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "design में बदलाव संभालना और उनका रिकॉर्ड रखना"
+          },
+          {
+            "text": "Design sign-off and responsibility",
+            "share": 8,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "design को आख़िरी मंज़ूरी देना और उसकी ज़िम्मेदारी लेना"
+          }
+        ]
+      },
+      "n_tasks": 8,
+      "skills_that_hold": [
+        "Design for manufacture",
+        "Tolerance and failure judgement",
+        "Working with suppliers and the shop floor",
+        "Signing off a design"
+      ],
+      "skills_fading": [
+        "Drafting as the entry job",
+        "Manual drawing and BOM production",
+        "CAD speed as the main skill"
+      ],
+      "new_tasks_emerging": [
+        "Setting constraints and judging generative-design output",
+        "Validating AI-proposed geometry for manufacturability",
+        "Owning design intent across tool-generated variants"
+      ],
+      "evidence": "BLS projects US mechanical engineers +11% to 2035, but drafters only +1%, with openings mostly replacement rather than new positions: the junior production tier is where the squeeze sits. Autodesk and Siemens ship generative design and CAD copilots, though Siemens documents its NX copilot as a help assistant rather than a design automator. Microsoft Research scores the architecture and engineering occupation group at 0.22 AI applicability, squarely mid-table. Quantified productivity evidence for design engineering specifically is thin and mostly vendor-published.",
+      "card_line_hi": "Design की माँग बनी हुई है, पर कम स्टूडेंट mechanical चुनते हैं",
+      "reason_hi": "Mechanical में कम स्टूडेंट आ रहे हैं, पर design की माँग बनी हुई है। AI से drawing बनाने का काम तेज़ होता है।",
+      "skills_that_hold_hi": [
+        "ऐसा design जो फ़ैक्ट्री में आसानी से बने",
+        "tolerance और टूट-फूट की परख",
+        "सप्लायर और फ़ैक्ट्री की टीम के साथ काम",
+        "design को आख़िरी मंज़ूरी देना"
+      ],
+      "skills_fading_hi": [
+        "drafting वाली शुरुआती नौकरी",
+        "drawing और BOM हाथ से बनाना",
+        "CAD में रफ़्तार को ही मुख्य स्किल मानना"
+      ],
+      "new_tasks_emerging_hi": [
+        "constraints तय करना और generative-design के नतीजे परखना",
+        "AI की सुझाई geometry जाँचना कि वह बन सकती है या नहीं",
+        "टूल के बनाए अलग-अलग variant में design का असली मकसद बनाए रखना"
+      ],
+      "evidence_hi": "BLS का अनुमान है कि 2035 तक अमेरिका में mechanical engineers +11% बढ़ेंगे, पर drafters सिर्फ़ +1%, और खुली जगहें ज़्यादातर पुराने लोगों की जगह भरने की हैं, नई पोस्ट की नहीं: दबाव जूनियर production वाली परत में ही है। Autodesk और Siemens generative design और CAD copilot दे रहे हैं, हालाँकि Siemens अपने NX copilot को design करने वाली मशीन नहीं, मदद करने वाला assistant बताता है। Microsoft Research architecture और engineering वाले समूह को 0.22 AI applicability देता है, यानी तालिका के ठीक बीच में। design engineering की productivity का नापा हुआ सबूत कम है और ज़्यादातर बनाने वाली कंपनियों ने ही छापा है।"
+    },
+    {
+      "id": "application-eng",
+      "title": "Sales / Application Engineer",
+      "family": "core",
+      "interest_areas": [
+        "machines-making",
+        "electronics-chips"
+      ],
+      "badge": "Growing",
+      "forecast_score": 62,
+      "card_line": "Technical products need engineers who can explain them to buyers",
+      "reason": "Selling technical products needs engineers who can explain them; this is growing",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "low",
+        "note": "Sources disagree; bands include typical incentives",
+        "sources_detail": "payscale.com Sales_Engineer; glassdoor.co.in sales-engineer, application-engineer",
+        "entry": {
+          "low": 3,
+          "high": 5,
+          "label": "Rs 3-5 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 6,
+          "high": 10,
+          "label": "Rs 6-10 L"
+        },
+        "senior": {
+          "low": 10,
+          "high": 18,
+          "label": "Rs 10-18 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 118.4,
+        "if_ai_spreads_fast": 106.1,
+        "if_ai_spreads_slowly": 130.7
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 26,
+        "with_ai": 28,
+        "led_by_people": 46
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Understanding customer technical requirements on site",
+            "share": 18,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "साइट पर जाकर ग्राहक की तकनीकी ज़रूरत समझना"
+          },
+          {
+            "text": "Solution configuration and sizing",
+            "share": 16,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "ग्राहक के लिए सही मशीन या सिस्टम चुनना और उसका साइज़ तय करना"
+          },
+          {
+            "text": "Proposals, quotes and technical documentation",
+            "share": 16,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "proposal, कोटेशन और तकनीकी डॉक्यूमेंट"
+          },
+          {
+            "text": "Product demonstrations and trials",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "प्रोडक्ट चलाकर दिखाना और ट्रायल"
+          },
+          {
+            "text": "Relationship building and negotiation",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "ग्राहक से रिश्ता बनाना और मोल-भाव"
+          },
+          {
+            "text": "Technical support after sale",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "बिक्री के बाद तकनीकी मदद"
+          },
+          {
+            "text": "CRM, reporting and forecasting",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "CRM, रिपोर्ट और बिक्री का अनुमान"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Technical trust with the buyer",
+        "On-site demonstration",
+        "Negotiation"
+      ],
+      "skills_fading": [
+        "Proposal production",
+        "CRM admin"
+      ],
+      "new_tasks_emerging": [
+        "Selling automation and AI-enabled equipment",
+        "Outcome-based and uptime-based contracts"
+      ],
+      "evidence": "No engineering-specific evidence was found; everything available is generic sales-AI marketing. Modelled on the enterprise-sales pattern, with a larger on-site and technical component that makes it one of the more insulated core roles.",
+      "card_line_hi": "तकनीकी प्रोडक्ट बेचने के लिए ऐसे इंजीनियर चाहिए जो खरीदार को समझा सकें",
+      "reason_hi": "तकनीकी प्रोडक्ट बेचने के लिए ऐसे इंजीनियर चाहिए जो उन्हें समझा सकें। यह काम बढ़ रहा है।",
+      "skills_that_hold_hi": [
+        "तकनीकी बातों में खरीदार का भरोसा जीतना",
+        "साइट पर चलाकर दिखाना",
+        "मोल-भाव"
+      ],
+      "skills_fading_hi": [
+        "proposal बनाना",
+        "CRM का एडमिन काम"
+      ],
+      "new_tasks_emerging_hi": [
+        "automation और AI वाले उपकरण बेचना",
+        "नतीजे और uptime पर आधारित contract"
+      ],
+      "evidence_hi": "इंजीनियरिंग के लिए खास कोई सबूत नहीं मिला; जो भी मिला वह आम sales-AI का प्रचार है। इसे enterprise-sales के ढर्रे पर मॉडल किया गया है, जिसमें साइट और तकनीक का हिस्सा बड़ा है, इसलिए यह core नौकरियों में ज़्यादा सुरक्षित नौकरियों में से एक है।"
+    },
+    {
+      "id": "process",
+      "title": "Chemical Process Engineer",
+      "family": "core",
+      "interest_areas": [
+        "machines-making"
+      ],
+      "badge": "Growing",
+      "forecast_score": 60,
+      "card_line": "Plants need process engineers on site; AI helps optimise",
+      "reason": "Plants need process engineers; AI helps optimise but not replace",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Refinery and PSU roles pay above",
+        "sources_detail": "payscale.com Process_Engineer, Chemical_Engineer; glassdoor.co.in process-engineer, chemical-engineer",
+        "entry": {
+          "low": 3,
+          "high": 6,
+          "label": "Rs 3-6 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 6,
+          "high": 10,
+          "label": "Rs 6-10 L"
+        },
+        "senior": {
+          "low": 10,
+          "high": 18,
+          "label": "Rs 10-18 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 112.5,
+        "if_ai_spreads_fast": 97.4,
+        "if_ai_spreads_slowly": 127.7
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 30,
+        "with_ai": 28,
+        "led_by_people": 42
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Troubleshooting unit upsets",
+            "share": 16,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "प्लांट की किसी यूनिट में गड़बड़ी आने पर उसे ठीक करना"
+          },
+          {
+            "text": "Process simulation runs and heat and mass balances",
+            "share": 16,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "process simulation चलाना और heat और mass balance का हिसाब"
+          },
+          {
+            "text": "HAZOP, safety reviews and management of change",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "HAZOP, सेफ़्टी जाँच और हर बदलाव को सुरक्षित ढंग से लागू करना"
+          },
+          {
+            "text": "Plant operations support and operator guidance",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "प्लांट चलाने में मदद और ऑपरेटर को सही तरीका बताना"
+          },
+          {
+            "text": "Scale-up, commissioning and design-basis decisions",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "छोटे से बड़े पैमाने पर ले जाना, प्लांट चालू करना और design के बुनियादी फ़ैसले"
+          },
+          {
+            "text": "Monitoring plant data and daily reports",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "प्लांट के डेटा पर नज़र और रोज़ की रिपोर्ट"
+          },
+          {
+            "text": "Process optimisation and APC tuning",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "process को बेहतर बनाना और APC (अपने-आप कंट्रोल) की सेटिंग"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Process safety",
+        "Scale-up judgement",
+        "Guiding operators through an upset"
+      ],
+      "skills_fading": [
+        "Routine simulation runs",
+        "Daily reporting"
+      ],
+      "new_tasks_emerging": [
+        "Working alongside AI process advisers",
+        "Digital twins for plant knowledge capture",
+        "Green hydrogen and electrification of process heat"
+      ],
+      "evidence": "The best-triangulated evidence in core engineering, all in one independent trade article (Chemical Processing, Jul 2026): AspenTech’s AI adviser automates what-if runs; Albemarle reports $150m+ in savings; Dow says experienced engineers \"reach the same conclusions faster without relying on an AI agent\" and that the tool helps newer engineers most, which is exactly the entry-level squeeze. BLS projects US chemical engineers +5% to 2035.",
+      "card_line_hi": "प्लांट में process इंजीनियर चाहिए, AI काम बेहतर करने में मदद करता है",
+      "reason_hi": "प्लांट को process इंजीनियर चाहिए। AI काम बेहतर करने में मदद करता है, उनकी जगह नहीं लेता।",
+      "skills_that_hold_hi": [
+        "process की सेफ़्टी",
+        "छोटे से बड़े पैमाने पर ले जाने की समझ",
+        "गड़बड़ी के समय ऑपरेटर को सही रास्ता दिखाना"
+      ],
+      "skills_fading_hi": [
+        "आम simulation चलाना",
+        "रोज़ की रिपोर्ट बनाना"
+      ],
+      "new_tasks_emerging_hi": [
+        "AI process adviser के साथ मिलकर काम करना",
+        "प्लांट का अनुभव सहेजने के लिए digital twin",
+        "green hydrogen और process heat का बिजली से चलना"
+      ],
+      "evidence_hi": "core engineering में सबसे अच्छी तरह मिलान किया गया सबूत, सब एक ही स्वतंत्र trade लेख (Chemical Processing, जुलाई 2026) में: AspenTech का AI adviser what-if रन अपने आप चलाता है; Albemarle $150m+ की बचत बताती है; Dow कहती है कि अनुभवी इंजीनियर \"AI एजेंट पर निर्भर हुए बिना उसी नतीजे पर तेज़ी से पहुँच जाते हैं\" और टूल नए इंजीनियरों की सबसे ज़्यादा मदद करता है, यानी शुरुआती स्तर पर ही दबाव है। BLS का अनुमान है कि 2035 तक अमेरिका में chemical engineers +5% बढ़ेंगे।"
+    },
+    {
+      "id": "cae",
+      "title": "Simulation / CAE Analyst",
+      "family": "core",
+      "interest_areas": [
+        "machines-making"
+      ],
+      "badge": "Changing",
+      "forecast_score": 56,
+      "card_line": "AI runs routine simulations; deciding what to simulate grows",
+      "reason": "Simulation tools get AI help; demand is steady but the work changes",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "low",
+        "note": "Mid and senior estimated (15-25% above CAD)",
+        "sources_detail": "glassdoor.co.in cae-engineer, simulation-engineer; payscale.com CAE",
+        "entry": {
+          "low": 3,
+          "high": 6,
+          "label": "Rs 3-6 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 7,
+          "high": 12,
+          "label": "Rs 7-12 L"
+        },
+        "senior": {
+          "low": 12,
+          "high": 20,
+          "label": "Rs 12-20 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 103.4,
+        "if_ai_spreads_fast": 75.8,
+        "if_ai_spreads_slowly": 131
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 50,
+        "with_ai": 24,
+        "led_by_people": 26
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Meshing and model pre-processing",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "meshing और मॉडल को simulation के लिए तैयार करना"
+          },
+          {
+            "text": "Running standard FEA and CFD cases",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "आम FEA और CFD simulation चलाना"
+          },
+          {
+            "text": "Post-processing and report generation",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "simulation के नतीजे निकालना और रिपोर्ट बनाना"
+          },
+          {
+            "text": "Boundary conditions and modelling assumptions",
+            "share": 14,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "boundary condition, और मॉडल किन बातों को मानकर चले, यह तय करना"
+          },
+          {
+            "text": "Correlating simulation with physical tests",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "simulation के नतीजों को असली टेस्ट से मिलाना"
+          },
+          {
+            "text": "Deciding which analysis to run, at what fidelity",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "कौन-सा analysis चलाना है और कितनी बारीकी से, यह तय करना"
+          },
+          {
+            "text": "Building and validating surrogate models",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "तेज़ चलने वाले छोटे मॉडल (surrogate model) बनाना और जाँचना"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Physical intuition about failure",
+        "Test correlation",
+        "Choosing the right fidelity"
+      ],
+      "skills_fading": [
+        "Meshing as a skill",
+        "Running standard load cases",
+        "Report production"
+      ],
+      "new_tasks_emerging": [
+        "Training and validating AI surrogate models",
+        "Deciding when a surrogate can be trusted over full simulation",
+        "Test-simulation correlation at scale"
+      ],
+      "evidence": "The clearest automation case in mechanical engineering. Sumitomo Riko reports Ansys SimAI predicting rubber-bush performance more than 10x faster, approximating a full FEA run in about five minutes (vendor customer story). Nvidia PhysicsNeMo targets the same surrogate-model workflow. Evidence is real but vendor-published and concentrated on narrow, repeated component classes rather than general CAE judgement.",
+      "card_line_hi": "आम simulation AI चलाता है, क्या जाँचना है यह तय करने का काम बढ़ रहा है",
+      "reason_hi": "Simulation टूल को AI की मदद मिल रही है। माँग बनी हुई है, पर काम का तरीका बदल रहा है।",
+      "skills_that_hold_hi": [
+        "कोई चीज़ कहाँ और कैसे टूटेगी, इसकी समझ",
+        "simulation को असली टेस्ट से मिलाना",
+        "कितनी बारीकी चाहिए, यह सही चुनना"
+      ],
+      "skills_fading_hi": [
+        "meshing को एक स्किल मानना",
+        "आम load case चलाना",
+        "रिपोर्ट बनाना"
+      ],
+      "new_tasks_emerging_hi": [
+        "AI surrogate मॉडल को train और validate करना",
+        "यह तय करना कि पूरे simulation की जगह surrogate पर कब भरोसा किया जाए",
+        "बड़े पैमाने पर टेस्ट और simulation के नतीजे मिलाना"
+      ],
+      "evidence_hi": "mechanical engineering में automation का सबसे साफ़ उदाहरण। Sumitomo Riko बताती है कि Ansys SimAI रबर-बुश का प्रदर्शन 10x से ज़्यादा तेज़ी से बताता है, और पूरे FEA रन का अंदाज़ा करीब पाँच मिनट में दे देता है (बेचने वाली कंपनी की ग्राहक-कहानी)। Nvidia PhysicsNeMo इसी surrogate-model काम को निशाना बनाता है। सबूत असली है, पर बेचने वाली कंपनियों ने ही छापा है और कुछ तय, बार-बार बनने वाले पुर्ज़ों तक सीमित है, आम CAE समझ तक नहीं।"
+    },
+    {
+      "id": "quality",
+      "title": "Quality Engineer",
+      "family": "core",
+      "interest_areas": [
+        "machines-making"
+      ],
+      "badge": "Changing",
+      "forecast_score": 59,
+      "card_line": "AI cameras check parts; root-cause and audit work stays with people",
+      "reason": "Machine vision automates inspection; quality systems and root-cause work remain",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Senior estimated",
+        "sources_detail": "glassdoor.co.in quality-engineer; payscale.com Quality_Engineer; in.indeed.com quality-engineer",
+        "entry": {
+          "low": 2.5,
+          "high": 4.5,
+          "label": "Rs 2.5-4.5 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 5,
+          "high": 8,
+          "label": "Rs 5-8 L"
+        },
+        "senior": {
+          "low": 8,
+          "high": 14,
+          "label": "Rs 8-14 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 101.2,
+        "if_ai_spreads_fast": 78.6,
+        "if_ai_spreads_slowly": 123.8
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 46,
+        "with_ai": 26,
+        "led_by_people": 28
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Visual and dimensional inspection",
+            "share": 20,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "देखकर और नापकर पार्ट की जाँच"
+          },
+          {
+            "text": "SPC charts, quality reports and dashboards",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "SPC chart, क्वालिटी रिपोर्ट और dashboard"
+          },
+          {
+            "text": "Root-cause analysis (8D, fishbone)",
+            "share": 14,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "गड़बड़ी की असली वजह ढूँढना (8D, fishbone)"
+          },
+          {
+            "text": "Supplier quality and customer complaints",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "सप्लायर के माल की क्वालिटी और ग्राहक की शिकायतें"
+          },
+          {
+            "text": "Certification and customer audits in person",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "certification और ग्राहक के ऑडिट में खुद मौजूद रहना"
+          },
+          {
+            "text": "Audit documentation and compliance records",
+            "share": 12,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "ऑडिट के कागज़ और नियमों के पालन का रिकॉर्ड"
+          },
+          {
+            "text": "Inspection and control plan design",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "जाँच का तरीका और control plan बनाना"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Supplier negotiation on quality",
+        "Standing in front of an auditor",
+        "Root-cause judgement"
+      ],
+      "skills_fading": [
+        "Manual inspection",
+        "Chart production",
+        "Audit paperwork"
+      ],
+      "new_tasks_emerging": [
+        "Validating and tuning vision-inspection systems",
+        "Deciding acceptance thresholds for automated inspection",
+        "Auditing AI-driven quality decisions"
+      ],
+      "evidence": "Computer-vision inspection is a mature, heavily marketed category (Landing AI, Voxel51), but no independently audited deployment figure was found; the ROI claims circulating are vendor or SEO content. The inspection task is modelled as automated because the technology is proven even where the numbers are not.",
+      "card_line_hi": "पार्ट AI कैमरे जाँचते हैं, गड़बड़ी की असली वजह और ऑडिट का काम लोगों के पास रहता है",
+      "reason_hi": "कैमरे और AI से पार्ट की जाँच अब अपने-आप होती है। क्वालिटी सिस्टम और गड़बड़ी की असली वजह ढूँढने का काम बना रहता है।",
+      "skills_that_hold_hi": [
+        "क्वालिटी पर सप्लायर से बात करके हल निकालना",
+        "ऑडिटर के सामने जवाब देना",
+        "गड़बड़ी की असली वजह पहचानने की समझ"
+      ],
+      "skills_fading_hi": [
+        "हाथ से जाँच करना",
+        "चार्ट बनाना",
+        "ऑडिट का कागज़ी काम"
+      ],
+      "new_tasks_emerging_hi": [
+        "vision-inspection सिस्टम को जाँचना और ठीक करना",
+        "automated inspection के लिए पास होने की सीमा तय करना",
+        "AI से लिए गए quality फ़ैसलों का ऑडिट"
+      ],
+      "evidence_hi": "Computer-vision inspection एक पक्की, खूब प्रचारित श्रेणी है (Landing AI, Voxel51), पर किसी स्वतंत्र ऑडिट वाला deployment आँकड़ा नहीं मिला; ROI के जो दावे घूम रहे हैं वे बेचने वालों या SEO कंटेंट के हैं। inspection के काम को automated माना गया है क्योंकि तकनीक साबित है, भले ही आँकड़े न हों।"
+    },
+    {
+      "id": "embedded",
+      "title": "Embedded Systems Engineer",
+      "family": "core",
+      "interest_areas": [
+        "electronics-chips"
+      ],
+      "badge": "Changing",
+      "forecast_score": 60,
+      "card_line": "More devices need embedded code; AI writes the routine parts",
+      "reason": "Every device, vehicle and robot needs embedded software; AI helps write code",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Automotive and product firms at the top",
+        "sources_detail": "payscale.com Embedded_Software_Engineer; glassdoor.co.in embedded-software-engineer",
+        "entry": {
+          "low": 3,
+          "high": 6,
+          "label": "Rs 3-6 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 8,
+          "high": 14,
+          "label": "Rs 8-14 L"
+        },
+        "senior": {
+          "low": 14,
+          "high": 24,
+          "label": "Rs 14-24 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 107.7,
+        "if_ai_spreads_fast": 81.9,
+        "if_ai_spreads_slowly": 133.6
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 44,
+        "with_ai": 26,
+        "led_by_people": 30
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Debugging on real hardware with scopes and analysers",
+            "share": 18,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "असली hardware पर scope और analyser से गड़बड़ी ढूँढना"
+          },
+          {
+            "text": "Drivers and firmware for standard peripherals",
+            "share": 16,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "आम peripheral के लिए driver और firmware लिखना"
+          },
+          {
+            "text": "Unit tests and hardware-in-loop test scripts",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "unit टेस्ट और hardware-in-loop टेस्ट script"
+          },
+          {
+            "text": "Documentation and requirements traceability",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "डॉक्यूमेंटेशन, और हर ज़रूरत को काम से मिलाकर रखना"
+          },
+          {
+            "text": "Architecture and hardware-software trade-offs",
+            "share": 14,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "सिस्टम का ढाँचा, और कौन-सा काम hardware करे, कौन-सा software, यह तय करना"
+          },
+          {
+            "text": "Model-based design and code generation",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "model-based design और मॉडल से अपने-आप कोड बनाना"
+          },
+          {
+            "text": "Safety and certification compliance",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "सेफ़्टी और certification के नियमों का पालन"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Debugging on hardware",
+        "Safety certification",
+        "Real-time constraints"
+      ],
+      "skills_fading": [
+        "Hand-written peripheral drivers",
+        "Traceability paperwork"
+      ],
+      "new_tasks_emerging": [
+        "Running AI inference on the edge",
+        "Functional-safety cases for AI-assisted code",
+        "Software-defined vehicle platforms"
+      ],
+      "evidence": "MathWorks ships a generative Simulink Copilot in Release 2026a, confirming model-based design copilots are mainstream. General coding-assistant productivity figures do not transfer cleanly to embedded work with hard real-time and hardware constraints, and no embedded-specific study was found.",
+      "card_line_hi": "ज़्यादा डिवाइस को embedded कोड चाहिए; रोज़मर्रा का हिस्सा AI लिखता है",
+      "reason_hi": "हर डिवाइस, गाड़ी और रोबोट को embedded software चाहिए। कोड लिखने में AI मदद करता है।",
+      "skills_that_hold_hi": [
+        "hardware पर गड़बड़ी ढूँढना",
+        "सेफ़्टी certification",
+        "real-time सिस्टम: तय समय के अंदर जवाब देना"
+      ],
+      "skills_fading_hi": [
+        "peripheral driver हाथ से लिखना",
+        "traceability का कागज़ी काम"
+      ],
+      "new_tasks_emerging_hi": [
+        "edge पर AI inference चलाना",
+        "AI की मदद से बने कोड के लिए functional-safety केस",
+        "software-defined vehicle प्लेटफ़ॉर्म"
+      ],
+      "evidence_hi": "MathWorks ने Release 2026a में generative Simulink Copilot जारी किया है, जिससे पक्का होता है कि model-based design के copilot आम हो गए हैं। कोडिंग assistant की आम productivity के आँकड़े hard real-time और hardware की पाबंदी वाले embedded काम पर सीधे लागू नहीं होते, और embedded के लिए कोई अध्ययन नहीं मिला।"
+    },
+    {
+      "id": "elec-design",
+      "title": "Electrical / Power Systems Design Engineer",
+      "family": "core",
+      "interest_areas": [
+        "electronics-chips"
+      ],
+      "badge": "Changing",
+      "forecast_score": 56,
+      "card_line": "AI does calculations and drawings; engineers own the sign-off",
+      "reason": "Power and electrical design is steady; AI assists calculations and drawings",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Private sector only; power PSUs via GATE pay far more",
+        "sources_detail": "payscale.com Electrical_Design_Engineer; glassdoor.co.in electrical-design-engineer",
+        "entry": {
+          "low": 3,
+          "high": 5,
+          "label": "Rs 3-5 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 6,
+          "high": 10,
+          "label": "Rs 6-10 L"
+        },
+        "senior": {
+          "low": 10,
+          "high": 16,
+          "label": "Rs 10-16 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 101.7,
+        "if_ai_spreads_fast": 81.4,
+        "if_ai_spreads_slowly": 122.1
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 42,
+        "with_ai": 28,
+        "led_by_people": 30
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Load calculations, cable and breaker sizing",
+            "share": 16,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "लोड की calculation, और केबल और breaker का साइज़ तय करना"
+          },
+          {
+            "text": "Single-line diagrams, schematics and drawings",
+            "share": 16,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "single-line diagram, schematic और drawing"
+          },
+          {
+            "text": "Coordination with site, vendors and utilities",
+            "share": 16,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "साइट, वेंडर और बिजली विभाग से तालमेल"
+          },
+          {
+            "text": "Protection coordination and system studies",
+            "share": 14,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "protection coordination और पूरे सिस्टम की स्टडी"
+          },
+          {
+            "text": "Design reviews and code compliance",
+            "share": 14,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "design review और बिजली के नियमों (code) का पालन"
+          },
+          {
+            "text": "Approvals, sign-off and statutory submissions",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "मंज़ूरी, sign-off और सरकारी विभागों में कागज़ जमा करना"
+          },
+          {
+            "text": "Bills of quantities and specifications",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "BOQ (सामान और मात्रा की लिस्ट) और specification"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Statutory sign-off",
+        "Utility and authority coordination",
+        "Protection judgement"
+      ],
+      "skills_fading": [
+        "Manual sizing calculations",
+        "Drawing production",
+        "BOQ preparation"
+      ],
+      "new_tasks_emerging": [
+        "Grid integration of renewables and storage",
+        "Validating auto-generated designs against code",
+        "Data-centre power design"
+      ],
+      "evidence": "A genuine evidence gap: no quantified AI-in-power-systems-design case study was found. BLS projects US electrical and electronics engineers +8% to 2035 against electrical technicians +2%. The sizing and drawing tasks are modelled as automated on structural grounds, since they are rule-based and already heavily tool-assisted.",
+      "card_line_hi": "calculation और drawing AI करता है, आख़िरी मंज़ूरी इंजीनियर देते हैं",
+      "reason_hi": "बिजली और पावर सिस्टम के design का काम बना हुआ है। calculation और drawing में AI मदद करता है।",
+      "skills_that_hold_hi": [
+        "कानूनी ज़िम्मेदारी के साथ आख़िरी मंज़ूरी देना",
+        "बिजली विभाग और सरकारी दफ़्तरों से तालमेल",
+        "protection की सही सेटिंग की समझ"
+      ],
+      "skills_fading_hi": [
+        "साइज़ की calculation हाथ से करना",
+        "drawing बनाना",
+        "BOQ तैयार करना"
+      ],
+      "new_tasks_emerging_hi": [
+        "renewables और storage को grid से जोड़ना",
+        "अपने आप बने design को codes के हिसाब से जाँचना",
+        "डेटा सेंटर का power design"
+      ],
+      "evidence_hi": "सबूत की असली कमी: power systems design में AI का कोई नापा हुआ केस स्टडी नहीं मिला। BLS का अनुमान है कि 2035 तक अमेरिका में electrical और electronics engineers +8% बढ़ेंगे, जबकि electrical technicians +2%। sizing और drawing के काम ढाँचे के आधार पर automated माने गए हैं, क्योंकि ये नियमों पर चलते हैं और पहले से टूल की बहुत मदद से होते हैं।"
+    },
+    {
+      "id": "vlsi",
+      "title": "VLSI Design & Verification Engineer",
+      "family": "core",
+      "interest_areas": [
+        "electronics-chips"
+      ],
+      "badge": "Changing",
+      "forecast_score": 56,
+      "card_line": "India's chip push adds jobs; AI handles routine verification",
+      "reason": "India's chip push creates jobs; verification work is partly automated",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Product MNCs take freshers at 16-30L; band blends service and product firms",
+        "sources_detail": "payscale.com Design_Verification_Engineer; glassdoor.co.in design-verification-engineer, vlsi-design-engineer; semiconductor.cv salary guide",
+        "entry": {
+          "low": 4,
+          "high": 8,
+          "label": "Rs 4-8 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 14,
+          "high": 28,
+          "label": "Rs 14-28 L"
+        },
+        "senior": {
+          "low": 28,
+          "high": 50,
+          "label": "Rs 28-50 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 100.4,
+        "if_ai_spreads_fast": 68.9,
+        "if_ai_spreads_slowly": 131.9
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 48,
+        "with_ai": 26,
+        "led_by_people": 26
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Writing testbenches and verification code",
+            "share": 18,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "testbench और verification कोड लिखना"
+          },
+          {
+            "text": "Running regressions and triaging failures",
+            "share": 16,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "regression टेस्ट चलाना और फ़ेल हुए टेस्ट छाँटना"
+          },
+          {
+            "text": "RTL coding of standard blocks",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "आम block का RTL कोड लिखना"
+          },
+          {
+            "text": "PPA optimisation and physical-design iterations",
+            "share": 14,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "PPA (power, performance, area) बेहतर करना और physical design को बार-बार सुधारना"
+          },
+          {
+            "text": "Micro-architecture and design specification",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "micro-architecture और design का spec तय करना"
+          },
+          {
+            "text": "Coverage closure and formal verification",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "coverage पूरा करना और formal verification"
+          },
+          {
+            "text": "Silicon bring-up and debug",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "बनकर आई chip को पहली बार चालू करना और गड़बड़ी ढूँढना"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Micro-architecture",
+        "Silicon debug",
+        "Knowing when verification is actually complete"
+      ],
+      "skills_fading": [
+        "Hand-written testbenches",
+        "Regression babysitting",
+        "RTL for standard blocks"
+      ],
+      "new_tasks_emerging": [
+        "Directing agentic verification flows",
+        "Specifying designs precisely enough for AI-generated RTL",
+        "Judging AI-proposed PPA trade-offs"
+      ],
+      "evidence": "The richest automation evidence of any core discipline. Cadence reports customers cutting some verification effort roughly 10x (Altera) and formal verification cycles up to 4x (Tenstorrent); Synopsys reported STMicro tripling PPA exploration productivity. All vendor-published. The paradox is that the sector is short of people: TeamLease projects India short by 250,000 to 300,000 chip professionals by 2027, and Cadence frames AI as filling a shortage. Semiconductor Engineering (Jan 2026) reports entry tasks disappearing and mid-level engineers facing the greatest disruption.",
+      "card_line_hi": "भारत में chip बनाने पर ज़ोर से नौकरियाँ बढ़ रही हैं, आम verification AI करता है",
+      "reason_hi": "भारत में chip बनाने पर ज़ोर से नई नौकरियाँ बन रही हैं। verification का कुछ काम अब अपने-आप होने लगा है।",
+      "skills_that_hold_hi": [
+        "micro-architecture",
+        "असली chip की गड़बड़ी ढूँढना",
+        "पहचानना कि verification सच में कब पूरा हुआ"
+      ],
+      "skills_fading_hi": [
+        "testbench हाथ से लिखना",
+        "regression run की निगरानी करते रहना",
+        "आम block के लिए RTL लिखना"
+      ],
+      "new_tasks_emerging_hi": [
+        "agentic verification flow को दिशा देना",
+        "design इतना सटीक बताना कि AI सही RTL बना सके",
+        "AI के सुझाए PPA trade-off को परखना"
+      ],
+      "evidence_hi": "किसी भी core शाखा में automation का सबसे भरपूर सबूत। Cadence बताती है कि कुछ ग्राहकों ने verification की मेहनत करीब 10x घटाई (Altera) और formal verification के चक्र 4x तक (Tenstorrent); Synopsys के मुताबिक STMicro की PPA exploration की productivity तीन गुना हुई। सब बेचने वाली कंपनियों ने छापा है। उलझन यह है कि इस सेक्टर में लोगों की कमी है: TeamLease का अनुमान है कि 2027 तक भारत में 250,000 से 300,000 chip प्रोफ़ेशनल कम होंगे, और Cadence AI को इस कमी को भरने वाला बताती है। Semiconductor Engineering (जनवरी 2026) के मुताबिक शुरुआती स्तर के काम गायब हो रहे हैं और बीच के स्तर के इंजीनियरों पर सबसे ज़्यादा असर है।"
+    },
+    {
+      "id": "site-civil",
+      "title": "Site / Construction Engineer",
+      "family": "core",
+      "interest_areas": [
+        "buildings-infra"
+      ],
+      "badge": "Growing",
+      "forecast_score": 61,
+      "card_line": "India's infrastructure push needs engineers on the ground",
+      "reason": "Construction sites need engineers on the ground; India's infrastructure spend keeps demand up",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Lowest-paid entry; tier-1 contractors pay the top band",
+        "sources_detail": "payscale.com Civil_Engineer; glassdoor.co.in site-engineer; in.indeed.com site-engineer",
+        "entry": {
+          "low": 2,
+          "high": 3.5,
+          "label": "Rs 2-3.5 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 4.5,
+          "high": 7,
+          "label": "Rs 4.5-7 L"
+        },
+        "senior": {
+          "low": 7,
+          "high": 12,
+          "label": "Rs 7-12 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 122.5,
+        "if_ai_spreads_fast": 112.3,
+        "if_ai_spreads_slowly": 132.7
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 24,
+        "with_ai": 24,
+        "led_by_people": 52
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Supervising work, labour and contractors on site",
+            "share": 24,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "साइट पर काम, मज़दूरों और ठेकेदारों की निगरानी"
+          },
+          {
+            "text": "Coordinating with clients, consultants and authorities",
+            "share": 16,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "क्लाइंट, कंसल्टेंट और सरकारी विभागों से तालमेल"
+          },
+          {
+            "text": "Progress tracking and daily reports",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "काम कितना हुआ, इस पर नज़र और रोज़ की रिपोर्ट"
+          },
+          {
+            "text": "Checking work quality against drawings",
+            "share": 14,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "drawing से मिलाकर काम की क्वालिटी जाँचना"
+          },
+          {
+            "text": "Safety management on site",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "साइट पर सेफ़्टी का इंतज़ाम"
+          },
+          {
+            "text": "Material reconciliation and site stores",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "माल का हिसाब मिलाना और साइट का स्टोर संभालना"
+          },
+          {
+            "text": "Resolving drawing clashes and site changes",
+            "share": 10,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "drawing में टकराव और साइट पर बदलाव सुलझाना"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Running a site",
+        "Labour and contractor management",
+        "Safety",
+        "Authority coordination"
+      ],
+      "skills_fading": [
+        "Manual progress reports",
+        "Stores reconciliation"
+      ],
+      "new_tasks_emerging": [
+        "Running drone and 360-degree progress capture",
+        "Acting on AI-flagged clashes and deviations"
+      ],
+      "evidence": "DroneDeploy Progress AI automates progress tracking from site imagery with no BIM input, and a customer describes it as \"like having an extra superintendent\" (vendor case study). That touches reporting, not supervision. BLS projects US civil engineers +6% to 2035, civil technicians +3%. In India the binding constraint is not AI but low digitisation of the site itself.",
+      "card_line_hi": "देश में सड़क, पुल और इमारतें तेज़ी से बन रही हैं, इसलिए साइट पर इंजीनियर चाहिए",
+      "reason_hi": "निर्माण की साइट पर इंजीनियर चाहिए। भारत में सड़क, पुल और बिल्डिंग पर खर्च से इनकी माँग बनी हुई है।",
+      "skills_that_hold_hi": [
+        "पूरी साइट संभालना",
+        "मज़दूरों और ठेकेदारों से काम करवाना",
+        "सेफ़्टी",
+        "सरकारी विभागों से तालमेल"
+      ],
+      "skills_fading_hi": [
+        "प्रोग्रेस रिपोर्ट हाथ से बनाना",
+        "स्टोर का हिसाब मिलाना"
+      ],
+      "new_tasks_emerging_hi": [
+        "drone और 360-degree से काम की प्रगति रिकॉर्ड करना",
+        "AI के बताए clash और deviation पर कदम उठाना"
+      ],
+      "evidence_hi": "DroneDeploy Progress AI साइट की तस्वीरों से बिना BIM इनपुट के काम की प्रगति ट्रैक करता है, और एक ग्राहक इसे \"एक अतिरिक्त superintendent जैसा\" बताता है (बेचने वाली कंपनी का case study)। यह रिपोर्टिंग को छूता है, निगरानी को नहीं। BLS का अनुमान है कि 2035 तक अमेरिका में civil engineers +6% और civil technicians +3% बढ़ेंगे। भारत में असली रुकावट AI नहीं, साइट का खुद कम डिजिटल होना है।"
+    },
+    {
+      "id": "structural",
+      "title": "Structural Design Engineer",
+      "family": "core",
+      "interest_areas": [
+        "buildings-infra"
+      ],
+      "badge": "Growing",
+      "forecast_score": 56,
+      "card_line": "AI speeds design; sign-off and responsibility stay with engineers",
+      "reason": "Design is AI-assisted; sign-off and responsibility stay with engineers",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "high",
+        "note": "Global design centres at the top",
+        "sources_detail": "payscale.com Structural_Engineer; glassdoor.co.in structural-engineer",
+        "entry": {
+          "low": 3,
+          "high": 5,
+          "label": "Rs 3-5 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 7,
+          "high": 11,
+          "label": "Rs 7-11 L"
+        },
+        "senior": {
+          "low": 12,
+          "high": 20,
+          "label": "Rs 12-20 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 111.1,
+        "if_ai_spreads_fast": 96.3,
+        "if_ai_spreads_slowly": 125.9
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 26,
+        "with_ai": 34,
+        "led_by_people": 40
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Structural analysis runs and load combinations",
+            "share": 18,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "structural analysis चलाना और load combination"
+          },
+          {
+            "text": "Member design and code checks",
+            "share": 16,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "बीम-कॉलम का design और building code से जाँच"
+          },
+          {
+            "text": "Detailing, drawings and schedules",
+            "share": 16,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "detailing, drawing और schedule"
+          },
+          {
+            "text": "Structural scheme and system selection",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "ढाँचे की योजना और सही structural system चुनना"
+          },
+          {
+            "text": "Statutory sign-off and liability",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "कानूनी मंज़ूरी और उसकी ज़िम्मेदारी"
+          },
+          {
+            "text": "Review with architects, MEP and site",
+            "share": 12,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "आर्किटेक्ट, MEP टीम और साइट के साथ design review"
+          },
+          {
+            "text": "Design reports and calculation notes",
+            "share": 10,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "design रिपोर्ट और calculation के नोट"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Choosing the structural system",
+        "Signing and carrying liability",
+        "Coordination with the design team"
+      ],
+      "skills_fading": [
+        "Detailing as the entry job",
+        "Calculation-note production"
+      ],
+      "new_tasks_emerging": [
+        "Validating AI-optimised member designs",
+        "Parametric and computational design"
+      ],
+      "evidence": "AI for structural design exists almost entirely in academic literature; no documented commercial deployment or productivity figure was found, the weakest deployment evidence of any role here. Statutory sign-off is a structural protection: professional engineering bodies hold that the signing engineer carries full responsibility regardless of how much AI assisted.",
+      "card_line_hi": "AI से design तेज़ होता है, मंज़ूरी और ज़िम्मेदारी इंजीनियर की रहती है",
+      "reason_hi": "Design में AI मदद करता है। मंज़ूरी और ज़िम्मेदारी इंजीनियर की ही रहती है।",
+      "skills_that_hold_hi": [
+        "सही structural system चुनना",
+        "दस्तख़त करना और उसकी कानूनी ज़िम्मेदारी उठाना",
+        "design टीम के साथ तालमेल"
+      ],
+      "skills_fading_hi": [
+        "detailing वाली शुरुआती नौकरी",
+        "calculation note बनाना"
+      ],
+      "new_tasks_emerging_hi": [
+        "AI से optimise किए member design को जाँचना",
+        "parametric और computational design"
+      ],
+      "evidence_hi": "structural design के लिए AI लगभग पूरी तरह शैक्षणिक शोध में है; कोई व्यावसायिक deployment या productivity आँकड़ा नहीं मिला, यानी यहाँ की सभी नौकरियों में deployment का सबसे कमज़ोर सबूत। कानूनी मंज़ूरी एक ढाँचागत सुरक्षा है: professional engineering संस्थाओं का मानना है कि दस्तखत करने वाला इंजीनियर पूरी ज़िम्मेदारी उठाता है, चाहे AI ने कितनी भी मदद की हो।"
+    },
+    {
+      "id": "qs",
+      "title": "Planning, Estimation & Quantity Surveying",
+      "family": "core",
+      "interest_areas": [
+        "buildings-infra"
+      ],
+      "badge": "Changing",
+      "forecast_score": 51,
+      "card_line": "Software measures drawings; claims and negotiation stay with people",
+      "reason": "Estimation and quantity take-off are being automated by software",
+      "src": "atlas_v7_1",
+      "pay": {
+        "src": "pay_india_2026_10",
+        "confidence": "med",
+        "note": "Gulf postings excluded",
+        "sources_detail": "payscale.com Quantity_Surveyor; glassdoor.co.in quantity-surveyor, planning-engineer",
+        "entry": {
+          "low": 2.5,
+          "high": 4.5,
+          "label": "Rs 2.5-4.5 L",
+          "basis": "fresher",
+          "basis_label": null
+        },
+        "mid": {
+          "low": 5,
+          "high": 8,
+          "label": "Rs 5-8 L"
+        },
+        "senior": {
+          "low": 8,
+          "high": 14,
+          "label": "Rs 8-14 L"
+        }
+      },
+      "hiring_2030": {
+        "src": "atlas_v7_1",
+        "today": 100,
+        "central": 98,
+        "if_ai_spreads_fast": 78.9,
+        "if_ai_spreads_slowly": 117
+      },
+      "work_split": {
+        "src": "atlas_v7_1",
+        "by_ai": 36,
+        "with_ai": 42,
+        "led_by_people": 22
+      },
+      "tasks": {
+        "src": "atlas_v7_1",
+        "items": [
+          {
+            "text": "Quantity take-off from drawings",
+            "share": 22,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "drawing से माल की मात्रा निकालना"
+          },
+          {
+            "text": "Rate analysis and cost estimation",
+            "share": 16,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "रेट का हिसाब और खर्च का अनुमान"
+          },
+          {
+            "text": "Bills of quantities and tender documents",
+            "share": 14,
+            "mode": "by_ai",
+            "code": "A",
+            "text_hi": "BOQ (सामान और मात्रा की लिस्ट) और टेंडर के कागज़"
+          },
+          {
+            "text": "Project scheduling and progress updates",
+            "share": 14,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "project का शेड्यूल और काम कितना हुआ, इसका अपडेट"
+          },
+          {
+            "text": "Claims, variations and commercial negotiation",
+            "share": 14,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "claim, काम में बदलाव और पैसों पर मोल-भाव"
+          },
+          {
+            "text": "Contractor billing and measurement verification",
+            "share": 12,
+            "mode": "with_ai",
+            "code": "U",
+            "text_hi": "ठेकेदार के बिल और नाप की जाँच"
+          },
+          {
+            "text": "Client and contractor coordination",
+            "share": 8,
+            "mode": "led_by_people",
+            "code": "I",
+            "text_hi": "क्लाइंट और ठेकेदार के बीच तालमेल"
+          }
+        ]
+      },
+      "n_tasks": 7,
+      "skills_that_hold": [
+        "Claims and variations",
+        "Commercial negotiation"
+      ],
+      "skills_fading": [
+        "Manual take-off",
+        "BOQ drafting"
+      ],
+      "new_tasks_emerging": [
+        "Validating AI take-offs against site reality",
+        "Commercial risk on AI-generated estimates"
+      ],
+      "evidence": "AI quantity take-off from BIM and drawings is an active product category and the subject of peer-reviewed work on AI-augmented cost estimation (Taylor & Francis, 2025 and 2026), but no measured share of QS hours automated was found. Most buyer-guide claims are promotional.",
+      "card_line_hi": "drawing से नाप software निकालता है, claim और मोल-भाव लोग करते हैं",
+      "reason_hi": "खर्च का अनुमान और drawing से माल की मात्रा निकालने का काम अब software करने लगा है।",
+      "skills_that_hold_hi": [
+        "claim और काम में बदलाव का हिसाब",
+        "पैसों पर मोल-भाव"
+      ],
+      "skills_fading_hi": [
+        "take-off हाथ से निकालना",
+        "BOQ का ड्राफ़्ट बनाना"
+      ],
+      "new_tasks_emerging_hi": [
+        "AI के take-off को साइट की असलियत से मिलाकर जाँचना",
+        "AI के बनाए estimate में commercial जोखिम"
+      ],
+      "evidence_hi": "BIM और drawing से AI quantity take-off एक सक्रिय प्रोडक्ट श्रेणी है और AI की मदद वाले cost estimation पर peer-reviewed काम का विषय भी (Taylor & Francis, 2025 और 2026), पर QS के कितने घंटे automate हुए, इसका नापा हुआ हिस्सा नहीं मिला। खरीदार-गाइड के ज़्यादातर दावे प्रचार हैं।"
+    }
+  ],
+  "hi_required": true
+}

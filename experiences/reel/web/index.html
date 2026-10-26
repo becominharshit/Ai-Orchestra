@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070618">
+  <title>Squad Reel Studio · Zenith</title>
+  <link rel="stylesheet" href="/core/tokens.css">
+  <link rel="stylesheet" href="/core/orchestra.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="stage">
+  <main class="pz-wrap rl">
+    <header class="rl-head">
+      <a class="pz-brand" href="/"><i></i>Zenith</a>
+      <span class="rl-step pz-mono" id="step-label">Counter <span data-pz-counter-of="reel">6</span></span>
+    </header>
+
+    <!-- 1. template (no form before the fun part) -->
+    <section id="s-intro" class="rl-screen">
+      <div class="pz-kicker">5 AI agents, 1 reel</div>
+      <h1 class="pz-display rl-title">Squad Reel <span class="pz-grad-text">Studio</span></h1>
+      <p class="pz-dim">Template chuno, 3 shots lo. Director, Editor, Captions, Hook aur Thumbnail agents 20 second ki reel bana denge.</p>
+      <div class="rl-templates" id="templates"></div>
+      <div id="tv-toggle"></div>
+      <p class="rl-hero-note" id="hero-note" hidden></p>
+    </section>
+
+    <!-- 3. shots -->
+    <section id="s-shots" class="rl-screen" hidden>
+      <div class="pz-kicker">Step 1 of 2 · <span id="shots-tpl"></span></div>
+      <h2 class="pz-display rl-h2">3 shots <span class="pz-grad-text">record karo</span></h2>
+      <p class="pz-dim rl-small">Phone vertical rakho. Har shot thoda lamba lo, Director beat pe cut karega.</p>
+      <ol class="rl-shots" id="shots"></ol>
+      <div class="rl-block">
+        <div class="rl-label">Squad mein kitne log? <small class="rl-fine">(optional)</small></div>
+        <div class="rl-chips" id="squad" role="radiogroup" aria-label="Squad size">
+          <button type="button" role="radio" data-n="2">2</button>
+          <button type="button" role="radio" data-n="3" aria-checked="true">3</button>
+          <button type="button" role="radio" data-n="4">4</button>
+          <button type="button" role="radio" data-n="5">5</button>
+        </div>
+      </div>
+      <button class="pz-btn block" id="make" disabled>Reel banao</button>
+      <button class="pz-btn ghost block" data-back="s-intro">Template badlo</button>
+    </section>
+
+    <!-- 4. orchestra -->
+    <section id="s-run" class="rl-screen" hidden>
+      <div class="rl-queue" id="queue" hidden><span class="pz-spinner"></span><b id="queue-n">1</b><span id="queue-t">reel aage hai, tumhari baari aa rahi hai</span></div>
+      <div id="orx"></div>
+      <p class="rl-fine rl-center">Phone ki screen on rakho, reel ban rahi hai.</p>
+    </section>
+
+    <!-- 5. result (gated) -->
+    <section id="s-result" class="rl-screen" hidden>
+      <div class="pz-kicker">Step 2 of 2 · Reel ready</div>
+      <h2 class="pz-display rl-h2" id="r-title">Tumhari reel <span class="pz-grad-text">ready hai</span></h2>
+      <div class="rl-locked" id="locked">
+        <div class="rl-locked-art" id="locked-art"><span class="pz-lock" aria-hidden="true"></span></div>
+        <p class="rl-hook" id="r-hook"></p>
+        <p class="pz-dim rl-small" id="r-stats"></p>
+        <button class="pz-btn block" id="unlock">Follow karke reel unlock karo</button>
+      </div>
+      <div class="rl-unlocked" id="unlocked" hidden>
+        <div class="rl-player"><video id="player" playsinline controls loop preload="metadata"></video></div>
+        <button class="pz-btn block" id="save">Phone mein save karo</button>
+        <a class="pz-btn ghost block" id="download" download="zenith-squad-reel.mp4">MP4 download karo</a>
+        <div class="rl-post">
+          <div class="rl-label">Post caption (copy karo)</div>
+          <p id="post-text"></p>
+          <button class="pz-btn ghost" id="copy-post" type="button">Copy</button>
+        </div>
+        <label class="rl-consent" id="tv-reel-box" hidden><input type="checkbox" id="tv-reel"> <span><b>Big screen pe reel chalao</b><small>Default off. Counter TV pe tumhari reel chalegi (chehre bhi). Tabhi on karo jab poori squad ka OK ho.</small></span></label>
+        <label class="rl-consent"><input type="checkbox" id="repost"> <span><b>Zenith ise repost kar sakta hai</b><small>Optional. Default off. Tick tabhi karo jab poori squad ka OK ho.</small></span></label>
+        <p class="rl-minor" id="minor-note" hidden>Squad mein koi 18 se chhota hai? Toh repost ke liye teacher ya parent ka OK zaroori hai. Unse pooch ke hi tick karo.</p>
+        <button class="pz-btn block" id="friends">Doston ko bhejo</button>
+        <p class="rl-fine rl-center">Reel 48 ghante baad apne aap delete ho jaati hai. Abhi save kar lo.</p>
+      </div>
+      <button class="pz-btn ghost block" id="again">Naya reel banao</button>
+      <p class="rl-src pz-mono" id="r-src"></p>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <!-- Illustrated palm for the ?demo=hero filming profile and the "no photo" path. Not a real person.
+       Left palm, fingers up, thumb on the right. The stock line set in web/lib/palmlines.js is drawn to match it. -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+      <stop offset="0" stop-color="#2a2170"/>
+      <stop offset="0.55" stop-color="#120d3c"/>
+      <stop offset="1" stop-color="#06051a"/>
+    </radialGradient>
+    <radialGradient id="skin" cx="52%" cy="62%" r="62%">
+      <stop offset="0" stop-color="#E4AE88"/>
+      <stop offset="0.55" stop-color="#CF946F"/>
+      <stop offset="1" stop-color="#A86C4C"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7CCBFF" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#A88BFF" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.66" stop-color="#06051a" stop-opacity="0"/><stop offset="0.86" stop-color="#06051a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#06051a" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="crease"><feGaussianBlur stdDeviation="0.9"/></filter>
+  </defs>
+  <rect width="600" height="800" fill="url(#bg)"/>
+  <g fill="#ffffff">
+    <circle cx="62" cy="88" r="1.6" opacity=".7"/><circle cx="118" cy="190" r="1.1" opacity=".5"/><circle cx="520" cy="96" r="1.8" opacity=".75"/>
+    <circle cx="548" cy="250" r="1.2" opacity=".5"/><circle cx="78" cy="372" r="1.3" opacity=".55"/><circle cx="470" cy="40" r="1" opacity=".5"/>
+    <circle cx="40" cy="560" r="1.5" opacity=".5"/><circle cx="566" cy="690" r="1.3" opacity=".5"/><circle cx="250" cy="44" r="1.1" opacity=".45"/>
+  </g>
+  <ellipse cx="320" cy="520" rx="250" ry="300" fill="#8F6BFF" opacity=".22" filter="url(#soft)"/>
+  <g id="hand">
+    <path id="handShape" fill="url(#skin)" d="M205 800 C195 720 160 640 152 560 C150 500 150 470 160 440
+      C158 400 160 320 168 262 C172 232 212 228 216 258 C222 300 224 370 226 420 Q232 432 240 418
+      C238 330 240 220 246 168 C250 136 296 134 298 168 C302 230 300 330 300 405 Q306 418 314 404
+      C312 300 314 180 318 128 C322 96 370 96 372 128 C378 190 376 300 374 404 Q380 418 388 408
+      C388 320 392 220 398 178 C404 148 446 150 448 182 C452 240 446 330 444 430
+      C446 470 452 500 462 520 C490 500 530 452 556 420 C574 398 606 410 596 444
+      C584 500 540 580 500 640 C470 690 440 740 430 800 Z"/>
+    <path d="M205 800 C195 720 160 640 152 560 C150 500 150 470 160 440 C158 400 160 320 168 262 C172 232 212 228 216 258" fill="none" stroke="url(#rim)" stroke-width="3" opacity=".8"/>
+    <path d="M596 444 C584 500 540 580 500 640 C470 690 440 740 430 800" fill="none" stroke="url(#rim)" stroke-width="3" opacity=".8"/>
+    <!-- mounts (soft highlights) -->
+    <ellipse cx="520" cy="560" rx="58" ry="80" fill="#F0C29F" opacity=".28" filter="url(#soft)"/>
+    <ellipse cx="300" cy="455" rx="120" ry="34" fill="#F0C29F" opacity=".22" filter="url(#soft)"/>
+    <ellipse cx="215" cy="660" rx="50" ry="90" fill="#F0C29F" opacity=".18" filter="url(#soft)"/>
+    <!-- finger joint creases -->
+    <g fill="none" stroke="#7A4A33" stroke-linecap="round" stroke-width="2.4" opacity=".42" filter="url(#crease)">
+      <path d="M170 352 Q192 358 220 350"/><path d="M174 300 Q194 305 218 298"/>
+      <path d="M242 296 Q270 304 300 294"/><path d="M246 226 Q272 232 298 224"/>
+      <path d="M314 270 Q344 278 376 268"/><path d="M318 192 Q345 198 374 190"/>
+      <path d="M392 294 Q420 302 448 292"/><path d="M396 232 Q422 238 448 230"/>
+      <path d="M520 470 Q540 486 566 474"/>
+    </g>
+    <!-- natural palm creases (the overlay glows on top of these) -->
+    <g fill="none" stroke="#6E3F2B" stroke-linecap="round" opacity=".55" filter="url(#crease)">
+      <path stroke-width="3.6" d="M162 468 C190 460 245 452 276 445 C330 438 352 428 372 416 C388 406 396 398 402 392"/>
+      <path stroke-width="3.2" d="M438 480 C410 490 360 505 330 514 C290 526 250 545 192 580"/>
+      <path stroke-width="3.6" d="M438 486 C410 520 386 560 381 600 C376 650 382 690 402 752"/>
+      <path stroke-width="2.2" opacity=".7" d="M300 760 C303 700 306 640 309 568 C311 520 313 480 315 456"/>
+      <path stroke-width="1.4" opacity=".5" d="M230 520 Q250 528 262 540"/><path stroke-width="1.4" opacity=".45" d="M460 600 Q470 640 466 680"/>
+    </g>
+  </g>
+  <rect width="600" height="800" fill="url(#fade)"/>
+</svg>

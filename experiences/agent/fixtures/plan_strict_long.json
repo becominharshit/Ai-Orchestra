@@ -1,0 +1,38 @@
+[
+ {
+  "steps": [
+   {
+    "tool": "lookup",
+    "item": "i1"
+   },
+   {
+    "tool": "lookup",
+    "item": "i2"
+   },
+   {
+    "tool": "lookup",
+    "item": "i3"
+   },
+   {
+    "tool": "calculator",
+    "item": "all"
+   },
+   {
+    "tool": "calendar",
+    "item": "all"
+   },
+   {
+    "tool": "notes",
+    "item": "all"
+   }
+  ],
+  "weights": [
+   3,
+   2,
+   2
+  ],
+  "sessionMin": 45,
+  "breakMin": 5,
+  "lightDay": false
+ }
+]

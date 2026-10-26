@@ -1,0 +1,5 @@
+{
+  "label": "Demo profile (fictional, for filming)",
+  "profile": { "job": "marketing", "typed": ["Fest ready, har step pe swag"], "picks": [0, 1, 0], "calls": [2, 1] },
+  "fixtures": { "agents_marketing": 0, "agents_finance": 0, "agents_product": 0, "agents_software": 0, "agents_creator": 0, "agents_doctor": 0 }
+}

@@ -1,0 +1,435 @@
+{
+ "template": "intro",
+ "reviewed": "Avi / BRAIN line-bank review, 24 Oct 2026 (TODO(student): add lines, keep ids stable)",
+ "slots": {
+  "n": "squad size 2-5, as a digit"
+ },
+ "captions": {
+  "1": [
+   {
+    "id": "in-c1-01",
+    "text": "Squad aa gayi, frame full!"
+   },
+   {
+    "id": "in-c1-02",
+    "text": "{n} dost, ek frame"
+   },
+   {
+    "id": "in-c1-03",
+    "text": "Attendance: poori squad present"
+   },
+   {
+    "id": "in-c1-04",
+    "text": "Hello duniya, hum aa gaye"
+   },
+   {
+    "id": "in-c1-05",
+    "text": "Meet the main characters"
+   },
+   {
+    "id": "in-c1-06",
+    "text": "Ek frame, poori family"
+   },
+   {
+    "id": "in-c1-07",
+    "text": "Wave karo, vibe bhejo"
+   },
+   {
+    "id": "in-c1-08",
+    "text": "Squad assemble ho chuki hai"
+   },
+   {
+    "id": "in-c1-09",
+    "text": "Yeh hai apna gang"
+   },
+   {
+    "id": "in-c1-10",
+    "text": "Entry mein hi energy full"
+   },
+   {
+    "id": "in-c1-11",
+    "text": "Team ready, camera ready"
+   },
+   {
+    "id": "in-c1-12",
+    "text": "Sab ek saath, hamesha"
+   },
+   {
+    "id": "in-c1-13",
+    "text": "Friendship level: frame full"
+   },
+   {
+    "id": "in-c1-14",
+    "text": "Intro shuru, volume full"
+   }
+  ],
+  "2": [
+   {
+    "id": "in-c2-01",
+    "text": "Har ek ka apna signature style"
+   },
+   {
+    "id": "in-c2-02",
+    "text": "Poses itne iconic, museum ready"
+   },
+   {
+    "id": "in-c2-03",
+    "text": "Swag level: off the charts"
+   },
+   {
+    "id": "in-c2-04",
+    "text": "Har pose ek mood hai"
+   },
+   {
+    "id": "in-c2-05",
+    "text": "Ek se badhkar ek pose"
+   },
+   {
+    "id": "in-c2-06",
+    "text": "Signature move, no retakes"
+   },
+   {
+    "id": "in-c2-07",
+    "text": "{n} log, {n} alag vibes"
+   },
+   {
+    "id": "in-c2-08",
+    "text": "Style apna apna, dosti same"
+   },
+   {
+    "id": "in-c2-09",
+    "text": "Pose karo, legend bano"
+   },
+   {
+    "id": "in-c2-10",
+    "text": "Har dost ek alag superpower"
+   },
+   {
+    "id": "in-c2-11",
+    "text": "Main character energy, har ek mein"
+   },
+   {
+    "id": "in-c2-12",
+    "text": "Confidence ka full stock"
+   },
+   {
+    "id": "in-c2-13",
+    "text": "Yeh pose toh trending jayega"
+   },
+   {
+    "id": "in-c2-14",
+    "text": "Sab stars, koi side role nahi"
+   }
+  ],
+  "3": [
+   {
+    "id": "in-c3-01",
+    "text": "Saath mein hum unstoppable"
+   },
+   {
+    "id": "in-c3-02",
+    "text": "Friendship goals, unlocked"
+   },
+   {
+    "id": "in-c3-03",
+    "text": "High five, mission friendship"
+   },
+   {
+    "id": "in-c3-04",
+    "text": "Yahi toh hai apna gang"
+   },
+   {
+    "id": "in-c3-05",
+    "text": "Squad strong, vibe stronger"
+   },
+   {
+    "id": "in-c3-06",
+    "text": "Yeh bond 4K mein hai"
+   },
+   {
+    "id": "in-c3-07",
+    "text": "Dosti: full HD, full volume"
+   },
+   {
+    "id": "in-c3-08",
+    "text": "Ek squad, ek dil"
+   },
+   {
+    "id": "in-c3-09",
+    "text": "Group hug ka official record"
+   },
+   {
+    "id": "in-c3-10",
+    "text": "Memories saved, squad forever"
+   },
+   {
+    "id": "in-c3-11",
+    "text": "Is squad ko koi nahi rok sakta"
+   },
+   {
+    "id": "in-c3-12",
+    "text": "Hum saath hain, bas kaafi hai"
+   },
+   {
+    "id": "in-c3-13",
+    "text": "Finale bhi full energy"
+   },
+   {
+    "id": "in-c3-14",
+    "text": "Team spirit: 100 percent"
+   }
+  ]
+ },
+ "hooks": [
+  {
+   "id": "in-h-01",
+   "text": "Meet the squad",
+   "style": "title"
+  },
+  {
+   "id": "in-h-02",
+   "text": "Yeh hai apna gang",
+   "style": "title"
+  },
+  {
+   "id": "in-h-03",
+   "text": "Squad intro loading...",
+   "style": "countdown"
+  },
+  {
+   "id": "in-h-04",
+   "text": "Main characters alert",
+   "style": "alert"
+  },
+  {
+   "id": "in-h-05",
+   "text": "Ek squad, full vibe",
+   "style": "title"
+  },
+  {
+   "id": "in-h-06",
+   "text": "Introducing: the legends",
+   "style": "title"
+  },
+  {
+   "id": "in-h-07",
+   "text": "{n} dost, ek reel",
+   "style": "title"
+  },
+  {
+   "id": "in-h-08",
+   "text": "Squad check: sab present?",
+   "style": "question"
+  },
+  {
+   "id": "in-h-09",
+   "text": "Ready? Squad aa rahi hai",
+   "style": "countdown"
+  },
+  {
+   "id": "in-h-10",
+   "text": "POV: best squad mil gayi",
+   "style": "pov"
+  },
+  {
+   "id": "in-h-11",
+   "text": "Hamari squad ka trailer",
+   "style": "title"
+  },
+  {
+   "id": "in-h-12",
+   "text": "Kaun kaun hai squad mein?",
+   "style": "question"
+  },
+  {
+   "id": "in-h-13",
+   "text": "Squad goals, live",
+   "style": "alert"
+  },
+  {
+   "id": "in-h-14",
+   "text": "Ek frame, poori duniya",
+   "style": "title"
+  },
+  {
+   "id": "in-h-15",
+   "text": "3, 2, 1, squad!",
+   "style": "countdown"
+  },
+  {
+   "id": "in-h-16",
+   "text": "Iss gang ko jaano",
+   "style": "title"
+  },
+  {
+   "id": "in-h-17",
+   "text": "Friendship ka naya level",
+   "style": "title"
+  },
+  {
+   "id": "in-h-18",
+   "text": "The squad has arrived",
+   "style": "alert"
+  },
+  {
+   "id": "in-h-19",
+   "text": "Squad mode: ON",
+   "style": "alert"
+  },
+  {
+   "id": "in-h-20",
+   "text": "Swag check shuru",
+   "style": "countdown"
+  },
+  {
+   "id": "in-h-21",
+   "text": "Hello, hum hain yahan",
+   "style": "title"
+  },
+  {
+   "id": "in-h-22",
+   "text": "Dosti ka official intro",
+   "style": "title"
+  },
+  {
+   "id": "in-h-23",
+   "text": "Sabse cool squad? Hum",
+   "style": "title"
+  },
+  {
+   "id": "in-h-24",
+   "text": "Yeh squad yaad rakhna",
+   "style": "callout"
+  },
+  {
+   "id": "in-h-25",
+   "text": "Apna gang, apna rule",
+   "style": "title"
+  },
+  {
+   "id": "in-h-26",
+   "text": "Tag karo apni squad",
+   "style": "callout"
+  },
+  {
+   "id": "in-h-27",
+   "text": "Squad intro: take 1",
+   "style": "title"
+  },
+  {
+   "id": "in-h-28",
+   "text": "POV: yeh squad tumhari",
+   "style": "pov"
+  },
+  {
+   "id": "in-h-29",
+   "text": "Vibe check: passed",
+   "style": "title"
+  },
+  {
+   "id": "in-h-30",
+   "text": "Ek squad, kaafi vibes",
+   "style": "title"
+  },
+  {
+   "id": "in-h-31",
+   "text": "Bas yahi log chahiye",
+   "style": "callout"
+  },
+  {
+   "id": "in-h-32",
+   "text": "Gang aa gayi, jagah do",
+   "style": "alert"
+  },
+  {
+   "id": "in-h-33",
+   "text": "Ready, set, squad",
+   "style": "countdown"
+  },
+  {
+   "id": "in-h-34",
+   "text": "Duniya ko milwao",
+   "style": "callout"
+  },
+  {
+   "id": "in-h-35",
+   "text": "Tumhari squad aisi hai?",
+   "style": "question"
+  },
+  {
+   "id": "in-h-36",
+   "text": "Squad = family",
+   "style": "title"
+  },
+  {
+   "id": "in-h-37",
+   "text": "Is gang se milo",
+   "style": "callout"
+  },
+  {
+   "id": "in-h-38",
+   "text": "Full energy squad",
+   "style": "title"
+  },
+  {
+   "id": "in-h-39",
+   "text": "Dosti level: legendary",
+   "style": "title"
+  },
+  {
+   "id": "in-h-40",
+   "text": "Squad ki pehli reel",
+   "style": "title"
+  }
+ ],
+ "posts": [
+  {
+   "id": "in-p-01",
+   "text": "Squad intro done, ab duniya ready ho jaye"
+  },
+  {
+   "id": "in-p-02",
+   "text": "Hamari squad ka official intro"
+  },
+  {
+   "id": "in-p-03",
+   "text": "Attendance 100 percent, vibe 200 percent"
+  },
+  {
+   "id": "in-p-04",
+   "text": "Main characters ki entry ho chuki hai"
+  },
+  {
+   "id": "in-p-05",
+   "text": "Squad strong, vibe stronger"
+  },
+  {
+   "id": "in-p-06",
+   "text": "One take, full squad, zero retakes"
+  },
+  {
+   "id": "in-p-07",
+   "text": "{n} dost, ek reel, full energy"
+  },
+  {
+   "id": "in-p-08",
+   "text": "Yeh gang hamesha saath"
+  },
+  {
+   "id": "in-p-09",
+   "text": "Friendship goals, officially unlocked"
+  },
+  {
+   "id": "in-p-10",
+   "text": "Squad assemble, mission dosti"
+  },
+  {
+   "id": "in-p-11",
+   "text": "Iss frame mein meri poori duniya"
+  },
+  {
+   "id": "in-p-12",
+   "text": "Best squad, best day"
+  }
+ ]
+}

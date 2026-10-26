@@ -1,0 +1,38 @@
+[
+ {
+  "shot1": "ro-c1-01",
+  "shot2": "ro-c2-01",
+  "shot3": "ro-c3-01",
+  "post": "ro-p-01"
+ },
+ {
+  "shot1": "ro-c1-02",
+  "shot2": "ro-c2-04",
+  "shot3": "ro-c3-06",
+  "post": "ro-p-02"
+ },
+ {
+  "shot1": "ro-c1-03",
+  "shot2": "ro-c2-07",
+  "shot3": "ro-c3-11",
+  "post": "ro-p-03"
+ },
+ {
+  "shot1": "ro-c1-04",
+  "shot2": "ro-c2-10",
+  "shot3": "ro-c3-02",
+  "post": "ro-p-04"
+ },
+ {
+  "shot1": "ro-c1-05",
+  "shot2": "ro-c2-13",
+  "shot3": "ro-c3-07",
+  "post": "ro-p-05"
+ },
+ {
+  "shot1": "ro-c1-06",
+  "shot2": "ro-c2-02",
+  "shot3": "ro-c3-12",
+  "post": "ro-p-06"
+ }
+]

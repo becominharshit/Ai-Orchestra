@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" data-exp="agent">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070618">
+  <title>Build Your Own AI Agent · Zenith</title>
+  <link rel="stylesheet" href="/core/tokens.css">
+  <link rel="stylesheet" href="/core/orchestra.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="stage ag">
+  <main class="pz-wrap ag-wrap">
+    <header class="ag-head">
+      <a class="pz-brand" href="/"><i></i>Zenith</a>
+      <ol class="ag-steps" id="steps" aria-label="Design steps"><li>Agent</li><li>Task</li><li>Vibe</li><li>Tools</li></ol>
+    </header>
+
+    <!-- off / loading -->
+    <section id="s-off" class="ag-screen" hidden>
+      <div class="ag-card ag-center"><div class="pz-kicker">Build Your Own AI Agent</div><h1 class="pz-display ag-h1">Jaldi aa raha hai</h1><p class="pz-dim" id="off-msg">Yeh counter abhi band hai. Baaki counters pe khelo!</p><a class="pz-btn block" href="/">Baaki experiences</a></div>
+    </section>
+
+    <!-- 1. job -->
+    <section id="s-job" class="ag-screen" hidden>
+      <div class="pz-kicker">Build Your Own AI Agent</div>
+      <h1 class="pz-display ag-h1">Apna <span class="pz-grad-text">AI agent</span> banao</h1>
+      <p class="pz-dim ag-lede">16 templates mein se ek chuno, 2 minute mein design karo. Phir tumhara agent ek asli kaam karega, tools ke saath, tumhare saamne.</p>
+      <div id="jobs"></div>
+    </section>
+
+    <!-- 2. task -->
+    <section id="s-task" class="ag-screen" hidden>
+      <div class="pz-kicker" id="task-kicker"></div>
+      <h2 class="pz-display ag-h2" id="task-title"></h2>
+      <p class="pz-dim ag-lede" id="task-lede">Agent ka pehla kaam. Chips chuno, likhna kuch nahi.</p>
+      <div id="task-groups"></div>
+      <p class="ag-err" id="task-err" hidden></p>
+      <div class="ag-nav"><button class="pz-btn ghost" type="button" data-back="s-job">Wapas</button><button class="pz-btn" type="button" id="to-persona">Aage: personality</button></div>
+    </section>
+
+    <!-- 3. personality -->
+    <section id="s-persona" class="ag-screen" hidden>
+      <div class="pz-kicker">Personality</div>
+      <h2 class="pz-display ag-h2">Agent ka vibe set karo</h2>
+      <div class="ag-sliders" id="sliders"></div>
+      <div class="ag-group"><div class="ag-label">Fun voice</div><div class="ag-chips" id="voices"></div></div>
+      <div class="ag-nav"><button class="pz-btn ghost" type="button" data-back="s-task">Wapas</button><button class="pz-btn" type="button" id="to-tools">Aage: tools</button></div>
+    </section>
+
+    <!-- 4. tools + name -->
+    <section id="s-tools" class="ag-screen" hidden>
+      <div class="pz-kicker">Tools aur naam</div>
+      <h2 class="pz-display ag-h2">Agent ko tools do</h2>
+      <div class="ag-tools" id="tools"></div>
+      <div class="ag-group"><div class="ag-label">Agent ka naam <button class="ag-link" type="button" id="more-names">Aur naam</button></div><div class="ag-chips ag-names" id="names"></div></div>
+      <label class="ag-group ag-own"><span class="ag-label">Tumhara first name (optional)</span>
+        <input class="pz-input" id="first-name" name="firstName" maxlength="12" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="jaise: Riya" data-care-net="off">
+        <small>Sirf tumhare phone aur Agent card pe. TV pe kabhi nahi, kahin save nahi.</small></label>
+      <div id="tv-toggle"></div>
+      <p class="ag-err" id="tools-err" hidden></p>
+      <div class="ag-nav"><button class="pz-btn ghost" type="button" data-back="s-persona">Wapas</button><button class="pz-btn" type="button" id="go">Agent chalao</button></div>
+      <p class="ag-hero-note" id="hero-note" hidden></p>
+    </section>
+
+    <!-- 5. run -->
+    <section id="s-run" class="ag-screen" hidden>
+      <div class="pz-kicker">Live run</div>
+      <h2 class="pz-display ag-h2" id="run-title">Agent kaam pe hai</h2>
+      <div id="orx" class="ag-orx"></div>
+    </section>
+
+    <!-- 6. result (phone only; model wording only after core's judge) -->
+    <section id="s-result" class="ag-screen" hidden>
+      <article class="ag-agent" id="r-agent"></article>
+      <div class="ag-sec ag-nick" id="r-nick" hidden><h3>Apne agent ke liye ek naam chuno</h3><div class="ag-chips" id="nick-opts"></div></div>
+      <p class="ag-bubble" id="r-intro"></p>
+      <div id="r-sections"></div>
+      <div class="ag-sec"><h3>Plan jo agent ne banaya</h3><ol class="ag-plan" id="r-plan"></ol></div>
+      <div id="r-out"></div>
+      <p class="ag-bubble tip" id="r-tip"></p>
+      <p class="ag-note" id="r-note"></p>
+      <button class="pz-btn block ag-unlock" id="unlock" type="button">Agent card + story card lo</button>
+      <div id="share-box" class="ag-share" hidden>
+        <div class="ag-label">Card pe kya likhein?</div>
+        <div class="ag-chips" id="kicker-pick"></div>
+        <div class="ag-cards">
+          <figure><img id="agent-img" alt="Agent card preview" width="1080" height="1350"><figcaption>Agent card</figcaption></figure>
+          <figure><img id="card-img" alt="Story card preview" width="1080" height="1920"><figcaption>Story card</figcaption></figure>
+        </div>
+        <button class="pz-btn block" id="dl-agent" type="button">Agent card download karo</button>
+        <button class="pz-btn block" id="share" type="button">Story pe share karo</button>
+        <button class="pz-btn ghost block" id="friends" type="button">Doston ko bhejo</button>
+      </div>
+      <button class="pz-btn ghost block" id="again" type="button">Naya agent banao</button>
+      <p class="ag-src pz-mono" id="r-src"></p>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

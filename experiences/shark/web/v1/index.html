@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" data-exp="shark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070618">
+  <title>AI Sharks (v1) · Zenith School of AI</title>
+  <link rel="stylesheet" href="/core/tokens.css">
+  <link rel="stylesheet" href="/core/orchestra.css">
+  <link rel="stylesheet" href="../sharks.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="stage">
+  <main class="pz-wrap sk">
+    <header class="sk-head">
+      <a class="pz-brand" href="/"><i></i>Zenith</a>
+      <span class="pz-forfun">For fun only</span>
+    </header>
+
+    <!-- 1. intro -->
+    <section id="s-intro" class="sk-screen">
+      <div class="sk-bench" id="intro-bench"></div>
+      <div class="pz-kicker sk-center">Counter pe live · 3 AI sharks</div>
+      <h1 class="pz-display sk-title sk-center">AI <span class="pz-grad-text">Sharks</span></h1>
+      <p class="sk-tag sk-center">60 second ka pitch. 3 AI sharks. <b>Deal ya out?</b></p>
+      <div class="sk-ribbon"><span>ASLI PAISA NAHI</span><span>Sirf mazaa aur seekh</span></div>
+      <ol class="sk-steps">
+        <li><b>Pitch karo</b><span>Bolke ya type karke, 60 sec</span></li>
+        <li><b>3 sawaal</b><span>VC, Marketing, Finance shark</span></li>
+        <li><b>Verdict</b><span>Score, deal, aur mini-MBA lesson</span></li>
+      </ol>
+      <div id="tv-toggle"></div>
+      <div class="pz-stack sk-cta">
+        <button class="pz-btn block" id="go-voice" type="button"><span class="sk-mic-glyph" aria-hidden="true"></span>Bolke pitch karo</button>
+        <button class="pz-btn ghost block" id="go-text" type="button">Type karke pitch karo</button>
+      </div>
+      <p class="sk-fine" id="voice-note">Awaaz se text tumhare phone ka browser banata hai. Hamare server tak sirf text aata hai, audio nahi.</p>
+      <p class="sk-hero-note" id="hero-note" hidden></p>
+    </section>
+
+    <!-- 2. pitch -->
+    <section id="s-pitch" class="sk-screen" hidden>
+      <div class="pz-kicker">Step 1 of 3 · Tumhara pitch</div>
+      <h2 class="pz-display sk-h2">Apna idea bolo</h2>
+      <p class="pz-dim sk-sub">Kya banaoge? Kiske liye? Paisa kaise aayega?</p>
+      <div class="sk-micbox" id="micbox">
+        <button class="sk-mic" id="mic" type="button" aria-label="Bolna shuru karo">
+          <svg class="sk-ring" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" class="sk-ring-bg"/><circle cx="60" cy="60" r="54" class="sk-ring-fg" id="ring"/></svg>
+          <span class="sk-mic-core"><span class="sk-mic-glyph big" aria-hidden="true"></span></span>
+        </button>
+        <div class="sk-micinfo">
+          <b id="mic-state">Tap karke bolo</b>
+          <span class="pz-mono" id="mic-time">60s</span>
+        </div>
+      </div>
+      <label class="sk-field">
+        <span>Tumhara pitch (edit bhi kar sakte ho)</span>
+        <textarea id="pitch" class="pz-input sk-text" maxlength="600" rows="5" placeholder="Jaise: Hostel ke liye laundry app. Pickup, wash, iron, delivery 24 ghante mein, 99 rupaye ka bag."></textarea>
+        <small class="sk-count pz-mono" id="pitch-count">0/600</small>
+      </label>
+      <div class="sk-prompts">
+        <div class="sk-prompts-h">Idea nahi aa raha? Ek pick karo</div>
+        <div class="sk-chips" id="prompts"></div>
+      </div>
+      <p class="sk-err" id="pitch-err" hidden></p>
+      <button class="pz-btn block" id="send-pitch" type="button" disabled>Sharks ko pitch karo</button>
+    </section>
+
+    <!-- 3. orchestra -->
+    <section id="s-run" class="sk-screen" hidden>
+      <div id="orx"></div>
+    </section>
+
+    <!-- 4. the tank: 3 questions -->
+    <section id="s-tank" class="sk-screen" hidden>
+      <div class="sk-tank-top">
+        <div class="pz-kicker" id="tank-kicker">Step 2 of 3 · Sawaal 1/3</div>
+        <div class="sk-dots" id="tank-dots"><i></i><i></i><i></i></div>
+      </div>
+      <h2 class="pz-display sk-idea" id="tank-idea"></h2>
+      <p class="sk-hostline" id="tank-host"></p>
+      <div class="sk-row" id="tank-row"></div>
+      <div class="sk-bubble" id="bubble">
+        <div class="sk-bubble-who" id="bubble-who"></div>
+        <p class="sk-bubble-q" id="bubble-q"></p>
+        <div class="sk-timer"><i id="timer-bar"></i></div>
+      </div>
+      <div class="sk-answer">
+        <div class="sk-chips" id="answer-chips"></div>
+        <div class="sk-answer-row">
+          <textarea id="answer" class="pz-input sk-text small" rows="2" maxlength="200" placeholder="Apna jawab bolo ya likho..."></textarea>
+          <button class="sk-mic small" id="answer-mic" type="button" aria-label="Jawab bolo"><span class="sk-mic-core"><span class="sk-mic-glyph" aria-hidden="true"></span></span></button>
+        </div>
+        <div class="sk-answer-actions">
+          <button class="pz-btn ghost" id="skip" type="button">Pass</button>
+          <button class="pz-btn" id="send-answer" type="button">Jawab bhejo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. polite redirect (unsafe pitch) -->
+    <section id="s-redirect" class="sk-screen" hidden>
+      <div class="sk-bench small" id="redirect-bench"></div>
+      <div class="pz-kicker sk-center" id="redirect-kicker">Sharks ka chhota sa request</div>
+      <h2 class="pz-display sk-h2 sk-center" id="redirect-title">Chalo, naya idea!</h2>
+      <p class="sk-redirect-msg" id="redirect-msg"></p>
+      <div class="sk-chips center" id="redirect-prompts"></div>
+      <button class="pz-btn block" id="redirect-again" type="button">Naya pitch karo</button>
+    </section>
+
+    <!-- 6. verdict -->
+    <section id="s-result" class="sk-screen" hidden>
+      <div class="pz-kicker sk-center">Step 3 of 3 · Verdict</div>
+      <h2 class="pz-display sk-idea sk-center" id="r-idea"></h2>
+      <div class="sk-stampbox" id="stampbox"><div class="sk-stamp" id="stamp">?</div><div class="sk-total" id="total"></div></div>
+      <div class="sk-cards" id="cards"></div>
+      <button class="pz-btn block" id="unlock" type="button">Verdict dekho</button>
+      <div id="after" hidden>
+        <div class="sk-note good"><b>Sharks ko pasand aaya</b><p id="r-compliment"></p></div>
+        <div class="sk-note fix"><b>Ek upgrade</b><p id="r-fix"></p></div>
+        <div class="sk-lesson">
+          <div class="pz-kicker">Tumhara mini-MBA lesson</div>
+          <h3 class="pz-display" id="r-lesson-title"></h3>
+          <p id="r-lesson-explain"></p>
+          <p class="sk-lesson-z" id="r-lesson-z"></p>
+          <small id="r-programme"></small>
+        </div>
+        <div class="sk-share">
+          <img id="card-img" alt="AI Sharks share card" width="1080" height="1920">
+          <button class="pz-btn block" id="share" type="button">Story pe share karo</button>
+          <button class="pz-btn ghost block" id="friends" type="button">Doston ko bhejo</button>
+        </div>
+      </div>
+      <button class="pz-btn ghost block" id="again" type="button">Naya pitch karo</button>
+      <p class="sk-fine sk-center">For fun only. AI Sharks. Asli paisa nahi.</p>
+      <p class="sk-src pz-mono" id="r-src"></p>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

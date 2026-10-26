@@ -1,0 +1,62 @@
+/* AI Startup Studio on the TV. 1em = 16 px at 1080p (core stage). Camera floors: names >= 36 px, labels >= 24 px, text >= 22 px. */
+.stv-card { --ss-bg: #0E0B2A; --ss-a: #62BBF3; --ss-b: #8F6BFF; --ss-ink: #F1F2FF;
+  position: relative; overflow: hidden; width: min(104em, 94%); display: grid; grid-template-columns: 1.15fr 1fr; gap: 4em; align-items: center;
+  padding: 4em 4.4em; border-radius: 2.6em; color: var(--ss-ink); background: var(--ss-bg);
+  border: 1px solid color-mix(in srgb, var(--ss-a) 35%, transparent); box-shadow: 0 3em 8em rgba(0,0,0,.55); animation: stv-pop .8s var(--ease) both; }
+.stv-card::before { content: ''; position: absolute; left: -20%; top: -60%; width: 80%; aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--ss-a) 26%, transparent), transparent 62%); pointer-events: none; }
+.stv-card > * { position: relative; min-width: 0; }
+@keyframes stv-pop { from { opacity: 0; transform: scale(.97) translateY(1em); } to { opacity: 1; transform: none; } }
+.stv-r { opacity: 0; animation: stv-rise .7s var(--ease) both; }
+@keyframes stv-rise { from { opacity: 0; transform: translateY(.8em); } to { opacity: 1; transform: none; } }
+
+.tv-stage .stv-kicker { font-family: var(--font-mono); font-weight: 800; font-size: max(1.6em, 24px) !important; letter-spacing: .2em; text-transform: uppercase; color: var(--ss-a); }
+.tv-stage .stv-area { font-size: max(1.7em, 26px) !important; font-weight: 700; margin: .3em 0 1.6em; opacity: .8; }
+.stv-brand { display: flex; align-items: center; gap: 1.4em; margin-bottom: 1.2em; }
+.stv-logo { position: relative; flex: none; width: 7.5em; height: 7.5em; color: var(--ss-a); }
+.stv-logo .ss-mark, .stv-logo .ss-mark svg { display: block; width: 100%; height: 100%; }
+.stv-logo .ss-fill { fill: var(--ss-a); }
+.stv-logo .ss-mono { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-display); font-weight: 700; font-size: 2.9em; color: var(--ss-bg); }
+.stv-logo.logo-1 .ss-mark circle { fill: var(--ss-b); }
+.stv-logo.logo-2 .ss-mono { font-size: 2.2em; }
+.stv-logo.logo-3 { color: var(--ss-bg); }
+.tv-stage .stv-name { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: max(6.4em, 96px) !important; line-height: .98; letter-spacing: -.025em; word-break: break-word;
+  background: linear-gradient(110deg, var(--ss-ink) 30%, var(--ss-a) 80%, var(--ss-b)); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .06em; }
+.tv-stage .stv-tag { margin: 0 0 1.2em; font-size: max(2.4em, 36px) !important; font-weight: 700; line-height: 1.25; }
+.tv-stage .stv-pitch { margin: 0; padding: .7em 1em; border-left: .18em solid var(--ss-a); border-radius: .2em .8em .8em .2em; background: color-mix(in srgb, var(--ss-ink) 7%, transparent);
+  font-family: var(--font-display); font-style: italic; font-size: max(2em, 30px) !important; line-height: 1.35; }
+
+.stv-right { display: grid; gap: 1.6em; }
+.stv-sec { padding: 1.3em 1.5em; border-radius: 1.4em; background: color-mix(in srgb, var(--ss-ink) 5%, transparent); border: 1px solid color-mix(in srgb, var(--ss-ink) 12%, transparent); }
+.tv-stage .stv-sec-k { font-family: var(--font-mono); font-weight: 800; font-size: max(1.5em, 24px) !important; letter-spacing: .22em; color: var(--ss-a); margin-bottom: .5em; }
+.tv-stage .stv-big { margin: 0; font-size: max(2.1em, 32px) !important; font-weight: 700; line-height: 1.3; }
+.stv-feat { list-style: none; margin: 0; padding: 0; display: grid; gap: .45em; counter-reset: n; }
+.tv-stage .stv-feat li { counter-increment: n; position: relative; padding-left: 2.2em; font-size: max(1.75em, 27px) !important; font-weight: 600; line-height: 1.3; }
+.stv-feat li::before { content: '0' counter(n); position: absolute; left: 0; top: .05em; font-family: var(--font-mono); font-weight: 800; font-size: .8em; color: var(--ss-a); }
+.stv-tiles { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4em 1em; }
+.tv-stage .stv-tiles b { font-size: max(2.4em, 36px) !important; }
+.tv-stage .stv-tiles span, .tv-stage .stv-rev { font-size: max(1.6em, 24px) !important; font-weight: 600; opacity: .85; }
+.stv-rev { margin: .4em 0 0; }
+
+/* portrait 9:16 */
+.tv-frame[data-layout='portrait'] .stv-card { grid-template-columns: 1fr; gap: 1.6em; width: 94%; padding: 2.6em 2.6em; }
+.tv-frame[data-layout='portrait'] .stv-area { margin-bottom: 1em; }
+.tv-frame[data-layout='portrait'] .stv-logo { width: 6em; height: 6em; }
+.tv-frame[data-layout='portrait'] .tv-stage .stv-name { font-size: max(5.4em, 80px) !important; }
+.tv-frame[data-layout='portrait'] .tv-stage .stv-tag { font-size: max(2.1em, 32px) !important; margin-bottom: .8em; }
+.tv-frame[data-layout='portrait'] .tv-stage .stv-pitch { font-size: max(1.8em, 28px) !important; }
+.tv-frame[data-layout='portrait'] .stv-right { gap: 1em; }
+.tv-frame[data-layout='portrait'] .stv-sec { padding: 1em 1.3em; }
+
+/* idle loop: Aaj ki startups */
+.tv-panel-in.stv-today { max-width: 104em; }
+.stv-board { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.2em; width: 100%; }
+.stv-board li { flex: 0 1 30em; min-width: 0; display: flex; align-items: center; gap: 1em; padding: 1em 1.2em; border-radius: 1.2em; background: var(--ss-bg); border: 1px solid color-mix(in srgb, var(--ss-a) 35%, transparent); text-align: left; }
+.tv-frame[data-layout='portrait'] .stv-board li { flex-basis: 28em; }
+.stv-board .stv-logo { width: 4.4em; height: 4.4em; }
+.stv-board .stv-logo .ss-mono { font-size: 1.7em; }
+.stv-board-t { min-width: 0; }
+.tv-stage .stv-board-t b { display: block; font-family: var(--font-display); font-size: max(2.4em, 36px) !important; line-height: 1.1; color: var(--ss-ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tv-stage .stv-board-t span { display: block; font-size: max(1.5em, 24px) !important; color: var(--ss-a); font-weight: 700; margin-top: .2em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tv-frame[data-layout='portrait'] .stv-logo .ss-mono { font-size: 2.3em; }
+.stv-logo.logo-0 .ss-mono { font-size: 2.5em; }

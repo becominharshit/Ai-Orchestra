@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Operator card: Squad Reel Studio (counter 6)</title><link rel="stylesheet" href="operator.css"></head>
+<body>
+<section class="page">
+  <div class="top"><img src="../../print/assets/logo/zenith_logo_ink.png" alt="Zenith School of AI"><div class="tag">Operator card · KRMU Ideas 4.0 · 27 to 28 Oct<br>Counter 6</div></div>
+  <div class="kicker">Experience 3 of 7</div>
+  <h1>Squad Reel Studio</h1>
+  <p class="lede">A squad records 3 short shots. 5 AI agents cut them on the beat into a reel of about 22 seconds.</p>
+  <div class="purpose"><p><b>Purpose:</b> everything a student staff member at counter 6 needs: the pitch, setup, the 5 common problems, and the reel consent rules.</p><p><b>Needed from Avi:</b> nothing for this card.</p></div>
+
+  <div class="pitch"><div class="kicker">30-second pitch (say it your way)</div>
+    <p>"Squad lao, template chuno, 3 chhote shots lo, aur AI agents beat pe cut karke reel bana denge, captions aur hook ke saath. Reel 48 ghante mein khud delete ho jaati hai, toh abhi phone mein save kar lo."</p></div>
+
+  <div class="cols-6-4">
+    <div>
+      <h2>What the visitor does</h2>
+      <ol>
+        <li>Scans the counter 6 QR. Picks a template: Squad Intro, Movie Trailer, Hostel Roast or Zenith Heist.</li>
+        <li>Records 3 shots on their phone, phone vertical (each at least 2 s, at most 30 s). Squad size chips are optional. <b>There is no text to type.</b></li>
+        <li>Taps "Reel banao". Director, Captions, Hook, Editor and Thumbnail agents build the reel (TV shows it live).</li>
+        <li>Follow gate, then: "Phone mein save karo", "MP4 download karo", post caption to copy, "Doston ko bhejo".</li>
+        <li>Two ticks, both <b>default off</b>: "Big screen pe reel chalao" and "Zenith ise repost kar sakta hai".</li>
+      </ol>
+      <div class="say"><h3>Privacy lines you must say</h3>
+        <ul>
+          <li>"Reel 48 ghante baad apne aap delete ho jaati hai. Raw clips banne ke turant baad delete."</li>
+          <li>"TV pe reel sirf tab chalegi jab tum 'Big screen pe reel chalao' tick karoge, aur poori squad ka OK ho."</li>
+          <li>"Repost sirf tumhari permission se. Squad mein koi 18 se chhota hai toh teacher ya parent ka OK zaroori hai."</li>
+        </ul>
+        <p class="small">Camera rule for under-18 visitors (filming crew): only hands and screens on our camera. Palm photos (counters 1 and 8) are never stored.</p>
+      </div>
+    </div>
+    <div>
+      <div class="shots"><figure><img src="../shots/TASK-09/reel-phone-4-toggles.png" alt=""><figcaption>Result screen: the two consent ticks (here ticked by the fictional filming demo; real visitors start with both off)</figcaption></figure></div>
+    </div>
+  </div>
+
+  <div class="shots phone-row">
+    <figure><img src="../shots/TASK-09/reel-phone-1-templates.png" alt=""><figcaption>1. Pick a template</figcaption></figure>
+    <figure><img src="../shots/TASK-09/reel-phone-2-orchestra.png" alt=""><figcaption>2. Agents cut the reel</figcaption></figure>
+    <figure><img src="../shots/TASK-09/reel-phone-3-ready.png" alt=""><figcaption>3. Reel ready (abstract demo footage)</figcaption></figure>
+  </div>
+</section>
+
+<section class="page">
+  <div class="top"><img src="../../print/assets/logo/zenith_logo_ink.png" alt="Zenith School of AI"><div class="tag">Squad Reel Studio · page 2</div></div>
+  <div class="grid2">
+    <div class="box"><h2>Setup (once, before the stall opens)</h2>
+      <ol class="small">
+        <li><b>Pair the TV browser first, in normal Chrome</b> (kiosk has no address bar): open <code>play.zenithschool.ai/staff</code> and type the 6-digit code the lead makes with "Pair a staff device" on <code>/admin</code> (10 min, one device). Once per TV browser, before visitors arrive; it lasts 4 days.</li>
+        <li>Then open the TV address full screen (kiosk): <code>play.zenithschool.ai/tv/reel?c=6</code>. Press <span class="key">H</span>: no "Staff TV nahi" message means pairing worked.</li>
+        <li>Check the reel worker: open <code>play.zenithschool.ai/status.json</code>, look for <code>"reelWorker":{"ok":true</code>. If it says <code>false</code>, tell the lead before opening.</li>
+        <li>Counter phone camera: set video to 1080p 30 fps (not 4K, not HEVC "High Efficiency"); 4K shots render about 10 s slower.</li>
+        <li>Mark a small filming spot with good light and a plain background.</li>
+        <li>Test once: one full reel with the counter phone, then play it and save it.</li>
+        <li>Filming crew only: phone <code>/reel/?c=6&amp;demo=hero</code> uses abstract footage, no people.</li>
+      </ol>
+    </div>
+    <div>
+      <div class="shots tv"><figure><img src="../shots/TASK-09/reel-tv-1-orchestra.png" alt=""><figcaption>TV: Director, Editor, Captions, Hook, Thumbnail live</figcaption></figure></div>
+      <div class="shots tv"><figure><img src="../shots/TASK-09/reel-tv-2-spotlight.png" alt=""><figcaption>TV result after the follow gate: reel plays only with the squad's tick; QR to get the reel</figcaption></figure></div>
+    </div>
+  </div>
+
+  <h2>5 most likely problems</h2>
+  <table>
+    <tr><th></th><th>What you see</th><th>What to do</th></tr>
+    <tr><td class="n">1</td><td>"Kam se kam 2 second", or the clip is refused as too long or too big.</td><td>Record again: 2 to 30 s per shot, under 80 MB. Shorter is better (7 s is the target on screen).</td></tr>
+    <tr><td class="n">2</td><td>Waiting or a queue message while the reel renders.</td><td>Many squads at once. It retries by itself. Keep the phone screen on ("Phone ki screen on rakho"): if the phone sleeps, the TV pauses and catches up later.</td></tr>
+    <tr><td class="n">3</td><td>The TV shows "Reel phone pe ready" but not the reel.</td><td>By design: the reel plays on the TV only when the squad ticks "Big screen pe reel chalao". Never tick it for them.</td></tr>
+    <tr><td class="n">4</td><td>"Save" does not work on a phone.</td><td>Use "MP4 download karo", then save from the downloads. <span class="inf">(Real iPhone and Android saving was not tested yet; check at rehearsal on 26 Oct.)</span></td></tr>
+    <tr><td class="n">5</td><td>A friendly error that the reel studio is busy or down; <code>reelWorker</code> shows <code>false</code>.</td><td>Tell the lead and log it. Fallback: the offline counter laptop (Stall Runbook), where the reel studio runs on the laptop itself.</td></tr>
+  </table>
+
+  <div class="box small"><h3>Repost and the consent list</h3>
+  <p>Only reels with "Zenith ise repost kar sakta hai" ticked may be reposted, and for an under-18 squad only after a teacher or parent says OK. The lead sees the consent list on a staff-only page; staff never download or forward reels from visitors' phones.</p></div>
+  <div class="care small"><b>Support card:</b> Squad Reel has no typing, so it is rare here. If anyone seems upset, go over kindly; Tele-MANAS is <b>14416</b> (free, 24x7). Never take a photo or a name. Tell the shift's safety lead.</div>
+  <div class="box small"><b>Who built it (only this line):</b> "Zenith first-years ne AI agents ke saath banaye". End card of every reel: @zenith_school_of_ai and "B.Tech in AI + mini-MBA. Ek degree, KRMU ki."</div>
+
+  <div class="src">Source: build notes, 24 Oct. Screenshots: local test server with fictional demo profiles, 24 Oct.</div>
+</section>
+</body></html>
