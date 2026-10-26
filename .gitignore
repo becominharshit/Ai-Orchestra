@@ -14,4 +14,7 @@ test-results/
 playwright-report/
 .DS_Store
 reel-worker/storage/
+# Generated test screenshots and print output
+docs/shots/
+print/out/
 !.env.example
